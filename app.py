@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 import index_service  # Import the service module
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 @app.route('/query_index', methods=['POST'])
 def query_index():
