@@ -7,8 +7,6 @@ from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Document
 from llama_index.llms.openai import OpenAI
 from llama_index.core.settings import Settings  # Import the singleton instance
-from utils import scrape_web_page
-from llama_index.core import StorageContext, load_index_from_storage
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -51,37 +49,23 @@ Settings._prompt_helper = prompt_helper
 # Load documents from data directory
 directory_documents = SimpleDirectoryReader(input_dir='data').load_data()
 
-# URLs to scrape
-# urls = ['https://www.mait.ac.in/']
-
-# # Scrape web pages and create documents
-# web_documents = []
-# for url in urls:
-#     content = scrape_web_page(url)
-#     if content:
-#         web_documents.append(Document(text=content))
-#         print(f'Scraped {len(content)} characters from {url}')
-#     else:
-#         print(f'Failed to fetch {url}')
-
-# Combine directory documents and web documents
-all_documents = directory_documents #+ web_documents
-
 # Print the total number of documents
-print(f'Total number of documents: {len(all_documents)}')
+print(f'Total number of documents: {len(directory_documents)}')
 
 # Create the index
 index = VectorStoreIndex.from_documents(
-    all_documents,
-    service_context=Settings  # Use the singleton instance directly
+    directory_documents,
+    service_context=Settings  
 )
 
 # load index
 index.storage_context.persist(persist_dir="index_storage")
 
 # Create a query engine
-query_engine = index.as_query_engine(service_context=Settings)  # Use the singleton instance directly
+query_engine = index.as_query_engine(service_context=Settings)  
 
 def query_index(query):
     response = query_engine.query(query)
-    return {"response": str(response)}
+    # Extract metadata
+    sources = [node.node.metadata for node in response.source_nodes]
+    return {"response": str(response), "sources": sources}
