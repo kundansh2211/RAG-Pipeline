@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/snip/measuring-intro.en
+
+\begin{document}
+\begin{sparagraph}
+Having represented documents as sequences of characters, we can use that to measure the
+sizes of documents. In this \currentsectionlevel we will have a look at the underlying
+units of information and try to get an intuition about what we can store in files.
+\end{sparagraph}
+
+\begin{sparagraph}[style=warning]
+We will take a very generous stance towards what a document is, in particular, we will
+include pictures, audio files, spreadsheets, computer aided designs, \ldots.
+\end{sparagraph}
+\end{document}
+

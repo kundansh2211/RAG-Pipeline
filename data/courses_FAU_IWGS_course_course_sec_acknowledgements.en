@@ -1,0 +1,52 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/acknowledgements.en
+
+\begin{document}
+\begin{sfragment}[id=IWGS-ack]{Acknowledgments}
+\begin{sparagraph}[title=Materials]
+The materials in this course are partially based on various lectures the author has
+given at Jacobs University Bremen in the years 2010-2016, these in turn have been
+partially based on materials and courses by Dr. Heinrich Stamerjohanns, PD Dr. Florian
+Rabe, and Prof. Dr. Peter Baumann. \sref[fallback=The Chapter on Image
+Processing,file=images/sec/images.en]{sec.image-processing} have been provided by
+Philipp Kurth and Dr. Frank Bauer.
+
+All course materials have bee restructured and semantically annotated in the \sTeX
+format, so that we can base additional semantic services on them.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Teaching Assistants]
+The organization and material choice in the \useSGvar{courseacronym} has significantly
+been influenced by Jonas Betzendahl and Philipp Kurth, who have been very active and
+dedicated teaching assistants and have given feedback on all aspects of the course. They
+have also provided almost all of the \useSGvar{courseacronym} exercises -- see
+\sref[fallback=below,file=course/sec/jupyterlab.en]{sec.jupyterlab}.
+\end{sparagraph}
+
+\begin{sparagraph}[title= DigiHumS Administrators]
+Jacqueline Klusik-Eckert and Philipp Kurth who used to administrate the DigiHumS major at
+FAU together have been helpful in navigating the administrative waters of an unfamiliar
+faculty.
+\end{sparagraph}
+
+\begin{sparagraph}[title=WissKI Specialists and Colleagues]
+\sref[fallback=The WissKI Chapter,file=wisski/sec/wisski.en]{sec.wisski} has profited
+from discussions with Peggy Große and Juliane Hamisch, then two WissKI specialists at
+FAU. My colleagues Prof. Peter Bell has provided the idea and data for the ``Kirmes
+Pictures Project'' that grounds some of the second semester.
+\end{sparagraph}
+
+\begin{sparagraph}[title=JupyterLab]
+The JupyterLab Server at \url{https://juptyter.kwarc.info} (see
+\sref[fallback=below,file=course/sec/jupyterlab.en]{sec.juptyterlab}) has been
+developed, operated, and maintained by Jonas Betzendahl. For details see
+\cite{Betzendahl:jkid20}.
+\end{sparagraph}
+
+\begin{sparagraph}[title=IWGS Students]
+The following students have submitted corrections and suggestions to this and earlier
+versions of the notes: Paul Moritz Wegener, Michael Gräwe.
+\end{sparagraph}
+\end{sfragment}
+\end{document}
+

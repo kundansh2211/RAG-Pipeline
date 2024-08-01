@@ -1,0 +1,42 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/css-inheritance.en
+
+\begin{document}
+\begin{smodule}{css-inheritance}
+
+\begin{nparagraph}
+Let us now look at \sn{CSS?CSS} \sn{inheritance} in a little more detail.
+\end{nparagraph}
+
+\begin{frame}[label=slide.cssi]
+\frametitle{Cascading in \sn{CSS?CSS}: Inheritance}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Sn{child} \sr{XML element}{elements} can \definame[post=s]{inherit} some
+\sr{CSS?property}{properties} (called \definame{inheritable}) from their
+\sns{parent}. In a nutshell:
+\begin{itemize}
+\item text-related \sr{CSS?property}{properties} are \sn{inheritable};
+e.g. \lstinline|color|, \lstinline|font|, \lstinline|letter-spacing|,
+\lstinline|line-height|, \lstinline|list-style|, and \lstinline|text-align|
+\item \sn{box}-related \sr{CSS?property}{properties} are not;
+e.g. \lstinline|background|, \lstinline|border|, \lstinline|display|,
+\lstinline|float|, \lstinline|clear|, \lstinline|height|, \lstinline|width|,
+\lstinline|margin|, \lstinline|padding|, \lstinline|position|, and
+\lstinline|text-align|.
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]
+\Sn{inheritance} is integrated into \sn{priorization}. \lec{recall case 7. above}
+\end{sparagraph}
+\item \Sn{inheritance} makes for consistent text \sr{CSS?property}{properties} and
+smaller \sn{CSS?CSS} \sns{stylesheet}.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+
+

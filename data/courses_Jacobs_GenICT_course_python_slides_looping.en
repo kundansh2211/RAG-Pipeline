@@ -1,0 +1,89 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/looping.en
+
+\begin{document}
+\begin{smodule}{python-looping}
+\lstset{language=python}
+
+\begin{nparagraph}
+Now let us see the syntax for \sns{loop} in \python.
+\end{nparagraph}
+
+\begin{frame}[label=slide.looping1]
+\frametitle{\Sns{loop} in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\python makes \sns{loop} via \lstinline|while| blocks
+\begin{columns}
+\begin{column}{5cm}
+\begin{itemize}
+\item
+syntax of the \lstinline|while| \sn{loop}
+\lstinputmhlisting[mathescape]{python/code/loop_schema.py}
+\item breaking out of \sns{loop} with \lstinline|break|
+\item skipping the current \sn{loop?body} with \lstinline|continue|
+\item \pmetavar{body} must be indented!
+\end{itemize}
+\end{column}\quad
+\begin{column}{6cm}
+\mhtikzinput{python/tikz/while}
+\end{column}
+\end{columns}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+As always we will fortify our intuition with a couple of small examples.
+\end{nparagraph}
+
+\begin{frame}[label=slide.looping2]
+\frametitle{Examples of Loops}
+\begin{itemize}
+\item
+\begin{sexample}[title=Counting in python,id=ex.python-count]\strut
+\lstinputmhlisting{python/code/while.py}
+This is the standard pattern for using \lstinline|while|: using a loop variable (here
+\lstinline|count|) and incrementing it in every pass through the loop.
+\end{sexample}
+\item
+\begin{sexample}[title=Breaking an unbounded Loop,id=ex.python-break]\strut
+\lstinputmhlisting{python/code/break.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\sref{ex.python-count} and \sref{ex.python-break} do the same thing: counting from zero
+to four, but using different mechanisms. This is normal in \sn{programming} there is not
+``one correct solution''. But the first solution is the ``standard one'', and is
+preferred, sind it is shorter and more readable. The \lstinline|break| functionality
+shown off in the second one is still very useful. Take for instance the problem of
+computing the product of the numbers -10 to 1.000.000. The naive \sn{implementation} of
+this is on the left below which does a lot of unnecessary work, because as soon was we
+passed 0, then the whole product must be zero. A more \sn{efficient} \sn{implementation}
+is on the right which breaks after seeing the first zero.
+\begin{center}
+\begin{tabular}{p{3.8cm}@{\qquad}p{4cm}}
+Direct \Sn{implementation} & More \Sn{efficient} \\
+\lstinputmhlisting{python/code/product.py} &
+\lstinputmhlisting{python/code/product-break.py}
+\end{tabular}
+\end{center}
+\end{nparagraph}
+
+\begin{frame}[label=slide.looping3]
+\frametitle{Examples of Loops}
+\begin{itemize}
+\item
+\begin{sexample}[title=Exceptions in the Loop]\strut
+\lstinputmhlisting{python/code/continue.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+
+\end{smodule}
+\end{document}
+

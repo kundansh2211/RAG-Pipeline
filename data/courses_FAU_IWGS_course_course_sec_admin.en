@@ -1,0 +1,34 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/admin.en
+
+\begin{document}
+\begin{sfragment}[id=IWCS-admin]{Administrativa}
+File: [courses/FAU/IWGS/course]{course/snip/admin-intro.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/prerequisites.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/grading.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/homeworks.en}
+
+File: [courses/FAU/AI/course]{course/snip/tutorials-intro.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/uebungen.en}
+
+File: [courses/FAU/IWGS/course]{course/snip/discussion.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/resources.en}
+
+File: [courses/FAU/meta-inf]{admin/slides/elearning.en}
+
+File: [talks/voll-ki]{slides/course-portal.en}
+
+File: [talks/voll-ki]{slides/flashcards.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/resources-guide.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/tools.en}
+
+\end{sfragment}
+\end{document}
+

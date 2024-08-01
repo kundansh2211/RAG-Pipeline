@@ -1,0 +1,59 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/serverside-scripting.en
+
+\begin{document}
+\begin{smodule}{serverside-scripting}
+\usemodule[smglom/computing]{mod?programming}
+
+\begin{frame}[label=slide.serverside-scripting]
+\frametitle{Server-Side Scripting: \Sn{programming} \Sns{web-page?web page}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea,id=sssf-idea]
+Why write \sn{html?HTML} pages if we can also program them!\lec{easy to do}
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=sssf.def]
+A \definame{server-side scripting framework} is a \sn{webserver?web server}
+extension that generates \sns{web-page?web page} upon
+\sn{http-protocol?HTTP} requests.
+\end{sdefinition}
+\item
+\begin{sexample}[for=server-side scripting framework]
+\usemodule[courses/Jacobs/TDM/course]{doccomp/slides?perl}
+$\PERLLanguage$ is a scripting language with good string manipulation
+facilities. \inlinedef{\definame{PERL CGI} is an early \sn{server-side scripting
+framework} based on this.}
+\end{sexample}
+\item
+\begin{sexample}[for=server-side scripting framework]
+\usemodule[courses/FAU/IWGS/course]{webapps/slides?bottle-stpl}
+\python is a scripting language with good string manipulation facilities. And
+\sn{bottle-stpl?bottle WSGI} is a simple but powerful \sn{server-side scripting
+framework} based on this.
+\end{sexample}
+\item
+\begin{sparagraph}[title=Observation]
+\usemodule[smglom/computing]{mod?database}
+\Sns{server-side scripting framework} allow to make use of external
+resources (e.g. \sns{database} or data feeds) and computational services
+during \sn{web-page?web page} generation.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Observation]
+\usemodule[smglom/computing]{mod?template-engine}
+A \sn{server-side scripting framework} solves two problems:
+\begin{enumerate}
+\item making the development of functionality that generates \sn{html?HTML} pages
+convenient and \sn{efficient}, usually via a \sn{template-engine?template engine},
+and
+\item \inlinedef{binding such functionality to \sns{URL?URL} the
+\definame[post=s]{route}, we call this \definame{routing}.}
+\end{enumerate}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

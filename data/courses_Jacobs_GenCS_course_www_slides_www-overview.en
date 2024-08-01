@@ -1,0 +1,25 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/www-overview.en
+
+\begin{document}
+\begin{smodule}{www-overview}
+
+\begin{nparagraph}
+\usemodule{www/slides?https-protocol}
+
+The infrastructure of the \sn{WWW} relies on a client-server architecture, where
+the \sr{webserver?web server}{servers} (called
+\sns{webserver?web server}) provide documents and the clients (usually
+\sns{webbrowser?web browser}) present the documents to the (human)
+users. Clients and \sr{webserver?web server}{servers} communicate via the
+\sns{http-protocol?HTTP} and \sns{HTTPS}
+protocols. We give an overview via a concrete example before we go into details.
+\end{nparagraph}
+
+\begin{frame}[label=slide.www-overview]
+\frametitle{The \sr{www?WWW}{World Wide Web} as a Client/Server System}
+\cmhgraphics[width=12cm]{www/PIC/httpprocess}
+\end{frame}
+\end{smodule}
+\end{document}
+

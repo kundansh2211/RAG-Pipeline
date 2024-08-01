@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/www-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?webapps}
+
+We will now present a very brief introduction into the concepts, mechanisms, and
+technologies that underlie the \sr{www?WWW}{World Wide Web}    and thus
+\sns{web application}, which are our interest here.
+\end{sparagraph}
+\end{document}
+

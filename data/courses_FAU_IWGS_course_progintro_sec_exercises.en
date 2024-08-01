@@ -1,0 +1,17 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/exercises.en
+
+\begin{document}
+\begin{nfragment}[id=sec.python-exercises]{Exercises}
+\includeproblem{progintro/prob/helloworld.en}
+\includeproblem{progintro/prob/yearseconds.en}
+\includeproblem{progintro/prob/supercalifragilisticexpialidocious.en}
+\includeproblem{progintro/prob/humanreadabletime.en}
+\includeproblem{progintro/prob/haiku.en}
+\includeproblem{progintro/prob/whatsyourname.en}
+\includeproblem{progintro/prob/simplebranching.en}
+\includeproblem{progintro/prob/looping.en}
+\includeproblem{progintro/prob/temperatures.en}
+\end{nfragment}
+\end{document}
+

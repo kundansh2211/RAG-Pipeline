@@ -1,0 +1,83 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/trees-cs.en
+
+\begin{document}
+\begin{smodule}{trees-cs}
+
+\begin{nparagraph}
+\Sns{tree?tree} are well understood \sn{mathematical} objects and \sn{tree?tree}
+\sns{data-structure?data structure} are very commonly used in
+\sr{computer-science?CS}{computer science} and \sn{programming?programming}. As such
+they have a well-developed nomenclature, which we will introduce now.
+\end{nparagraph}
+
+\begin{frame}[label=slide.trees-cs1]
+\frametitle{Well-Bracketed Structures: Tree Nomenclature}
+\begin{itemize}
+\item<1->
+\begin{sdefinition}
+In \sn{mathematics} and \sn{computer-science?CS}, such well-bracketed structures are called
+\definame[post=s]{tree?tree} (with \definame{forest?root},
+\definame[post=es]{branch?branch}, \definiendum{leaf}{leaves}, and
+\definame{height-depth?height}). \lec{but written upside down}
+\end{sdefinition}
+\only<1>{\vspace*{5cm}}
+\item<2->
+\begin{sexample}[for={path,forest?root,leaf}]
+In a \sn{tree}, there is only one \sn{path} from the \sn{forest?root} to the
+\sr{leaf}{leaves}
+\begin{onlyenv}<2>
+\begin{columns}[c]
+\begin{column}{5cm}
+\end{column}
+\qquad
+\begin{column}{4cm}
+\def\myxscale{.8}\def\myyscale{1}\mhtikzinput{digdocs/tikz/html-tree}
+\end{column}
+\end{columns}
+\end{onlyenv}
+\end{sexample}
+\item<3->
+\usestructure{tree}
+\begin{sdefinition}
+We speak of \definame{parent}, \definame{child},
+\definame{ancestor-descendant?ancestor}, and
+\definame{ancestor-descendant?descendant} \sns{graph?node}
+\lec{genealogy nomenclature}.
+\begin{onlyenv}<3>
+\begin{columns}
+\begin{column}{4cm}
+\end{column}
+\qquad
+\begin{column}{4cm}
+\def\myxscale{.8}\def\myyscale{1}\mhtikzinput{digdocs/tikz/html-tree}
+\end{column}
+\end{columns}
+\end{onlyenv}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}[title=Why are trees written upside-down?]
+The main answer is that we want to draw \sn{tree?tree} diagrams in text. And we
+naturally start drawing a \sn{tree?tree} at the \sn{forest?root}. So, if a
+\sn{tree?tree} grows from the \sn{forest?root} and we do not exactly know the \sn{tree}
+\sn{height-depth?height}, then we do not know how much space to leave. When we write
+trees upside down, we can directly start from the \sn{forest?root} and grow the
+\sn{tree?tree} downward as long as we need. We will keep to this tradition in the
+\useSGvar{courseacronym} course.
+\end{nparagraph}
+
+\begin{frame}[label=slide.trees-cs2]
+\frametitle{Upside Down Trees in Nature}
+\begin{itemize}
+\item Actually, upside down trees exist in nature (though rarely):
+\cmhgraphics[height=6.5cm]{digdocs/PIC/upsidedowntree}
+This is a fig tree in Bacoli,
+Italy; see \url{https://www.atlasobscura.com/places/upside-down-fig-tree}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

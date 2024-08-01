@@ -1,0 +1,13 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/snip/python-branchloop.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides?branchloop}
+
+After this general introduction -- \sn{conditional execution} and
+\sns{loop}) are supported by all \sns{programming language} in
+some form -- we will see how this is realized in \python
+\end{sparagraph}
+\end{document}
+

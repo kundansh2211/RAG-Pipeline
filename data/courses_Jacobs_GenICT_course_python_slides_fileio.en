@@ -1,0 +1,100 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/fileio.en
+
+\begin{document}
+\begin{smodule}{python-fileio}
+\lstset{language=python,mathescape}
+
+\begin{nparagraph}
+Now we can come to the \python bindings for the \sn{file?file}
+input/output operations. They are rather straightforward.
+\end{nparagraph}
+
+\begin{frame}[label=slide.python-fileio1,fragile]
+\frametitle{Disk Input/Output in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\python uses \definame[post=s]{file object} to encapsulate all file input/output
+functionality.
+\end{sdefinition}
+\item In \python we have special
+\sns{information-processing-system?instruction} for dealing with
+\sns{file?file}:
+\begin{itemize}
+\item \lstinline|open($\pmetavar{path}$,$\pmetavar{iospec}$)| returns a
+\sn{file object} $f$; $\pmetavar{iospec}$ is one of \lstinline|r|
+(\sn{files?read} only; the default), \lstinline|a| (append \hateq
+\sn{files?write} to the end), and \lstinline|r+|
+(\sn{files?read}/\sn{files?write}).
+\item $f$\lstinline|.read()| \sns{files?read} the \sn{file?file} represented
+by \sn{file object} $f$ into a \sn{python-datatypes?string}.
+\item $f$\lstinline|.readline()| reads a single \sn{file-type?line} from the
+\sn{file?file} (including the newline \sn{character?character} (\lstinline|\n|) otherwise
+returns the empty string \lstinline|''|.
+\item $f$\lstinline|.write($\pmetavar{str}$)| appends the
+\sn{python-datatypes?string} $\pmetavar{str}$ to the end of $f$, returns the
+number of \sns{character?character} written.
+\item $f$\lstinline|.close()| closes $f$ to protect it from accidental
+\sns{files?read} and \sns{files?write}.
+\end{itemize}
+\item
+\begin{sexample}[title=Duplicating the contents of a file]
+\lstinputmhlisting[mathescape,linerange=1-3]{python/code/fileio.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The only interesting thing is that we have to declare our intentions when we
+\sr{files?open}{opening} a \sn{file?file}. This allows the
+\sn{file-system?file system} to protect the \sns{file?file} against unintended
+actions and also optimize the data transfer to the
+\sns{storage-device?storage device} involved.
+\end{nparagraph}
+
+\begin{nparagraph}
+Let us now look at some examples to fortify our intuition about what we can do with
+\sns{file?file} in practice.
+\end{nparagraph}
+
+\begin{frame}[label=slide.python-fileio2,fragile]
+\frametitle{Disk Input/Output in \python (continued)}
+\begin{itemize}
+\item
+\begin{sexample}[title=Reading a file linewise,id=ex.read-linewise]\strut
+\begin{center}\vspace*{-1.5em}
+\begin{tabular}{p{5.2cm}@{\qquad}p{4.8cm}}
+\lstinputmhlisting[linerange=5-10]{python/code/fileio.py} &
+\lstinputmhlisting[linerange=12-16]{python/code/fileio.py}
+\end{tabular}\vspace*{-1em}
+\end{center}
+\end{sexample}
+\item If you want to read all the lines of a \sn{file?file} in a list you can also
+use \lstinline|list(f)| or \lstinline|f.readlines()|.
+\item
+\begin{sparagraph}
+\usemodule{python/slides/libraries?python-libraries}
+For \sn[post=ing]{files?read} a \python file we use the
+\lstinline|import($\pmetavar{basename}$)|
+\sn{information-processing-system?instruction}
+\begin{itemize}
+\item it searches for the \sn{file?file} \lstinline|$\pmetavar{basename}$.py|, loads it,
+interprets it as \python code, and directly executes it.
+\item primarily used for loading \python
+\sr{library}{libraries}\lec{additional functionality}
+\item also useful for loading \python-encoded data\lec{e.g. dictionaries}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The code snippet on the right of \sref{ex.read-linewise} show that \sns{file?file}
+can be \sr{python-forloop?iterate}{iterated} over using a
+\sn{python-forloop?for loop}: the \sn{file object} is implicitly converted
+into a sequences of strings via the \lstinline|readline| method.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

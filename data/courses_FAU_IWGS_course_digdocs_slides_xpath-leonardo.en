@@ -1,0 +1,47 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/xpath-leonardo.en
+
+\begin{document}
+\begin{smodule}{xpath-leonardo}
+
+\begin{nparagraph}
+To see that \sn{xpath-nutshell?XPath} is not just a plaything, we will now look at at a typical example
+where we can identify useful subtrees in a large \sn{html?HTML} document: the Wikipedia page on
+paintings by Leonardo da Vinci.
+\end{nparagraph}
+
+\begin{frame}[label=slide.xpath-leonardo]
+\frametitle{\sn{xpath-nutshell?XPath} Example: Scraping Wikipedia}
+\begin{itemize}
+\item
+\begin{sexample}[title=Extracting Information from HTML,for=XPath]
+\begin{itemize}
+\item<1-> We want a list of all titles of paintings by Leonardo da Vinci.
+\item<2-> open
+\url{https://en.wikipedia.org/wiki/List_of_works_by_Leonardo_da_Vinci} in
+$\firefoxbrowser$.\lec{save it into a file \lstinline|leo.html|}
+\item<3-> call \sn{DOM} inspector to get an idea of the
+\sn{xpath-nutshell?XPath} of titles.\lec{bottom line}\\
+\only<3>{\cmhgraphics[width=10cm]{digdocs/PIC/monalisa-inspect}}
+The path is \lstinline|table > tbody > tr > td > dl > dd > i > b > a |\\
+\titleemph{Alternatively}: right-click on highlighted line, \ergo "copy" \ergo "XPath", gives\\
+\lstinline|/html/body/div[3]/div[3]/div[4]/div/table[4]/tbody/tr[3]/td[2]/dl/dd/i/b/a|.
+\item<4-> \titleemph{Idea}: We want to use the second table cells \lstinline|td[2]|.
+\item<4-> Program it in \python using the \lstinline|lxml| library:
+\lstinline|titles| is list of title strings.
+\lstinputmhlisting[language=python]{digdocs/code/leo.py}
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+If the task of writing an \sn{xpath-nutshell?XPath} for extracting the $50+$ titles from this page does
+not convince you as worth learning \sn{xpath-nutshell?XPath} for, consider that Wikipedia has ca. 30 such
+lists, which apparently have exactly the same tree structure, so the \sn{xpath-nutshell?XPath} developed
+once for da Vinci, probably works for all the others as well.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

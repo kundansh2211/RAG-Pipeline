@@ -1,0 +1,51 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/uri-nutshell.en
+
+\begin{document}
+\begin{smodule}{uri-nutshell}
+
+\begin{frame}[label=slide.uri-nutshell]
+\frametitle{Uniform Resource Identifier (\sn{URI?URI}), Plumbing of the Web}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=URI.def]
+A \definiendum{URI?URI}{uniform resource identifier} (\definame{URI?URI}) is a
+global identifiers of local or network-retrievable documents, or media files
+(\definame[post=s]{URI?web resource}). \sns{URI} adhere a uniform \sn{syntax}
+(\sn{grammar}) defined in RFC-3986 \cite{BerFieMas:05}.
+
+A \sn{URI?URI} is made up of the following \definame[post=s]{URI?component}:
+\begin{itemize}
+\item a \definame{URI?scheme} that specifies the protocol governing the resource,
+\item an \definame{URI?authority}: the host (authentication there) that provides
+the resource,
+\item a \definame{URI?path} in the hierarchically organized resources on the host,
+\item a \definame{URI?query} in the non-hierarchically organized part of the host
+data, and
+\item a \definame{URI?fragment identifier} in the resource.
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sexample}[for=URI]
+The following are two example \sns{URI?URI} and their component parts:
+\lstinputmhlisting[columns=fixed,basicstyle=\ttfamily,belowskip=0pt,aboveskip=0pt]{www/code/uri.txt}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Note]
+\usemodule[smglom/www]{mod?webbrowser}
+\sns{URI} only \red{identify} documents, they do not have to provide access to them
+(e.g. in a \sr{web browser}{browser}).
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule{www/slides?url-urn}
+The definition above only specifies the structure of a \sn{URI} and its functional
+parts. It is designed to cover and unify a lot of existing addressing schemes, including
+\sns{URL?URL} (which we cover next), ISBN numbers (book identifiers), and mail
+addresses.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,24 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/digdocs.en
+
+\begin{document}
+\begin{sfragment}[id=sec.digdocs]{Documents as Digital Objects}
+File: [courses/Jacobs/TDM/course]{digdocs/snip/intro.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/files.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/snip/measuring-trans.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/sec/measuring.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/html.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/html-trees.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/xml-overview.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/exercises.en}
+
+\end{sfragment}
+\end{document}
+

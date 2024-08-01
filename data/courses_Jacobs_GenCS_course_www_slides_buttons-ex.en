@@ -1,0 +1,89 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/buttons-ex.en
+
+\begin{document}
+\begin{smodule}{buttons-ex}
+
+\begin{frame}
+\frametitle{Fun with Buttons (Three easy Interactions)}
+\begin{itemize}
+\item
+\begin{sexample}[id=ex.hover,title=A Button that Changes Color on Hover,
+for={jQuery,HTML}]
+\lstinputmhlisting[language=HTML,linerange={15-21},gobble=2,
+basicstyle=\footnotesize\sf]{www/code/buttons.html}
+\begin{itemize}
+\item The \sn{HTML} has a button with text ``hover''.
+\item The \sn{jQuery} code selects it via its \lstinline|id| and catches its hover
+\sn{event} via the \lstinline|hover()| method.
+\item This takes two functions as arguments:
+\begin{itemize}
+\item The first is called when the mouse moves into the button, the second when it
+leaves.
+\item The first changes changes the button color to red, the second reverts this.
+\end{itemize}
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fun with Buttons (Three easy Interactions)}
+\begin{itemize}
+\item
+\begin{sexample}[id=ex.readmore,title=A Button that Uncovers Text,
+for={jQuery,HTML}]
+\lstinputmhlisting[language=HTML,linerange={23-34},gobble=2,
+basicstyle=\footnotesize\sf]{www/code/buttons.html}
+\begin{itemize}
+\item The \sn{HTML} has two buttons (one of them visible) and a text.
+\item The \sn{jQuery} code selects both buttons via their \lstinline|read| class.
+\item A click \sn{event} activates the \lstinline|.click()| method taking an event
+handler function:
+\begin{itemize}
+\item This selects the text via its \lstinline|id| attribute \lstinline|rTeX| and
+\item uses the \lstinline|toggle()| method which changes the \lstinline|display|
+between \lstinline|none| and \lstinline|block|.
+\item The first \sn{parameter} of \lstinline|toggle()| is a duration for the
+animation.
+\item The second is a completion function to be run after animation finishes.
+\item Here complection function makes the respective other button visible (read
+more/less).
+\end{itemize}
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fun with Buttons (Three easy Interactions)}
+\begin{itemize}
+\item
+\begin{sexample}[id=ex.click,title=A Button that Plays a Sound,
+for={jQuery,HTML}]
+\lstinputmhlisting[language=HTML,linerange={36-45},gobble=2,
+basicstyle=\footnotesize\sf]{www/code/buttons.html}
+\begin{itemize}
+\item The \sn{HTML} has a button with text ``sound'' and an \lstinline|onclick|
+attribute.
+\item That activates the \lstinline|playSound| function on a URL:
+\item The \lstinline|playSound| function is defined in the \lstinline|script|
+element: it
+\begin{itemize}
+\item logs the action and \sn{URL} in the \sr{web browser}{browser} console,
+\item makes a new audio object \lstinline|a|, which
+\item plays it via the \lstinline|play()| method.
+\end{itemize}
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+For reference, here is the full code of the examples in one file:
+\lstinputmhlisting[language=HTML,basicstyle=\footnotesize\sf]{www/code/buttons.html} It
+has a bit more general \sn{CSS} and includes \sn{jQuery} in the beginning.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

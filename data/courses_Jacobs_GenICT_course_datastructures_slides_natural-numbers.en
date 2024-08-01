@@ -1,0 +1,44 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/slides/natural-numbers.en
+
+\begin{document}
+\begin{smodule}{natural-numbers}
+
+\begin{nparagraph}
+The first system for \sn{number} representations is very simple; so simple in fact that
+it has been discovered and used a long time ago.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Natural Numbers}
+\begin{itemize}
+\item \Sns{number} are symbolic representations of numeric
+\sr{quantity}{quantities}.
+\item There are many ways to represent \sns{number}\lec{more on this later}
+\item Let's take the simplest one\lec{about 8,000 to 10,000 years old}
+\begin{center}
+\end{center}
+\item We count by making marks on some surface.
+\item For instance $\sslash{\sslash{\sslash{\sslash\szero}}}$ stands for the
+\sn{number} four\lec{be it in 4 apples, or 4 worms}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/epistemology]{mod?meaning}
+In addition to manipulating normal objects directly linked to their daily survival,
+humans also invented the manipulation of place-holders or symbols. A \emph{symbol}
+represents an object or a set of objects in an abstract way. The earliest examples for
+symbols are the cave paintings showing iconic silhouettes of animals like the famous
+ones of Cro-Magnon.  The invention of symbols is not only an artistic, pleasurable
+``waste of time'' for humans, but it had tremendous consequences. There is
+archaeological evidence that in ancient times, namely at least some 8000 to 10000 years
+ago, humans started to use tally bones for counting. This means that the symbol ``bone
+with marks'' was used to represent numbers. The important aspect is that this bone is a
+symbol that is completely detached from its original down to earth \sn{meaning}, most
+likely of being a tool or a waste product from a meal. Instead it stands for a universal
+concept that can be applied to arbitrary objects.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

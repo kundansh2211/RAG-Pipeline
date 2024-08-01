@@ -1,0 +1,13 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/snip/encoding-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/nutshell?python-nutshell}
+
+Now that we understand the ``theory'' of encodings, let us work out how to program with
+them in \python:
+\end{sparagraph}
+
+\end{document}
+

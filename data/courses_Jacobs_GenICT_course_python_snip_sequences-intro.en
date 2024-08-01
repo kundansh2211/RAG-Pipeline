@@ -1,0 +1,19 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/snip/sequences-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/dictionaries?python-dictionaries}
+
+We now come to a commonly used
+class of objects in \python: sequences, such as \sns{list?list},
+sets, tuples, \sns{python-sequences?range}, and
+\sr{dictionary?dictionary}{dictionaries}.
+
+They are used for storing, accumulating, and accessing objects in various ways in
+programs. They all have in common, that they can be used for
+\sr{python-forloop?iteration}{iteration}, thus creating a uniform interface to
+similar functionality.
+\end{sparagraph}
+\end{document}
+

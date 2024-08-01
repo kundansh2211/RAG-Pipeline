@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/css.en
+
+\begin{document}
+\begin{sfragment}[id=sec.css]{Cascading Stylesheets}
+File: [courses/FAU/IWGS/course]{digdocs/snip/css-intro.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/css-intro.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/css-fragment.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/css-tools.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/css-contact.en}
+
+\end{sfragment}
+\end{document}
+

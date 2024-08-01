@@ -1,0 +1,26 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/slides/unicode-emojis.en
+
+\begin{document}
+\begin{frame}
+\usemodule[smglom/computing]{mod?character}
+\usemodule[courses/Jacobs/GenCS/course]{codes/slides?unicode-ucs}
+\frametitle{XKCD's Take on Recent Unicode Extensions}
+\begin{itemize}
+\item $\unicode$ 6.0 adopted hundreds of emoji \sns{character?character} in 2010
+\lec{2666 in July 2017}
+\item Modifying \sns{character?character}\lec{\url{https://xkcd.com/1813/}}
+\cmhgraphics[width=11cm]{codes/PIC/xkcd_vomiting_emoji}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\usemodule[courses/Jacobs/GenCS/course]{codes/slides?unicode-ucs}
+\frametitle{XKCD's Take on Recent Unicode Extensions (cont.)}
+\begin{itemize}
+\item Recent $\unicode$ extensions\lec{\url{https://xkcd.com/1953/}}
+\cmhgraphics[width=11cm]{codes/PIC/xkcd_unicode}
+\end{itemize}
+\end{frame}
+\end{document}
+

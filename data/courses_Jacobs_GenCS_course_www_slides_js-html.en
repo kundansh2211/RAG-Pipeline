@@ -1,0 +1,111 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/js-html.en
+
+\begin{document}
+\begin{smodule}{js-html}
+
+\begin{nparagraph}
+\sn{javascript?JavaScript} is a client side \sn{programming language}, that
+means that the \sns{program} are delivered to the \sr{web
+browser}{browser} with the \sn{html?HTML} documents and is executed in the
+\sr{web browser}{browser}. There are essentially three ways of embedding
+\sn{javascript?JavaScript} into \sn{html?HTML} documents:
+\end{nparagraph}
+
+\begin{frame}[label=slide.js-html1]
+\frametitle{Embedding \sn{javascript?JavaScript} into \sn{html?HTML}}
+\begin{itemize}
+\item In a \lstinline|<script>| element in \sn{html?HTML}, e.g.
+\lstinputmhlisting[language=html,linerange=3-5]{www/code/js-script.html}
+\item External \sn{javascript?JavaScript} file via a \lstinline|<script>| element
+with \lstinline|src| \sn{xml-markup?attribute}:
+\lstinputmhlisting[language=html,linerange=6-6]{www/code/js-script.html}
+\titleemph{Advantage}: \sn{html?HTML} and \sn{javascript?JavaScript} code
+are clearly separated.
+\item In \sns{event handler attribute} of various \sn{html?HTML} elements, e.g.
+\lstinputmhlisting[language=html,linerange=9-9]{www/code/js-script.html}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+A related -- and equally important -- question is,  \emph{when} the various embedded
+\sn{javascript?JavaScript} fragments are executed. Here, the situation is more varied
+\end{nparagraph}
+
+\begin{frame}[label=slide.js-html2]
+\frametitle{Execution of \sn{javascript?JavaScript} Code}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Question]
+When and how is \sn{javascript?JavaScript} code executed?
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Answer]
+While loading the \sn{html?HTML} page or afterwards triggered by \sns{event}.
+\end{sparagraph}
+\item \sn{javascript?JavaScript} in a \lstinline|script| element: during page
+load:\lec{not in a function}
+\lstinputmhlisting[language=html,linerange=10-10]{www/code/js-script.html}
+\item
+\begin{sparagraph}
+\sn{javascript?JavaScript} in \inlinedef{an \definame{event handler attribute} \lstinline|onclick|,
+\lstinline|ondblclick|, \lstinline|onmouseover|, \ldots'' whenever the corresponding
+\sn{event} occurs}.
+\end{sparagraph}
+\item \sn{javascript?JavaScript} in a ``special link'': when the anchor is clicked:
+\lstinputmhlisting[language=html,linerange=11-11]{www/code/js-script.html}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?stylesheet}
+The first key concept we need to understand here is that the \sr{web
+browser}{browser} essentially acts as an user interface: it presents the
+\sn{html?HTML} pages to the user, waits for actions by the user --
+\inlinedef{usually mouse clicks, drags, or gestures; we call them
+\definame[post=s]{event}} -- and reacts to them.
+
+The second is that all \sns{event} can be associated to an element node in the \sn{DOM}:
+consider an \sn{html?HTML} anchor node, as we have seen above, this corresponds to a
+rectangular area in the \sr{web browser}{browser} \sn{window}. Conversely, for any point
+$p$ in the \sr{web browser}{browser} \sn{window}, there is a minimal \sn{DOM} element
+$e(p)$ that contains $p$ recall that the \sn{DOM} is a tree. So, if the user clicks
+while the mouse is at point $p$, then the \sr{web browser}{browser} triggers a
+\lstinline|click| \sn{event} in $e(p)$, determines how $e(p)$ handles a
+\lstinline|click| \sn{event}, and if $e(p)$ does not, bubbles the \lstinline|click|
+event up to the parent of $e(p)$ in the \sn{DOM} tree.
+
+There are multiple ways a \sn{DOM} element can \sn{handle} an \sn{event}: some elements
+have default \sns{event handler}, e.g. an \sn{html?HTML} anchor
+\lstinline[mathescape]|<a href="$\pmetavar{URI}$">| will handle a \lstinline|click|
+\sn{event} by issuing a \sn{http-protocol?HTTP} GET request for $\pmetavar{URI}$. Other
+\sn{html?HTML} elements can carry \sns{event handler attribute} whose
+\sn{javascript?JavaScript} content is executed when the corresponding \sn{event} is
+triggered on this element.
+
+Actually there are more \sns{event} than one might think at first, they include:
+\begin{enumerate}
+\item Mouse \sns{event}; \lstinline|click| when the mouse clicks on an element
+(touchscreen devices generate it on a tap); \lstinline|contextmenu|: when the mouse
+right-clicks on an element; \lstinline|mouseover| / \lstinline|mouseout|: when the
+mouse cursor comes over / leaves an element; \lstinline|mousedown| /
+\lstinline|mouseup|: when the mouse button is pressed / released over an element;
+\lstinline|mousemove|: when the mouse is moved.
+\item Form element \sns{event}; \lstinline|submit|: when the visitor submits a
+\lstinline|<form>|; \lstinline|focus|: when the visitor focuses on an element, e.g. on
+an \lstinline|<input>|.
+\item Keyboard \sns{event}; \lstinline|keydown| and \lstinline|keyup|: when the visitor
+presses and then releases the button.
+\item Document \sns{event}; \lstinline|DOMContentLoaded|:– when the \sn{html?HTML} is
+loaded and processed, \sn{DOM} is fully built, but external resources like pictures
+\lstinline|<img>| and \sns{stylesheet} may be not yet loaded.  \lstinline|load|: the
+\sr{web browser}{browser} loaded all resources (images, styles etc);
+\lstinline|beforeunload| / \lstinline|unload|: when the user is leaving the page.
+\item resource loading \sns{event}; \lstinline|onload|: successful load,
+\lstinline|onerror|: an error occurred.
+\end{enumerate}
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/xml-overview.en
+
+\begin{document}
+\begin{sfragment}[id=sec.xml-overview]{An Overview over XML Technologies}
+File: [courses/Jacobs/GenCS/course]{xml/snip/intro.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/xml-intro.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/lxml.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/xmlns.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/xpath.en}
+
+\end{sfragment}
+\end{document}
+

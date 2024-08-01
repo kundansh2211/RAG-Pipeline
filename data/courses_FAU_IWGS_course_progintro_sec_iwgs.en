@@ -1,0 +1,16 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/iwgs.en
+
+\begin{document}
+\begin{sfragment}[id=sec.programming-iwgs]{Programming in \useSGvar{courseacronym}}
+File: [courses/FAU/IWGS/course]{progintro/snip/iwgs-intro.en}
+
+File: [courses/Jacobs/GenICT/course]{python/slides/python-genict.en}
+
+File: [courses/FAU/IWGS/course]{progintro/snip/iwgs-not.en}
+
+File: [courses/FAU/IWGS/course]{progintro/slides/lets-hack.en}
+
+\end{sfragment}
+\end{document}
+

@@ -1,0 +1,28 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/frontend-recap.en
+
+\begin{document}
+\begin{frame}
+\usemodule[smglom/www]{mod?html}
+\usemodule[smglom/www]{mod?web-page}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?jquery-layers}
+\frametitle{Recap: Web Application Frontend}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Recap: Web Application Frontend]
+\begin{center}
+\begin{slideshow}
+\nextslide{\Sns{web page} are just \sn{HTML} \sns{file}.\\\hfill
+\nextslide{Layout is specified by \sn{CSS} instructions and \sns{CSS?selector}\\\hfill
+\nextslide{\sn{JavaScript} specifies behavior\\\hfill
+\nextslide{for \sn[post=ing]{interact} with the user\\\hfill
+\nextslide{\sn{jQuery} \hateq more succinct \sn{JavaScript}\\\hfill
+\lastslide{\sn{jQuery} attaches behaviors to \sn{DOM} elements via \sn{CSS}
+\sns{CSS?selector}\\\hfill
+\end{slideshow}
+\end{center}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{document}
+

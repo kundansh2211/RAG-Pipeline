@@ -1,0 +1,12 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/snip/admin-intro.en
+
+\begin{document}
+\begin{sparagraph}[style=introduction]
+\usemodule[smglom/computing]{mod?efficient}
+We will now go through the ground rules for the course. This is a kind of a social
+contract between the instructor and the students. Both have to keep their side of the
+deal to make learning as \sn{efficient} and painless as possible.
+\end{sparagraph}
+\end{document}
+

@@ -1,0 +1,106 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/datatypes.en
+
+\begin{document}
+\begin{smodule}{python-datatypes}
+\lstset{language=python}
+
+\begin{nparagraph}
+The next phenomenon in \python is also common to many (but not all)
+\sns{program?programming language}:
+\sr{program-expression?expression}{expressions} are classified by the kind of
+objects their \sns{value?value} are. Objects can be simple (i.e. of a basic
+\sn{type?type}; \python has five of these) or complex, i.e. composed of
+other objects; we will go into that below.
+\end{nparagraph}
+
+\begin{frame}[label=slide.datatypes1]
+\frametitle{Data Types in \python}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Recall]
+\python \sns{program?program} process data
+(\sns{value?value}), which can be combined by
+\sns{operator?operator} and
+\sn{program-variable?variable} into
+\sns{program-expression?expression}.
+\end{sparagraph}
+\item \sr{type?type}{Data types} group data and tell the \sn{interpreter} what to expect
+\begin{itemize}
+\item \lstinline|1|, \lstinline|2|, \lstinline|3|, etc. are \sn{data?data} of
+\sn{type?type} ``integer''
+\item \lstinline|"hello"| is \sn{data?data} of \sn{type?type} ``string''
+\end{itemize}
+\item \sr{type?type}{Data types} determine which operators can be applied
+\item In \python, every \sns{value?value} has a
+\sn{type?type}, variables can have any \sn{type?type}, but can only be
+assigned \sns{value?value} of their \sn{type?type}.
+\item
+\begin{sdefinition}[id=python-basic-datatypes.def]
+\python has the following five basic \definame[post=s]{type?type}
+\begin{center}\footnotesize
+\begin{tabular}{|c|c|l|l|}\hline
+\sr{type?type}{Data type} & Keyword  & contains& Examples\\\hline\hline
+\definame[post=s]{python-datatypes?integer} & \lstinline|int|
+& bounded \sns{integernumbers?integer}
+& \lstinline|1|, \lstinline|-5|,  \lstinline|0|, \ldots\\\hline
+\definame[post=s]{python-datatypes?float} & \lstinline|float|
+& \sr{floating-point-number?float}{floating point numbers}
+& \lstinline|1.2|, \lstinline|.125|, \lstinline|-1.0|, \ldots\\\hline
+\definame[post=s]{string} & \lstinline|str|
+& \sr{words?word}{strings}
+& \lstinline|"Hello"|, \lstinline|'Hello'|, \lstinline|"123"|, \lstinline|'a'|, \ldots\\\hline
+\definame[post=s]{Boolean} & \lstinline|bool|
+& \sns{truthvalues?truth value}
+& \lstinline|True|, \lstinline|False|\\\hline
+\definame[post=es]{python-datatypes?complex}  & \lstinline|complex|
+& \sns{complexnumbers?complex number}
+& \lstinline|2+3j|,\ldots\\\hline
+\end{tabular}
+\end{center}
+\end{sdefinition}
+\item We will ecounter more \sns{type?type} later.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+We will now see what we can -- and cannot -- do with \sr{type?type}{data types},
+this becomes most noticable in \sns{variable assignment} which establishes a
+\sn{type?type} for the variable (this cannot be change any more) and in the
+application of \sns{operator?operator} to
+\sns{subroutine?argument} (which have to be of the correct
+\sn{type?type}).
+\end{nparagraph}
+
+\begin{frame}[label=slide.datatypes2]
+\frametitle{Data Types in \python (continued)}
+\begin{itemize}
+\item The type of a \sn{program-variable?variable} is automatically determined in
+the first \sn{variable assignment}\lec{before that the variable
+is unbound} \lstinputmhlisting[linerange=1-5]{python/code/type.py}
+\item
+\begin{sparagraph}[title=Hint]
+The \python \sn{subroutine?function} \lstinline|type| to computes the \sn{type}\lec{don't
+worry about the \lstinline|class| bit}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=slide.datatypes3]
+\frametitle{Data Types in \python (continued)}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+\python is strongly typed, i.e. types have to match
+\end{sassertion}
+\item Use data type conversion \sns{subroutine?function} \lstinline|int()|, \lstinline|float()|,
+\lstinline|complex()|, \lstinline|bool()|, and \lstinline|str()| to adjust types
+\item
+\begin{sexample}[title=Type Errors and Type Coersion]
+\lstinputmhlisting[linerange=6-12]{python/code/type.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

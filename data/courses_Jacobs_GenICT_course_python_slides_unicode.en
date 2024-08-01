@@ -1,0 +1,54 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/unicode.en
+
+\begin{document}
+\begin{smodule}{python-unicode}
+\lstset{language=python}
+
+\begin{nparagraph}
+\usemodule{python/slides/libraries?python-libraries}
+
+\Sn{programming} with $\unicode$ strings is particularly simple, strings in
+\python are $\UTFeight$-encoded $\unicode$ strings and all operations on them
+are $\unicode$-based\footnote{Older \sns{program?programming language} have
+\sn{ASCII} strings only, and $\unicode$ strings are supplied by external
+\sr{library}{libraries}.}. This makes the introduction to $\unicode$ in
+\python very short, we only have to know how to produce non-\sn{ASCII}
+\sns{character?character}, i.e. the \sns{character?character}
+that are not on regular keyboards.
+
+If we know the \sn{code point}, this is very simple: we just use $\unicode$
+\sns{python-string-literals?escape sequence}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Unicode in \python}
+\begin{itemize}
+\item
+\begin{sassertion}[style=remark]
+The \python \sn{python-datatypes?string} \sr{type?type}{data
+type} is $\unicode$, \sr{code?code}{encoded} as $\UTFeight$.
+\end{sassertion}
+\item
+\begin{sparagraph}[title=How to write $\unicode$ characters?]
+there are five ways
+\begin{itemize}
+\item write them in your editor\lec{make sure that it uses $\UTFeight$}
+\item otherwise use \python escape sequences\lec{try it!}
+\lstinputmhlisting{python/code/unicode.py}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?text-editor}
+\usemodule[smglom/computing]{mod?glyph}
+Note that the discussion about entry methods for \sn{unicode} \sns{character?character} applies to
+the bare \python \sn{interpreter}, not \python-specific \sn{text editor} modes or \sr{UI}{user
+interfaces}, which are often helpful by automatically replacing the input by the
+respective \sns{glyph} themselves.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

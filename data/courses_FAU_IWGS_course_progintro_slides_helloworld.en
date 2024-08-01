@@ -1,0 +1,60 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/slides/helloworld.en
+
+\begin{document}
+\begin{smodule}{jupyterlab-helloworld}
+\lstset{language=python}
+
+\begin{frame}[label=slide.helloworld]
+\frametitle{A first program in \python}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=A classic ``Hello World'' program]
+start your \sn{jupyterLab?python console}, type \lstinline|print("Hello IWGS")|.
+\lec{print a string}
+\only<1>{\cmhgraphics[width=10cm]{progintro/PIC/jupyterLab-helloworld}}
+\end{sparagraph}
+\item<2->
+\begin{sparagraph}[title=Alternatively]
+\begin{enumerate}
+\item   got to the \sn{jupyterLab} \sn{dashboard?dashboard} select ``Text File'',
+\item Type your program,
+\only<2>{\cmhgraphics[width=10cm]{progintro/PIC/jupyterLab-editor}}
+\item Save the file as \lstinline|hello.py|
+\item Go to your \sn{jupyterLab?terminal} and type \lstinline|python3 hello.py|
+\item[3'] \titleemph{Alternatively}: go to your \sn{jupyterLab?python console} and
+type\lec{in the same \sn{directory}}
+\lstinputmhlisting[language=bash]{progintro/code/import-hello.sh}
+\end{enumerate}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+We have seen that we can just call a program from the
+\sn{jupyterLab?terminal}, if we stored it in a file. In fact, we can do
+better: we can make our program behave like a native \sn{shell?shell} command.
+\begin{enumerate}
+\item The \sn{file} \sn{file-system?extension} \lstinline|.py| is only used by convention,
+we can leave it out and simply call the file \lstinline|hello|.
+\item Then we can add a special \python \sn{commenting?comment} in the first \sn{file-type?line}
+\lstinputmhlisting[language=bash,archive=courses/Jacobs/GenICT/course,mathescape]{python/code/python-call.sh}
+which the \sn{jupyterLab?terminal} interprets as ``call the program
+\lstinline|python3| on me''.
+\item Finally, we make the file \lstinline|hello| executable, i.e. tell the
+\sn{jupyterLab?terminal} the \sn{file} should behave like a \sn{shell}
+\sr{instruction}{command} by issuing
+\lstinputmhlisting[language=bash,archive=courses/Jacobs/GenICT/course]{python/code/chmod.sh} in the
+\sn{directory} where the file \lstinline|hello| is stored.
+\item We add the \sn{file-type?line}
+\lstinputmhlisting[language=bash,mathescape=false,archive=courses/Jacobs/GenICT/course]{python/code/path.sh}
+to the file \lstinline|.bashrc|. This tells the \sn{jupyterLab?terminal} where to
+look for programs (here the respective \sr{working directory}{current directory} called
+\lstinline|.|)
+\end{enumerate}
+With this simple recipe we could in principle extend the repertoire of instructions of the
+\sn{jupyterLab?terminal} and automate repetitive tasks.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

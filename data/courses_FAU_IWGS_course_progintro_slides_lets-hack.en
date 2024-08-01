@@ -1,0 +1,65 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/slides/lets-hack.en
+
+\begin{document}
+\begin{frame}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+\frametitle{But Seriously\ldots Learning programming in \useSGvar{courseacronym}}
+\begin{itemize}
+\item The \useSGvar{courseacronym} lecture teaches you
+\begin{itemize}
+\item a general introduction to \sn{programming} and \python\lec{next}
+\item various useful concepts and how they can be done in \python \lec{in
+principle}
+\end{itemize}
+\item The \useSGvar{courseacronym} tutorials
+\begin{itemize}
+\item teach the actual skill and joy of \sn{programming} \lec{hacking $\not=$
+security breach}
+\item supply you with problems so you can practice that.
+\end{itemize}
+\item
+\begin{sparagraph}[title=Richard Stallman (MIT) on Hacking]
+``What they had in common was mainly love of excellence and
+\sn{programming}. They wanted to make their programs that they used be as good
+as they could. They also wanted to make them do neat things. They wanted to be able
+to do something in a more exciting way than anyone believed possible and show ``Look
+how wonderful this is. I bet you didn't believe this could be done.''
+\end{sparagraph}
+\item
+\begin{sparagraph}[style=start,title={So, ...}]
+Let's hack
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+However, the result would probably be the following:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{{\textwarning} 2am in the Kollegienhaus CIP Pool {\textwarning}}
+\cmhgraphics[width=11cm,archive=courses/Jacobs/GenCS/course]{course/PIC/monkeys}
+\end{frame}
+
+\begin{nparagraph}
+If we just start hacking before we fully understand the problem, chances are very good
+that we will waste time going down blind alleys, and garden paths, instead of attacking
+problems. So the main motto of this course is:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\textwarning no, let's think \textwarning}
+\begin{itemize}
+\item We have to fully understand the problem, our tools, and the solution space
+first\lec{That is what the \useSGvar{courseacronym} lecture is for}
+\begin{itemize}
+\item read Richard Stallman's quote carefully \ergo problem understanding is a crucial
+prerequisite for hacking.
+\end{itemize}
+\item \nlex{The GIGO Principle: Garbage In, Garbage Out}\lec{-- ca. 1967}
+\item \nlex{Applets, Not Craplets\textsuperscript{tm}}\lec{-- ca. 1997}
+\end{itemize}
+\end{frame}
+\end{document}
+

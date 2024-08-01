@@ -1,0 +1,48 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/contact-form-recap.en
+
+\begin{document}
+\begin{smodule}{contact-form-recap}
+
+\begin{nparagraph}
+We are now equipped to finish the contact form example
+
+We now come back to our worked \sn{html?HTML} example: the contact form from
+above. Here is the current state:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Back to our Contact Form (Current State)}
+\begin{itemize}
+\item<1-> A contact form and message receipt \lec{communicate via
+\sns{http-protocol?HTTP request}} \lstset{basicstyle=\footnotesize\sf}
+\begin{center}
+\parbox[c]{5.5cm}{
+\lstinline|contact4.html|
+\lstinputmhlisting{digdocs/code/contact4.html}
+\only<2>{\lstinputmhlisting{digdocs/code/contact-get.url}}}\qquad
+\parbox[c]{5cm}{
+\lstinline|contact-after.html|
+\lstinputmhlisting{digdocs/code/contact-after.html}
+\only<2>{\lstinputmhlisting{digdocs/code/contact-after-get.url}}}
+\end{center}
+\begin{onlyenv}<3>\centering
+\parbox[c]{2cm}{\mhgraphics[width=2cm]{digdocs/PIC/browser4}}\hspace*{2cm}
+\parbox[c]{5cm}{\mhgraphics[width=6cm]{digdocs/PIC/browser4-after}}
+\end{onlyenv}
+\item<4->
+\begin{sparagraph}[title=Problem]
+The answer is a static \sn{html?HTML} document independent of
+\sn{html-form-data?form data}.
+\end{sparagraph}
+\item<4->
+\begin{sparagraph}[title=Solution]
+Generate the answer programmatically using the
+\sn{html-form-data?form data}.\lec{up next}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

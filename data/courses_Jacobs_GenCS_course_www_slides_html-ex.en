@@ -1,0 +1,36 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/html-ex.en
+
+\begin{document}
+\begin{smodule}{html-ex}
+\lstset{language=HTML}
+
+\begin{nparagraph}
+The best way to understand \sn{html?HTML} is via an example. Here we have prepared a simple
+file that shows off some of the basic functionality of \sn{html?HTML}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.html-ex1]
+\frametitle{A very first \sn{html?HTML} Example (Source)}
+\lstinputmhlisting[basicstyle=\small\sf,aboveskip=0pt]{www/code/first-html.html}
+\end{frame}
+
+\begin{nparagraph}
+The thing to understand here is that \sn{html?HTML} markup is itself a
+well-balanced structure of \sr{html?begin tag}{begin} and
+\sns{html?end tag}. That wrap other balanced \sn{html?HTML} structures
+and -- eventually -- \sn{markup?textual content}. The \sn{html?HTML}
+recommendation \cite{W3C:html5} specifies the visual appearance expectation and
+\sn[post=ions]{interact} afforded by the respective \sns{html?tag},
+which \sn{html?HTML}-aware software systems -- e.g. a
+\sn{webbrowser?web browser} -- then execute. In the next slide we see how
+$\firefoxbrowser$ displays the \sn{html?HTML} document from the previous.
+\end{nparagraph}
+
+\begin{frame}[label=slide.html-ex2]
+\frametitle{A very first \sn{html?HTML} Example (Result)}
+\cmhgraphics[width=7cm]{www/PIC/first-html}
+\end{frame}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,60 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/css-selectors.en
+
+\begin{document}
+\begin{smodule}{CSS-selectors}
+\lstset{language=HTML,mathescape}
+
+\begin{nparagraph}
+Recall that \sns{CSS?selector} are the part of \sn{CSS?CSS} \sns{CSS?rule} that
+determine what \sr{XML element}{elements} a \sn{CSS?rule} affects. We now give the most important
+cases for our applications.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{\sn{CSS?CSS} \Sns{CSS?selector}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Question]
+Which \sr{XML element}{elements} are affected by a \sn{CSS?CSS} \sn{CSS?rule}?
+\end{sparagraph}
+\item \sr{XML element}{Elements} of a given name (optionally with given
+\sns{xml-markup?attribute})
+\begin{itemize}
+\item \Sns{CSS?selector}: name \hateq \lstinline|$\pmetavar{elname}$|,
+\sns{xml-markup?attribute} \hateq
+\lstinline|[$\pmetavar{attname}$=$\pmetavar{attval}$]|
+\end{itemize}
+\item
+\begin{sexample}[for=CSS?selector]
+\lstinline|p[xml:lang='de']| applies to \lstinline|<p xml:lang="de">$\ldots$</p>|
+\end{sexample}
+\item Any \sr{XML element}{element} with a given \lstinline|class| \sns{xml-markup?attribute}
+\begin{itemize}
+\item \Sn{CSS?selector}: \lstinline|.$\pmetavar{classname}$|
+\end{itemize}
+\item
+\begin{sexample}[for=CSS?selector]
+\lstinline|.important| applies to
+\lstinline|<$\pmetavar{el}$ class='important'>$\ldots$</$\pmetavar{el}$>|
+\end{sexample}
+\item The \sr{XML element}{element} with a given \lstinline|id| \sn{xml-markup?attribute}
+\begin{itemize}
+\item \Sn{CSS?selector}: \textsf{\#}$\pmetavar{id}$
+\end{itemize}
+\item
+\begin{sexample}[for=CSS?selector]
+\textsf{\#myRoot} applies to
+\lstinline|<$\pmetavar{el}$ id='myRoot'>$\ldots$</$\pmetavar{el}$>|
+\end{sexample}
+\item
+\begin{sparagraph}[title=Note]
+Multiple \sns{CSS?selector} can be combined in a comma separated list.
+\end{sparagraph}
+\item For a full list see \url{https://www.w3schools.com/cssref/css_selectors.asp}.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

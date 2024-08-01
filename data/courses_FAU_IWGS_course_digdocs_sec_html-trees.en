@@ -1,0 +1,20 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/html-trees.en
+
+\begin{document}
+\begin{sfragment}[id=sec.html-trees]{Documents as Trees}
+File: [courses/FAU/IWGS/course]{digdocs/snip/trees-intro.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/wbs-cs.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/wbs-trees.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/trees-cs.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/tree-computing.en}
+
+File: [courses/Jacobs/GenCS/course]{xml/slides/dom.en}
+
+\end{sfragment}
+\end{document}
+

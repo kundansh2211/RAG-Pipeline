@@ -1,0 +1,46 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/www-concepts.en
+
+\begin{document}
+\begin{smodule}{www-concepts}
+
+\begin{frame}
+\frametitle{Concepts of the World Wide Web}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=web-page.def]
+A \definame{web page} is a document on the \sn{WWW} that can include
+\sn{multimedia} \sn{data} and \sns{hyperlink?hyperlink}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]\usemodule{www/slides?html}
+\Sns{web-page?web page} are usually \sr{markup}{marked up} in in
+\sn{html?HTML}.
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=web-site.def]
+A \definame{web-site?web site} is a collection of related
+\sns{web-page?web page} usually designed or controlled by the same
+individual or organization.
+\end{sdefinition}
+\item A \sn{web site} generally shares a common domain name.
+\item
+\begin{sdefinition}[id=hyperlink.def]
+A \definame{hyperlink?hyperlink} is a reference to data that can immediately be
+followed by the user or that is followed automatically by a
+\sn{user-agent?user agent}.
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=hypertext.def]
+A collection text documents with \sns{hyperlink?hyperlink} that point to
+text fragments within the collection is called a \definame{hypertext?hypertext}. The
+action of following \sns{hyperlink?hyperlink} in a \sn{hypertext}
+is called \definame{browsing} or \definiendum{browsing}{navigating} the
+\sn{hypertext}.
+\end{sdefinition}
+\item In this sense, the \sn{WWW} is a \sn{multimedia} \sn{hypertext}.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

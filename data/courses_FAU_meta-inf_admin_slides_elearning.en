@@ -1,0 +1,48 @@
+Archive: courses/FAU/meta-inf
+Filepath: admin/slides/elearning.en
+
+\begin{document}
+\begin{smodule}{eLearning-KWARC}
+\begin{nparagraph}
+Next we come to a special project that is going on in parallel to teaching the course. I
+am using the course materials as a research object as well. This gives you an additional
+resource, but may affect the shape of the coures materials (which now serve double
+purpose). Of course I can use all the help on the research project I can get, so please
+give me feedback, report errors and shortcomings, and suggest improvements.
+\end{nparagraph}
+
+\begin{frame}[label=slide.elearning]
+\frametitle{Experiment: Learning Support with \sn{KWARC} Technologies}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=My research area]
+Deep representation formats for (mathematical) knowledge
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=One Application]
+Learning support systems\lec{represent knowledge to transport it}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Experiment]
+Start with this course \lec{Drink my own medicine}
+\begin{enumerate}
+\item Re-represent the slide materials in $\omdoc$ (Open Mathematical Documents)
+\item Feed it into the \sn{ALeA} system \lec{\url{http://courses.voll-ki.fau.de}}
+\item Try it on you all \lec{to get feedback from you}
+\end{enumerate}
+\end{sparagraph}
+\item Research tasks%\lec{I cannot pay you for this}
+\begin{itemize}
+\item help me complete the material on the slides\lec{what is missing/would help?}
+\item I need to remember ``what I say'', examples on the board.\lec{take notes}
+\end{itemize}
+\item Benefits for you \lec{so why should you help?}
+\begin{itemize}
+\item you will be mentioned in the acknowledgements\lec{for all that is worth}
+\item you will help build better course materials\lec{think of next-year's students}
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

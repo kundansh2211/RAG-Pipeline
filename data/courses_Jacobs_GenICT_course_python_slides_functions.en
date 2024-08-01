@@ -1,0 +1,39 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/functions.en
+
+\begin{document}
+\begin{smodule}{python-functions}
+\lstset{language=python}
+
+\begin{nparagraph}
+We can now make the intuitions above formal and give the exact \python syntax
+of \sns{subroutine?function}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.functions,fragile]
+\frametitle{Functions in \python (Definition)}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=python-function.def]
+\varseq{aseq}{1,\ellipses,n}{\comp{a}_{#1}}
+\varseq{pseq}{1,\ellipses,n}{\comp{p}_{#1}}
+A \python \definame{subroutine?function} is defined by a code snippet of
+the form \lstinputmhlisting[mathescape]{python/code/function_schema.py}
+\begin{itemize}
+\item the indented part is called the \definame{subroutine?body} of
+$f$,\lec{\textwarning: whitespace matters in \python}
+\item the $\pseq{i}$ are called \definame[post=s]{subroutine?parameter}, and $n$ the
+\definame{subroutine?arity} of $f$.
+\end{itemize}
+A \sn{subroutine?function} $f$ can be \definame[post=ed]{subroutine?call} on
+\definame[post=s]{subroutine?argument} $\aseq!$ by writing the
+\sn{program-expression?expression} \lstinline[mathescape]|$f$($\aseq!$)|. This
+executes the \sn{subroutine?body} of $f$ where the (formal)
+\sns{parameter} $\pseq{i}$ are replaced by the
+\sns{subroutine?argument} $\aseq{i}$.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

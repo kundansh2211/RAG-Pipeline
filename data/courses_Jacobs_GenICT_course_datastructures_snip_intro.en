@@ -1,0 +1,27 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/snip/intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/computing]{mod?programming}
+\usemodule[smglom/computing]{mod?computer}
+
+In our basic introduction to \sn{programming} above we have convinced ourselves
+that we need some basic objects to compute with, e.g. Boolean values for conditionals,
+numbers to calculate with, and characters to form strings for input and output. In this
+\currentsectionlevel we will look at how these are represented in the
+\sn{computer}, which in principle can only store binary digits    voltage or no
+noltage on a wire -- which we think of as 1 and 0.
+\end{sparagraph}
+
+\begin{sparagraph}
+\usemodule[smglom/computing]{mod?programming}
+\usemodule[smglom/computing]{mod?computer}
+
+In this \currentsectionlevel we look at the representation of the basic data types of
+\sns{programming language} (numbers and characters) in the
+\sn{computer}; Boolean values (``True'' and ``False'') can directly be encoded as
+binary digits.
+\end{sparagraph}
+\end{document}
+

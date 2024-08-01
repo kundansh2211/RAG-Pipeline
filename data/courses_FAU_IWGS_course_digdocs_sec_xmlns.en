@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/xmlns.en
+
+\begin{document}
+\begin{sfragment}[id=sec.xmlns]{XML Namespaces}
+File: [courses/Jacobs/GenCS/course]{xml/slides/xml-everywhere.en}
+
+File: [courses/Jacobs/GenCS/course]{xml/slides/xmlns.en}
+
+\end{sfragment}
+\end{document}
+
+

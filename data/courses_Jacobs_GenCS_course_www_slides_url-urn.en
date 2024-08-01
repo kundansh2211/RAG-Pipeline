@@ -1,0 +1,76 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/url-urn.en
+
+\begin{document}
+\begin{smodule}{url-urn}
+
+\begin{nparagraph}
+Note that some forms of \sns{URI?URI} can be used for actually locating (or
+accessing) the identified resources, e.g. for retrieval, if the resource is a document
+or sending to, if the resource is a mailbox. Such \sns{URI?URI} are called
+``uniform resource \emph{locators}'', all others ``uniform resource \emph{locators}''.
+\end{nparagraph}
+
+\begin{frame}[label=slide.url-urn]
+\frametitle{Uniform Resource Names and Locators}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=URLN.def]
+A \definiendum{URL?URL}{uniform resource locator} (\definame{URL?URL}) is a
+\sn{URI?URI} that gives access to a \sn{URI?web resource}, by
+specifying an access method or location. All other \sns{URI?URI} are
+called \definiendum{URL?URN}{uniform resource name} (\definame{URL?URN}).
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Idea]
+A \sn{URN} defines the identity of a resource, a \sn{URL} provides a method
+for finding it.
+\end{sparagraph}
+\item
+\begin{sexample}[for=URL]
+\usemodule[smglom/www]{mod?webbrowser}
+
+The following \sn{URI?URI} is a \sn{URL}\lec{try it in your
+\sr{web browser}{browser}} \lstinline|http://kwarc.info/kohlhase/index.html|
+\end{sexample}
+\item
+\begin{sexample}[for=URN]
+\lstinline|urn:isbn:978-3-540-37897-6| only
+identifies~\cite{Kohlhase:OMDoc1.2}\lec{it is in the library}
+\end{sexample}
+\item
+\begin{sparagraph}
+\sns{URN} can be turned into \sns{URL} via a catalog
+service, e.g.  \url{http://wm-urn.org/urn:isbn:978-3-540-37897-6}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Note]
+\usemodule{www/slides/interweb-intro?internetweb}
+\sns{URI?URI} are one of the core features of the web infrastructure,
+they are considered to be the \red{plumbing of the \sn{WWW}}.\lec{direct the
+flow of data}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Historically, started out as \sns{URL} as short strings used for locating
+documents on the \sn{internet?internet}. The generalization to identifiers (and the
+addition of \sns{URN}) as a concept only came about when the concepts
+evolved and the application layer of the \sn{internet?internet}  grew and needed more structure.
+\end{nparagraph}
+
+\begin{nparagraph}
+Note that there are two ways in \sn{URI?URI} can fail to be resource
+locators: first, the scheme does not support direct access (as the ISBN scheme in our
+example), or the scheme specifies an access method, but address does not point to an
+actual resource that could be accessed. Of course, the problem of ``dangling links''
+occurs everywhere we have addressing (and change), and so we will neglect it from our
+discussion. In practice, the \sn{URL}/\sn{URN} distinction is mainly driven by the
+scheme part of a \sn{URI?URI}, which specifies the access/identification
+scheme.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

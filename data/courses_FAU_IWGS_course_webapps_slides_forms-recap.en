@@ -1,0 +1,62 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/forms-recap.en
+
+\begin{document}
+\begin{smodule}{forms-recap}
+\lstset{language=HTML}
+
+\begin{frame}[fragile,label=slide.forms-recap1]
+\frametitle{Recap \sn{html?HTML} Forms: Submitting Data to the Web Server}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Recall]
+\sn{html?HTML} forms collect data via named \lstinline|input| elements, the submit
+\sn{event} triggers a \sn{http-protocol?HTTP} request to the \sn{URL?URL} specified
+in the \lstinline|action| attribute.
+\end{sparagraph}
+\item
+\begin{sexample}[id=html-forms.ex,for=HTML form]
+Forms contain input fields and explanations.
+\lstinputmhlisting{webapps/code/form.html} yields the following in a
+\sn{webbrowser?web browser}:
+\cmhgraphics[width=11.5cm]{webapps/PIC/form}
+Pressing the submit button activates a \sn{http-protocol?HTTP}
+\sn{http-protocol?GET} request to the \sn{URL?URL}\\
+\lstinline[mathescape]|login.html?user=$\pmetavar{name}$&pass=$\pmetavar{passwd}$|
+\end{sexample}
+\item
+\begin{sparagraph}[style=warning]
+Never use the \sn{http-protocol?GET} method for submitting passwords \lec{see below}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+We can now use the tools any modern browser supplies to check up on this claim. In fact,
+using the browser tools is essential for advanced web development. Here we use the web
+console, that monitors any activity, to check upon what really happens when we
+\sn{interact} with the \sn{web page}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.forms-recap2]
+\frametitle{Checking up on the Transmission}
+\begin{itemize}
+\item<1-> Let's verify the claims above using browser tools\lec{here the web console}
+\item<1-> Loading the file and filling in the form:\lec{console logs file \sn{URI?URI}}
+\only<1>{\cmhgraphics[width=11cm]{webapps/PIC/form-console1}}
+\item<2-> After submitting the form:\lec{console logs the \sn{http-protocol?HTTP} request}
+\only<2>{\cmhgraphics[width=11cm]{webapps/PIC/form-console2}}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+A side effect of re-playing our development in the browser is that we see another type
+of \sn{html-forms?input element}: A password field, which hides user input from
+un-authorized eyes. We also see that the \sn{http-protocol?GET} request incorporates the
+\sn{html-form-data?form data} which contains the password into the \sn{URI?URI} of the request,
+which is visible to everyone on the web. We will come back to this problem later.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

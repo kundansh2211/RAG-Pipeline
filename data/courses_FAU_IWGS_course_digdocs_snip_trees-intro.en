@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/trees-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html-ex}
+\usemodule[smglom/cs]{mod?computer-science}
+We have concentrated on \sn{html?HTML} as a \sn{document-type?document type} for
+\sn{interactive} \sn{multimedia} documents. Before we progress, we want to discuss an
+important feature: all practical \sns{document-type?document type} that employ
+\sns{markup?control word} are in some sense well-bracketed. Well-bracketed structures
+are well-understood in \sn{computer-science?CS} and \sn{mathematics}: they are called
+\sns{tree?tree} and come with a rich and useful collection of descriptive concepts and
+tools. We will present the concepts in this \currentsectionlevel and the tools they
+enable in \sref[fallback=the next,file=digdocs/sec/xml-overview.en]{sec.xml-overview}.
+\end{sparagraph}
+\end{document}
+

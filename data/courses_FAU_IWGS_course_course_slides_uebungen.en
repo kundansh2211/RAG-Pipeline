@@ -1,0 +1,50 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/uebungen.en
+
+\begin{document}
+\begin{frame}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+\frametitle{\useSGvar{courseacronym} Tutorials}
+\begin{itemize}
+\item Weekly tutorials and homework assignments\lec{first one in week two}
+\item
+\begin{columns}[c]
+\begin{column}{8cm}
+\begin{sparagraph}[title=Tutor]\lec{Doctoral Student in
+\sn{computer-science?CS}}
+\begin{itemize}
+\item Jonas Betzendahl: \url{jonas.betzendahl@fau.de}
+\end{itemize}
+They know what they are doing and really want to help you learn!\lec{dedicated
+to DH}
+\end{sparagraph}
+\end{column}
+\begin{column}{2cm}
+\end{column}
+\end{columns}
+\item
+\begin{sparagraph}[title=Goal 1]
+Reinforce what was taught in class \lec{important pillar of the
+\useSGvar{courseacronym} concept}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Goal 2]
+Let you experiment with \python\lec{think of them as Programming Labs}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Life-saving Advice]
+\red{go to your tutorial, and prepare it by having looked at the slides and the
+homework assignments}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Inverted Classroom]
+\usemodule[courses/FAU/AI/course]{course/slides?flipped-classroom}
+the latest craze in didactics\lec{works well if done right}
+
+\titleemph{in \useSGvar{courseacronym}}: Lecture + Homework assignments + Tutorials
+\hateq \sr{flipped-classroom?flipped classroom}{inverted classroom}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{document}
+

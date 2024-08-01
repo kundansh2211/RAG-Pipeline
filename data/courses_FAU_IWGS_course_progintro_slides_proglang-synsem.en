@@ -1,0 +1,99 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/slides/proglang-synsem.en
+
+\begin{document}
+\begin{smodule}{proglang-synsem}
+\usemodule[courses/Jacobs/ComSem]{nlintro/slides?compositionality}
+
+\begin{nparagraph}
+We now come to one of the most important, but maybe least acknowledged principles of
+\sns{program?programming language}: The \sr{compositional}{principle of
+compositionality}. To fully understand it, we need to fix some fundamental vocabulary.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Top Principle of Programming: \Sn[post=ity]{compositional}}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+Modern \sns{program?programming language} compose various
+\sns{primitive} and give them a pleasing, concise, and uniform \sn{syntax}.
+\end{sassertion}
+\item
+\begin{sparagraph}[title=Question]
+What does all of this even mean?
+\end{sparagraph}
+\item
+\begin{sdefinition}
+In a \sn{program?programming language}, a \definame{primitive} is a
+``basic unit of processing'', i.e. the simplest element that can be given a
+procedural meaning (its \definame{semantics}) of its own.
+\end{sdefinition}
+\item
+\begin{sdefinition}[title={\Sn[post=ity]{compositional}}]
+All \sns{program?programming language} provide
+\definame[post=s]{composition principle} that allow to \definame{proglang-synsem?compose} smaller
+program fragments into larger ones in such a way, that the \sn{semantics} of
+the larger is determined by the \sn{semantics} of the smaller ones and that of
+the \sn{composition principle} employed.
+\end{sdefinition}
+\item
+\begin{sassertion}[style=observation]
+The \sn{semantics} of a \sn{program?programming language}, is determined
+by the meaning of its \sns{primitive} and
+\sns{composition principle}.
+\end{sassertion}
+\item
+\begin{sdefinition}
+\Sn{program?programming language} \definame{syntax} describes the surface form
+of the program: the admissible character sequences. It is also a composition of the
+\sn{syntax} for the \sns{primitive}.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+All of this is very abstract -- it has to be as we have not fixed a \sn{programming
+language} yet and you will only understand the true impact of the
+\sr{compositional}{compositionality principle} over time and with \sn{programming}
+experience.  Let us now see what this means concretely for our course.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Consequences of \Sn[post=ity]{compositional}}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+To understand a \sn{program?programming language}, we (only) have to understand
+its \sns{primitive}, \sns{composition principle}, and their
+\sn{syntax}.
+\end{sassertion}
+\item
+\begin{sdefinition}
+The ``art of \definame{programming?programming}'' consists of
+\sr{proglang-synsem?compose}{composing} the \sns{primitive} of a
+\sn{program?programming language}.
+\end{sdefinition}
+\item
+\begin{sassertion}[style=observation]
+We only need very few -- about half a dozen -- \sns{primitive} to obtain
+a \sn{Turing-complete?Turing complete} \sn{program?programming language}.
+\end{sassertion}
+\item
+\begin{sassertion}[style=observation]
+The space of program behaviors we can achieve by \sn{programming} is
+\sns{infinite} large nonetheless.
+\end{sassertion}
+\item
+\begin{sassertion}[style=remark]
+More \sns{primitive} make \sn{programming} more convenient.
+\end{sassertion}
+\item
+\begin{sassertion}[style=remark]
+\Sns{primitive} in one language can be composed in others.
+\end{sassertion}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

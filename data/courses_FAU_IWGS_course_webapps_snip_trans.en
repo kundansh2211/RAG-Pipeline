@@ -1,0 +1,25 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?webapps}
+To understand \sns{web application}, we will first need to understand
+\begin{enumerate}
+\item how we can express \sns{web page} in \sn{html?HTML} and (see
+\sref[fallback=above,file=digdocs/sec/html.en]{sec.html}) \sn{interact} with them
+for data input (we recap this in
+\sref[file=webapps/sec/forms-recap.en]{sec.forms-recap}),
+\item the basics of how the \sr{WWW}{World Wide Web} works as a distribution
+framework (see \sref[fallback=the last
+chapter,file=webapps/sec/www-basics.en]{sec.www-basics}),
+\item how we can generate \sn{html?HTML} documents programmatically (in our case in
+\python; see \sref[file=webapps/sec/serverside.en]{sec.serverside}) as
+answer pages, and finally
+\item how we can make \sn{html?HTML} pages dynamic by client side manipulation
+(see~\sref[file=webapps/sec/clientside.en]{sec.clientside}).
+\end{enumerate}
+\end{sparagraph}
+\end{document}
+

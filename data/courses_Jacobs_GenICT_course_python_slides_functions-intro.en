@@ -1,0 +1,54 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/functions-intro.en
+
+\begin{document}
+\begin{smodule}{python-functions-intro}
+\usemodule{python/slides/functions?python-functions}
+
+\begin{nparagraph}
+We now come to a general device for organizing and modularizing code provided by most
+\sns{program?programming language}, including \python. Like
+\sns{program-variable?variable}, \sns{subroutine?function} give
+names to \python objects -- here fragments of code -- and thus make them
+reusable in other contexts.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Functions in \python (Introduction)}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Observation]
+Sometimes \sn{programming} tasks are repetitive
+\lstinputmhlisting[linerange=1-4,mathescape]{python/code/functions.py}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+We can automate the repetitive part by \sns{subroutine?function}.
+\end{sparagraph}
+\item
+\begin{sexample}[for=subroutine?function,id=python function.ex]\strut
+We encapsultate the greeting functionality in a \sn{subroutine?function}:
+\lstinputmhlisting[linerange=6-12,mathescape]{python/code/functions.py}
+and use it repeatedly.
+\end{sexample}
+\item \sr{subroutine?function}{Functions} can be a very powerful tool for
+structuring and documenting \sns{program?program}\lec{if used correctly}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Functions in \python (Example)}
+\begin{itemize}
+\item
+\begin{sexample}[title=Multilingual Greeting]
+\usemodule[smglom/computing]{mod?localization}
+Given a value for \lstinline|lang|
+\lstinputmhlisting[linerange=14-18,mathescape,basicstyle=\small\sf]{python/code/functions.py}
+we can even \sr{localization}{localize} (i.e. adapt to the language specified in
+\lstinline|lang|) the greeting.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

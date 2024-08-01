@@ -1,0 +1,33 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/jquery-inserting.en
+
+\begin{document}
+\begin{smodule}{jquery-inserting}
+
+\usestructure{tree}
+\begin{nparagraph}
+We will now show a couple of \sn{jQuery} methods for inserting material into \sn{html?HTML}
+elements and discuss their behavior in examples
+\end{nparagraph}
+
+\begin{frame}[label=slide.jquery-inserting]
+\frametitle{Inserting Material into the \sn{DOM}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Inserting before the first \sn{child}]
+\lstinputmhlisting[linerange=1-1]{www/code/jquery-inserting.js}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Inserting after the last \sn{child}]
+\lstinputmhlisting[linerange=2-3]{www/code/jquery-inserting.js}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Inserting before/after an \sn{element}]
+\lstinputmhlisting[linerange=4-5]{www/code/jquery-inserting.js}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

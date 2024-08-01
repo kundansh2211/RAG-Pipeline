@@ -1,0 +1,62 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xpath-nutshell.en
+
+\begin{document}
+\begin{smodule}{xpath-nutshell}
+
+\usestructure{tree}
+\begin{nparagraph}
+One of the great advantages of viewing marked-up documents as trees is that we can
+describe subsets of its nodes.
+\end{nparagraph}
+
+\begin{frame}[label=slide.xpath-nutshell]
+\frametitle{\sn{xpath-nutshell?XPath}, A Language for talking about \sn{xml?XML} Tree Fragments}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=XPath.def]
+The \definiendum{XPath}{XML path language} (\definame{XPath}) is a language framework
+for specifying fragments of \sn{xml?XML} trees.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Intuition]
+\usemodule[courses/Jacobs/TDM/course]{doccomp/slides?regexp-practical}
+
+\sn{xpath-nutshell?XPath} is for \sns{tree?tree} what
+\sr{regex}{regular expressions} are for
+\sr{words?word}{strings}.
+\end{sparagraph}
+\item
+\begin{sexample}[for=XPath]
+\begin{columns}\footnotesize
+\begin{column}{5.5cm}\footnotesize
+\def\myxscale{.7}\def\myyscale{1.2}
+\mhtikzinput[width=6cm]{xml/tikz/xmltreepicture}
+\end{column}\qquad
+\begin{column}{6cm}\small
+\begin{tabular}{|l|p{2.2cm}|}\hline
+\sn{xpath-nutshell?XPath} exp. & fragment \\\hline
+\lstinline|/| & root\\\hline
+\lstinline|omtext/CMP/*| & all \lstinline|<CMP>| \sn[post=ren]{child}\\\hline
+\lstinline|//@name| & the \lstinline|name| \sn{xml-markup?attribute} on the
+\lstinline|<OMS>| \sr{XML element}{element}\\\hline
+\lstinline|//CMP/*[1]| & the first child of all \lstinline|<CMP>| \sr{XML element}{elements}\\\hline
+\lstinline|//*[@cd='nums1']| & all \sr{XML element}{elements} whose \lstinline|cd| has value
+\lstinline|nums1|\\\hline
+\end{tabular}
+\end{column}
+\end{columns}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+An \sn{xpath-nutshell?XPath} processor is an application or library that reads an
+\sn{xml?XML} file into a \sn{DOM} and given an
+\sn{xpath-nutshell?XPath} expression returns (pointers to) the set of nodes in the
+\sn{DOM} that satisfy the expression.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

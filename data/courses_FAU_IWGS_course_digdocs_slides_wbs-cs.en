@@ -1,0 +1,38 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/wbs-cs.en
+
+\begin{document}
+\begin{smodule}{wbs-cs}
+
+\begin{frame}
+\frametitle{Well-Bracketed Structures in Computer Science}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+We often deal with well-bracketed structures in \sn{computer-science?CS}, e.g.
+\begin{itemize}
+\item<1-> Expressions: e.g. $\displaystyle\frac{3\cdot(a+5)}{2x+7}$\lec{numerator an denominator
+in fractions implicitly bracketed}
+\item<2-> \sr{markup format}{Markup languages} like \sn{html?HTML}:
+\begin{onlyenv}<2>
+\lstinputmhlisting[language=HTML]{digdocs/code/html-generic.html}
+\end{onlyenv}
+\item<3->
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/branching?python-branching}
+\Sns{programming language} like python:
+\only<3>{\lstinputmhlisting[archive=courses/Jacobs/GenICT/course,language=python]{python/code/branching.py}}
+\end{itemize}
+\end{sassertion}
+\item<4->
+\begin{sparagraph}[title=Idea]
+Come up with a common \sn{data structure} that allows to program the same
+\sns{algorithm} for all of them. \lec{common approach to scaling in
+\sr{computer-science?CS}{computer science}}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

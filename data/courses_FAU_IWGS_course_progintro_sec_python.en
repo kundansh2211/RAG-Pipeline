@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/python.en
+
+\begin{document}
+\begin{sfragment}[id=sec.python]{Programming in Python}
+File: [courses/Jacobs/GenICT/course]{python/snip/intro-intro.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/hello.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/jupyterlab.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/vartypes.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/control.en}
+
+\end{sfragment}
+\end{document}
+

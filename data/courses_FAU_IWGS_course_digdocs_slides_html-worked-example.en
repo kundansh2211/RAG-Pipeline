@@ -1,0 +1,58 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/html-worked-example.en
+
+\begin{document}
+\begin{nparagraph}
+\usemodule[smglom/www]{mod?web-site}
+
+After this simple example, we will come to a more complex one: a little ``contact form''
+as we find on many \sns{web site} that can be used for sending a message to
+the owner of the site. Let us only look a the design of the form document before we go
+into the \sn[post=ion]{interact} facilities afforded it.
+\end{nparagraph}
+
+\begin{frame}[fragile,t]
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+\frametitle{HTML in Practice: Worked Example}
+\lstset{language=HTML}
+\begin{itemize}
+\item<1-> Make a design and ``paper prototype'' of the page:
+\only<1>{\cmhgraphics[width=6.5cm]{digdocs/PIC/design}}
+\item<2-> Put the intended text into a file: \lstinline|contact.html|:
+\only<2>{\clstinputmhlisting[linewidth=6cm]{digdocs/code/contact1.html}}
+\item<3-> Load into your browser to check the state:
+\only<3>{\cmhgraphics[width=11cm]{digdocs/PIC/browser1}}
+\item<4-> Add title, paragraph and button markup:
+\begin{onlyenv}<4>
+\begin{center}
+\parbox[c]{6.5cm}{\lstinputmhlisting{digdocs/code/contact2.html}}\qquad
+\parbox[c]{4.5cm}{\mhgraphics[width=4.5cm]{digdocs/PIC/browser2}}
+\end{center}
+\end{onlyenv}
+\item<5-> Add input fields and breaks:
+\begin{onlyenv}<5>
+\begin{center}
+\parbox[c]{6.5cm}{\lstinputmhlisting{digdocs/code/contact3.html}}\qquad
+\parbox[c]{3cm}{\mhgraphics[width=3cm]{digdocs/PIC/browser3}}
+\end{center}
+\end{onlyenv}
+\item<6-> Convert into a \sn{html?HTML} form with action (message receipt):
+\lstset{basicstyle=\footnotesize\sf}
+\begin{onlyenv}<6>
+\begin{center}
+\parbox[c]{5.5cm}{\lstinputmhlisting{digdocs/code/contact4.html}}\qquad
+\parbox[c]{5cm}{\lstinputmhlisting{digdocs/code/contact-after.html}}
+\end{center}
+\end{onlyenv}
+\begin{onlyenv}<7>
+\begin{center}
+\parbox[c]{2cm}{\mhgraphics[width=2cm]{digdocs/PIC/browser4}}\qquad
+\parbox[c]{7cm}{\mhgraphics[width=6cm]{digdocs/PIC/browser4-after}}
+\end{center}
+\end{onlyenv}
+\item<8-> That's as far as we will go, the rest is page layout and
+\sn[post=ion]{interact}.\lec{up next}
+\end{itemize}
+\end{frame}
+\end{document}
+

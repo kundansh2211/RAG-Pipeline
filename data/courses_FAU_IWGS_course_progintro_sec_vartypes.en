@@ -1,0 +1,12 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/vartypes.en
+
+\begin{document}
+\begin{sfragment}[id=sec.vartypes]{Variables and Types}
+File: [courses/Jacobs/GenICT/course]{python/slides/variables.en}
+
+File: [courses/Jacobs/GenICT/course]{python/slides/datatypes.en}
+
+\end{sfragment}
+\end{document}
+

@@ -1,0 +1,44 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/webbrowser.en
+
+\begin{document}
+\begin{smodule}{webbrowser}
+\symdef{firefoxbrowser}[name=firefox]{\comp{\mathtt{FireFox}}}
+\symdef{edgebrowser}[name=edge]{\comp{\mathtt{Edge}}}
+\symdef{msiebrowser}[name=msie]{\comp{\mathtt{MS Internet Explorer}}}
+\symdef{safaribrowser}[name=safari]{\comp{\mathtt{Safari}}}
+\symdef{chromebrowser}[name=chrome]{\comp{\mathtt{Chrome}}}
+\symdef{webkitbrowser}[name=webkit]{\comp{\mathtt{WebKit}}}
+
+\begin{frame}
+\frametitle{\sr{web browser}{Web Browsers}}
+\begin{itemize}
+\item\inputref[smglom/www]{mod/webbrowser.en}
+\item
+\begin{sparagraph}[title=Practical Browser Tools]
+\begin{itemize}
+\item Status Bar: security info, page load progress
+\item Favorites (bookmarks)
+\item View Source: view the code of a \sn{web-page?web page}
+\item Tools/Internet Options, history, temporary Internet files, home page, auto
+complete, security settings, programs, etc.
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sexample}[for=web browser,title=Common Browsers]
+\begin{itemize}
+\item \inlinedef[for=msiebrowser]{$\msiebrowser$ is an once dominant, now obsolete browser for $\windowsOS$.}
+\item \inlinedef[for=edgebrowser]{$\edgebrowser$ is provided by Microsoft for $\windowsOS$.}\lec{replaces $\msiebrowser$}
+\item \inlinedef[for=firefoxbrowser]{$\firefoxbrowser$ is an open source \sr{web browser}{browser} for all platforms, it is known
+for its standards compliance.}
+\item \inlinedef[for=safaribrowser]{$\safaribrowser$ is provided by Apple for $\macosxOS$ and $\windowsOS$.}
+\item \inlinedef[for=chromebrowser]{$\chromebrowser$ is a lean and mean \sr{web browser}{browser} provided  by Google Inc.}\lec{very common}
+\item \inlinedef[for=webkitbrowser]{$\webkitbrowser$ is a library that forms the open source basis for
+$\safaribrowser$ and $\chromebrowser$.}
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

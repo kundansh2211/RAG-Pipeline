@@ -1,0 +1,48 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/kwargs.en
+
+\begin{document}
+\begin{smodule}{python-kwargs}
+
+\begin{nparagraph}
+The first \sn{subroutine?argument} passing feature we want to discuss is the
+use of \sns{keyword argument}, which gets around the problem of having to remember
+the position of an argument of a multi-parameter \sn{subroutine?function}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.kwargs,fragile]
+\frametitle{Argument Passing in \python: Keyword Arguments}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=def.default-argument]
+\varseq{pseq}{1,\ellipses,n}{\comp{p}_{#1}}
+\varseq{aseq}{1,\ellipses,n}{\comp{a}_{#1}}
+\varseq{vseq}{1,\ellipses,n}{\comp\pmetal{val}\comp\pmetar_{#1}}
+The last $\natlethan{k}n$ of $n$ parameters of a \sn{subroutine?function} can
+be \definame[post=s]{keyword argument} of the form
+\lstinline[mathescape]|$\pseq{i}$=$\vseq{i}$|: If no argument $\aseq{i}$ is given in
+the function call, the \definame{default value} $\vseq{i}$ is taken.
+\end{sdefinition}
+\item
+\begin{sexample}[id=default-argument.ex,for=default value]
+The head of the \lstinline|open| \sn{subroutine?function} is
+\lstinputmhlisting[linerange=1-2]{python/code/open.py}
+Even if we only call it with \lstinline|open("foo")|, we can use
+\sns{subroutine?parameter} like \lstinline|mode| or \lstinline|opener| in
+the \sn{subroutine?body}; they have the corresponding
+\sn{default value}.
+
+We can also give more arguments via keywords, even out of order
+\lstinputmhlisting[linerange=3-3]{python/code/open.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}[title=BTW]
+\usemodule{python/slides/lambda?python-lambda} The \lstinline|opener| argument of
+\lstinline|open| is a \sn{subroutine?function}, and often an
+\sn{python-lambda?anonymous function} is used if it is specified.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

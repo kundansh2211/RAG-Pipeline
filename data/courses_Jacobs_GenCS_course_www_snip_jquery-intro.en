@@ -1,0 +1,13 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/jquery-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?jquery-layers} While \sn{javascript?JavaScript} is fully
+sufficient to manipulate the \sn{html?HTML} DOM, it is quite verbose and tedious to write. To
+remedy this, the web developer community has developed libraries that extend the
+\sn{javascript?JavaScript} language by new functionalities that more concise programs and are often
+used Instead of pure \sn{javascript?JavaScript}.
+\end{sparagraph}
+\end{document}
+

@@ -1,0 +1,100 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/branching.en
+
+\begin{document}
+\begin{smodule}{python-branching}
+\lstset{language=python,aboveskip=2pt,belowskip=0pt}
+
+\begin{frame}[label=slide.branching1]
+\frametitle{Conditionals in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Sn{conditional execution} via \lstinline|if|/\lstinline|else|
+statements
+\begin{columns}
+\begin{column}{5cm}
+\lstinputmhlisting[mathescape]{python/code/branch_schema.py}
+\cmhtikzinput[width=5cm]{python/tikz/indenting}
+\end{column}
+\begin{column}{6cm}
+\def\myxscale{2}\def\myyscale{1.2}
+\mhtikzinput[width=6cm]{python/tikz/ifthenelse}
+\end{column}
+\end{columns}
+\end{sdefinition}
+\item \pmetavar{then-part} and \pmetavar{else-part} have to be indented
+equally.\lec{e.g. 4 blanks}
+\item If \sns{control structure} are nested they need to be further indented
+consistently.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\python uses indenting to signify nesting of body parts in control structures
+-- and other structures as we will see later. This is a very un-typical syntactic choice
+in \sns{program?programming language}, which typically use brackets, braces,
+or other paired delimiters to indicate nesting and give the freedom of choice in
+indenting to \sns{programmer}. This freedom is so ingrained in
+\sn{programming} practice, that we emphasize the difference here. The following
+example shows \sn{conditional execution} in action.
+\end{nparagraph}
+
+\begin{frame}[label=slide.branching2]
+\frametitle{Conditional Execution Example}
+\begin{itemize}
+\item
+\begin{sexample}[title=Empathy in \python,id=ex.python-empathy]\strut
+\lstinputmhlisting{python/code/branching.py}
+Note the indenting of the body parts.
+\end{sexample}
+\item
+\begin{sparagraph}[title=BTW]
+\lstinline|input| is an operator that prints its argument string, waits for user
+input, and returns that.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+But \sn{conditional execution} in \python has one more trick
+up its sleeve: what we can do with two branches, we can do with more as well.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Variant: Multiple Branches}
+\begin{itemize}
+\item
+\begin{sparagraph}
+Making multiple \sn[post=es]{branch} is similar
+\lstinputmhlisting[mathescape]{python/code/mbranch_schema.py}
+\begin{itemize}
+\item The there can be more than one \lstinline|elif| clause.
+\item The \pmetavar{condition}s are evaluated from top to bottom and the
+\pmetavar{then-part} of the first one that comes out \lstinline|true| is executed. Then
+the whole \sn{control structure} is exited.
+\item multiple \sn[post=es]{branch} could achieved by nested
+\lstinline|if|/\lstinline|else| structures.
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sexample}[title=Better Empathy in \python]
+In \sref{ex.python-empathy} we print \lstinline|Good!| even if the input is e.g.
+\lstinline|I feel terrible|, so extend \lstinline|if|/\lstinline|else| by
+\lstinputmhlisting{python/code/empathy2.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Note that the \lstinline|elif| is just ``syntactic sugar'' that does not add anything
+new to the language: we could have expressed the same functionality as two nested
+if/else statements
+\lstinputmhlisting[mathescape]{python/code/elif_schema.py}
+But this would have introduced an additional layer of nesting (per \lstinline|elif|
+clause in the original). The nested syntax also obscures the fact that all branches are
+essentially equal.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

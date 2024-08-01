@@ -1,0 +1,12 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/http-ex-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?http-protocol}
+
+Now that we have seen all the components we fortify our intuition of what actually goes
+down the net by tracing the \sn{http-protocol?HTTP} messages.
+\end{sparagraph}
+\end{document}
+

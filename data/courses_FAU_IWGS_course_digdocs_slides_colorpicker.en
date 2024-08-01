@@ -1,0 +1,35 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/colorpicker.en
+
+\begin{document}
+\begin{smodule}{colorpicker}
+
+\begin{nparagraph}
+In \sn{CSS?CSS} we can specify colors by various names, but the full range of
+possible colors can only specified by numeric (usually \sn{hexadecimal})
+numbers. For instance in \sref[fallback=the initial example for
+CSS,archive=courses/Jacobs/GenCS/course,file=/www/slides/CSS.en]{css-simple.ex}, we specified the
+background color of the page as \lstinline|#d0e4fe;|, which is a pain for the author.
+Fortunately, there are tools that can help.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Picking \sn{CSS?CSS} Colors}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Problem]
+Colors in \sn{CSS?CSS} are specified by funny names (e.g. \lstinline|CornflowerBlue|) or
+\sn{hexadecimal} numbers, (e.g. \lstinline|#6495ED|).
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Solution]
+Use an online color picker,
+e.g. \url{https://www.w3schools.com/colors/colors_picker.asp}
+\cmhgraphics[width=11cm]{digdocs/PIC/colorpicker}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

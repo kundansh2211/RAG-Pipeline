@@ -1,0 +1,85 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/slides/utfcodes.en
+
+\begin{document}
+\begin{smodule}{utfcodes}
+
+\begin{nparagraph}
+Note that there is indeed an issue with space-efficient \sns{character encoding}
+here. $\unicode$ reserves space for $\natpower{2}{32}$ (more than a million)
+\sns{character?character} to be able to handle future scripts. But just simply using 32
+bits for every $\unicode$ \sn{character?character} would be extremely wasteful:
+$\unicode$-\sn[post=d]{code?encode} versions of \sn{ASCII} files would be four times as
+large.
+\end{nparagraph}
+
+\begin{nparagraph}
+Therefore $\unicode$ allows multiple \sns{character encoding}.  $\UTFthirtytwo$ is a
+simple 32-bit code that directly uses the \sns{code point} in \sn{pns-common?binary}
+form. $\UTFeight$ is optimized for western languages and coincides with the \sn{ASCII}
+where they overlap. As a consequence, \sn{ASCII} encoded texts can be decoded in
+$\UTFeight$ without changes --- but in the $\UTFeight$ encoding, we can also address all
+other \sn{unicode} \sns{character?character} (using multi-\sn{bits?byte}
+\sns{character?character}).
+\end{nparagraph}
+
+\begin{frame}[label=slide.utfcodes]
+\frametitle{Character Encodings in Unicode}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \definame{character encoding} is a mapping from \sn{pns-common?bit}
+\sr{words?word}{strings} to \sn{UCS} \sns{code point}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Idea]
+\Sn{unicode} supports multiple \sns{character encoding} (but not \sns{character
+set}) for \sn{efficiency}.
+\end{sparagraph}
+\item
+\begin{sdefinition}[title=Unicode Transformation Format,for={UTFeight,UTFsixteen,UTFthirtytwo}]
+\begin{itemize}
+\item $\UTFeight$, 8-\sn{bits?bit}, variable width \sn{character encoding}, which
+maximizes compatibility with \sn{ASCII}.
+\item $\UTFsixteen$, 16-\sn{bits?bit}, variable width \sn{character
+encoding}\lec{popular in Asia}
+\item $\UTFthirtytwo$, a 32-\sn{bits?bit}, fixed width \sn{character
+encoding}\lec{as a fallback}
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sdefinition}
+The $\UTFeight$ \sr{character encoding}{encoding} follows the following schema:
+\begin{small}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}\hline
+\Sn{unicode}            & \sn{octet} 1    & \sn{octet} 2    & \sn{octet} 3    & \sn{octet} 4\\\hline
+$\unicodepoint{000000}-\unicodepoint{00007F}$
+& 0xxxxxxx &          &          &       \\\hline
+$\unicodepoint{000080}-\unicodepoint{0007FF}$
+& 110xxxxx & 10xxxxxx &          &       \\\hline
+$\unicodepoint{000800}-\unicodepoint{00FFFF}$
+& 1110xxxx & 10xxxxxx & 10xxxxxx &       \\\hline
+$\unicodepoint{010000}-\unicodepoint{10FFFF}$
+& 11110xxx & 10xxxxxx & 10xxxxxx & 10xxxxxx \\\hline
+\end{tabular}
+\end{center}
+\end{small}
+\end{sdefinition}
+\item
+\begin{sexample}[for=unicodepoint]
+$\ASCIIdollar=\unicodepoint{0024}$ is encoded as 00100100\lec{1 byte}\\
+$\cent=\unicodepoint{00A2}$ is encoded as 11000010,10100010\lec{two bytes}\\
+$\text{\euro}=\unicodepoint{20AC}$ is encoded as 11100010,10000010,10101100\lec{three bytes}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Note how the fixed \sn{pns-common?bit} \sn[post=es]{subword?prefix} in the $\UTFeight$
+\sr{character encoding}{encoding} are engineered to determine which of the four cases
+apply, so that $\UTFeight$ encoded documents can be safely decoded.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

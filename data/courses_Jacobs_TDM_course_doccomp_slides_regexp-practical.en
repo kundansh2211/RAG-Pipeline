@@ -1,0 +1,89 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: doccomp/slides/regexp-practical.en
+
+\begin{document}
+\begin{smodule}{regexp-practical}
+
+\begin{frame}
+\frametitle{Problem: Text/Data File Manipulation}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=Problem 1 (Information Extraction)]
+We often want to extract information from large document collections, e.g.
+\begin{itemize}
+\item e-mail addresses or dates from collected correspondencesrtts
+\item dates and places from newsfeeds
+\item links from web pages
+\end{itemize}
+\end{sparagraph}
+\item<2->
+\begin{sparagraph}[title=Problem 2 (Data Cleaning)]
+The representation in data files is often too noisy and inconsistent for directly
+importing into an application; e.g.
+\begin{itemize}
+\item standardizing different spellings of e.g. city names, \lec{Nuremberg vs. Nürnberg}
+\item eliminating higher $\unicode$ \sns{character?character}, when the
+application only accepts \sn{ASCII},
+\item separating structured texts into data blocks. \lec{e.g. in $x$-separated lists}
+\end{itemize}
+\end{sparagraph}
+\item<3->
+\begin{sparagraph}[title=Enabling Technology]
+Specifying text/data fragments \ergo \sr{regex}{regular expressions}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?pythonLanguage}
+There are several dialects of \sr{regex}{regular expression languages} that differ
+in details, but share the general setup and syntax. Here we introduce the
+\python variant and recommend~\cite{PyRegex:on} for a cheat-sheet on
+\python \sr{regex}{regular expressions} (and an integrated
+\sn{regex} tester).
+\end{nparagraph}
+
+\begin{frame}[label=slide.regexp-practical]
+\frametitle{Regular Expressions, see \cite{python-regexp:URL}}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=regexp.def]
+A \definiendum{regex}{regular expression} (also called \definame{regex}) is a
+\sr{formal language}{formal} \sn{wfexp?expression} that specifies a set of
+\sr{words?word}{strings}.
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=regexp-metachar.def,title=Meta-Characters for
+Regexps]
+\begin{center}\footnotesize
+\begin{tabular}{|l|l|}\hline%|
+char & denotes \\\hline\hline
+$\ASCIIdot$ & any single \sn{character?character} (except a newline)\\\hline
+$\ASCIIcaret$ & beginning of a \sr{words?word}{string}\\\hline
+$\ASCIIdollar$ & end of a \sr{words?word}{string}\\\hline
+$\ASCIIosqbrack$\ldots$\ASCIIcsqbrack$/$\ASCIIosqbrack\ASCIIcaret$\ldots$\ASCIIcsqbrack$
+& any single \sn{character?character} in/not in the brackets\\\hline
+$\ASCIIosqbrack x\ASCIIdash y\ASCIIcsqbrack$/$\ASCIIosqbrack\ASCIIcaret x\ASCIIdash y\ASCIIcsqbrack$
+& any single \sn{character?character} in/not in range $x$ to $y$\\\hline
+$\ASCIIobrack$\ldots$\ASCIIcbrack$ & marks a \sn{capture group}\\\hline
+$\ASCIIbackslash{n}$ & the $n$\textsuperscript{th} \sr{capture group}{captured group}\\\hline
+$\ASCIIvbar$ & disjunction\\\hline
+$\ASCIIstar$ & matches preceding element zero or more times\\\hline
+$\ASCIIplus$ & matches preceding element one or more times\\\hline
+$\ASCIIquestionmark$ & matches preceding element zero or one times\\\hline
+$\ASCIIobrace{n}\ASCIIcomma{m}\ASCIIcbrace$ & matches the preceding element between $n$ and $m$ times\\\hline
+$\ASCIIbackslash\ASCIIS$/$\ASCIIbackslash\ASCIIs$ & non-/whitespace \sn{character?character}\\\hline
+$\ASCIIbackslash\ASCIIW$/$\ASCIIbackslash\ASCIIw$ & non-/word \sn{character?character}\\\hline
+$\ASCIIbackslash\ASCIID$/$\ASCIIbackslash\ASCIId$ & non-/digit (not only 0-9,
+but also e.g. arabic digits)\\\hline
+\end{tabular}
+\end{center}
+All other \sns{character?character} match themselves, to match e.g. a $\ASCIIquestionmark$, escape
+with a $\ASCIIbackslash$:   \lstinline|\\?|.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

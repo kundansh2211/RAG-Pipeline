@@ -1,0 +1,63 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xmlns.en
+
+\begin{document}
+\begin{smodule}{xmlns}
+
+\begin{nparagraph}
+We will now reflect what we have seen in \sref[fallback=the example
+above,file=xml/slides/xml-everywhere.en]{xml-metadata} and fully define the namespacing
+mechanisms involved. Note that these definitions are technically involved, but
+conceptually quite natural. As a consequence they should be read more with an eye
+towards ``what are we trying to achieve'' than the technical details.
+\end{nparagraph}
+
+\begin{frame}[label=slide.xmlns,fragile]
+\frametitle{Mixing Vocabularies via \sn{xml?XML} Namespaces}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=Problem]
+We would like to reuse \sr{XML element}{elements} from different \sn{xml?XML} vocabularies\\
+What happens if \sr{XML element}{element} names coincide, but have different meanings?
+\end{sparagraph}
+\item<1->
+\begin{sparagraph}[title=Idea]
+\sr{disambiguation}{Disambiguate} them by vocabulary name.\lec{prefix}
+\end{sparagraph}
+\item<2->
+\begin{sparagraph}[title=Problem]
+What if vocabulary names are not unique? \lec{e.g. different versions}
+\end{sparagraph}
+\item<2->
+\begin{sparagraph}[title=Idea]
+Use a long string for identification and a short prefix for referencing
+\end{sparagraph}
+\item<3->
+\begin{sdefinition}
+An \definiendum{xmlns}{XML namespace} is a string that identifies an \sn{xml?XML}
+vocabulary. Every \sr{XML element}{element} and \sn{xml-markup?attribute} name in \sn{xml?XML} consists of
+a \definame{local name} and a \sr{xmlns}{namespace}.
+\end{sdefinition}
+\item<3->
+\begin{sdefinition}
+A \definame{namespace declaration} is an \sn{xml-markup?attribute}
+\lstinline|xmlns:|\pmetavar{prefix}|=| whose value is an \sr{xmlns}{XML namespace}
+$n$ on an \sn{XML element} $e$. The first associates the
+\definame{namepsace prefix} \pmetavar{prefix} with the \sr{xmlns}{namespace} $n$ in
+$e$: Then, any \sn{XML element} in $e$ with a \definame{prefixed name}
+\lstinline[mathescape]|$\pmetavar{prefix}$:$\pmetavar{name}$| has
+\sr{xmlns}{namespace} $n$ and \sn{local name} $\pmetavar{name}$.
+
+A \definame{default namespace declaration} \lstinline[mathescape]|xmlns=$d$| on an
+\sr{XML element}{element} $e$ gives all \sr{XML element}{elements} in $e$ whose
+name is not \sr{prefixed name}{prefixed}, the \sr{xmlns}{namepsace} $d$.
+
+\Sns{namespace declaration} on \sns{subtree?subtree} shadow the ones on
+\sns{subtree?supertree}.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

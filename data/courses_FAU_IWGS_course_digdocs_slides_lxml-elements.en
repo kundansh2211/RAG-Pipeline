@@ -1,0 +1,68 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/lxml-elements.en
+
+\begin{document}
+\begin{smodule}{lxml-elements}
+\lstset{language=python,aboveskip=3pt,belowskip=2pt}
+
+\usestructure{tree}
+\begin{frame}
+\frametitle{Computing with \sn{xml?XML} in \python (\sr{XML element}{Elements})}
+\begin{itemize}
+\item<1-> The \lstinline|lxml| library~\cite{lxml:on} provides \python
+bindings for the (low-level) \lstinline|LibXML2| library.\lec{\sn{install} it
+with \lstinline|pip3 install lxml|}
+\item<2-> The \lstinline|ElementTree| \sn{API?API} is the main way to
+programmatically \sn{interact} with \sn{xml?XML}. Activate it by importing
+\lstinline|etree| from \lstinline|lxml|:
+\lstinputmhlisting[linerange=1-1]{digdocs/code/lxml-element.py}
+\item<3-> \sr{XML element}{Elements} are easily created, their properties are accessed with special
+\sn{accessor} \sns{oop?method}
+\lstinputmhlisting[linerange=2-4]{digdocs/code/lxml-element.py}
+\item<4-> \sr{XML element}{Elements} are organised in an \sn{xml?XML} \sn{tree?tree} structure. To
+create \sn{child} \sr{XML element}{element} \sns{graph?node} and add them to a \sn{parent}
+\sr{XML element}{element} \sns{graph?node}, you can use the \lstinline|append()| method:
+\lstinputmhlisting[linerange=5-5]{digdocs/code/lxml-element.py}
+\item<5->
+\begin{sparagraph}[title=Abbreviation]
+create a \sn{child}
+\sr{XML element}{element} \sn{graph?node} and add it to a \sn{parent}.
+\lstinputmhlisting[linerange=6-7]{digdocs/code/lxml-element.py}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Computing with \sn{xml?XML} in \python (Result)}
+\begin{itemize}
+\item Here is the resulting \sn{xml?XML} tree so far; we
+\sr{serialization}{serialize} it via \lstinline|etree.tostring|
+\lstinputmhlisting[linerange=8-13]{digdocs/code/lxml-element.py}
+\item BTW, the \lstinline|etree.tostring| is highly configurable via default arguments.
+\lstinputmhlisting[basicstyle=\small\sf]{digdocs/code/etree.tostring.py}
+The \lstinline|lxml| API documentation~\cite{lxml:API:on} has the details.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+This method of ``manually'' producing \sn{xml?XML} \sns{tree?tree} in memory by applying
+\lstinline|etree| methods may seem very clumsy and tedious. But the power of
+\lstinline|lxml| lies in the fact that these can be embedded in \python programs. And as
+always, \sn{programming} gives us the power to do things very \sn[post=ly]{efficient}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computing with \sn{xml?XML} in \python (Automation)}
+\begin{itemize}
+\item This may seem trivial and/or tedious, but we have \python power now:
+\lstinputmhlisting[linerange=2-5]{digdocs/code/kchildren.py}
+produces a tree with 1000 \sn[post=ren]{child} without much effort.
+\lstinputmhlisting[firstline=6]{digdocs/code/kchildren.py}
+We abstain from printing the \sn{xml?XML} tree (too large) and only check the length.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

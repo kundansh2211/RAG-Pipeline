@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/snip/numbers.en
+
+\begin{document}
+\begin{sparagraph}
+We start with the representation of numbers. There are multiple number systems, as we
+are interested in the principles only, we restrict ourselves to the natural numbers --
+all other number systems can be built on top of these. But even there we have choices
+about representation, which influence the space we need and how we compute with natural
+numbers.
+\end{sparagraph}
+
+\end{document}
+

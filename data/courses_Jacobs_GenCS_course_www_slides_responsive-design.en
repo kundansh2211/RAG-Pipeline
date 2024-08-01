@@ -1,0 +1,49 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/responsive-design.en
+
+\begin{document}
+\begin{smodule}{responsive-design}
+\begin{nparagraph}
+One of the important applications of the content/form separation made possible by \sn{CSS?CSS}
+is to tailor \sn{web-page?web page} layout to the screen size and resolution of
+the device it is viewed on. Of course, it would be possible to maintain multiple layouts
+for a \sn{web-page?web page}    one per screensize/resolution class, but a better way is to have one
+layout that changes according to the device context. This is what we will briefly look
+at now.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\sn{CSS?CSS} Application: Responsive Design}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Problem]
+What is the screen size/resolution of my device?
+\end{sparagraph}
+\item
+\begin{sdefinition}
+\definiendum[root=responsive web design]{RWD}{Responsive web design}
+(\definame{RWD}) designs web documents so that they can be viewed with a minimum of
+resizing, panning, and scrolling -- across a wide range of devices (from desktop
+monitors to mobile phones).
+\end{sdefinition}
+\item
+\begin{sexample}[for=web page]
+A \sn{web-page?web page} with content blocks
+\begin{center}
+\begin{tabular}{ccc}
+Desktop & Tablet & Phone\\
+\end{tabular}
+\end{center}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Implementation]
+\sn{CSS?CSS} based layout with relative sizes and
+\inlinedef{\definiendum{media query}{media queries}\xspace -- \sn{CSS?CSS}
+conditionals based on client screen size/resolution/\ldots}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

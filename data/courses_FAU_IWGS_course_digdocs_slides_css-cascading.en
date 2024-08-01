@@ -1,0 +1,82 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/css-cascading.en
+
+\begin{document}
+\begin{smodule}{css-cascading}
+\usemodule{digdocs/slides?css-inheritance}
+\usemodule{digdocs/slides?inspector}
+
+\begin{nparagraph}
+We now come to a topic that is quite mind-boggling at first: The ``cascading'' aspect of
+\sn{CSS?CSS} \sns{stylesheet}. Technically, the story is quite simple, there are two
+independent mechanisms at work:
+\begin{itemize}
+\item \inlinedef{\definame{inheritance}: if an \sr{XML element}{element} is fully
+contained in another, the inner (usually) \sns{inherit} all properties of the
+outer}.
+\item \inlinedef{\sn{CSS?rule} \definame{priorization}: if more than one selector
+applies to an \sr{XML element}{element} (e.g. one by \sr{XML element}{element}
+name and one by \lstinline|id| \sn{xml-markup?attribute}), then we have to determine
+what \sn{CSS?rule} applies}.
+\end{itemize}
+Technically, \sn{priorization} takes care of them in an integrated fashion.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Cascading of \sns{CSS?selector} in \sn{CSS?CSS}: \Sn{priorization}}
+\begin{itemize}
+\item Multiple \sn{CSS?CSS} \sns{CSS?selector} apply with the following
+\sns{priorization}:
+\begin{enumerate}
+\item\label{li:important} important (i.e. marked with \lstinline|!important|) before
+unimportant
+\item inline (specified via the \lstinline|style| \sn{xml-markup?attribute})
+\item media-specific \sns{CSS?rule} before general ones
+\item user-defined \sn{CSS?CSS} \sn{stylesheet} (e.g. in the $\firefoxbrowser$
+profile)
+\item specialized before general \sns{CSS?selector}\lec{complicated; see
+e.g.~\cite{Wikipedia:CSS-specificity}}
+\item \sn{CSS?rule} order: later before earlier \sns{CSS?selector}
+\item\label{li:inheritance} parent inheritance: unspecified properties are
+\sn[post=ed]{inherit} from the \sn{parent}.
+\item \Sn{style sheet} included or referenced in the \sn{html?HTML} document.
+\item browser default
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+But do not despair with this technical specification, you do not have to remember it to
+be \sn{effective} with \sn{CSS?CSS} practically, because the \sns{CSS?rule} just encode
+very natural ``behavior''. And if you need to understand what the browser -- which
+\sns{implement} these \sns{CSS?rule} -- really sees, use the integrated \sn{page
+inspector} tool (see slide~\ref{slide.inspector} for details).
+\end{nparagraph}
+
+\begin{nparagraph}
+We now look at an example to fortify our intuition.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Cascading of \sns{CSS?selector} in \sn{CSS?CSS}: \Sn{priorization} Example}
+\begin{itemize}
+\item
+\begin{sexample}[for=CSS]
+Can you explain the colors in the \sns{webbrowser?web browser} below?
+\lstinputmhlisting[linewidth=10cm,linerange=11-14]{digdocs/code/css-cascading.html}
+\parbox[c]{8.5cm}{\lstinputmhlisting[linewidth=8.1cm,linerange=4-7]{digdocs/code/css-cascading.html}}\quad
+\parbox[c]{2.5cm}{\mhgraphics[width=2.5cm]{digdocs/PIC/css-cascading}}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+For instance, the words \nlex{very important} get a red background, as the class
+\lstinline|markedimportant| is marked as important by the \sn{CSS?CSS} \sn{keyword}
+\lstinline|!important|, which makes (cf. \sn{CSS?rule} \ref{li:important} above) the
+color red win agains the color yellow inherited from the parent \lstinline|<div>|
+\sr{XML element}{element} (\sn{CSS?rule} \ref{li:inheritance} above).
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

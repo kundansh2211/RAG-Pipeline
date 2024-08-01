@@ -1,0 +1,87 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: programming/slides/tcs-nutshell.en
+
+\begin{document}
+\begin{smodule}{tcs-nutshell}
+
+\begin{nparagraph}
+Finally, we want to go over a couple of general issues pertaining to
+\sns{program?program} and (universal) machines. We will just go over them to get the
+intuitions -- which are central for understanding
+\sr{computer-science?CS}{computer science}    and let the lecture ``Theoretical
+Computer Science'' fill in the details and justifications.
+\end{nparagraph}
+
+\begin{frame}[label=slide.tcs-nutshell]
+\frametitle{Computers as Universal Machines (a taste of theoretical CS)}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=Observation]
+\Sns{computer?computer} are \inlinedef{\definame{universal} tools: their
+behavior is determined by a \sn{program?program}; they can do anything, the
+\sn{program?program} specifies.}
+\end{sparagraph}
+\item<1->
+\begin{sparagraph}[title=Context]
+Tools in most other disciplines are specific to particular tasks.\lec{except in
+e.g. ribosomes in cell biology}
+\end{sparagraph}
+\item<2->
+\begin{sassertion}[title=Deep Fundamental Result,style=remark,name=non-computability]
+There are things no \sn{computer?computer} can compute.
+\end{sassertion}
+\item<2->
+\begin{sexample}[id=ex.halting-problem,for=non-computability]
+There cannot be a \sn{program} that decides whether another
+\sn{program?program} will terminate in \sn{finite} time.
+\end{sexample}
+\item<3->
+\begin{sassertion}[style=remark,title=Church-Turing Hypothesis]
+There are two classes of languages\inlinedef{
+\begin{itemize}
+\item \definame{Turing-complete?Turing complete} (or
+\definiendum{Turing-complete?Turing complete}{computationally universal}) ones
+that can compute what is theoretically possible.
+\item \definame[post=s]{data-language?data language} that cannot. \lec{but describe data sets}
+\end{itemize}}
+\end{sassertion}
+\item<3->
+\begin{sassertion}[style=observation,title=Turing Equivalence]
+All \sns{program?programming language} are (made to be)
+\sr{Turing complete}{universal}, so they can compute exactly the
+same.\lec{\sns{compiler?compiler}/\sns{interpreter?interpreter}
+exist}
+\end{sassertion}
+\item<3->
+\begin{sparagraph}[title=\ldots in particular \ldots]
+Everybody who tells you that one \sns{program?programming language} is the best has
+no idea what they're talking about\lec{though differences in \sn{efficiency},
+convenience, and beauty exist}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=slide.ai-nutshell]
+\frametitle{Artificial Intelligence}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Another Universal Tool]
+The human mind. \lec{We can understand/learn anything.}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Strong Artificial Intelligence]
+claims that the brain is just another \sn{computer?computer}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[style=start,title=If that is true]
+then
+\begin{itemize}
+\item the human mind underlies the same restrictions as computational machines
+\item we may be able to find the ``mind-program''.
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

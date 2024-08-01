@@ -1,0 +1,19 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/xml-intro.en
+
+\begin{document}
+\begin{sfragment}[id=sec.xml-intro]{Introduction to XML}
+File: [courses/Jacobs/GenCS/course]{xml/slides/xml-nutshell.en}
+
+File: [courses/Jacobs/GenCS/course]{xml/slides/xml-everywhere-xhtml.en}
+
+File: [courses/Jacobs/GenCS/course]{xml/slides/xml-everywhere-catalogs.en}
+
+File: [courses/Jacobs/GenCS/course]{xml/slides/xml-everywhere-docx.en}
+
+File: [courses/Jacobs/GenCS/course]{xml/slides/xml-trees.en}
+
+\end{sfragment}
+\end{document}
+
+

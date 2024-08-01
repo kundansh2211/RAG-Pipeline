@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/bottle.en
+
+\begin{document}
+\begin{sfragment}[id=sec.bottle]{Routing and Argument Passing in Bottle}
+File: [courses/FAU/IWGS/course]{webapps/snip/bottle-intro.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/bottle-routing.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/bottle-dynamic-routes.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/bottle-route-filters.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/bottle-request.en}
+
+\end{sfragment}
+\end{document}
+

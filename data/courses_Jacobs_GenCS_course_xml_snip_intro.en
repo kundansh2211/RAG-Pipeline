@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/snip/intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?browser-rendering-pipeline}
+We have seen that many of the technologies that deal with marked-up documents utilize
+the tree-like structure of (the \sn{DOM}) of \sn{html?HTML} documents. Indeed, it is
+possible to abstract from the concrete vocabulary of \sn{html?HTML} that implements the
+intended layout of hypertexts and the function of its fragments, and build a generic
+framework for document trees. This is what we will study in this \currentsectionlevel.
+\end{sparagraph}
+\end{document}
+

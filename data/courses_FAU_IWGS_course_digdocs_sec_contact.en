@@ -1,0 +1,15 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/contact.en
+
+\begin{document}
+\begin{sfragment}[id=sec.html-contact-form]{A Worked Example: The Contact Form}
+File: [courses/FAU/IWGS/course]{digdocs/slides/html-worked-example.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/html-forms.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/more-input.en}
+
+\end{sfragment}
+\end{document}
+
+

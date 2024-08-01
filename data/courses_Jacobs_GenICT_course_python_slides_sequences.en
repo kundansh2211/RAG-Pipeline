@@ -1,0 +1,55 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/sequences.en
+
+\begin{document}
+\begin{smodule}{python-sequences}
+\usemodule{python/slides/forloop?python-forloop}
+\lstset{language=python}
+
+\begin{nparagraph}
+But \sns{list?list} are not the only things in \python that can be
+accessed in the way shown in
+\sref[file=python/slides/lists.en]{python-lists.ex}. \python introduces a
+special class of types the \sn{python-sequences?sequence} types.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Sequences in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\python has more \sns{type?type} that behave just like
+\sns{list?list}, they are called \definame{python-sequences?sequence}
+\sns{type?type}.
+\end{sdefinition}
+\item The most important \sn{python-sequences?sequence} \sns{type?type}
+for \useSGvar{courseacronym} are \sns{list?list},
+\sns{python-datatypes?string} and
+\sns{python-sequences?range}.
+\item
+\begin{sdefinition}
+A \definame{python-sequences?range} is a \sn{finite-cardinality?finite}
+\sn{python-sequences?sequence} of numbers it can conveniently be constructed by
+the \lstinline|range| \sn{subroutine?function}:
+\lstinline[mathescape]|range($\pmetavar{start}$,$\pmetavar{stop}$,$\pmetavar{step}$)|
+construts a \sn{python-sequences?range} from $\pmetavar{start}$ (inclusive) to
+$\pmetavar{stop}$ (exclusive) with step size $\pmetavar{step}$.
+\end{sdefinition}
+\item
+\begin{sexample}
+Lists can be constructed from \sns{python-sequences?range}:
+\lstinputmhlisting[linerange=14-15]{python/code/lists.py}
+\lstinline|range(1,6,2)| makes a ``range'' from 1 to 6 with step 2, \lstinline|list|
+makes it a list.
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\Sns{python-sequences?range} are useful, because
+they are easily and flexibly constructed for \sn{python-forloop?iteration} (up
+next).
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

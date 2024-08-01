@@ -1,0 +1,29 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xml-everywhere-xhtml.en
+
+\begin{document}
+\begin{smodule}{xml-everywhere-xhtml}
+
+\begin{frame}
+\frametitle{\sn{xml?XML} is Everywhere (E.g. Web Pages)}
+\begin{itemize}
+\item
+\begin{sexample}[id=xml-webpage,for={HTML,web page}]
+\usemodule{www/slides?webbrowser}
+\usemodule{xml/mod?gui-menu}
+Open \sn{web page} file in $\firefoxbrowser$, then click on
+$\menupath{\menuitem{View},\menuitem{Page Source}}$, you get the following
+text:\lec{showing only a small part and reformatting}
+\lstinputmhlisting[language=XML,mathescape,basicstyle=\footnotesize\ttfamily,
+morekeywords={[3]html,head,meta,body,p,i,strong,a,title,br}]{xml/code/miko.html}
+\end{sexample}
+\item
+\begin{sdefinition}
+\Definame{XHTML} is the \sn{xml?XML} version of \sn{html?HTML}.\lec{just make it valid
+\sn{xml?XML}}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

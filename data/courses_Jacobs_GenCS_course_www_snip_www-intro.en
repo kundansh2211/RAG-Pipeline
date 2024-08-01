@@ -1,0 +1,12 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/www-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?www-concepts}
+The \sn{WWW} is the \sn{hypertext}/\sn{multimedia} part of the \sn{internet}. It is
+\sn[post=ed]{implement} as a service on top of the \sn{internet} (at the application
+level) based on specific protocols and markup formats for documents.
+\end{sparagraph}
+\end{document}
+

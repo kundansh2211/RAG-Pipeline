@@ -1,0 +1,33 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/forloop.en
+
+\begin{document}
+\begin{smodule}{python-forloop}
+\lstset{language=python}
+
+\begin{frame}
+\frametitle{Iterating over Sequences in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \definame{for loop} \definame[post=s]{iterate} a \sn{program?program} fragment over a
+\sn{python-sequences?sequence}; we call the process
+\definame{iteration}. \python uses the following general syntax:
+\lstinputmhlisting[mathescape]{python/code/forloop_schema.py}
+\end{sdefinition}
+\item
+\begin{sexample}
+A \lstinline|range| \sn{subroutine?function} makes an \sn{python-sequences?sequence} over which we
+can iterate.  \lstinputmhlisting{python/code/forloop3.py}
+\end{sexample}
+\item
+\begin{sexample}
+\Sns{list?list} and \sns{python-datatypes?string} can also
+act as \sns{python-sequences?sequence}.\lec{try it}
+\lstinputmhlisting{python/code/for-reverse.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

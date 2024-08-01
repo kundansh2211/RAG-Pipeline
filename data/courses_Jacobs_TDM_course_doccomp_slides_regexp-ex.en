@@ -1,0 +1,52 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: doccomp/slides/regexp-ex.en
+
+\begin{document}
+\begin{smodule}{regexp-ex}
+
+\begin{nparagraph}
+Let us now fortify our intuition with some (simple)  examples and a more complex one.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Regular Expression Examples}
+\begin{itemize}
+\item
+\begin{sexample}[id=regexp.ex,for=regex,title=Regular Expressions and their Values]
+\begin{center}\small
+\begin{tabular}{|l|l|}\hline%|
+regexp & values \\\hline\hline
+\lstinline|car| & \lstinline|car|\\\hline
+\lstinline|.at| & \lstinline|cat|, \lstinline|hat|, \lstinline|mat|, \ldots\\\hline
+\lstinline|[hc]at| & \lstinline|cat|, \lstinline|hat|\\\hline
+\lstinline|[^c]at| & \lstinline|hat|, \lstinline|mat|, \ldots (but not \lstinline|cat|)\\\hline
+\lstinline|^[hc]at| & \lstinline|hat|, \lstinline|cat|, but only at the beginning of the line\\\hline
+\lstinline|[0-9]| & Digits\\\hline
+\lstinline|[1-9][0-9]*| & natural numbers\\\hline
+\lstinline|(.*)\1| & \lstinline|mama|, \lstinline|papa|, \lstinline|wakawaka|\\\hline
+\lstinline!cat|dog! & \lstinline|cat|, \lstinline|dog|\\\hline%|
+\end{tabular}
+\end{center}
+\end{sexample}
+\item
+\begin{sparagraph}
+\usemodule[smglom/computing]{mod?compiler}
+\usemodule{doccomp/slides?yacc}
+A \sr{regex}{regular expression} can be interpreted by a
+\inlinedef{\definame{regular expression processor} (a \sn{program} that
+identifies parts that match the provided specification)} or a
+\sn[post=d]{compile} by a \sn{parser generator}.
+\end{sparagraph}
+\item
+\begin{sexample}[title=A more complex example,id=complex-regexp.ex,for=regex]
+The following \sn{regex} matches times in a variety of
+formats, such as \lstinline|10:22am|, \lstinline|21:10|, \lstinline|08h55|, and
+\lstinline|7.15 pm|.
+\lstinputmhlisting[basicstyle=\small\sf]{doccomp/code/dates.pl}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

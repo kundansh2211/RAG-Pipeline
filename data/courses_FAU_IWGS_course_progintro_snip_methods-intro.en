@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/snip/methods-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/functions?python-functions}
+\usemodule[smglom/computing]{mod?oop-class}
+
+We now come to a peculiarity of an object-oriented language like \python: it
+treats types as first-class entities, which can be defined by the user -- they are
+called \sr{oop-class?class}{classes} then. We will not go into that here, since we
+will not need \sr{oop-class?class}{classes} in \useSGvar{courseacronym}, but have
+have to briefly talk about \sns{oop?method}, which are essentially functions, but
+have a special notation.
+\end{sparagraph}
+\end{document}
+
+

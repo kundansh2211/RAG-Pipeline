@@ -1,0 +1,39 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/slides/pns-back.en
+
+\begin{document}
+\begin{smodule}{pns-back}
+
+\begin{frame}
+\frametitle{How to get back to Decimal (or any other system)}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Observation]
+\sref[archive=smglom/arithmetics,file=mod/positional-numer-system.en]{positional-number-system.def}
+specifies how we can get from \sn{positional-number-system?base} $b$
+representations to \sn{decimal}.  We can always go back to the
+\sn{positional-number-system?base} $b$ \sr{natural number}{numbers}.
+\end{sparagraph}
+\item
+\begin{sassertion}[style=observation,name=convert-base.obs]
+To convert a \sn{decimal} \sn{number} $n$ to base $b$, use successive
+\sn{integer division} (\sn{natarith?division} with \sn{natarith?remainder}) by
+$b$:
+\lstinputmhlisting[mathescape,language=pseudocode]{datastructures/code/pns-convert.pcode}
+\end{sassertion}
+\item
+\begin{sexample}[for=convert-base.obs,title=Convert 456 to base 8]
+Result: $\pnsinbase{710}8$
+\begin{center}
+\begin{tabular}{ll}
+$\natdiv{456}8=57$  & $\natmod{456}8=0$\\
+$\natdiv{57}8=7$  & $\natmod{57}8=1$\\
+$\natdiv{7}8=0$  & $\natmod{7}8=7$\\
+\end{tabular}
+\end{center}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

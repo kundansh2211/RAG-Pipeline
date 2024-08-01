@@ -1,0 +1,58 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xml-everywhere.en
+
+\begin{document}
+\begin{smodule}{xml-everywhere}
+
+\begin{frame}[label=slide.xml-everywhere]
+\frametitle{\sn{xml?XML} is Everywhere (E.g. document \sn{metadata})}
+\begin{itemize}
+\item
+\begin{sexample}[id=xml-metadata,for={metadata,XML}]
+\usemodule[smglom/computing]{mod?GUI}\usemodule[smglom/computing]{mod?PDF}
+\usemodule{xml/mod?gui-menu}
+Open a \sn{PDF?PDF} file in $\acrobatReader$, then click on
+\[\menupath{\menuitem{File},\menuitem{Document Properties},\menuitem{Document
+Metadata},\menuitem{View Source}}\]
+you get the following text:\lec{showing only a small part}
+\lstinputmhlisting[language=XML,mathescape,basicstyle=\footnotesize\ttfamily,aboveskip=0pt,belowskip=0pt,
+morekeywords={[2]rdf:RDF,rdf:Description},
+morekeywords={[3]pdf:CreationDate,pdf:ModDate,pdf:Producer,pdf:Author,pdf:Creator,pdf:Title},
+morekeywords={[4]dc:creator,dc:title}]
+{xml/code/acrobat.xml}
+\end{sexample}
+\item
+\begin{sexample}[for={metadata,vocabulary}]
+\usemodule[courses/Jacobs/CompLog]{semweb/slides?rdf-nutshell}
+\sref{xml-metadata} mixes \sr{XML element}{elements} from three different
+vocabularies:
+\begin{itemize}
+\item \sn{RDF}: \lstinline|xmlns:rdf| for the ``Resource Descritpion Format'',
+\item PDF: \lstinline|xmlns:pdf| for the ``Portable Document Format'', and
+\item DC:  \lstinline|xmlns:dc| for the ``Dublin Core'' vocabulary
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?PDF}
+\usemodule[courses/Jacobs/TDM/course]{digdocs/slides?wordprocessors}
+\usemodule[smglom/computing]{mod?database}
+This is an excerpt from the document \sn{metadata} which $\acrobatDistiller$ saves along
+with each \sn{PDF?PDF} document it creates. It contains various kinds of information
+about the creator of the document, its title, the software version used in creating it
+and much more. Document \sn{metadata} is useful for libraries, bookselling companies,
+all kind of text \sns{database}, book search engines, and generally all institutions or
+persons or programs that wish to get an overview of some set of books, documents,
+texts. The important thing about this document \sn{metadata} text is that it is not
+written in an arbitrary, \sn{PDF?PDF} proprietary format. Document \sn{metadata} only
+make sense if these \sn{metadata} are independent of the specific format of the
+text. The \sn{metadata} that $\MSWord$ saves with each Word document should be in the
+same format as the \sn{metadata} that Amazon saves with each of its book records, and
+again the same that the British library uses, etc.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

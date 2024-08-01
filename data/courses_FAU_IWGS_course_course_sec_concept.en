@@ -1,0 +1,51 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/concept.en
+
+\begin{document}
+\begin{sfragment}{Course Concept}
+\begin{sparagraph}[title=Objective]
+\usemodule[smglom/cs]{mod?computer-science}
+The course aims at giving students an
+overview over the variety of digital tools and methods at the disposal of
+practitioners of the humanities and social sciences, explaining their intuitions on
+how/why they work (the way they do). The main goal of the course is to empower
+students for their for the emerging discipline of \enquote{digital humanities and
+social sciences}. In contrast to a classical course in
+\sr{computer-science?CS}{computer science} which lays the \sn{mathematical} and
+computational foundations which will become useful in the long run, we want to
+introduce methods and tools that can become \emph{useful in the short term} and thus
+generate immediate success and gratification, thus alleviating the ``programming
+shock'' (the brain stops working when in contact with
+\sr{computer-science?CS}{computer science} tools or \sns{computer-science?computer
+scientist}) common in the humanities and social sciences.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Original Context]
+The course \enquote{Informatische Werkzeuge in den Geistes- und Sozialwissenschaften}
+is a first-year, two-semester course in the bachelor program \enquote{Digitale
+Geistes- und Sozialwissenschaften} (Digital Humanities and Social Sciences:
+DigiHumS) at FAU Erlangen-Nürnberg.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Open to External Students]
+Other Bachelor programs are increasingly co-opting the course as specialization option
+or a key skill. There is no inherent restriction to DHSS students in this course.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Prerequisites]
+\usemodule[smglom/computing]{mod?computer}
+\usemodule[smglom/computing]{mod?installation}
+
+There are no formal prerequisites -- after all it starts in the first semester for
+DigiHumS -- but a good deal of motivation, openness towards exploring the weird and
+wonderful world of digital methods and tools, and a certain perseverance in the face of
+not understanding directly help tremendously and helps having fun in this course.
+
+We do assume that students have a personal laptop, or access to a \sn{computer}
+where they have admin rights, i.e.  can \sn{install} software. This is necessary
+for solving the homework. In particular, smartphones and most tablet computers will
+not suffice.
+\end{sparagraph}
+\end{sfragment}
+\end{document}
+

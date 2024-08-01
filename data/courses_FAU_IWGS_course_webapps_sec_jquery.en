@@ -1,0 +1,20 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/jquery.en
+
+\begin{document}
+\begin{sfragment}{jQuery: Write Less, Do More}
+File: [courses/Jacobs/GenCS/course]{www/snip/jquery-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/jquery.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/jquery-layers.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/jquery-inserting.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/dhtml-applications.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/buttons-ex.en}
+
+\end{sfragment}
+\end{document}
+

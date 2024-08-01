@@ -1,0 +1,53 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/lxml-text.en
+
+\begin{document}
+\begin{smodule}{lxml-text}
+\usestructure{XML document tree}
+
+\begin{nparagraph}
+The main remaining functionality in \sn{xml?XML} is the treatment of text. \inlinedef{\sn{xml?XML}
+treats text as special kinds of \sn{graph?node} in the \sn{tree?tree}:
+\definame[post=s]{text node}}. They can be treated just like any other \sn{graph?node} in
+the \sn{xml?XML} \sn{tree?tree} in the \lstinline|etree| library.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computing with \sn{xml?XML} in \python (Text nodes)}
+\begin{itemize}
+\item \sns{XML element} can contain text: we use the \lstinline|.text| property to access
+and set it.  \lstinputmhlisting[linerange=2-7]{digdocs/code/lxml-text.py}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+To get a real intuition about what is happening, let us see how we can use all the
+functionality so far: we programmatically construct an \sn{html?HTML} \sn{tree?tree}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.lxml-text]
+\frametitle{Case Study: Creating an \sn{html?HTML} document}
+\begin{itemize}
+\item We create nested \lstinline|html| and \lstinline|body| \sr{XML element}{elements}
+\lstinputmhlisting[linerange=9-10]{digdocs/code/lxml-text.py}
+\item Then we inject a text node into the latter using the \lstinline|.text| property.
+\lstinputmhlisting[linerange=11-11]{digdocs/code/lxml-text.py}
+\item Let's check the result
+\lstinputmhlisting[linerange=13-14]{digdocs/code/lxml-text.py}
+\item We add another \sr{XML element}{element}: a line break and check the result
+\lstinputmhlisting[linerange=16-18]{digdocs/code/lxml-text.py}
+\item Finally, we can add trailing text via the \lstinline|.tail| property
+\lstinputmhlisting[linerange=20-22]{digdocs/code/lxml-text.py}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Note the use of the \lstinline|.tail| property here? While the \lstinline|.text|
+property can be used to set ``all'' the text in an \sn{xml?XML} \sr{XML element}{element}, we have to
+use the \lstinline|.tail| property to add trailing text (e.g. after the
+\lstinline|<br/>| \sr{XML element}{element}).
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

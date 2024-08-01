@@ -1,0 +1,44 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/bottle-dynamic-routes.en
+
+\begin{document}
+\begin{smodule}{bottle-dynamic-routes}
+\lstset{language=python,mathescape}
+
+\begin{nparagraph}
+But we can do more with routes!
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Dynamic Routes in Bottle}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \definame{dynamic route} is a route annotation that contains
+\definame[post=s]{named wildcard}, which can be picked up in the
+\sn{route function}.
+\end{sdefinition}
+\item
+\begin{sexample}[id=bottle-dynamic-route.ex,for=dynamic route]
+Multiple \lstinline|@route| annotations per \sn{bottle-routing?route function}
+$f$ are allowed \ergo the \sn{web application} uses $f$ to answer
+multiple \sns{URL?URL}.
+\lstinputmhlisting[firstline=3,lastline=6]{webapps/code/hello-stranger.py} With the
+\sr{named wildcard}{wildcard} \lstinline|<name>| we can bind the
+\sn{bottle-routing?route function} \lstinline|greet| to all
+\sns{URI?path} and via its argument \lstinline|name| and customize
+the greeting.
+
+\titleemph{Concretely}: A \sn{http-protocol?HTTP} GET request to
+\begin{itemize}
+\item \url{http://localhost} is answered with \lstinline|Hello Stranger, how are you?|.
+\item \url{http://localhost/hello/MiKo} is answered with \lstinline|Hello MiKo, how are you?|.
+\end{itemize}
+Requests to e.g \url{http://localhost/hello} or
+\url{http://localhost/hello/prof/kohlhase} lead to errors. \lec{404: not found}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

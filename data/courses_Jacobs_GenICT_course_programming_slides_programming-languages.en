@@ -1,0 +1,71 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: programming/slides/programming-languages.en
+
+\begin{document}
+\begin{smodule}{programming-languages}
+\usemodule[smglom/computing]{mod?programming-paradigm}
+
+\begin{frame}
+\frametitle{Programming Languages}
+\begin{itemize}
+\item<1-> \Sn{programming} \hateq writing
+\sns{program?program}\lec{Telling the \sn{computer} what to do}
+\item<2->
+\begin{sassertion}[style=remark]
+The \sn{computer} does exactly as told
+\begin{itemize}
+\item extremely fast extremely reliable
+\item completely stupid: will not do what you mean unless you tell it exactly
+\end{itemize}
+\end{sassertion}
+\item<2-> \Sn{programming} can be extremely fun/frustrating/addictive\lec{try it}
+\item<3->
+\begin{sdefinition}
+A \definame{program?programming language} is the \sn{formal language} in which
+we write \definame[post=s]{program?program} \lec{express an \sn{algorithm}
+concretely}
+\end{sdefinition}
+\begin{itemize}
+\item formal, symbolic, precise \sn{meaning} \lec{a machine must understand it}
+\end{itemize}
+\item<4-> There are lots of \sns{program?programming language}
+\begin{itemize}
+\item design huge effort in \sr{computer-science?CS}{computer science}
+\item all \sns{program?programming language} equally strong
+\item each is more or less appropriate for a specific task depending on the
+circumstances
+\end{itemize}
+\item<4-> Lots of \sns{programming paradigm}:
+\sr{imperative programming}{imperative},
+\sr{functional programming}{functional}, \sr{logic programming}{logic},
+\sn{object oriented programming}.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[courses/FAU/AI/course]{intro/slides?whatisai}
+\usemodule[smglom/computing]{mod?efficient}
+\sn{AI} studies \sr{HI}{human intelligence} with the premise that the brain is a
+computational machine and that \sn{intelligence} is a ``\sn{program?program}'' running
+on it. In particular, the working hypothesis is that we can ``program''
+\sn{intelligence}. Even though \sn{AI} has many successful applications, it has not
+succeeded in creating a machine that exhibits the equivalent to general human
+\sn{intelligence}, so the jury is still out whether the \sn{AI} hypothesis is true or
+not. In any case it is a fascinating area of scientific inquiry.
+\end{nparagraph}
+
+\begin{nparagraph}[title=Note]
+\usemodule[smglom/computing]{mod?efficient}
+This has an immediate consequence for the discussion in our course. Even though
+\sns{computer} can execute \sns{program?program} very \sn[post=ly]{efficient}, you
+should not expect them to ``think'' like a human. In particular, they will execute
+\sns{program?program} exactly as you have written them. This has two consequences:
+\begin{itemize}
+\item the behavior of \sns{program?program} is -- in principle -- predictable
+\item all errors of \sn{program?program} behavior are your own (the
+\sn{programmer}'s)
+\end{itemize}
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

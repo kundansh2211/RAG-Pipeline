@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: programming/snip/intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/nutshell?python-nutshell}
+
+\Sn{programming} is an important and distinctive part of ``\useSGvar{coursetitle}''
+-- the topic of this course. Before we delve into learning \python, we will
+review some of the basics of computing to situate the discussion.
+\end{sparagraph}
+
+\end{document}
+

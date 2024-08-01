@@ -1,0 +1,46 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/bottle-stpl.en
+
+\begin{document}
+\begin{smodule}{bottle-stpl}
+\symdef{stplengine}{\comp{\mathrm{stpl}}}
+\lstset{language=python}
+
+\begin{nparagraph}
+\usemodule[smglom/www]{mod?webapp}
+Naturally, \python comes with a \sn{template-engine?template engine}
+in fact multiple ones. We will use the one from the bottle \sn{web application}
+framework for \useSGvar{courseacronym}.
+\end{nparagraph}
+
+\begin{frame}[fragile]% fragile needed.
+\frametitle{$\stplengine$: the ``Simple Template Engine'' from Bottle}
+\begin{itemize}
+\item
+\begin{sdefinition}[for=stplengine]
+\Definame{bottle WSGI} supplies the \sn{template engine}
+$\stplengine$ (Simple Template Engine).\lec{documentation at \cite{stpl:on}}
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=template-engine.def]
+A \definame{template-engine?template engine} for a \sn{document-format?document
+format} $F$ is a program that transforms
+\definame[post=s]{template-engine?template}, i.e. \sr{words?word}{strings} or
+\sns{file?file} through a mixture of program constructs and $F$ markup, into
+$F$-strings or $F$-documents by executing the program constructs in the
+\sn{template} (\definame{template-engine?template processing}).
+\end{sdefinition}
+\item
+\begin{sparagraph}
+$\stplengine$ uses the \lstinline|template| function for
+\sn{template-engine?template processing} and
+\lstinline[mathescape]|{{$\text\ldots$}}| to embed program objects into a
+\sn{template-engine?template}; it returns a formatted
+\sn{unicode} string.  \lstinputmhlisting{webapps/code/stpl.py}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

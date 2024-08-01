@@ -1,0 +1,85 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: memory/slides/exabyte.en
+
+\begin{document}
+\begin{smodule}{exabyte}
+\usemodule[smglom/computing]{mod?database}
+
+\begin{nparagraph}
+Let us now look at some information quantities and their real-world counterparts to get
+an intuition for the information content.
+\end{nparagraph}
+
+\begin{frame}[label=slide.exabyte1]
+\usemodule[courses/Jacobs/GenCS/course]{codes/slides?unicode-ucs}
+\frametitle{How much Information?}
+\begin{center}
+\begin{tabular}{|l|l|}\hline
+\textbf{Bit ($\bit$)} &\emph{binary digit 0/1}\\
+\textbf{Byte ($\byte$)} &\emph{8 bit}\\
+2 Bytes & A $\unicode$ \sn{character?character} in UTF.\\
+10 Bytes & your name.\\\hline
+\textbf{Kilobyte ($\kilobyte$)} &\emph{1,000 bytes OR $\natpower{10}3$ bytes}\\
+2 Kilobytes & A Typewritten page.\\
+100 Kilobytes & A low-resolution photograph.\\\hline
+\textbf{Megabyte ($\megabyte$)} & \emph{1,000,000 bytes OR $\natpower{10}6$ bytes}\\
+1 Megabyte& A small novel or a 3.5 inch floppy disk.\\
+2 Megabytes& A high-resolution photograph.\\
+5 Megabytes& The complete works of Shakespeare. \\
+10 Megabytes& A minute of high-fidelity sound.\\
+100 Megabytes& 1 meter of shelved books. \\
+500 Megabytes& A CD-ROM.\\\hline
+\textbf{Gigabyte ($\gigabyte$)} & \emph{1,000,000,000 bytes or $\natpower{10}9$ bytes}\\
+1 Gigabyte& a pickup truck filled with books. \\
+20 Gigabytes& A good collection of the works of Beethoven. \\
+100 Gigabytes& A library floor of academic journals.\\\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=slide.exabyte2]
+\frametitle{How much Information?}
+\begin{center}
+\begin{tabular}{|l|l|}\hline
+\textbf{Terabyte ($\terabyte$)} & \emph{1,000,000,000,000 bytes or $\natpower{10}{12}$ bytes}\\
+1 Terabyte& 50000 trees made into paper and printed. \\
+2 Terabytes& An academic research library. \\
+10 Terabytes& The print collections of the U.S. Library of Congress. \\
+400 Terabytes& National Climate Data Center (NOAA) \sn{database}.\\\hline
+\textbf{Petabyte ($\petabyte$)} & \emph{1,000,000,000,000,000 bytes or $\natpower{10}{15}$ bytes}\\
+1 Petabyte& 3 years of EOS data (2001). \\
+2 Petabytes& All U.S. academic research libraries. \\
+20 Petabytes& Production of hard-disk drives in 1995. \\
+200 Petabytes& All printed material (ever).\\\hline
+\textbf{Exabyte ($\exabyte$)} & \emph{1,000,000,000,000,000,000 bytes or $\natpower{10}{18}$ bytes}\\
+2 Exabytes& Total volume of information generated in 1999.\\
+5 Exabytes& All words ever spoken by human beings ever.\\\hline
+300 Exabytes & All data stored digitally in 2007. \\\hline
+\textbf{Zettabyte ($\zettabyte$)} & \emph{1,000,000,000,000,000,000,000 bytes or $\natpower{10}{21}$ bytes}\\
+2 Zettabytes & Total volume digital data transmitted in 2011\\
+100 Zettabytes& Data equivalent to the human Genome in one body.\\\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{nparagraph}
+The information in this table is compiled from various studies, most recently
+\cite{HilLop:wtcscci11}.
+\end{nparagraph}
+
+\begin{nparagraph}[title=Note]
+\usemodule[smglom/computing]{mod?digital-image}
+Information content of real-world artifacts can be assessed differently, depending on
+the view. Consider for instance a text typewritten on a single page. According to our
+definition, this has ca. $\quantityof2\kilobyte$, but if we fax it, the \sr{digital image}{image} of the
+page has $\quantityof2\megabyte$ or more, and a recording of a text read out loud is
+ca. $\quantityof{50}\megabyte$. Whether this is a terrible waste of bandwidth depends on
+the application. On a fax, we can use the shape of the signature for identification
+(here we actually care more about the shape of the ink mark than the letters it encodes)
+or can see the shape of a coffee stain. In the audio recording we can hear the
+inflections and sentence melodies to gain an impression on the emotions that come with
+text.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

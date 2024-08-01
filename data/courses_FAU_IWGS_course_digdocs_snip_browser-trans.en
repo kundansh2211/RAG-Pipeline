@@ -1,0 +1,14 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/browser-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?webbrowser}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+
+In the last slide, we have seen $\firefoxbrowser$ as a
+\sn{electronic-document?document renderer} for \sn{html?HTML}. We will now introduce this class of
+\sns{program?program} in general and point out a few others.
+\end{sparagraph}
+\end{document}
+

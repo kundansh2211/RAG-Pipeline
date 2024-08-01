@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/exercises.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?webapps}
+In the exercises in this \currentsectionlevel, we will take a closer look at \sns{web
+application}, templating and \sn{html?HTML} routing. Concretely, we will be using the
+Bottle framework\footnote{See the documentation of bottle for reference:
+\url{https://bottlepy.org/docs/dev/tutorial.html}}, as demonstrated in the lecture.
+\end{sparagraph}
+\end{document}
+

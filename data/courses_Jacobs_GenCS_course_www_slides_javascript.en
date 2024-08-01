@@ -1,0 +1,61 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/javascript.en
+
+\begin{document}
+\begin{smodule}{javascript}
+
+\begin{frame}[label=slide.script]
+\frametitle{Dynamic \sn{html?HTML}}
+\begin{itemize}
+\item
+\begin{sdefinition}
+We call a \sn{web page} \definame{dynamic}, if its presentation can change without
+the \sn{web browser} loading new content.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Idea]
+Generate parts of the \sn{web-page?web page} \sn[post=ally]{dynamic} by manipulating
+the \sn{DOM}.
+\end{sparagraph}
+\item\inputref[smglom/www]{mod/javascript.en}
+\item \sn{javascript?JavaScript} is standardized by ECMA in~\cite{ECMAScript09}.
+\item
+\begin{sexample}[id=script-simple.ex,for={HTML,DOM}]
+We write the some text into \sn{html?HTML} \sn{DOM}.
+\lstinputmhlisting[language=HTML,basicstyle=\footnotesize\ttfamily,
+moreemph={[2]script},moreemph={[3]document.write}]{www/code/docwrite.html}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Application]
+Write ``gmail'' or ``google docs'' as \sn{javascript?JavaScript} enhanced web
+applications.\lec{client-side computation for immediate reaction}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Current Megatrend]
+\Sn{computation} in the ``cloud'', \sr{web browser}{browsers} (or ``apps'') as
+\sr{UI}{user interfaces}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The example above already shows a \sn{javascript?JavaScript} command:
+\lstinline|document.write|, which replaces the content of the \lstinline|<body>| element
+with its argument -- this is only useful for testing and debugging purposes.
+\end{nparagraph}
+
+\begin{nparagraph}
+\usemodule[smglom/www]{mod?webapp}
+Current \sns{web application} include simple office software (word
+processors, online spreadsheets, and presentation tools), but can also include more
+advanced applications such as project management, computer-aided design, video editing
+and point-of-sale. These are only possible if we carefully balance the effects of
+server-side and client-side computation. The former is needed for computational
+resources and data persistence (data can be stored on the server) and the latter to keep
+personal information near the user and react to local context (e.g. screen size).
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+
+

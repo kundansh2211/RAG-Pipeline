@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/sec/javascript.en
+
+\begin{document}
+\begin{sfragment}{JavaScript in HTML}
+File: [courses/Jacobs/GenCS/course]{www/slides/javascript.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/js-browserlevel.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/js-html.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/js-html-ex.en}
+
+\end{sfragment}
+\end{document}
+

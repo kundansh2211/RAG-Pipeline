@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/snip/literals.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/string-literals?python-string-literals}
+
+We now extend our repertoire on handling and formatting strings in \python: we
+will introduce \sn{string} \sns{literal}, which allow writing complex
+strings.
+\end{sparagraph}
+\end{document}
+

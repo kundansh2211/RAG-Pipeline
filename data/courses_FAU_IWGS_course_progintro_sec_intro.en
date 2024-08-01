@@ -1,0 +1,16 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/intro.en
+
+\begin{document}
+\begin{sfragment}[id=sec.programming-intro]{What is Programming?}
+File: [courses/Jacobs/GenICT/course]{programming/snip/intro.en}
+
+File: [courses/Jacobs/GenICT/course]{programming/slides/hardware-software-programming.en}
+
+File: [courses/Jacobs/GenICT/course]{programming/slides/programming-languages.en}
+
+File: [courses/Jacobs/GenICT/course]{programming/slides/program-execution.en}
+
+\end{sfragment}
+\end{document}
+

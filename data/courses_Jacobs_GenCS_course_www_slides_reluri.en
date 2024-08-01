@@ -1,0 +1,70 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/reluri.en
+
+\begin{document}
+\begin{smodule}{relative-uri}
+
+\begin{nparagraph}
+In many situations \sns{URI?URI} still have to be entered by hand, so they
+can become quite unwieldy. Therefore there is a way to abbreviate them.
+\end{nparagraph}
+
+\begin{frame}[fragile]%needed somehow
+\frametitle{Relative URIs}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=relative-URI.def]
+\sns{URI?URI} can be abbreviated to \definame[post=s]{relative URI};
+missing parts are filled in from the context.
+\end{sdefinition}
+\item
+\begin{sexample}[id=relative-URI-ex,for=relative URI]
+Relative \sns{URI?URI} are more convenient to write
+\begin{center}
+\begin{tabular}{|l|l|l|}\hline
+relative \sn{URI?URI} & abbreviates & in context\\\hline
+\lstinline|#foo| & \lstinline[mathescape]|$\stringmetavar{current-file}$#foo|
+& curent file\\\hline
+\lstinline|bar.txt| & \lstinline|file:///home/kohlhase/foo/bar.txt|
+& file system\\\hline
+\lstinline|../bar/bar.html| & \lstinline|http://example.org/bar/bar.html|
+& on the web\\\hline
+\end{tabular}
+\end{center}
+\end{sexample}
+\item
+\begin{sdefinition}
+To distinguish them from \sns{relative URI}, we call
+\sns{URI?URI} \definame[post=s]{absolute URI}.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The important concept to grasp for relative \sns{URI?URI} is that the
+missing parts can be reconstructed from the context they are found in: the document
+itself and how it was retrieved.
+\end{nparagraph}
+
+\begin{nparagraph}
+For the file system example, we are assuming that the document is a file
+\lstinline|foo.html| that was loaded from the file system -- under the file system \sn{URI?URI}
+\lstinline|file:///home/kohlhase/foo/foo.html| -- and for the web example via the \sn{URI?URI}
+\lstinline|//example.org/foo/foo.html|. Note that in the last example, the relative \sn{URI?URI}
+\lstinline|../bar/| goes up one segment of the path component (that is the meaning of
+\lstinline|../|), and specifies the file \lstinline|bar.html| in the \sn{directory}
+\lstinline|bar|.
+\end{nparagraph}
+
+\begin{nparagraph}
+\usemodule{www/slides?www-concepts}
+But \sns{relative URI} have another advantage over
+\sns{absolute URI}: they make a \sn{web-page?web page} or
+\sn{web-site?web site} easier to move. If a \sn{web site} only has
+\sr{hyperlink}{links} using \sns{relative URI} internally, then those do
+not mention e.g. \sn{URI?authority} (this is recovered from context and therefore
+variable), so we can freely move the web-site e.g. between domains.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

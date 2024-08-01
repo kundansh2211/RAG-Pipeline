@@ -1,0 +1,84 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/nutshell.en
+
+\begin{document}
+\begin{smodule}{python-nutshell}
+\symdef{idlethree}{\comp{\mathsf{IDLE3}}}
+
+\begin{nparagraph}
+Before we get into the \sn{syntax} and \sn{meaning} of \python, let us recap why we
+chose this particular language for \useSGvar{courseacronym}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\python in a Nutshell}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Why \python?]
+\begin{columns}
+\begin{column}{7cm}
+\begin{itemize}
+\item general purpose \sn{program?programming language}
+\item \sr{imperative programming}{imperative}, \sn{interactive}
+\sn{interpreter?interpreter}
+\end{itemize}
+\end{column}
+\begin{column}{4cm}
+\cmhgraphics[width=4cm]{python/PIC/python-logo}
+\end{column}
+\end{columns}
+\begin{itemize}
+\item syntax very easy to learn\lec{spend more time on problem solving}
+\item scales well:
+\begin{itemize}
+\item easy for beginners to write simple \sns{program?program},
+\item but advanced software can be written with it as well.
+\end{itemize}
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Interactive mode]
+The \inlinedef[for=idlethree]{\python \sn{shell} $\idlethree$}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=For the eager (optional)]
+\usemodule[smglom/computing]{mod?installation}
+
+Establish a \python \sn{interpreter?interpreter} (version 3.7) \lec{
+not 2.?.?, that has different syntax}
+\begin{itemize}
+\item \sn{install} \python from \url{http://python.org}\lec{for offline use}
+\item make sure (tick box) that the \lstinline|python| executable is added to the
+path.\lec{makes \sn{shell} \sn[post=ion]{interact} much easier}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}[title=Installing \python]
+\usemodule[smglom/computing]{mod?operating-systems}
+\usemodule[smglom/computing]{mod?installation}
+\python can be \sn[post=ed]{install} from \url{http://python.org} \ergo
+``Downloads'', as a $\windowsOS$ \sn[post=er]{install} or a $\macosxOS$ disk
+image. For $\linuxOS$ it is best \sn[post=ed]{install} via the package manager,
+e.g. using \lstinputmhlisting[language=bash]{python/code/apt-get.sh}
+
+The download will \sn{install} the \python \sn{interpreter?interpreter} and
+the \python \sn{shell} $\idlethree$ that can be used for
+\sn[post=ing]{interact} with the \sn{interpreter?interpreter} directly.
+\end{nparagraph}
+
+\begin{nparagraph}
+
+It is important that you make sure (tick the box in the Windows
+\sn[post=er]{install}) that the \lstinline|python| executable is added to the
+path. In the \sn{shell}\Ednote{fully introduce the concept of a shell in the next
+round}, you can then use the \sr{instruction}{command}
+\lstinputmhlisting[language=bash,mathescape]{python/code/python-call.sh} to run the
+python file $\pmetavar{filename}$. This is better than using the windows-specific
+\lstinputmhlisting[language=bash,mathescape]{python/code/py-call.sh} which does not need
+the \lstinline|python| \sn{interpreter} on the path as we will see later.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

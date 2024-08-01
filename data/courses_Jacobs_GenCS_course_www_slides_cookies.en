@@ -1,0 +1,85 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/cookies.en
+
+\begin{document}
+\begin{smodule}{cookies}
+
+\begin{nparagraph}
+\usemodule[smglom/cs]{mod?loginout}
+
+There is one problem however with \sns{web application} that is difficult to
+solve with the technologies so far. We want \sns{web application} to give
+the user a consistent user experience even though they are made up of multiple
+\sns{web-page?web page}. In a regular application we we only want to
+\sn{log in} once and expect the application to remember e.g. our username and
+password over the course of the various \sn[post=ions]{interact} with the
+system. For \sns{web application} this poses a technical problem which we
+now discuss.
+\end{nparagraph}
+
+\begin{frame}[label=slide.cookies]
+\frametitle{State in Web Applications and Cookies}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=Recall]
+\Sns{web application} contain multiple \sr{web page}{pages},
+\sn{http-protocol?HTTP} is a stateless protocol.
+\end{sparagraph}
+\item<1->
+\begin{sparagraph}[title=Problem,id=webapp-state.problem]
+How do we pass state between pages?\lec{e.g. username, password}
+\end{sparagraph}
+\item<2->
+\begin{sparagraph}[title=Simple Solution]
+Pass information along in \sn{query} part of page \sns{URL?URL}.
+\end{sparagraph}
+\item<2->
+\begin{sexample}[title=HTTP GET for Single Login,for=HTTP]
+Since we are generating pages we can generated augmented links
+\only<2>{\lstinputmhlisting[language=html,basicstyle=\small\tt]{www/code/cookies.html}}
+\end{sexample}
+\item<2->
+\begin{sparagraph}[title=Problem]
+Only works for limited amounts of information and for a single session.
+\end{sparagraph}
+\item<3->
+\begin{sparagraph}[title=Other Solution]
+Store \sn{state} \sn[post=ly]{persistent} on the \sn{client} hard
+disk.
+\end{sparagraph}
+\item<3->
+\begin{sdefinition}[id=cookie.def]
+A \definame{cookie} is a text file stored on the client hard disk by the
+\sn{web browser}. \Sns{webserver?web server} can request the
+\sr{web browser}{browser} to store and send \sns{cookie}.
+\end{sdefinition}
+\item<4->
+\begin{sparagraph}[title=Note]
+\Sns{cookie} are data, not programs, they do not generate pop ups or
+behave like viruses, but they can include your log-in name and \sr{web browser}{browser} preferences.
+\end{sparagraph}
+\item<4->
+\begin{sparagraph}[title=Note]
+\Sns{cookie} can be convenient, but they can be used to gather
+information about you and your browsing habits.
+\end{sparagraph}
+\item<4->
+\begin{sdefinition}[id=third-party-cookie.def]
+\Definame[post=s]{third-party cookie} are used by advertising companies to track
+users across multiple sites.\lec{but you can turn off, and even delete
+\sns{cookie}}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Note that both solutions to the state problem are not ideal, for usernames and passwords
+the \sn{URL?URL}-based solution is particularly problematic, since
+\sn{http-protocol?HTTP} transmits \sns{URL?URL} in
+\sn{http-protocol?GET} requests without encryption, and in our example passwords
+would be visible to anybody with a packet sniffer. Here \sns{cookie} are
+little better, since they can be requested by any website you visit.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

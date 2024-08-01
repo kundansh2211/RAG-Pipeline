@@ -1,0 +1,17 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/resources-guide.en
+
+\begin{document}
+\begin{frame}
+\frametitle{Practical recommendations on Lecture Videos}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Excellent Guide]
+\cite{NorKueRob:lcprs18} (german Version at \cite{NorKueRob:vnas18})
+\cmhgraphics[width=9cm]{course/PIC/lecture-capture-guide.pdf}
+\end{sparagraph}
+\item Normally intended for ``offline students'' \hateq everyone during Corona times.
+\end{itemize}
+\end{frame}
+\end{document}
+

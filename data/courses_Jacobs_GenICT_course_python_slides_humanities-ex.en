@@ -1,0 +1,95 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/humanities-ex.en
+
+\begin{document}
+\begin{smodule}{python-humanities-ex}
+\lstset{language=python}
+
+\begin{nparagraph}
+\usemodule{python/slides/libraries?python-libraries}
+We will now see what we can do with \sr{regex}{regular expressions} in a practical
+example. You should consider it as a ``code reading/understanding'' exercise, not think
+of it as something you should (easily) be able to do yourself. But
+\sref[file=python/slides/humanities-ex.en]{corranon.ex} could serve as a quarry of ideas
+for things you can do to texts with \sr{regex}{regular expressions}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.humanities-ex]
+\frametitle{Example: Correcting and Anonymizing Documents}
+\begin{itemize}
+\item
+\begin{sexample}[title=Document Cleanup,id=corranon.ex]
+\usemodule{python/slides/libraries?python-libraries}
+
+We write a \sn{subroutine?function} that makes simple corrections on documents and
+also crosses out all names to anonymize.
+\begin{itemize}
+\item \nlex{The worst president of the US,arguably was George W. Bush, right?}
+\item \nlex{However,are you famILIar with Paul Erd\H{o}s or Henri Poincar\'e?}\lec{Unicode}
+\end{itemize}
+Here is the \sn{subroutine?function}
+\begin{itemize}
+\item we import the \sr{regex}{regular expressions} \sn{library} and start
+the \sn{subroutine?function}
+\lstinputmhlisting[linerange=1-2]{python/code/humanities-ex.py}
+\item we first add blanks after commata
+\lstinputmhlisting[linerange=3-3]{python/code/humanities-ex.py}
+\item capitalize the first letter of a new sentence,
+\lstinputmhlisting[linerange=4-6]{python/code/humanities-ex.py}
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+This \sn{program} is just a series of stepwise \sr{regex}{regular expression}
+computations that are assigned to the variable \lstinline|s|. For the last one, we use
+the \lstinline|lambda| operator that constructs a \sn{subroutine?function} as an
+argument (the second) to \lstinline|re.sub|. We use the
+\sns{python-lambda?anonymous function} because this
+\sn{subroutine?function} is only used once.
+\end{nparagraph}
+
+\begin{nparagraph}
+This worked well, so we just continue along these lines.
+\end{nparagraph}
+
+\begin{frame}[label=slide.humanities-ex2]
+\frametitle{Example: Correcting and Anonymizing Documents (cont.)}
+\begin{itemize}
+\item
+\begin{sexample}[title=Document Cleanup (continued),id=corranon.ex2]
+\begin{itemize}
+\item next we make abbreviations for \sr{regex}{regular expressions} to save
+space \lstinputmhlisting[linerange=7-8]{python/code/humanities-ex.py}
+\item remove  capital letters in the middle of words
+\lstinputmhlisting[linerange=9-11,basicstyle=\small\sf]{python/code/humanities-ex.py}
+\item and  we cross-out for official public versions of government documents,
+\lstinputmhlisting[linerange=12-14]{python/code/humanities-ex.py}
+\item finally, we return the result
+\lstinputmhlisting[linerange=15-15]{python/code/humanities-ex.py}
+\end{itemize}
+\nlex{The worst president of the US,arguably was George W. Bush, right?}\\ becomes\\
+\nlex{The worst president of the US, arguably was XXXXXX XX XXXX, right?}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+We show the whole program again, to see that it is relatively small (thanks to the very
+compact -- if cryptic -- \sr{regex}{regular expressions}), when we leave out all the
+\sns{comment}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.humanities-ex3]
+\frametitle{Example: Correcting and Anonymizing Documents (all)}
+\begin{itemize}
+\item
+\begin{sexample}[title=Document Cleanup (overview),id=corranon.ex3]
+\lstinputmhlisting{python/code/humanities-ex.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

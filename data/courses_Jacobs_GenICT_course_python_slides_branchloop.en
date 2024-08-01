@@ -1,0 +1,47 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/branchloop.en
+
+\begin{document}
+\begin{smodule}{branchloop}
+
+\begin{nparagraph}
+So far, we only know how to make \sns{program?program} that are a simple
+sequence of \sns{information-processing-system?instruction} no repetitions,
+no alternative pathways. \sref[fallback=Swapping values of
+variables,file=python/slides/variables.en]{ex.swap-variables} is a perfect example. We
+will now change that by introducing \sns{control structure}, i.e complex
+\sn{program?program} \sns{information-processing-system?instruction}
+that change the \sn{control flow} of the \sn{program?program}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Conditionals and Loops}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Problem]
+Up to now \sns{program?program} seem to execute all the
+\sns{information-processing-system?instruction} in sequence, from the first to
+the last.\lec{a linear \sn{program?program}}
+\end{sparagraph}
+\item\inputref[smglom/computing]{mod/control-flow.en}
+\item\inputref[smglom/computing]{mod/conditional-execution.en}
+\item
+\begin{sdefinition}
+A \definame{condition} is a \sn{python-datatypes?Boolean}
+\sn{program-expression?expression} in a \sn{control structure}.
+\end{sdefinition}
+\item\inputref[smglom/computing]{mod/loop.en}
+\item
+\begin{sexample}
+In \python, \sns{condition} are constructed by applying a
+\sn{Boolean} operator to arguments, e.g.
+\lstinline|3>5|, \lstinline|x==3|, \lstinline|x!=3|, \ldots\\
+or by combining simpler conditions by Boolean connectives \lstinline|or|,
+\lstinline|and|, and \lstinline|not| (using brakets if necessary), e.g.
+\lstinline|x>5 or x<3|
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

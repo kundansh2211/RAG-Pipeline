@@ -1,0 +1,38 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/python-genict.en
+
+\begin{document}
+\begin{smodule}{python-genict}
+
+\begin{frame}
+\frametitle{Programming in \useSGvar{courseacronym}: \python}
+\begin{itemize}
+\item We will use \python as the \sn{program?programming language} in this course
+\item We cover just enough \python, so that you
+\begin{itemize}
+\item understand the joy and principle of \sn{programming}
+\item can play with objects we present in \useSGvar{courseacronym}.
+\end{itemize}
+\item After a general introduction we will introduce language features as we go along
+\item For more information on \python\lec{homework/preparation}
+\begin{center}\huge
+\begin{sparagraph}
+\inlinedef{\definame{RTFM} (\hateq ``read those \green{fine} manuals'')}
+\end{sparagraph}
+\end{center}
+\item
+\begin{sparagraph}[title=RTFM Resources]
+There are also lots of good tutorials on the web,
+\begin{itemize}
+\item I like~\cite{LP:on,sthurlow:abpt:url,Sweigart:iwp14};
+\item but also see the language
+documentation~\cite{python3doc:on}.
+\ifSGvar{courseacronym}{IWGS}{\item\cite{Karsdorp:pph}
+is an introduction geared to the (digital) humanities}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

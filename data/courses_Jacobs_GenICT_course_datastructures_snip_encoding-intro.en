@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/snip/encoding-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/computing]{mod?computer}
+\usemodule[smglom/www]{mod?utfcodes}
+IT systems need to encode \sns{character} from our \sns{alphabet} as \sn{bit} strings
+(sequences of \sr{bit}{binary digits} (\sns{bit}) 0 and 1) for representation in
+\sns{computer}. To understand the current state -- the \sn{unicode} standard -- we will
+take a historical perspective.
+\end{sparagraph}
+\end{document}
+

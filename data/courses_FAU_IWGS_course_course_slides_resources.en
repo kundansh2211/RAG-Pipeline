@@ -1,0 +1,43 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/resources.en
+
+\begin{document}
+\begin{smodule}{resources}
+
+\begin{nparagraph}
+But what if you are not in a lecture or tutorial and want to find out more about the
+\useSGvar{courseacronym} topics?
+\end{nparagraph}
+
+\begin{frame}[label=slide.resources]
+\frametitle{Textbook, Handouts and Information, Forums, Videos}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=No Textbook]
+but lots of online python tutorials on the web.
+\end{sparagraph}
+\item Course notes will be posted at \url{http://kwarc.info/teaching/IWGS}\lec{see
+references}
+\begin{itemize}
+\item I mostly prepare/adapt/correct them as we go along
+\item please e-mail me any errors/shortcomings you notice \lec{improve for the group}
+\end{itemize}
+\item The lecture videos of WS 2020/21 are at \useSGvar{fautvURL}\lec{not much changed}
+\item Matrix chat at \useSGvar{chaturl} (via
+IDM)\lec{\href{https://www.anleitungen.rrze.fau.de/serverdienste/matrix-an-der-fau/erste-schritte/}{instructions}}
+\item
+\begin{sparagraph}[title=StudOn Forum]
+\useSGvar{studon} for
+\begin{itemize}
+\item announcements, homeworks\lec{my view on the forum}
+\item questions, discussion among your fellow students\lec{your forum too, use it!}
+\end{itemize}
+\end{sparagraph}
+\item If you become an active discussion group, the forum turns into a valuable
+resource!
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

@@ -1,0 +1,16 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/bottle-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/libraries?python-libraries}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?serverside-scripting}
+We wil now introduce the \lstinline|bottle| \sn{python-libraries?library}, which
+supplies a lightweight \sn{webserver?web server} and
+\sn{serverside-scripting?server-side scripting framework} \sn[post=ed]{implement} in
+\python. It is already \sn[post=ed]{install} on the JuptyerLab cloud IDE at
+\url{http://jupyter.kwarc.info}. To \sn{install} it on your laptop, just type
+\lstinline|pip install bottle| in a \sn{shell}.
+\end{sparagraph}
+\end{document}
+

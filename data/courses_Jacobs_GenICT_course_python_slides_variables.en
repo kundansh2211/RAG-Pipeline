@@ -1,0 +1,85 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/variables.en
+
+\begin{document}
+\begin{smodule}{python-variables}
+\lstset{language=python}
+
+\begin{nparagraph}
+And we start with a general feature of \sns{program?programming language}:
+we can give names to \sns{value?value} and use them multiple
+times. Conceptually, we are introducing shortcuts, and in reality, we are giving
+ourselves a way of storing \sns{value?value} in \sn{memory?memory} so
+that we can reference them later.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Variables in \python}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea]
+\Sns{value?value} (of \sns{program-expression?expression})
+can be given a name for later reference.
+\end{sparagraph}
+\item\inputref[smglom/computing]{mod/program-variable.en}
+\item
+\begin{sparagraph}[title=Note]
+In \python a \sn{variable name}
+\begin{itemize}
+\item must start with letter or \lstinline|_|,
+\item cannot be a \python \sn{keyword}
+\item is case-sensitive\lec{\lstinline|foobar|, \lstinline|FooBar|, and
+\lstinline|fooBar| are different variables}
+\end{itemize}
+\end{sparagraph}
+\item A \sn{variable name} can be used in
+\sns{program-expression?expression} everywhere its \sn{value?value}
+could be.
+\item
+\begin{sdefinition}[title=in \python]
+A \definame{variable assignment}
+\lstinline[mathescape]|$\pmetavar{var}$=$\pmetavar{val}$| \definame[post=s]{assignment?assign}
+a new \sn{value?value} to a \sn{program-variable?variable}.
+\end{sdefinition}
+\item
+\begin{sexample}[title=Playing with \python
+Variables,id=ex.swap-variables]\strut
+\cmhgraphics[width=8cm]{python/PIC/variables}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Let us fortify our intuition about \sns{program-variable?variable} with some  examples. The first
+shows that we sometimes need \sns{program-variable?variable} to store objects out of the way and the
+second one that we can use \sns{program-variable?variable} to assemble intermeditate results.
+\end{nparagraph}
+
+\begin{frame}[label=slide.variables-ex]
+\frametitle{Variables in \python: Extended Example}
+\begin{itemize}
+\item
+\begin{sexample}[title=Swapping Variables]
+To exchange the values of two \sns{program-variable?variable}, we have to cache the first in an
+auxiliary variable.
+\lstinputmhlisting{python/code/swap.py}
+Here we see the first example of a \inlinedef{\python script, i.e. a
+series of \python commands, that jointly perform an action (and
+communicates it to the user)}.
+\end{sexample}
+\item
+\begin{sexample}[title=Variables for Storing Intermediate Variables,id=ex.var-intermediate]
+\lstinputmhlisting{python/code/ohGott.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+If we use \sns{program-variable?variable} to assemble intermediate results,
+we can use telling names to document what these intermediate objects are -- something we
+did not do well in \sref[file=python/slides/variables.en]{ex.var-intermediate}; but
+admittely, the \sn{meaning} of the objects in this contrived example is questionable.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

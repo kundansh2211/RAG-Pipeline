@@ -1,0 +1,50 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/jquery-layers.en
+
+\begin{document}
+\begin{smodule}{jquery-layers}
+
+\begin{nparagraph}
+The key feature of \sn{jquery?jQuery} is that it borrows the notion of
+``\sns{selector}'' to describe \sn{html?HTML} \sn{graph?node} \sns{set?set} from \sn{CSS?CSS}
+actually, \sn{jquery?jQuery} uses the \sn{CSS?CSS} \sns{CSS?selector} directly and then
+uses \sn{javascript?JavaScript}-like methods to act on them. In fact, the name
+\sn{jquery?jQuery} comes from the fact that \sns{selector} ``query'' for \sns{graph?node} in
+the \sn{DOM}.
+\end{nparagraph}
+
+\begin{frame}[fragile]% needed somehow
+\frametitle{\sn{jquery?jQuery} Philosophy and Layers}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=jQuery Philosophy]
+Select a \sn[pre=sub]{tree} from the \sn{DOM}, and operate on it.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Syntax Convention]
+\sn{jQuery} \sns{instruction} start with a
+\lstinline|$| to distinguish it from \sn{javascript?JavaScript}.%$
+\end{sparagraph}
+\item
+\begin{sexample}[for=jQuery]
+The following \sn{jQuery} command achieves a lot in four steps:
+\lstinputmhlisting{www/code/jquery-layers.js}
+\begin{enumerate}
+\item Find elements in the \sn{DOM} by \sn{CSS?CSS} selectors,
+e.g.
+\lstinline|$("#myId")|%$\lec{\hateq query for nodes; hence the name \sn{jQuery}}
+\item do something to them, here \lstinline|show()|\lec{chaining of methods}
+\item change their layout by changing \sn{CSS?CSS} attributes, e.g. \lstinline|css("color","green")|
+\item change their behavior, e.g. \lstinline|slideDown()|
+\end{enumerate}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Good News]
+\sn{jQuery} \sns{selector} \hateq \sn{CSS?CSS} \sn{selector}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

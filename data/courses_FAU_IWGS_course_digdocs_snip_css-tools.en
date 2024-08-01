@@ -1,0 +1,16 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/css-tools.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?browser-rendering-pipeline}
+In this \currentsectionlevel we introduce a technology of digital documents which
+naturally As \sn{CSS?CSS} has grown to be very complex and moreover, the
+\sr{webbrowser?web browser}{browser} \sn{DOM} of which \sn{CSS?CSS} is
+part can even be modified after loading the \sn{html?HTML} (see \sref[fallback=next
+chapter,file=webapps/sec/clientside.en]{sec.clientside}), we need tools to help us
+develop \sn{effective} and maintainable \sn{CSS?CSS}.
+\end{sparagraph}
+\end{document}
+

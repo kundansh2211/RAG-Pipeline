@@ -1,0 +1,53 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/lambda.en
+
+\begin{document}
+\begin{smodule}{python-lambda}
+
+\begin{nparagraph}
+We digress to the internals of \sns{subroutine?function} that make them even
+more powerful. It turns out that we do not have to give a \sn{subroutine?function} a name at all.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Anonymous Functions (\lstinline|lambda|)}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation,name=namedfunction]
+A \python \sn{subroutine?function} definition combines making a
+\sn{function object} with giving it a name.
+\end{sassertion}
+\item
+\begin{sdefinition}
+\python also allows to make \definame[post=s]{anonymous function} via the
+\sn{subroutine?function} \sn{literal} \lstinline|lambda| for
+\definame[post=s]{function object}:
+\lstinputmhlisting[mathescape]{python/code/lambda_schema.py}
+\end{sdefinition}
+\item
+\begin{sexample}
+The following two \python fragments are equivalent:
+\begin{center}
+\begin{tabular}{p{2cm}@{\qquad}p{4cm}}
+\lstinputmhlisting[linerange=1-2]{python/code/lambda.py} &
+\lstinputmhlisting[linerange=3]{python/code/lambda.py}
+\end{tabular}
+\end{center}
+The right one is just a \sn{variable assignment} that assigns a
+\sn{function object} to the \sn{program-variable?variable}
+\lstinline|cube|.\lec{In fact \python uses the right one internally}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Question]
+Why use \sns{anonymous function}?
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Answer]
+We may not want to invent (i.e. waste) a name if the \sn{subroutine?function} is only used
+once.\lec{examples on the next slide}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

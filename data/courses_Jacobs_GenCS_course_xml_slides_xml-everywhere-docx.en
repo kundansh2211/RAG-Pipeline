@@ -1,0 +1,40 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xml-everywhere-docx.en
+
+\begin{document}
+\begin{smodule}{xml-everywhere-docx}
+
+\begin{nparagraph}
+And now, if you still need proof that \sn{xml?XML} is really used almost everywhere, here is
+the ultimate example.
+\end{nparagraph}
+
+\begin{frame}[label=slide.xml-everywhere-docx]
+\frametitle{\sn{xml?XML} is Everywhere (E.g. Office Suites)}
+\begin{itemize}
+\item
+\begin{sexample}[id=xml-docx,title=MS Office uses \sn{XML},for=XML]
+The $\MSOffice$ suite and $\LibreOffice$ use \sn[post=ed]{compress} \sn{xml?XML} as
+an \sn{electronic-document?electronic document} format.
+\begin{enumerate}
+\item Save a $\MSOffice$ file \lstinline|test.docx|, add the \sn{file-system?extension}
+\lstinline|.zip| to obtain  \lstinline|test.docx.zip|.
+\item \sn[pre=Un]{compress} with \lstinline|unzip| ($\unixOS$) or open File
+Explorer, right-click \ergo ``Extract All'' ($\windowsOS$)
+\item You obtain a folder with 15+ files, the content is in
+\lstinline|word/contents.xml|
+\item Other files have packaging information, \sr{digital image}{images}, and other
+objects.
+\end{enumerate}
+\textwarning This is huge and offensively ugly.
+\begin{itemize}
+\item But you have everything you wanted and more
+\item In particular, you can process the contents via a program now.
+\end{itemize}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

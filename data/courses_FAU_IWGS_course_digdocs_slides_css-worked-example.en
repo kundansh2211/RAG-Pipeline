@@ -1,0 +1,79 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/css-worked-example.en
+
+\begin{document}
+\begin{smodule}{css-worked-example}
+\usemodule{digdocs/slides?css-boxmodel}
+\lstset{language=HTML}
+
+\begin{nparagraph}
+To fortify our intuition on \sn{CSS?CSS}, we take up the ``contact form'' example from above
+and improve the layout in a step-by-step process concentrating on one aspect at a time.
+\end{nparagraph}
+
+\begin{frame}[fragile,t,label=slide.css-worked-example]
+\frametitle{CSS in Practice: The Contact Form Example (Continued)}
+\begin{itemize}
+\item<1-> Recap: The unstyled contact form -- \only<2->{Dream vs. Reality}
+\begin{onlyenv}<1,2>
+\begin{center}
+\only<1>{\parbox[c]{6.5cm}{\lstinputmhlisting{digdocs/code/contact4.html}}}
+\only<2>{\parbox[c]{5cm}{\cmhgraphics[width=5cm]{digdocs/PIC/design}}}
+\qquad
+\parbox[c]{3cm}{\mhgraphics[width=3cm]{digdocs/PIC/browser4}}
+\end{center}
+\end{onlyenv}
+\item<3-> Add a \sn{CSS?CSS} file with font information
+\begin{onlyenv}<3>
+\begin{center}
+\parbox[c]{6.8cm}{
+\lstinputmhlisting[linerange={2-3,11-12}]{digdocs/code/csscontact1.html}
+\clstinputmhlisting{digdocs/code/csscontact1.css}}\qquad
+\parbox[c]{3cm}{\mhgraphics[width=3cm]{digdocs/PIC/cssbrowser1}}
+\end{center}
+\end{onlyenv}
+\item<4-> Add lots of color \lec{ooops, what about the size}
+\begin{onlyenv}<4>
+\begin{center}
+\parbox[c]{5.5cm}{
+\lstinputmhlisting[linerange={5-5,8-8,9-11},basicstyle=\footnotesize\sf]
+{digdocs/code/csscontact2.html}
+\clstinputmhlisting[linerange={7-10}]{digdocs/code/csscontact2.css}}\qquad
+\parbox[c]{5cm}{\mhgraphics[width=5cm]{digdocs/PIC/cssbrowser2}}
+\end{center}
+\end{onlyenv}
+\item<5-> Add size information and a dotted frame
+\begin{onlyenv}<5>
+\begin{center}
+\parbox[c]{7cm}{
+\lstinputmhlisting[linerange={4-15},basicstyle=\footnotesize\sf]
+{digdocs/code/csscontact3.html}}\quad
+\parbox[c]{3cm}{\mhgraphics[width=3.5cm]{digdocs/PIC/cssbrowser3}}
+\end{center}
+\end{onlyenv}
+\item<6-> Add a cat that plays with the submit button\lec{because we can}
+\begin{onlyenv}<6>
+\begin{center}
+\parbox[c]{5cm}{
+\lstinputmhlisting[linerange={8-11},basicstyle=\footnotesize\sf]
+{digdocs/code/csscontact4.html}}\quad
+\parbox[c]{5.5cm}{\mhgraphics[width=6cm]{digdocs/PIC/cssbrowser4}}
+\end{center}
+\end{onlyenv}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+This worked example should be enough to cover most layout needs in practice. Note that
+in most use cases, these generally layout primitives will have to be combined in
+different and may be even new ways.
+\end{nparagraph}
+
+\begin{nparagraph}
+Actually, the last ``improvement'' may have gone a bit overboard; but we used it to show
+how absolute positioning of \sr{digital image}{images} (or actually any \sn{CSS?CSS}
+\sn[post=es]{box} for that matter) works in practice.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

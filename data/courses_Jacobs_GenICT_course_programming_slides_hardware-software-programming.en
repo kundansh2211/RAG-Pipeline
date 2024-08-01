@@ -1,0 +1,122 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: programming/slides/hardware-software-programming.en
+
+\begin{document}
+\begin{smodule}{hardware-software-programming}
+\begin{nparagraph}
+To understand \sn{programming}, it is important to realize that
+\sns{computer} are universal machines. Unlike a conventional tool    e.g a
+spade -- which has a limited number of purposes/behaviors -- digging holes in case of a
+spade, maybe hitting someone over the head, a \sn{computer} can be given
+arbitrary\footnote{as long as they are ``computable'', not all are.} purposes/behaviors
+by specifying them in form of a \sn{program}.
+\end{nparagraph}
+
+\begin{nparagraph}
+\usemodule[smglom/formal-methods]{mod?formal-verification}
+This notion of a \sn{program} as a behavior specification for an universal machine is
+so powerful, that the field of \sr{computer-science?CS}{computer science} is centered
+around studying it -- and what we can do with \sns{program}, this includes
+\begin{enumerate}[\em i\rm)]
+\item storing and manipulating data about the world,
+\item encoding, generating, and interpreting \sr{digital image}{image}, audio, and video,
+\item transporting information for communication,
+\item representing knowledge and reasoning,
+\item transforming, optimizing, and \sn[post=ing]{verify} other \sns{program?program},
+\item learning patterns in data and predicting the future from the past.
+\end{enumerate}
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computer Hardware/Software \& Programming}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Definame[post=s]{computer?computer} consist of \sn{computer?hardware} and
+\sn{computer?software}.
+\end{sdefinition}
+\item
+\begin{sdefinition}
+\Definame{computer?hardware} consists of
+\begin{columns}\quad
+\begin{column}{5.2cm}
+\begin{itemize}
+\item a \definiendum{cpu?CPU}{central processing unit} (\definame{cpu?CPU})
+\item \definame{memory?memory}: e.g. RAM, ROM, \ldots
+\item \definame[post=s]{storage-device?storage device}: e.g.  Disks, SSD, tape, \ldots
+\item \definiendum{information-processing-system?input subsystem}{input}:
+e.g. keyboard, mouse, touchscreen, \ldots
+\item \definiendum{information-processing-system?output subsystem}{output}:
+e.g. screen, earphone, printer, \ldots
+\end{itemize}
+\end{column}
+\begin{column}{5cm}
+\cmhgraphics[width=5cm]{programming/PIC/computer_components}
+\end{column}
+\end{columns}
+\end{sdefinition}
+\item
+\begin{sdefinition}
+\Definame{computer?software} consists of
+\begin{columns}\quad
+\begin{column}{6cm}
+\begin{itemize}
+\item \definame{data?data} that represents objects and their relationships in the world
+\item \definame[post=s]{program?program} that inputs, manipulates, outputs
+\definame{data?data}
+\end{itemize}
+\end{column}\quad
+\begin{column}{4cm}
+\def\myxscale{1.2}\def\myyscale{1.1}
+\mhtikzinput[archive=courses/Jacobs/GenCS/course]{course/tikz/data-alg-machine}
+\end{column}
+\end{columns}
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Remark]
+\Sn{computer?hardware} stores \sn{data?data} and runs
+\sns{program?program}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?general-purpose-computer}
+\usemodule[smglom/computing]{mod?embedded-system}
+A universal machine has to have -- so experience in
+\sr{computer-science?CS}{computer science} shows    certain distinctive parts.
+\begin{itemize}
+\item A \sn{cpu?CPU} that consists of a
+\begin{itemize}
+\item \inlinedef{\definame{cpu?control unit} that interprets the \sn{program} and controls the
+flow of instructions} and
+\item a \inlinedef{\definiendum{cpu?ALU}{arithmetic/logic unit} (\definame{cpu?ALU}) that does the
+actual computations internally}.
+\end{itemize}
+\item \Sn{memory?memory} that allows the system to store data during runtime
+(volatile storage; usually RAM) and between runs of the system (persistant storage;
+usually hard disks, solid state disks, magnetic tapes, or optical media).
+\item I/O devices for the communication with the user and other \sns{computer?computer}.
+\end{itemize}
+With these components we can build various kinds of universal machines; these range from
+thought experiments like \sns{Turing machine}, to today's
+\sns{general-purpose-computer?general purpose computer} like your laptop with
+various \sns{embedded-system?embedded system} (wristwatches, Internet routers,
+airbag controllers, \ldots) in-between.
+\end{nparagraph}
+
+\begin{nparagraph}
+\usemodule[courses/FAU/AI/course]{intro/slides?whatisai} Note that -- given enough fantasy -- the
+human brain has the same components.  Indeed the human mind is a universal machine -- we
+can think whatever we want, react to the environment, and are not limited to particular
+behaviors. There is a sub-field of \sr{computer-science?CS}{computer science} that
+studies this: \sr{AI}{Artificial Intelligence} (\sn{AI}). In
+this analogy, the brain is the ``hardware'' --sometimes called ``wetware'' because it is
+not made of hard silicon or ``meat machine''\footnote{Marvin Minsky; one of the founding
+fathers of the field of \sr{AI}{Artificial Intelligence}}. It is instructional to
+think about what the \sn{program?program} and the data might be in this analogy.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

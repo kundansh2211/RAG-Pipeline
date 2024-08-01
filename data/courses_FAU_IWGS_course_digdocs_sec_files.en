@@ -1,0 +1,20 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/files.en
+
+\begin{document}
+\begin{sfragment}[id=sec.files]{Representing \& Manipulating Documents on a Computer}
+File: [courses/Jacobs/TDM/course]{digdocs/snip/docrep-intro.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/slides/edocs.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/slides/markup.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/slides/file-type.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/slides/editors.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/slides/wordprocessors.en}
+
+\end{sfragment}
+\end{document}
+

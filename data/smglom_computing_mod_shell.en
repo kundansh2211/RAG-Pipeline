@@ -1,0 +1,17 @@
+Archive: smglom/computing
+Filepath: mod/shell.en
+
+\begin{document}
+\begin{smodule}[creators=miko,title={Shell}]{shell}
+
+\begin{sdefinition}
+A \definame{shell} is a \sr{CLI?CLI}{command line interface} for accessing the
+\sns{client-server?service} of a \sn{computer?computer}'s
+\sr{operating-system?OS}{operating system}.
+
+There are multiple \sn{shell} \sns{implementation}: \definame{sh}, \definame{csh},
+\definame{bash}, \definame{zsh}; they differ in advanced features.
+\end{sdefinition}
+\end{smodule}
+\end{document}
+

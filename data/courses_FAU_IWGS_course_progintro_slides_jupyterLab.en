@@ -1,0 +1,109 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/slides/jupyterLab.en
+
+\begin{document}
+\begin{smodule}{jupyterLab}
+
+\begin{nparagraph}
+In \useSGvar{courseacronym}, we want to use the \sn{jupyterLab} cloud service. This runs
+the \python \sn{interpreter?interpreter} on a cloud server and gives you a
+\sr{webbrowser?web browser}{browser} \sn{window} with a \sn{web IDE}, which you can use
+for \sn[post=ing]{interact} with the \sn{interpreter?interpreter}. You will have to make
+an account there; details to follow.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\sn{jupyterLab} A Cloud IDE for \python}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[style=start,title=For helping you]
+it would be good if the TAs could access to your code
+\end{sparagraph}
+\item<1->
+\begin{sparagraph}[title=Idea]
+Use a \inlinedef[for=jupyterLab]{\definame{web-IDE?web IDE} (a web based integrated
+development environment): \sn{jupyterLab}}, which you can use for
+\sn[post=ing]{interact} with the \sn{interpreter?interpreter}.
+\end{sparagraph}
+\item<2-> We will use \sn{jupyterLab} for \useSGvar{courseacronym}.\lec{but you can also
+use \python locally}
+\item<2->
+\begin{sparagraph}[title=Homework]
+Set up \sn{jupyterLab}
+\begin{itemize}
+\item make an account at \url{http://jupyter.kwarc.info}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The advantage of a cloud IDE like \sn{jupyterLab} for a course like
+\useSGvar{courseacronym} is that you do not need any \sn[post=ation]{install},
+cannot lose your files, and your teachers (the course instructor and the teaching
+assistants) can see (and even directly \sn{interact} with) the your run time
+environment. This gives us a much more controlled setting and we can help you better.
+\end{nparagraph}
+
+\begin{nparagraph}
+Both $\idlethree$ as well as \sn{jupyterLab} come with an integrated editor for writing
+\python programs. These editors gives you \python syntax
+highlighting, and \sn{interpreter?interpreter} and debugger integration. In
+short, $\idlethree$ and \sn{jupyterLab} are integrated development environments for
+\python. Let us now go through the interface of the \sn{jupyterLab} IDE.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\sn{jupyterLab} Components}
+\begin{itemize}
+\item<1->
+\begin{sdefinition}
+The \sn{jupyterLab} \definame{dashboard?dashboard} gives you access to all
+components.
+\only<1>{\cmhgraphics[width=8.5cm]{progintro/PIC/jupyterLab}}
+\end{sdefinition}
+\item<2->
+\begin{sdefinition}
+The \sn{jupyterLab} \definame{python console}, i.e. a \python
+\sn{interpreter?interpreter} in your
+\sr{webbrowser?web browser}{browser}.\lec{use this for \python
+\sn[post=ion]{interact} and testing.}
+\only<2>{\cmhgraphics[width=11cm]{progintro/PIC/jupyterLab-python-console}}
+\end{sdefinition}
+\item<3->
+\begin{sdefinition}
+The \sn{jupyterLab} \definame{jupyterLab?terminal}, i.e. a $\unixOS$
+\sn{shell?shell} in your browser.\lec{use this for managing files}
+\only<3>{\cmhgraphics[width=11cm]{progintro/PIC/jupyterLab-bash-console}}
+\end{sdefinition}
+\item<4->
+File: [smglom/computing]{mod/shell.en}
+
+\item<4->
+\begin{sparagraph}[title=Useful \sn{shell} \sr{instruction}{commands}]
+See e.g.~\cite{Allen:nutbsc18} for a basic tutorial
+\begin{itemize}
+\item \lstinline|ls|: ``list'' the \sns{file} in this \sn{directory}
+\item \lstinline|mkdir|: ``make'' \sr{directory}{folder} (called
+``\sn{directory}'')
+\item \lstinline|pwd|: ``print \sn{working directory}''\lec{where am I}
+\item \lstinline|cd| $\pmetavar{dirname}$: ``change \sn{directory}''
+\begin{itemize}
+\item if $\pmetavar{dirname} = \lstinline|..|$: one up in the \sn{directory}
+\sn{tree}
+\item empty \pmetavar{dirname}: go to your \sn{home directory}.
+\end{itemize}
+\item \lstinline|rm| $\pmetavar{name}$:  remove \sn{file}/\sn{directory}
+\item \lstinline|cp|/\lstinline|mv| $\pmetavar{filename}$ $\pmetavar{newname}$: copy
+to or rename
+\item \lstinline|cp|/\lstinline|mv| $\pmetavar{filename}$ $\pmetavar{dirname}$: copy
+or move to
+\item \ldots see \cite{Allen:nutbsc18} for more \ldots
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

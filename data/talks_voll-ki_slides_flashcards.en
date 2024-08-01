@@ -1,0 +1,38 @@
+Archive: talks/voll-ki
+Filepath: slides/flashcards.en
+
+\begin{document}
+\usemodule[smglom/voll-ki]{mod?learner-model}
+\usemodule[smglom/voll-ki]{mod?learning-task}
+\usemodule[smglom/voll-ki]{mod?flash-card}
+\begin{frame}
+\frametitle{New Feature: \Sn[post=ing]{drill} with \Sns{flash-card?flashcard}}
+\begin{itemize}
+\item \Sns{flashcard?flashcard} challenge you with a \sn{task} (term/problem) on the
+\sn{front}\ldots
+\begin{center}
+\end{center}
+\ldots and the definition/answer is on the \sn{back}.
+\item \Sn[post=ment]{self-assess} updates the \sn{learner model}\lec{before/after}
+\item
+\begin{sparagraph}[title=Idea]
+Challenge yourself to a \sn{card stack}, keep drilling/\sn[post=ing]{assess}
+\sns{flash-card?flashcard} until the \sn{learner model} eliminates all.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Bonus]
+\Sns{flash-card?flashcard} can be generated from existing semantic markup\lec{educational
+equivalent to free beer}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+We have already seen above how the \sn{learner model} can drive the \sn[post=ing]{drill}
+with \sns{flash-card?flashcard}. It can also be used for the configuration of \sns{card stack} by
+configuring a domain \inlineex{e.g. a section in the course mateirals and a
+\sn{competency} threshold}.
+\end{nparagraph}
+\end{document}
+
+

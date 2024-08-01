@@ -1,0 +1,45 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/template-engine.en
+
+\begin{document}
+\begin{smodule}{rc*template-engine}
+\usemodule{www/slides?php}
+
+\begin{nparagraph}
+We will now formalize and toolify the idea of ``embedding code into
+\sn{html?HTML}''. What comes out of this idea is called ``templating''. It exists
+in many forms, and in most \sns{programming language}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Template Processing for \sn{html?HTML}}
+\begin{itemize}
+\item\inputref[smglom/computing]{mod/template-engine.en}
+\item
+\begin{sparagraph}[title=Note]
+No program code is left in the resulting \sn{web-page?web page} after
+generation.\lec{important security concern}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Remark]
+We will be most interested in \sn{html?HTML} \sns{template engine}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Observation,id=sssf-routes-files]
+We can turn a \sn{template engine} into a \sn{serverside-scripting?server-side
+scripting framework} by employing the \sns{URI?URI} of
+\sns{template-engine?template file} on a \sn{server} as
+\sns{serverside-scripting?route} and extending the \sn{webserver?web server} by
+\sn{template processing}.
+\end{sparagraph}
+\item
+\begin{sexample}[id=PHP-sssf,for=server-side scripting framework]
+\sn{php?PHP} (originally ``Programmable Home Page Tools'') is a very successful
+\sn{serverside-scripting?server-side scripting framework} following this model.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

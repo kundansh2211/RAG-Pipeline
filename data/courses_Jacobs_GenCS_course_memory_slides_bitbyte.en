@@ -1,0 +1,37 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: memory/slides/bitbyte.en
+
+\begin{document}
+\begin{smodule}{bitbyte}
+
+\begin{frame}
+\frametitle{\Sns{quantities?unit} for Information}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Observation]
+The smallest \sn{quantities?unit} of information is knowing the state of a
+system with only two states.
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=bit.def]
+A \definame{bits?bit} (a contraction of ``binary digit'') is the basic
+\sn{quantities?unit} of capacity of a data storage device or communication
+channel. The capacity of a system which can exist in only two states, is one
+\sn{bit} (written as $\quantityof1\bit$)
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]
+\usemodule{codes/slides?ASCII}
+In the \sr{ASCII}{ASCII encoding}, one \sn{character?character} is encoded as
+$\quantityof8\bit$, so we introduce another basic \sn{quantities?unit}:
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=byte.def]
+The \definame{bits?byte} is a derived \sn{quantities?unit} for information capacity:
+$\quantityof1\byte=\quantityof8\bit$.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

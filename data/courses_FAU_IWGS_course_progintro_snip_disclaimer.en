@@ -1,0 +1,20 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/snip/disclaimer.en
+
+\begin{document}
+\begin{sparagraph}[title=Disclaimer]
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/functions?python-functions}
+
+The last couple of features of \python functions are a bit more advanced than
+would usually be expected from a \python \sn{programming} introduction in
+a course such as \useSGvar{courseacronym}. But one of the goals of
+\useSGvar{courseacronym} is to empower students to be able to read \python
+code of more experienced authors. And that kind of code may very well contain these
+features, so we need to cover them in \useSGvar{courseacronym}.
+
+So the last couple of slides should be considered as an ``early exposure for
+understanding'' rather than ``essential to know for \useSGvar{courseacronym}'' content.
+\end{sparagraph}
+\end{document}
+
+

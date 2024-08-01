@@ -1,0 +1,77 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/lxml-attributes.en
+
+\begin{document}
+\begin{smodule}{lxml-attributes}
+
+\begin{nparagraph}
+But \sn{xml?XML} documents that only have \sr{XML element}{elements}, are boring; let's do
+\sn{xml?XML} \sns{xml-markup?attribute} next. Recall that attributes are essentially string-valued
+key/value pairs. So what could be more natural than treating them like
+\sr{dictionary?dictionary}{dictionaries}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computing with \sn{xml?XML} in \python (\Sns{xml-markup?attribute})}
+\begin{itemize}
+\item \Sns{xml-markup?attribute} can directly be added in the \lstinline|Element| function
+\lstinputmhlisting[linerange=2-5]{digdocs/code/lxml-attribute.py}
+\item The \lstinline|.get| method returns \sns{xml-markup?attribute} in a \sn{dictionary}-like
+object:
+\lstinputmhlisting[linerange=6-7]{digdocs/code/lxml-attribute.py}
+We can set them with the \lstinline|.set| method:
+\lstinputmhlisting[linerange=8-10]{digdocs/code/lxml-attribute.py} This results in a
+changed \sr{XML element}{element}:
+\lstinputmhlisting[linerange=12-13]{digdocs/code/lxml-attribute.py}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Recall that we could use \python \sr{dictionary?dictionary}{dictionaries} for iterating
+over in a \lstinline|for| loop. We can do the same for \sns{xml-markup?attribute}:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computing with \sn{xml?XML} in \python (\Sns{xml-markup?attribute}; continued)}
+\begin{itemize}
+\item We can access \sns{xml-markup?attribute} by the \lstinline|keys|, \lstinline|values|, and
+\lstinline|items| methods, known from \sr{dictionary?dictionary}{dictionaries}:
+\lstinputmhlisting[linerange=15-21]{digdocs/code/lxml-attribute.py}
+\item
+\begin{sparagraph}[style=warning]
+To get a `real` dictionary, use the \lstinline|attrib| method\lec{e.g. to pass
+around}
+\lstinputmhlisting[linerange=23-23]{digdocs/code/lxml-attribute.py}
+
+Note that \lstinline|attributes| participates in any changes to \lstinline|root| and
+vice versa.
+\end{sparagraph}
+\item
+\begin{sparagraph}[style=warning]
+To get an independent snapshot of the \sns{xml-markup?attribute} that does not depend on the
+\sn{xml?XML} tree, copy it into a \lstinline|dict|:
+\lstinputmhlisting[linerange=25-27]{digdocs/code/lxml-attribute.py}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The last two items touch a somewhat delicate subject in
+\sn{programming}. \inlinedef{\Definame{mutable} an \definame{immutable}
+\sns{data-structure?data structure}: the former can be changed in place
+as we have above with the \lstinline|.set| method, and the latter cannot.} Both have
+their justification and respective advantages. \Sn{immutable}
+\sns{data-structure?data structure} are ``safe'' in the sense that they
+cannot be changed unexpectedly by another part of the \sn{program?program}, they
+have the disadvantage that every time we want to have a variant, we have to copy the
+whole object. \Sn{mutable} ones do not -- we can change in place -- but we have to
+be very careful about who accesses them when.
+
+This is also the reason why we spoke of ``dictionary-like interface'' to \sn{xml?XML} trees in
+\lstinline|lxml|: \sr{dictionary?dictionary}{dictionaries} are
+\sn{immutable}, while \sn{xml?XML} trees are not.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

@@ -1,0 +1,15 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/html-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?html}
+
+\sn{WWW} documents have a specialized \sn{document-type?document type} that
+mixes markup for document structure with layout markup, hyper-references, and
+\sn[post=ion]{interact}. The \sn{html?HTML} markup elements always concern
+text fragments, they can be nested but may not otherwise overlap. This essentially turns
+a text into a document tree.
+\end{sparagraph}
+\end{document}
+

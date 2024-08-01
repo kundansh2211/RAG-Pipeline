@@ -1,0 +1,25 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/http-ex.en
+
+\begin{document}
+\begin{smodule}{http-ex}
+
+\begin{frame}[label=slide.http-ex]
+\frametitle{Example: An HTTP request in real life}
+\begin{itemize}
+\item Send off a \lstinline!GET! request for \url{http://www.nowhere123.com/doc/index.html}
+\lstinputmhlisting[basicstyle=\footnotesize\ttfamily]{www/code/http.txt}
+\item The response from the server
+\lstinputmhlisting[basicstyle=\footnotesize\ttfamily]{www/code/http-response.txt}
+\item
+\begin{sparagraph}[title=Note]
+As you can seen, these are clear-text messages that go over an unprotected
+network. A consequence is that everyone on this network can intercept this
+communication and see what you are doing/reading/watching.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

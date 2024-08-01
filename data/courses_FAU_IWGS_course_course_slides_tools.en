@@ -1,0 +1,35 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/tools.en
+
+\begin{document}
+\begin{smodule}{tools}
+
+\begin{frame}
+\frametitle{Software/Hardware tools}
+\begin{itemize}
+\item You will need \sn{computer} access for this course
+\item we recommend the use of standard software tools
+\begin{itemize}
+\item find a \sn{text editor} you are comfortable with\lec{get good with it} A
+\sn{text editor} is a program you can use to write
+\sns{file-type?text file}. \lec{not $\MSWord$}
+\item any \sr{operating-system?OS}{operating system} you like \lec{I can only
+help with $\unixOS$}
+\item Any browser you like \lec{I use $\firefoxbrowser$: less spying}
+\end{itemize}
+\item
+\begin{sparagraph}[title=Advice]
+\red{learn how to touch-type NOW}\lec{reap the benefits earlier, not later}
+\begin{itemize}
+\item you will be typing multiple hours/week in the next decades
+\item touch-typing is about twice as fast as ``system eagle''.
+\item you can learn it in two weeks\lec{good programs}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+File: [courses/FAU/meta-inf]{admin/snip/touchtype.en}
+
+\end{smodule}
+\end{document}
+

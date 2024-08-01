@@ -1,0 +1,33 @@
+\providecommand\classoptions{,notes,titlepage}
+\libusetheme{FAU}
+\gdef\IWGSsubtitle{IWGS-1: Programming, Documents, Web Applications}
+
+\begin{document}
+\maketitle
+\begin{nparagraph}
+This document contains the course notes for the course ``\useSGvar{coursetitle}
+(short \useSGvar{courseacronym}-1'') held at FAU Erlangen-Nürnberg in the Winter Semesters
+2018/19 ff.
+\end{nparagraph}
+File: [courses/FAU/IWGS/course]{course/snip/otherparts.en}
+
+
+File: [courses/FAU/IWGS/course]{course/notes/frontmatter.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/preliminaries.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/progintro.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/datastructures.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/sec/digdocs.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/webapps.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/frontend.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/concl1.en}
+
+
+\end{document}
+

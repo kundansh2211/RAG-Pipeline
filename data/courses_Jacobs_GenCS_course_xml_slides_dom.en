@@ -1,0 +1,25 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/dom.en
+
+\begin{document}
+\begin{smodule}{dom}
+
+\begin{frame}
+\frametitle{The Document Object Model}
+\begin{itemize}
+\item\inputref[smglom/www]{mod/DOM.en}
+\item
+\begin{sparagraph}[title=Idea]
+\usemodule{www/slides?webbrowser}
+\usemodule{www/slides?html}
+When a \sn{webbrowser?web browser} loads a \sn{html?HTML} page, it directly
+\sns{parse} it into a \sn{DOM} and then works exclusively on that. In particular,
+the \sn{html?HTML} document is immediately discarded; documents are rendered from
+the \sn{DOM}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

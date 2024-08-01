@@ -1,0 +1,14 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/snip/outline-trans.en
+
+\begin{document}
+\begin{nparagraph}
+\usemodule[smglom/cs]{mod?computer-science}
+\usemodule[smglom/computing]{mod?efficient}
+We now come to the concrete topics we want to cover in \useSGvar{courseacronym}. The
+guiding intuition for the selection is to concentrate on techniques that may become
+useful in day-to-day DH work -- not \sn{computer-science?CS} completeness or teaching
+\sn{efficiency}.
+\end{nparagraph}
+\end{document}
+

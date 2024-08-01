@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/sec/preliminaries.en
+
+\begin{document}
+\begin{sfragment}{Preliminaries}
+File: [courses/Jacobs/GenCS/course]{www/snip/www-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/interweb-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/snip/www-concepts-trans.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/www-concepts.en}
+
+\end{sfragment}
+\end{document}
+

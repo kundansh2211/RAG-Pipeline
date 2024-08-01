@@ -1,0 +1,16 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/www-basics.en
+
+\begin{document}
+\begin{sfragment}[id=sec.www-basics]{Basic Concepts of the World Wide Web}
+File: [courses/FAU/IWGS/course]{webapps/snip/www-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/sec/preliminaries.en}
+
+File: [courses/Jacobs/GenCS/course]{www/sec/addressing.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/running.en}
+
+\end{sfragment}
+\end{document}
+

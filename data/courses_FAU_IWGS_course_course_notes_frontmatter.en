@@ -1,0 +1,22 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/notes/frontmatter.en
+
+\begin{document}
+\ifnotes
+\begin{frontmatter}
+\begin{blindfragment}
+\thispagestyle{empty}\maketitle
+\tableofcontents
+\newpage\setcounter{page}{1}
+File: [courses/FAU/IWGS/course]{course/sec/pre.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/syllabus.en}
+
+\clearpage
+\end{blindfragment}
+\end{frontmatter}
+\else\frame[noframenumbering]\maketitle
+\fi
+\end{document}
+
+

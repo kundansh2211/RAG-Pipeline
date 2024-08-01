@@ -1,0 +1,12 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/css-layout-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS} So far, we have looked at the
+mechanics of \sn{CSS?CSS} from a very general perspective. We will now come to a set of \sn{CSS?CSS}
+behaviors that are useful for specifying layouts of pages and texts.
+\end{sparagraph}
+
+\end{document}
+

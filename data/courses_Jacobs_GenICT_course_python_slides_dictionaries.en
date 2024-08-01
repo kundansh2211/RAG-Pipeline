@@ -1,0 +1,89 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/dictionaries.en
+
+\begin{document}
+\begin{smodule}{python-dictionaries}
+\lstset{language=python,aboveskip=0pt,belowskip=0pt,mathescape}
+
+\begin{nparagraph}
+But \sns{list?list} are not the only \sn{data structure} for
+collections of objects. \python provides others that are organized slightly
+differently for different applications. We give a particularly useful example here:
+\sr{dictionary?dictionary}{dictionaries}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.dictionaries1]
+\frametitle{ \python \sr{dictionary?dictionary}{Dictionaries}}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \definame{dictionary?dictionary} is an unordered collection of
+\sr{pair?pair}{ordered pairs} $\pair{k}v$, where we call $k$ the
+\definame{dictionary?key} and $v$ the \definame{dictionary?value}.
+\end{sdefinition}
+\item In \python \sr{dictionary}{dictionaries} are written with curly
+brackets, pairs are separated by commata, and the \sn{dictionary?value} is separated from
+the \sn{key} by a colon.
+\item
+\begin{sexample}
+\sr{dictionary}{Dictionaries} can be used for various purposes,
+\begin{center}\vspace*{-.5em}
+\begin{tabular}{p{4.9cm}p{3.1cm}p{2cm}}
+\lstinputmhlisting{python/code/painting.py}&
+\lstinputmhlisting{python/code/dict_de_en.py}&
+\lstinputmhlisting{python/code/enum.py}
+\end{tabular}\vspace*{-1em}
+\end{center}
+\end{sexample}
+\item \sr{dictionary}{Dictionaries} and \sns{python-sequences?sequence}
+can be nested, e.g. for a \sn{list?list} of paintings.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\sr{dictionary}{Dictionaries} give ``keyed access'' to collections of data: we can
+access a \sn{dictionary?value} via its \sn{key}. In particular, we do not have to remember
+the position of a \sn{dictionary?value} in the collection.
+\end{nparagraph}
+
+\begin{frame}[fragile,label=slide.dictionaries2]
+\frametitle{Interacting with Dictionaries}
+\begin{itemize}
+\item
+\begin{sexample}[title=Dictionary operations]
+\begin{itemize}
+\item \lstinline|painting["title"]| returns the \sn{functions?value} for the \sn{key}
+\lstinline|"title"| in the dictionary \lstinline|painting|.
+\item \lstinline|painting["title"]="De Nachtwacht"| changes the \sn{dictionary?value} for
+the \sn{key} \lstinline|"title"| to its original Dutch \lec{or adds item
+\lstinline|"title": "De Nachtwacht"|}
+\end{itemize}
+\end{sexample}
+\item
+\begin{sexample}[title=Printing Keys and Values]
+\begin{center}\lstset{basicstyle=\small\sf}
+\begin{tabular}{p{3.1cm}@{\qquad}p{3.4cm}@{\qquad}p{3.7cm}}
+\sns{key} & \sns{dictionary?value} & \sn{key}/\sn{dictionary?value} \sns{pair?pair}\\
+\lstinputmhlisting[linerange=1-2]{python/code/fordict.py} &
+\lstinputmhlisting[linerange=3-4]{python/code/fordict.py} &
+\lstinputmhlisting[linerange=5-6]{python/code/fordict.py}
+\end{tabular}\vspace*{-1.5em}
+\end{center}
+\end{sexample}
+\item More \sn{dictionary} commands:
+\begin{itemize}
+\item \lstinline|if $\pmetavar{key}$ in $\pmetavar{dict}$| checks whether
+$\pmetavar{key}$ is a \sn{key} in $\pmetavar{dict}$.
+\item \lstinline|painting.pop("title")| removes the \lstinline|"title"| item from
+\lstinline|painting|.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Note that \lstinline|thisdict.keys| has a short form: we can just iterate over the keys
+using \lstinline|for x in thisdict:|.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

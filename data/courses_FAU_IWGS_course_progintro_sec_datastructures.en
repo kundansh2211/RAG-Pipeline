@@ -1,0 +1,24 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/datastructures.en
+
+\begin{document}
+\begin{sfragment}[id=sec.datastructures]{Numbers, Characters, and Strings}
+File: [courses/Jacobs/GenICT/course]{datastructures/snip/intro.en}
+
+File: [courses/Jacobs/TDM/course]{digdocs/slides/digitalobjects.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/numbers.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/unicode.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/stringcomp.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/more-functions.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/regexp.en}
+
+File: [courses/FAU/IWGS/course]{progintro/sec/ds-exercises.en}
+
+\end{sfragment}
+\end{document}
+

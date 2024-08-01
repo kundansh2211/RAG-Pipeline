@@ -1,0 +1,41 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/css-ex.en
+
+\begin{document}
+\begin{smodule}{css-ex}
+\lstset{language=HTML,basicstyle=\footnotesize\sf}
+
+\begin{nparagraph}
+We explore this new technology by way of an example. We rework the title box from the
+\sn{html?HTML} example above -- after all treating author/affiliation information as headers is
+not very semantic. Here we use \lstinline|div| and \lstinline|span| elements, which are
+generic block-level (i.e. paragraph-like) and inline containers, which can be styled via
+\sn{CSS?CSS} classes. The class \lstinline|titlebox| is represented by the \sn{CSS?CSS}
+\sn{CSS?selector} \lstinline|.titlebox|.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{A Styled \sn{html?HTML} Title Box (Source)}
+\begin{itemize}
+\item
+\begin{sexample}[title=A style Title Box,for=HTML]
+The \sn{html?HTML} source:
+\lstinputmhlisting[firstline=2,lastline=14]{www/code/styled-html.html}
+And the \sn{CSS?CSS} file referenced in the \lstinline|<link>| element in
+\sn{file-type?line} 3:
+\lstinputmhlisting{www/code/style.css}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+And here is the result in the \sr{web browser}{browser}:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{A Styled \sn{html?HTML} Title Box (Result)}
+\cmhgraphics[archive=courses/Jacobs/GenCS/course,width=9cm]{www/PIC/styled-html}
+\end{frame}
+\end{smodule}
+\end{document}
+

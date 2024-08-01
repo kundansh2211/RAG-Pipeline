@@ -1,0 +1,39 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/dhtml-applications.en
+
+\begin{document}
+\begin{smodule}{dhtml-applications}
+
+\begin{nparagraph}
+Let us fortify our intuition about \sn{dynamic} \sn{html?HTML} by going into a more
+involved example. We use the \lstinline|toggle| method from the \sn{jQuery}
+layout layer to change visibility of a \sn{DOM} element. This method adds and removes a
+\lstinline|style="display:none"| attribute to an \sn{html?HTML} element and thus toggles
+the visibility in the \sr{web browser}{browser} \sn{window}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Applications and useful tricks in Dynamic \sn{html?HTML}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Observation]
+\sn{jQuery} is not limited to adding material to the \sn{DOM}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+Use \sn{jQuery} to change \sn{CSS} \sr{property}{properties} in the \sn{DOM} as
+well.
+\end{sparagraph}
+\item
+\begin{sexample}[title=Visibility,for={jQuery,CSS}]
+Hide document parts by setting \sn{CSS?CSS} \lstinline|style| \sns{xml-markup?attribute} to
+\lstinline|display:none|.
+\lstset{moreemph={[2]script,onClick},moreemph={[3]document.getElementById,style,display,toggleDiv}}
+\lstinputmhlisting[language=HTML,basicstyle=\footnotesize\sf,belowskip=0pt]
+{www/code/dropper.html}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

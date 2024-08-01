@@ -1,0 +1,24 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/css-fragment.en
+
+\begin{document}
+\begin{sfragment}[id=sec.css-fragment]{A small but useful Fragment of CSS}
+File: [courses/FAU/IWGS/course]{digdocs/snip/css-fragment.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/css-selectors.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/css-boxmodel.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/css-cascading.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/css-inheritance.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/snip/css-layout-trans.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/cssflow.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/responsive-design.en}
+
+\end{sfragment}
+\end{document}
+

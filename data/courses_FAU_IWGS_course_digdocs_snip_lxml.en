@@ -1,0 +1,36 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/lxml.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{digdocs/slides?tree-computing}
+\usemodule[courses/Jacobs/GenCS/course]{xml/slides?xml-trees}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/strings?python-strings}
+
+We have claimed above that the \sn{tree?tree} nature of \sn{xml?XML} documents is one of
+the main advantages. Let us now see how \python makes good on this promise.
+\end{sparagraph}
+
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{xml/slides?xml-trees}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+\usemodule[courses/Jacobs/GenCS/course]{xml/slides?xpath-nutshell}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/strings?python-strings}
+
+We use the external \lstinline|lxml| library~\cite{lxml:on} in \useSGvar{courseacronym},
+even though the \python distribution includes the standard library
+\lstinline|ElementTree| library~\cite{ElementTree:on} for dealing with
+\sn{xml?XML}. \lstinline|lxml| subsumes \lstinline|ElementTree| and extends it by
+functionality for \sn{xpath-nutshell?XPath} and can \sn{parse} a large set of
+\sn{html?HTML} documents even though they are not valid \sn{xml?XML}. This
+makes \lstinline|lxml| a better basis for practical applications in the Digital
+Humanities.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Acknowledgements]
+Many of the examples and the flow of exposition in the next slides has been adapted from
+the \lstinline|lxml| tutorial~\cite{lxml:tutorial:on}.
+\end{sparagraph}
+\end{document}
+
+

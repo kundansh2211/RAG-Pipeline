@@ -1,0 +1,57 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/slides/natnums-computer.en
+
+\begin{document}
+\begin{smodule}{natnums-computer}
+\usemodule[smglom/computing]{mod?computer}
+\usemodule[smglom/computing]{mod?memory}
+
+\usestructure{pns}
+\begin{nparagraph}
+So far so good, let us see how this would be represented on a \sn{computer}:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Unary Natural Numbers on the Computer}
+\begin{itemize}
+\item
+\begin{sdefinition}
+We call the representation of \sns{natural number} by slashes on a
+surface the \definame{unary natural numbers}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Question]
+How do we represent them on a \sn{computer}?\lec{not bones or walls}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+If we have a \sr{memory}{memory bank} of $n$ \sr{bit}{binary digits},
+initialize all by 0, represent each slash by a 1 from the right.
+\end{sparagraph}
+\item
+\begin{sexample}
+\sr{memory}{Memory bank} with 32 \sn{pns-common?binary} \sns{digit},
+representing the number 11.
+\begin{center}\setlength\tabcolsep{2pt}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&1&1&1&1&1&1&1\\\hline
+\end{tabular}
+\end{center}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Problem]
+For realistic \sn{arithmetics?arithmetic} we need better number representations than the
+\sn{unary natural numbers}\lec{e.g. for representing the number of EU citizens
+\hateq 100 000 pages of $\sslash!$}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}[style=clarification,for=positional number system]
+The problem with the \sr{unary natural numbers}{unary number system} is that it uses
+enormous amounts of space, when writing down large numbers. We obviously need a better
+representation.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,47 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/grading.en
+
+\begin{document}
+\begin{smodule}{IWGS-grading}
+\begin{nparagraph}
+Now we come to a topic that is always interesting to the students: the grading scheme:
+The short story is that things are complicated. We have to strike a good balance between
+what is didactically useful and what is allowed by Bavarian law and the FAU rules.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Assessment, Grades}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Grading Background/Theory]
+Only modules are graded! \lec{by the law}
+\begin{itemize}
+\item Module ``DH-Einführung'' (DHE) \hateq courses IWGS1/2, DH-Einführung.
+\item DHE module grade \ergo pass/fail determined by ``portfolio'' \hateq collection
+of contributions/assessments.
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Assessment Practice]
+The IWGS assessments in the ``portfolio'' consist of
+\begin{itemize}
+\item weekly homework assignments,\lec{practice IWGS concepts and tools}
+\item 60 minutes exam directly after lectures end: \useSGvar{examdate}.
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Retake Exam]
+60 min exam at the end of the exam break.\lec{\useSGvar{retakedate}}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Homework assignments, %quizzes,
+and end-semester exam may seem like a lot of work -- and indeed
+they are -- but you will need practice (getting your hands dirty) to master the
+concepts. We will go into the details next.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

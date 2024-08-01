@@ -1,0 +1,12 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/webapps-intro.en
+
+\begin{document}
+\begin{sfragment}[id=sec.webapps-intro]{Web Applications: The Idea}
+File: [courses/Jacobs/GenCS/course]{www/slides/webapps.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/webapp-anatomy.en}
+
+\end{sfragment}
+\end{document}
+

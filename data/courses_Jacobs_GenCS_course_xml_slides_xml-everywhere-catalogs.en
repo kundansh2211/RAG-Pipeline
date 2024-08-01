@@ -1,0 +1,34 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xml-everywhere-catalogs.en
+
+\begin{document}
+\begin{smodule}{xml-everywhere-catalogs}
+
+\begin{nparagraph}
+Now we see an example of an \sn{xml?XML} file that is used for communicating data in a
+machine-readable, but human-understandable way.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\sn{xml?XML} is Everywhere (E.g. Catalogs)}
+\begin{itemize}
+\item
+\begin{sexample}[title=The NYC Galleries Catalog,id=ex.mygalleries,for=XML]
+A public \sn{xml?XML} file at\\ \url{https://data.cityofnewyork.us/download/kcrm j9hh/application/xml}
+\lstinputmhlisting[language=XML,linerange=1-18,basicstyle=\small\sf]{xml/code/museums-nyc.xml}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\usestructure{tree}
+\begin{nparagraph}
+\usemodule{xml/slides?xml-trees} This \sn{xml?XML} uses an ad hoc
+\sr{markup format}{markup language}: Every \lstinline|<museum>|
+\sr{XML element}{element} represents one museum in New York City
+(NYC). Its \sn[post=ren]{child} convey the detailed information as ``key value
+pairs''.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

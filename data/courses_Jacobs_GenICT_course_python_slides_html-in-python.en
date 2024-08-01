@@ -1,0 +1,45 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/html-in-python.en
+
+\begin{document}
+\begin{smodule}{html-python}
+\lstset{language=python,aboveskip=2pt,belowskip=0pt}
+
+\begin{nparagraph}
+In \useSGvar{courseacronym}, we use \python for \sn{programming}, so let
+us see how we would generate \sn{html?HTML} pages in \python.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{What would we do in \python}
+\begin{itemize}
+\item
+\begin{sexample}[title=HTML Hello World in \python]
+\lstinputmhlisting{python/code/hello.py}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Problem 1]
+Most \sn{web-page?web page} content is static (page head, text blocks,
+etc.)
+\end{sparagraph}
+\item
+\begin{sexample}[title=Python Solution]
+\ldots use \python \sns{subroutine?function}:
+\lstinputmhlisting[basicstyle=\small\sf]{python/code/hellofun.py}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Problem 2]
+If \sn{html?HTML} markup dominates, want to use a \sn{html?HTML} editor (mode),
+\begin{itemize}
+\item e.g. for \sn{html?HTML} syntax highlighting/indentation/completion/checking
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+Embed \sn{program?program} snippets into \sn{html?HTML}.\lec{only execute these, copy rest}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

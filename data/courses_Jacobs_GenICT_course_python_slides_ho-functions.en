@@ -1,0 +1,52 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/ho-functions.en
+
+\begin{document}
+\begin{smodule}{python-ho-functions}
+
+\begin{nparagraph}
+\Sns{anonymous function} do not seem like a big deal at first, but having a
+way to construct a \sn{subroutine?function} that can be used in any expression, is very powerful as we
+will see now.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Higher-Order Functions in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=def.ho-function]
+We call a \sn{subroutine?function} a \definame{higher order function}, \sn{iff} it
+takes a \sn{subroutine?function} as \sn{subroutine?argument}.
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=def.map-filter]
+\lstinline|map| and \lstinline|filter| are built-in
+\sns{higher order function} in \python. They take a
+\sn{subroutine?function} and a \sn{list?list} as arguments.
+\begin{itemize}
+\item \lstinline[mathescape]|map($f$,$L$)| returns the \sn{list} of
+$f$-\sns{functions?value} of the \sns{container?element} of $L$.
+\item \lstinline[mathescape]|filter($p$,$L$)| returns the \sn[pre=sub-]{list}
+$L'$ of those $l$ in $L$, such that \lstinline[mathescape]|$p$($l$)=True|.
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sexample}[id=map-filter.ex]
+Mapping over and filtering a \sn{list}
+\lstinputmhlisting{python/code/map-filter.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Admittedly, in our example, we could also have defined a named \sn{subroutine?function}
+\lstinline|twice| and then mapped that over \lstinline|li|:
+
+\lstinputmhlisting{python/code/map-twice.py}
+
+But the code from \sref{map-filter.ex} is more compact. Once we get used to the
+\sn{programming} idiom and understand it, it becomes quite readable.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

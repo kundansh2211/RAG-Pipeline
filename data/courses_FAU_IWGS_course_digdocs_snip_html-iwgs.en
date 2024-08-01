@@ -1,0 +1,25 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/html-iwgs.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{xml/slides?xml-nutshell}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+\usemodule[smglom/www]{mod?webapp}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+In \useSGvar{courseacronym}, we discuss \sn{html?HTML} mostly as a way to build
+interfaces of \sns{web application}. Therefore we will prioritize those
+aspects of \sn{html?HTML} that have to do with ``programming documents'' over the
+creation of nice-looking \sns{web page}. Therefore we will pick up the
+notion of nested text fragments marked up by well-bracketed tags and elements in
+\sref[file=digdocs/sec/html-trees.en]{sec.html-trees} and generalize these ideas to
+\sn{xml?XML} as a general representation paradigm for semi-structured data in
+\sref[file=digdocs/sec/xml-overview.en]{sec.xml-overview}.
+
+We will also postpone the discussion of \sr{CSS}{cascading stylesheets}, which have
+evolved as the dominant technology for the specification of presentation (layout,
+colors, and fonts) for marked-up documents, to \sref[fallback=the chapter on web
+applications,file=webapps/sec/webapps.en]{sec.webapps}.
+\end{sparagraph}
+\end{document}
+

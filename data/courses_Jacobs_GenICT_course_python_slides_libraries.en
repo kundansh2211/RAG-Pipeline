@@ -1,0 +1,57 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/libraries.en
+
+\begin{document}
+\begin{smodule}{python-libraries}
+\lstset{language=python}
+
+\begin{nparagraph}
+It is very natural to want to share successful and useful code with others, be it
+collaborators in a larger project or company, or the respective community at
+large. Given what we have learned so far this is easy to do: we write up the code in a
+(collection of) \python files, and make them available for download. Then
+others can simply load them via the \lstinline|import| command.
+\end{nparagraph}
+
+\begin{frame}[label=slide.libraries,fragile]
+\frametitle{\python Libraries}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea]
+\Sns{subroutine?function}, \sn[post=es]{oop-class?class}, and
+\sns{oop?method} are re usable, so why not package them up for others to
+use.
+\end{sparagraph}
+\item
+\begin{sdefinition}
+A \python \definame{library} is a \python \sn{file} with a collection of
+\sns{subroutine?function}, \sr{oop-class?class}{classes}, and \sns{oop?method}. It
+can be \definame[post=ed]{import} (i.e. loaded and interpreted as a \python program
+fragment) via the \lstinline|import| command.
+\end{sdefinition}
+\item There are $\geq 150.000$ libraries for \python \lec{\hateq packages on
+\url{http://pypi.org}}
+\begin{itemize}
+\item search for them at \url{http://pypi.org}\lec{e.g. 815 packages for ``music''}
+\item \sn{install} them with \lstinline[mathescape]|pip install $\pmetavar{package name}$|
+\item look at how they were done\lec{all have links to source code}
+\item maybe even contribute back (report issues, improve code,
+\ldots)\lec{\sr{floss-intro?FLOSS}{open source}}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The \python community is an \sr{floss-intro?FLOSS}{open source} community,
+therefore many developers organize their code into libraries and license them under
+\sr{floss-intro?FLOSS}{open source} \sns{licensing?license}.
+
+Software repositories like PyPI (the \python Package Index) collect
+(references to) and make them for the package manager \lstinline|pip|, a
+\sn{program?program} that downloads \python libraries and
+\sns{install} them on the local machine where the \lstinline|import| command
+can find them.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

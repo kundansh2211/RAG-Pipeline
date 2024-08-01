@@ -1,0 +1,40 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/slides/pns-arith.en
+
+\begin{document}
+\begin{smodule}{pns-arith}
+
+\begin{frame}
+\frametitle{Arithmetics in Positional Number Systems}
+\begin{itemize}
+\item For \sn{natarith?arithmetic} just follow the rules from elementary school\lec{for
+the right base}
+\item Tom Lehrer's ``New Math'': \url{https://www.youtube.com/watch?v=DfCJgC2zezw}
+\item
+\begin{sexample}
+\begin{center}
+\begin{tabular}{l@{\qquad\qquad\qquad}l}
+\Sn{natarith?addition} \sn{positional-number-system?base} 4 &
+\sn{pns-common?binary} \sn{natarith?multiplication}\\
+$\begin{array}{llll}
+& 1 & 2  & 3 \\
++  & 1_1 & 2_1  & 3 \\\hline
+& 3 & 1 & 2
+\end{array}$ &
+$\begin{array}{llllll}
+&&1&0&1&0\\
+&*&&1&1&0\\\hline
+&&0&0&0&0\\
+&1&0&1&0&\\
+1&0&1&0&&\\\hline
+1&1&1&1&0&0
+\end{array}
+$
+\end{tabular}
+\end{center}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

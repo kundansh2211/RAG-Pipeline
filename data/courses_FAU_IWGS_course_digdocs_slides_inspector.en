@@ -1,0 +1,25 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/inspector.en
+
+\begin{document}
+\begin{smodule}{inspector}
+
+\begin{frame}[label=slide.inspector]
+\frametitle{But how to find out what the \sn{web browser} really sees?}
+\begin{itemize}
+\item \sn{CSS?CSS} has many interesting \sn{inheritance} \sns{CSS?rule}.
+\item
+\begin{sdefinition}
+The \definame{page inspector} tool gives you an overview over the internal state of
+the \sn{web browser} and its \sn{DOM}.
+\end{sdefinition}
+\item
+\begin{sexample}[for=page inspector]
+\cmhgraphics[width=11cm]{digdocs/PIC/inspector}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

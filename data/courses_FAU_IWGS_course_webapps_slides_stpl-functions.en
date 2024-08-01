@@ -1,0 +1,47 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/stpl-functions.en
+
+\begin{document}
+\begin{smodule}{stpl-functions}
+
+\begin{nparagraph}
+So now, we have template files. But experience shows that \sns{template file} can be
+quite redundant; in fact, the better designed the \sn{web site} we want to to create,
+the more fragments of the \sns{template file} we want to reuse in multiple places --
+with and without adaptions to the particular use case.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Template Functions}
+\begin{itemize}
+\item<1->
+\begin{sdefinition}
+\sn{stpl-files?stpl python} supplies the \definame[post=s]{template function}
+\begin{enumerate}
+\item \lstinline[mathescape]|include($\pmetavar{tpl}$,$\pmetavar{vars}$)|, where
+$\pmetavar{tpl}$ is another \sn{template file} and $\pmetavar{vars}$ a set of
+variable declarations (for $\pmetavar{tpl}$).
+\item \lstinline[mathescape]|defined($\pmetavar{var}$)| for checking definedness
+$\pmetavar{var}$
+\item \lstinline[mathescape]|get($\pmetavar{var}$,$\pmetavar{default}$)|: return the
+value of $\pmetavar{var}$, or $\pmetavar{default}$.
+\item \lstinline[mathescape]|setdefault($\pmetavar{name}$,$\pmetavar{val}$)|
+\end{enumerate}
+\end{sdefinition}
+\item<2->
+\begin{sexample}[title=Including Header and Footer in a template,for=template function]
+In a coherent \sn{web-site?web site}, the
+\sns{web-page?web page} often share common header and footer parts. Realize
+this via the following page template:
+\lstinputmhlisting{webapps/code/headerfooter.tpl}
+\end{sexample}
+\item<3->
+\begin{sexample}[title=Dealing with Variables and Defaults,for=template function]
+\lstinputmhlisting{webapps/code/defaults.tpl}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

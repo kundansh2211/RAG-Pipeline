@@ -1,0 +1,65 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/contact-form-data.en
+
+\begin{document}
+\begin{smodule}{contact-form-data}
+
+\begin{frame}[label=slide.contact-form-data1]
+\frametitle{Completing the Contact Form}
+\begin{itemize}
+\item \sn{bottle-stpl?bottle WSGI} has functionality (\lstinline|request.GET| and
+\lstinline|request.POST|) to decode the \sn{html-form-data?form data} from a
+\sn{http-protocol?HTTP request}. \lec{so we do not have to worry about the details}
+\item
+\begin{sexample}[title=Submitting a Contact Form,for=HTML form]
+\lstset{basicstyle=\small\sf}
+We use a new route for \lstinline|contact-form-after.html| with a corresponding
+template file:
+\begin{center}
+\begin{tabular}{cc}
+\lstinline|contact.py| & \lstinline|contact-after.tpl|\\
+\parbox[c]{6.5cm}{\lstinputmhlisting{webapps/code/contact.py}}&
+\parbox[c]{4.5cm}{\lstinputmhlisting[linerange=4-14]{webapps/code/contact-after.tpl}}\\
+\end{tabular}
+\end{center}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Fortunately, the only remaining part: actually sending off an e-mail to the specified
+mailbox is very easy: using the \lstinline|smtplib| library we just create an e-mail
+message object, and then specify all the components.
+\end{nparagraph}
+
+\begin{frame}[label=slide.contact-form-data2]
+\frametitle{Sending off the e-mail}
+\begin{itemize}
+\item We still need to \sn{implement} the \lstinline|send-contact-email| function,
+\ldots
+\item Fortunately, there is a \python package for that: \lstinline|smtplib|,
+which makes this relatively easy.\lec{\sn{smtp-telnet?SMTP} \hateq
+\sr{smtp-telnet?SMTP}{Simple Mail Transfer Protocol}''}
+\item
+\begin{sexample}[title=Continuing,for=HTML form]
+\usemodule[smglom/cs]{mod?authentication}
+\usemodule[smglom/cs]{mod?encryption}
+\lstinputmhlisting{webapps/code/send-contact-email.py}
+
+Actually, this does not quite work yet as google requires \sn{authentication} and
+\sn{encryption}, \ldots; \lec{google for ``python smtplib gmail''}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Once we have the e-mail message object \lstinline|msg|, we open a
+``\sn{smtp-telnet?SMTP} connection'' \lstinline|s| send the message via its
+\lstinline|send_message| method and close the connection by
+\lstinline|s.quit())|. Again, the \python library hides all the gory details
+of the \sn{smtp-telnet?SMTP} protocol.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

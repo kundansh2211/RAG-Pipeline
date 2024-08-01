@@ -1,0 +1,18 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/sec/addressing.en
+
+\begin{document}
+\begin{sfragment}[id=www-addressing]{Addressing on the World Wide Web}
+File: [courses/Jacobs/GenCS/course]{www/snip/addressing-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/uri-nutshell.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/reluri.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/url-urn.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/iri-nutshell.en}
+
+\end{sfragment}
+\end{document}
+

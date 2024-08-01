@@ -1,0 +1,45 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xml-nutshell.en
+
+\begin{document}
+\begin{smodule}{xml-nutshell}
+
+\begin{frame}
+\frametitle{\sn{xml?XML} (E\red{X}tensible \red{M}arkup \red{L}anguage)}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Definame{xml?XML} (short for \definiendum{xml?XML}{Extensible Markup Language}) is
+a framework for \sns{document-type?markup format} for documents and
+structured \sn{data?data}.
+\begin{itemize}
+\item \Sn{tree} representation language\lec{begin/end brackets}
+\item Restrict instances by \emph{Doc. Type Def. (DTD)} or
+\emph{Schema}\lec{Grammar}
+\item Presentation markup by \emph{style files}\lec{XSL: \red{X}ML \red{S}tyle
+\red{L}anguage}
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Intuition]
+\usemodule{www/slides?html} \sn{XML} is extensible \sn{html?HTML}
+\end{sparagraph}
+\item logic annotation (\emph{markup}) instead of presentation!
+\item many tools available: \sns{parser}, \sn{compression}, data bases, \ldots
+\item \titleemph{conceptually}: transfer of \sns{tree?tree} instead of
+\sr{words?word}{strings}.
+\item details at \url{http://w3c.org}\lec{\sn{XML} is standardize by the WWW
+Consortium}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The idea of \sn{XML} being an ``extensible'' \sr{markup format}{markup
+language} may be a bit of a misnomer. It is made ``extensible'' by giving language
+designers ways of specifying their own vocabularies. As such \sn{XML} does not
+have a vocabulary of its own, so we could have also it an ``empty''
+\sr{markup format}{markup language} that can be filled with a vocabulary.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/snip/hello-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/nutshell?python-nutshell}
+
+Now that we understand our tools, we can wrote our first program: Traditionally, this is
+a ``hello-world program'' (see~\cite{HWC:on} for a description and a list of hello world
+programs in hundreds of languages) which just prints the string ``Hello World'' to the
+console. For \python, this is very simple as we can see below. We use this
+program to explain the concept of a program as a (text) file, which can be started from
+the console.
+\end{sparagraph}
+\end{document}
+

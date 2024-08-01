@@ -1,0 +1,60 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/slides/unicode-ucs.en
+
+\begin{document}
+\begin{smodule}{unicode-ucs}
+
+\begin{nparagraph}
+The goal of the $\unicode$ standard is to cover all the worlds scripts (past, present,
+and future) and provide \sn{efficient} encodings for them. The only scripts in regular
+use that are currently excluded are fictional scripts like the elvish scripts from the
+Lord of the Rings or Klingon scripts from the Star Trek series.
+\end{nparagraph}
+
+\begin{nparagraph}
+An important idea behind $\unicode$ is to separate concerns between standardizing the
+\sn{character set} --- i.e. the set of encodable \sns{character?character} and the encoding itself.
+\end{nparagraph}
+
+\begin{frame}[label=slide.unicode-ucs]
+\frametitle{Unicode and the Universal Character Set}
+\begin{itemize}
+\item
+\begin{sdefinition}[title=Twin Standards]
+A scalable architecture for representing all the worlds writing systems:
+\begin{itemize}
+\item The \definiendum{UCS}{universal character set} (\definame{UCS}) defined by the
+ISO/IEC 10646 International Standard, is a standard set of
+\definame[post=s]{character?character} upon which many \sns{character encoding}
+are based.
+\item The \definame{unicode} standard defines a set of standard \sns{character
+encoding}, rules for normalization, decomposition, collation, rendering and
+bidirectional display order.
+\end{itemize}
+\end{sdefinition}\vspace*{-1em}\strut
+\item
+\begin{sdefinition}
+Each \sn{UCS} \sn{character?character} is identified by an \sn[pre=un]{ambiguous}
+name and an \sn{natural number} called its \definame{code point}.
+\end{sdefinition}
+\item
+\begin{sparagraph}
+The \sn{UCS} has 1.1 million \sns{code point} and nearly 100\;000 \sns{character?character}.
+\end{sparagraph}
+\item
+\begin{sdefinition}
+Most (non-Chinese) \sns{character?character} have \sns{code point} in
+$\integerinterval{1}{65536}$: the \definiendum{BMP}{basic multilingual plane}
+(\definame{BMP}).
+\end{sdefinition}
+\item
+\begin{sdefinition}[title=Notation,for={unicodepoint,ucsname}]
+For \sns{code point} in the (\sn{BMP}), four \sn{hexadecimal} digits are used,
+e.g. $\unicodepoint{0058}$ for the \sn{character?character}
+$\ucsname{LATIN CAPITAL LETTER X}$;
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

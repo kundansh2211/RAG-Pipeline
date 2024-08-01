@@ -1,0 +1,59 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/css-boxmodel.en
+
+\begin{document}
+\begin{smodule}{css-boxmodel}
+
+\begin{nparagraph}
+We now come to one of the most important conceptual parts of \sn{CSS?CSS}: the \sr{CSS box model}{box
+model}. Understanding it is essential for dealing with \sn{CSS?CSS} based layouts.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{The \sr{CSS box model}{CSS Box Model}}
+\begin{itemize}
+\item
+\begin{sdefinition}
+For layout, \sn{CSS?CSS} considers all \sn{html?HTML} \sr{XML element}{elements} as
+\definame[post=es]{box}, i.e. document areas with a given \definame{width} and
+\definame{height}. A \sn{CSS?CSS} \sn{box} has four parts:
+\begin{itemize}
+\item \definame{content}: the content of the \sn{box}, where text and \sr{digital
+image}{images} appear.
+\item \definame{padding}: clears an area around the \sn{content}. The \sn{padding}
+is transparent.
+\item \definame{border} a border that goes around the \sn{padding} and \sn{content}.
+\item \definame{margin} clears an area outside the \sn{border}. The \sn{margin} is
+transparent.
+\end{itemize}
+The latter three wrap around the \sn{content} and add to its size.
+\end{sdefinition}
+\item All parts of a \sn{box} can be customized with suitable \sn{CSS?CSS}
+\sr{CSS?property}{properties}:
+\begin{center}
+\parbox[c]{5cm}{\lstinputmhlisting[linerange=4-10,linewidth=5cm]{digdocs/code/css-boxmodel.html}}
+\qquad\parbox[c]{4cm}{\mhgraphics[width=5cm]{digdocs/PIC/css-boxmodel}}
+\end{center}
+Note that the overall \sn{width} of the \sn{CSS?CSS} \sn{box} is
+$\natplus{300,\nattimes[cdot]{2,3,25}} = 450$ pixels.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+As a summary of the above, we can visualize the \sn{CSS box model} in a
+diagram:
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{The \sr{CSS box model}{CSS Box Model}: Diagram}
+\begin{itemize}
+\item
+\begin{sdefinition}
+The following diagram summarizes the \definame{CSS box model}
+\cmhtikzinput{digdocs/tikz/css-boxmodel}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

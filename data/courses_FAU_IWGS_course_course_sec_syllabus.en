@@ -1,0 +1,24 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/syllabus.en
+
+\begin{document}
+\begin{sfragment}[id=sec.syllabus]{Recorded Syllabus}
+\begin{sparagraph}
+In this \currentsectionlevel, we record the progress in the form of a ``recorded
+syllabus'', i.e. a syllabus that is created after the fact rather than before. For the
+topics planned for this course, see
+\sref[fallback=above,file=course/sec/contents.en]{sec.course-contents}.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Syllabus -- \IWGSsemester \IWGSyear]
+\usemodule[smglom/voll-ki]{mod?ALeA}
+The recorded syllabus for this semester is in the course page in the \ALeAname{} system
+at \url{https://courses.voll-ki.fau.de/course-home/iwgs-1}. The table of contents in the
+\useSGvar{courseacronym} notes at \url{https://courses.voll-ki.fau.de} indicates the
+material covered to date in yellow.
+
+The recorded syllabus of IWGS-2 can be found at \url{https://courses.voll-ki.fau.de/course-home/iwgs-2}
+\end{sparagraph}
+\end{sfragment}
+\end{document}
+

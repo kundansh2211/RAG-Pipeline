@@ -1,0 +1,28 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+\usemodule[smglom/computing]{mod?installation}
+\usemodule[smglom/www]{mod?webserver}
+
+In this \currentsectionlevel we will see how we can turn \sn{html?HTML} pages into
+\sr{WWW}{web}-based \sns{appsys-software?application} that can be used without having to
+\sn{install} additional software.
+
+For that we discuss the basics of the \sr{WWW}{World Wide Web} as the
+\sn{client server architecture} that enables such
+\sns{appsys-software?application}. Then we take up the contact form example
+to get an understanding how information is passed between \sn{client} and
+\sn{server} in \sn{interactive} \sns{web page}. This motivates a
+discussion of server-side computation of \sns{web page} that can react to
+such information. A discussion of \sn{CSS?CSS} styling shows how to make the
+\sns{web page} that are generated can be made visually appealing. We
+conclude the \currentsectionlevel by a discussion of client-side computation that allows
+making \sns{web page} \sn{interactive} without recurring to the
+\sr{web server}{server}.
+\end{sparagraph}
+\end{document}
+
+

@@ -1,0 +1,16 @@
+Archive: talks/voll-ki
+Filepath: snip/kr-experiment.en
+
+\begin{document}
+\begin{sparagraph}[title=Knowledge Representation Experiment]
+\usemodule[talks/sTeX]{slides?sTeX-approach}
+\usemodule[mkohlhase/talks]{planetary/slides/adp?activedocs-paradigm}
+This document is also an experiment in knowledge representation. Under the hood, it uses
+the \sTeXformat package \cite{Kohlhase:ulsmf08,sTeX:github:on}, a
+\TeXformat/\LaTeXformat extension for semantic markup, which allows to export the
+contents into \sr{ADP}{active documents} that adapt to the
+reader and can be instrumented with services based on the explicitly represented meaning
+of the documents.
+\end{sparagraph}
+\end{document}
+

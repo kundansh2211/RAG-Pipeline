@@ -1,0 +1,57 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: programming/slides/files.en
+
+\begin{document}
+\begin{smodule}{files}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?operating-system}
+We now fix some of the nomenclature surrounding \sns{file?file} and
+\sns{file-system?file system} provided by most
+\sr{OS}{operating system}. Most \sns{programming language} provide
+their own bindings that allow to manipulate \sns{file?file}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.files]
+\frametitle{Secondary (Disk) Storage; Files, Folders, etc.}
+\begin{itemize}
+\item\inputref[smglom/computing]{mod/file.en}
+\item
+\begin{sdefinition}
+\Sns{file?file} are identified by a \definame{file-system?file name}
+which usually consists of a \definame{file-system?base name} and an
+\definame{file-system?extension} separated by a dot character.
+
+\Sns{file} are managed by a \definame{file-system?file system} which organize them
+hierarchically into named \definiendum{hfs?directory}{folders} and locate them by a
+\definame{path}; a sequence of \sr{hfs?directory}{folder} names. The
+\sn{file-system?file name} and the \sn{path} together fully identify a
+\sn{file?file}.
+\end{sdefinition}
+\item Some \sns{file-system?file system} restrict the characters allowed in
+the \sn{file-system?file name} and/or lengths of the
+\sn{file-system?base name} or \sn{file-system?extension}.
+\item
+\begin{sdefinition}
+Once a \sn{file?file} has been \definame[post=ed]{files?open}, the
+\sn{cpu?CPU} can \definame{write} to it and \definame{read} from it. After use
+a \sn{file} should be \definiendum{close}{closed} to protect it from accidental
+\sns{read} and \sns{write}.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?stream}
+\usemodule[smglom/computing]{mod?operating-system}
+Many \sr{OS}{operating systems} use \sns{file?file} as a primary computational metaphor,
+also treating other resources like \sns{file?file}. This leads to an abstraction of
+\sns{file?file} called \sns{stream?stream}, which encompass \sns{file?file} as well as
+e.g. keyboards, printers, and the screen, which are seen as objects that can be read
+from (keyboards) and written to (e.g. screens). This practice allows flexible use of
+\sns{program?program}, e.g. re-directing a the (screen) output of a \sn{program?program}
+to a \sn{file?file} by simply changing the output \sn{stream?stream}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

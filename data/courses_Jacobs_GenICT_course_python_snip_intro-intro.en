@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/snip/intro-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/nutshell?python-nutshell}
+
+In this \currentsectionlevel we will introduce the basics of the \python
+language. \python will be used as our means to express
+\sns{algorithm} and to explore the computational properties of the objects
+we introduce in \useSGvar{courseacronym}.
+\end{sparagraph}
+\end{document}
+

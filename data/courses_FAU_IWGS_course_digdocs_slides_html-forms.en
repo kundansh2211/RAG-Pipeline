@@ -1,0 +1,59 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/html-forms.en
+
+\begin{document}
+\begin{smodule}{html-forms}
+\lstset{language=HTML}
+\usemodule{webapps/slides?html-form-data}
+
+\begin{nparagraph}
+After designing the functional (what are the text blocks) structure of the contact form,
+we will need to understand the \sn[post=ion]{interact} with the contact form.
+\end{nparagraph}
+
+\begin{frame}[label=slide.html-forms,fragile]
+\frametitle{\sn{html?HTML} Forms}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Question]
+But how does the \sn[post=ion]{interact} with the contact form really work?
+\end{sparagraph}
+\item
+\begin{sdefinition}
+A \definame{HTML form} is realized by the \sn{html?HTML} \lstinline|form| \sns{tag},
+which groups the layout and \definame[post=s]{input element}:
+\begin{itemize}
+\item \lstinline[mathescape]|<form action="$\pmetavar{URI}$"...>| specifies the
+\definame{form action} \lec{as a \sn{web page} address}.
+\item the \definame{input element} \lstinline|<input type="submit" .../>| triggers the \sn{form action}: it
+sends the \definame{html-form-data?form data} to \sn{web page} specified
+there.
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sexample}[title=In the Contact Form,for=HTML form]
+We send the request
+\lstinputmhlisting{digdocs/code/contact-get.url}
+
+We current ignore the \sn{form data} (the part after the \lstinline|?|)
+\end{sexample}
+\item We will come to the full story of processing actions later.
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Unfortunately, we can only see what the browser sends to the server at the current state
+of play, not what the server does with the information. But we will get to this when we
+take up the example again.
+\end{nparagraph}
+
+\begin{nparagraph}
+For the moment, we made use of the fact that we can just specify the page
+\lstinline|contact-after.html|, which the browser displays next. That ignores the
+\sn{query} part and -- via a \lstinline|form| \sns{tag} of its own gets the user back
+to the original contact form.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

@@ -1,0 +1,76 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/bottle-routing.en
+
+\begin{document}
+\begin{smodule}{bottle-routing}
+\lstset{language=python,mathescape}
+
+\begin{frame}[label=slide.bottle-routing,fragile]
+\frametitle{The Web Server and Routing in Bottle WSGI}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\definiendum[root=serverside routing]{routing}{Serverside routing} (or simply
+\definame{routing}) is the process by which a \sn{webserver?web server}
+connects a \sn{http-protocol?HTTP} request to a function (called the
+\definame{route function}) that provides a \sn{URI?web resource}. A single
+\sn{URI?URI} \sn{URI?path}/\sn{route function} pair is called a
+\definame{route}.
+\end{sdefinition}
+\item The \sn{bottle-stpl?bottle WSGI} \sn{python-libraries?library} supplies
+a simple \python \sn{webserver?web server} and \sn{routing}.
+\begin{itemize}
+\item The \lstinline[mathescape]|run($\pmetavar{keys}$)| function starts the
+\sn{webserver?web server} with the configuration given in $\pmetavar{keys}$.
+\item The \lstinline|@route| decorator connects \sn{URI?path}
+\sns{URI?component} to \python
+\sn{subroutine?function} that return \sr{words?word}{strings}.
+\end{itemize}
+\item
+\begin{sexample}[title=A Hello World route,id=bottle-hello.ex,for=routing]
+\ldots for \sn{localhost} on \sn{ports?port} 8080
+\lstinputmhlisting{webapps/code/hello.py}
+
+This \sn{webserver?web server} answers to \sn{http-protocol?HTTP}
+\sn{http-protocol?GET} requests for the \sn{URL?URL}
+\url{http://localhost:8080/hello}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Let us understand \sref{bottle-hello.ex} \sn{file-type?line} by
+\sn{file-type?line}: The first line imports the
+\sn{python-libraries?library}. The second establishes a \sn{route} with the
+name \lstinline|hello| and binds it to the \python function \lstinline|hello|
+in \sn{file-type?line} 3 and 4. The last \sn{file-type?line} configures the
+\lstinline|bottle| \sn{webserver?web server}: it serves content via the
+\sn{http-protocol?HTTP} protocol for \sn{localhost} on \sn{ports?port}
+8080.
+
+So, if we run the program from \sref{bottle-hello.ex}, then we obtain a
+\sn{webserver?web server} that will answer \sn{http-protocol?HTTP}
+\lstinline|GET| requests to the \sn{URL?URL} \url{http://localhost:8080/hello} with
+a \sn{http-protocol?HTTP} answer with the content \lstinline|Hello IWGS!|.
+
+To keep the example simple, we have only returned a text string; A realistic application
+would have generated a full \sn{html?HTML} page (see below).
+\end{nparagraph}
+
+\begin{nparagraph}
+In the last \sn{file-type?line} of \sref{bottle-hello.ex}, we have also configured
+the \lstinline|bottle| \sn{webserver?web server} to use ``\sr{debugger}{debug
+mode}'', which is very helpful during early development.
+
+In this mode, the \lstinline|bottle| \sn{webserver?web server} is much more verbose
+and provides helpful \sn[post=ging]{debug} information whenever an
+\sr{bug}{error occurs}. It also disables some optimisations that might get in your
+way and adds some checks that warn you about possible misconfiguration.
+
+Note that \sr{debugger}{debug mode} should be disabled in a production server for
+\sn{efficiency}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

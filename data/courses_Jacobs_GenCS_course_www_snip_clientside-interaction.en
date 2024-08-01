@@ -1,0 +1,25 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/clientside-interaction.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/math]{mod?mathematics}
+\usemodule{www/slides?www-concepts}
+\usemodule[smglom/computing]{mod?interpreter}
+One of the main advantages of moving documents from their traditional ink-on-paper form
+into an electronic form is that we can \sn{interact} with them more directly. But there
+are many more \sn[post=ions]{interact} than just browsing \sns{hyperlink} we can think
+of: adding margin notes, looking up definitions or translations of particular words, or
+copy-and-pasting \sn{mathematical} formulae into a computer algebra system. All of them
+(and many more) can be made, if we make documents programmable. For that we need three
+ingredients:
+\begin{enumerate}[\em i)]
+\item a machine-accessible representation of the document structure, and
+\item a program \sn{interpreter} in the \sn{web browser}, and
+\item a way to send \sns{program} to the \sr{web browser}{browser}
+together with the document.
+\end{enumerate}
+We will sketch the \sn{WWW} solution to this in the following.
+\end{sparagraph}
+\end{document}
+

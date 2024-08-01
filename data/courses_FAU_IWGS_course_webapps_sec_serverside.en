@@ -1,0 +1,22 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/serverside.en
+
+\begin{document}
+\begin{sfragment}[id=sec.serverside]{Generating HTML on the Server}
+File: [courses/Jacobs/GenCS/course]{www/snip/serverside-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/serverside-scripting.en}
+
+File: [courses/FAU/IWGS/course]{webapps/snip/bottle-trans.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/bottle.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/stpl.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/cookies.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/contact-form.en}
+
+\end{sfragment}
+\end{document}
+

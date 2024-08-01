@@ -1,0 +1,19 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/ds-exercises.en
+
+\begin{document}
+\begin{nfragment}[id=sec.ds-exercises]{Exercises}
+\includeproblem{progintro/prob/basiclists.en}
+\includeproblem{progintro/prob/certainInput.en}
+\includeproblem{progintro/prob/dictionaries.en}
+\includeproblem{progintro/prob/egyptNumerals.en}
+\includeproblem{progintro/prob/discuss-encodings.en}
+\includeproblem{progintro/prob/egyptText1.en}
+\includeproblem{progintro/prob/egyptText2.en}
+\includeproblem{progintro/prob/basechange.en}
+\includeproblem{progintro/prob/regex1.en}
+\includeproblem{progintro/prob/regex2.en}
+\includeproblem{progintro/prob/regex3.en}
+\end{nfragment}
+\end{document}
+

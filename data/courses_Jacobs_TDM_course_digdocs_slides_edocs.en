@@ -1,0 +1,30 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/edocs.en
+
+\begin{document}
+\begin{smodule}{edocs}
+
+\begin{frame}
+\frametitle{Electronic Documents}
+\begin{itemize}
+\item\inputref[smglom/computing]{mod/electronic-document.en}
+\item
+\begin{sexample}[for=electronic document]
+\usemodule[smglom/computing]{mod?digital-image}
+\usemodule[smglom/computing]{mod?PDF}
+\sns{PDF}, \sns{digital image}, videos, audio recordings, web pages, \ldots
+\end{sexample}
+\item\inputref[smglom/computing]{mod/digital-text.en}
+\item\inputref[smglom/computing]{mod/text-types.en}
+\item
+\begin{sexample}[for={plain text,formatted text}]
+\usemodule[courses/FAU/IWGS/course]{progintro/slides?jupyterLab}
+\usemodule[smglom/computing]{mod?PDF}
+\python \sns{program?program} are \sn{plain text},
+\sns{PDF} are \sr{formatted text}{formatted}.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

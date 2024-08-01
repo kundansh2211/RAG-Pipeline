@@ -1,0 +1,33 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/webapps.en
+
+\begin{document}
+\begin{smodule}{webapps}
+
+\begin{frame}[label=slide.webapps]
+\frametitle{Web Applications: Using Applications without Installing}
+\begin{itemize}
+\item\inputref[smglom/www]{mod/webapp.en}
+\item
+\begin{sexample}[id=webapps.ex,for=web application]
+Commonly used \sns{web application} include
+\begin{itemize}
+\item \url{http://ebay.com}; auction pages are generated from databases.
+\item \url{http://www.weather.com}; weather information generated from weather
+feeds.
+\item \url{http://slashdot.org}; aggregation of news feeds/discussions.
+\item \url{http://github.com}; source code hosting and project management.
+\item \url{http://studon}; course/exam management from students records.
+\end{itemize}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Common Traits]
+\usemodule[smglom/computing]{mod?database}
+Pages generated from \sns{database} and external feeds, content
+submission via \sn{html?HTML} forms, file upload, dynamic \sn{html?HTML}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

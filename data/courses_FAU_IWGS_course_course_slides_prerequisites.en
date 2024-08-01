@@ -1,0 +1,23 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/prerequisites.en
+
+\begin{document}
+\begin{frame}
+\frametitle{Prerequisites}
+\begin{itemize}
+\ifSGvar{semester}{2}{%
+\item
+\begin{sparagraph}[title=Formal Prerequisite]
+IWGS-1\lec{If you did not take it, read the notes}
+\end{sparagraph}}
+\item
+\begin{sparagraph}[title=General Prerequisites]
+Motivation, interest, curiosity, hard work.\\
+\red{nothing else}!\ifSGvar{semester}{2}{\lec{apart from IWGS-1}\par}
+We will teach you all you need to know
+\end{sparagraph}
+\item You can do this course if you want! \lec{we will help}
+\end{itemize}
+\end{frame}
+\end{document}
+

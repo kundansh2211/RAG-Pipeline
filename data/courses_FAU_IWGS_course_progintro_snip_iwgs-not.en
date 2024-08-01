@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/snip/iwgs-not.en
+
+\begin{document}
+\begin{sparagraph}[style=start,title=Note]
+\usemodule[smglom/computing]{mod?programming}
+that \useSGvar{courseacronym} is not a \sn{programming} course, which concentrates
+on teaching a \sn{programming language} in all it gory detail. Instead we want to
+use the \useSGvar{courseacronym} lectures to introduce the necessary concepts and use
+the tutorials to introduce additional language features based on these.
+\end{sparagraph}
+\end{document}
+

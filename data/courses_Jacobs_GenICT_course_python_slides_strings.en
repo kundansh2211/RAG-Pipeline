@@ -1,0 +1,82 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/strings.en
+
+\begin{document}
+\begin{smodule}{python-strings}
+\lstset{language=python}
+
+\begin{frame}
+\frametitle{Playing with Strings and Characters in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=pystring.def]
+\python \definame[post=s]{string} are sequences of $\unicode$
+\sns{character?character}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[style=warning]
+In \python, \sns{character?character} are just strings of length 1.
+\end{sparagraph}
+\item \lstinline|ord| gives the \sn{UCS} \sn{code point} of the
+\sn{character?character}, \lstinline|chr| \sn{character?character} for a number.
+\item
+\begin{sexample}[title=Playing with Characters,id=lcuc-chars.ex]\strut
+\lstinputmhlisting{python/code/chars.py}
+\end{sexample}
+\item Strings can be accessed by \sns{range}
+\lstinline[mathescape]|[$i$:$j$]| \lec{\lstinline[mathescape]|[$i$]| \hateq
+\lstinline[mathescape]|[$i$:$i$]|}
+\item
+\begin{sexample}[id=cap.ex]
+Taking strings apart and re-assembling them.
+\lstinputmhlisting{python/code/cap.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+
+\sref{cap.ex} may be difficult to understand at first. It is a \sn{programming}
+technique called \sn{recursion?recursion},
+i.e. \sns{subroutine?function} that call themselves from within their
+\sn{subroutine?body} to solve problems by utilizing solutions to smaller instances
+of the same problem. \Sn{recursion?recursion} can lead to very concise code, but
+requires some getting-used-to.
+
+In \sref{cap.ex} we define a \sn{subroutine?function} \lstinline|cap| that given a
+string \lstinline|s| returns a string that is constructed by combining the first
+\sn{character?character} uppercased by the \lstinline|uc| \sn{subroutine?function} with
+the result of calling the \lstinline|cap| \sn{subroutine?function} on the rest
+string -- \lstinline|s| without the first \sn{character?character}. The base case for
+the recursion is the empty string, where \lstinline|uc| also returns the empty string.
+So let us see what happens in our test \lstinline|cap('iwgs')|:
+
+\noindent\lstinline|cap('iwgs')| \ergo
+\lstinline|uc('i')+cap('wgs')| \ergo
+\lstinline|'I'+uc('w')+cap('gs')| \ergo
+\lstinline|'I'+'W'+uc('g')+cap('s')| \ergo\\
+\lstinline|'IW'+'G'+cap('s')| \ergo
+\lstinline|'IWG'+uc('s')+cap('')| \ergo
+\lstinline|'IWG'+'S'+cap('')| \ergo
+\lstinline|'IWGS'+''| \ergo
+\lstinline|'IWGS'|
+\end{nparagraph}
+
+
+\begin{nparagraph}[style=warning]
+\sref{lcuc-chars.ex} and \sref{cap.ex} (or any other examples in this lecture) are not
+production code, but didactically motivated -- to show you what you can do with the
+objects we are presenting in \python.
+
+In particular, if we ``lowercase'' a character that is already lowercase -- e.g. by
+\lstinline|lc('c')|, then we get out of the range of the \sn{UCS} code: the answer
+is \lstinline|\x83|, which is the \sn{character?character} with the \sn{hexadecimal}
+code \lstinline|83| (\sn{decimal} \lstinline|131|), i.e. the \sn{character?character}
+\lstinline|No Break Here|.
+
+In production code (as used e.g. in the \python \lstinline|lower| method), we
+would have some range checks, etc.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

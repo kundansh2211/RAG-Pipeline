@@ -1,0 +1,52 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/comments.en
+
+\begin{document}
+\begin{smodule}{python-comments}
+\lstset{language=python}
+
+\begin{nparagraph}
+Before we go on to learn more basic \python operators and
+\sns{information-processing-system?instruction}, we address an important general topic:
+\sns{comment} in \sn{program?program} code.
+\end{nparagraph}
+
+\begin{frame}[fragile,label=slide.comments]
+\frametitle{\Sns{comment} in \python}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=Generally]
+It is highly advisable to insert \sns{comment} into your \sns{program?program},
+\begin{itemize}
+\item especially, if others are going to read your code, \lec{TAs/graders}
+\item you may very well be one of the ``others'' yourself, \lec{in a year's time}
+\item writing \sns{comment} first helps you organize your thoughts.
+\end{itemize}
+\end{sparagraph}
+\item \Sns{comment} are ignored by the \python \sn{interpreter?interpreter} but are
+useful information for the \sn{programmer}.
+\item<2->
+\begin{sparagraph}[title=In \python]
+there are two kinds of \sns{comment}
+\begin{itemize}
+\item Single \sn{file-type?line} \sns{comment} start with a \lstinline|#|
+\item Multiline \sns{comment} start and end with three quotes\lec{single or double:
+\lstinline|"""| or \lstinline|'''|}%|
+\end{itemize}
+\end{sparagraph}
+\item<3->
+\begin{sparagraph}[title=Idea]
+Use \sns{comment} to
+\begin{itemize}
+\item specify what the intended input/output behavior of the \sn{program?program} or fragment
+\item give the idea of the \sn{algorithm} achieves this behavior.
+\item specify any assumptions about the context \lec{do we need some file to exist}
+\item document whether the \sn{program?program} changes the context.
+\item document any known limitations or errors in your code.
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

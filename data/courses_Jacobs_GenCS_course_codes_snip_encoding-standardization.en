@@ -1,0 +1,19 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/snip/encoding-standardization.en
+
+\begin{document}
+\begin{sparagraph}
+It is important to understand that encoding and decoding of characters is an activity
+that requires standardization in multi-device settings -- be it sending a file to the
+printer or sending an e-mail to a friend on another continent. Concretely, the
+recipient wants to use the same character mapping for decoding the sequence of bits
+as the sender used for encoding them -- otherwise the message is garbled.
+
+We observe that we cannot just specify the encoding table in the transmitted document
+itself, (that information would have to be en/decoded with the other content), so we
+need to rely document-external external methods like standardization or encoding
+negotiation at the meta-level. In this \currentsectionlevel we will focus on the former.
+\end{sparagraph}
+
+\end{document}
+

@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: doccomp/snip/regexp.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{doccomp/slides?regexp-practical}
+Now we can come to the main topic of this \currentsectionlevel: \sr{regex}{regular
+expressions}, A domain-specific language for describing string
+patterns. \sr{regex}{Regular expressions} are extremely useful, but also quite
+cryptical at first. They should be understood as a powerful tool, that relies on a
+language with a very limited vocabulary. It is more important to understand what this
+tool can do and how it works in principle than memorizing the vocabulary -- that can be
+looked up on demand.
+\end{sparagraph}
+\end{document}
+

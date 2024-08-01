@@ -1,0 +1,43 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/bottle-route-filters.en
+
+\begin{document}
+\begin{smodule}{bottle-route-filters}
+\lstset{language=python}
+
+\begin{nparagraph}
+Often we want to have more control over the routes. We can get that by filters, which
+can involve data types and/or \sr{regex}{regular expressions}.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Restricting Dynamic Routes}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \sn{bottle-dynamic-routes?dynamic route} can be restricted by a
+\definame{route filter} to make it more selective.
+\end{sdefinition}
+\item
+\begin{sexample}[title=Concrete Filters,for=route filter]
+We use \lstinline|:int| for integers and
+\lstinline[mathescape]|:re:$\pmetavar{regex}$| for
+\sr{regex}{regular expressions}
+\lstinputmhlisting{webapps/code/route-filter.py}
+
+Different route filters allow to classify paths and treat them differently.
+\end{sexample}
+\item
+\begin{sparagraph}[title=Note,name=multi-wildcards.note]
+Multiple \sns{bottle-dynamic-routes?named wildcard} are also possible,
+in a \sn{dynamic route}; with and without \sr{route filter}{filters}
+\end{sparagraph}
+\item
+\begin{sexample}[for=multi-wildcards.note,title=A route with two wildcards,for=named wildcard]
+\lstinputmhlisting{webapps/code/multi-wildcard.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

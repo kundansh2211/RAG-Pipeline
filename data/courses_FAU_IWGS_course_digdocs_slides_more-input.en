@@ -1,0 +1,35 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/more-input.en
+
+\begin{document}
+\begin{smodule}{more-input}
+
+\begin{frame}[label=slide.more-input]
+\frametitle{More useful types of Input fields}
+\begin{itemize}
+\item<1-> Radio buttons: \lstinline|type="radio"| \lec{grouped by \lstinline|name| \sn{xml-markup?attribute}}
+\begin{onlyenv}<1>\centering
+\parbox[c]{9cm}{\lstinputmhlisting[linerange=5-7,linewidth=9cm,basicstyle=\footnotesize\sf]{digdocs/code/more-input.html}}
+\quad\fbox{\parbox[c]{1.5cm}{\mhgraphics[width=1.5cm]{digdocs/PIC/radio}}}
+\end{onlyenv}
+\item<2-> Check boxes: \lstinline|type="checkbox"|
+\begin{onlyenv}<2>
+\lstinputmhlisting[linerange=10-13,linewidth=10cm,basicstyle=\footnotesize\sf]{digdocs/code/more-input.html}
+\fbox{\mhgraphics[width=8cm]{digdocs/PIC/checkbox}}
+\end{onlyenv}
+\item<3-> File selector dialogs\lec{\sn[post=ion]{interact} is system specific
+here for MacOS Mojave}
+\begin{onlyenv}<3>
+\lstinputmhlisting[linerange=15-15,linewidth=9cm,basicstyle=\footnotesize\sf]{digdocs/code/more-input.html}
+\fbox{\mhgraphics[width=8cm]{digdocs/PIC/fileselector}}
+\end{onlyenv}
+\item<4-> Drop down menus: \lstinline|select| and \lstinline|option|\\
+\begin{onlyenv}<4>\centering
+\parbox[c]{6.4cm}{\lstinputmhlisting[linerange=17-23,linewidth=6.4cm,basicstyle=\footnotesize\sf]{digdocs/code/more-input.html}}
+\quad\fbox{\parbox[c]{2cm}{\mhgraphics[width=2cm]{digdocs/PIC/select}}}
+\end{onlyenv}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,230 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/slides/ASCII.en
+
+\begin{document}
+\begin{smodule}{ASCII}
+\symdef{ASCIINUL}{\comp{\mathtt{NUL}}}
+\symdef{ASCIISOH}{\comp{\mathtt{SOH}}}
+\symdef{ASCIISTX}{\comp{\mathtt{STX}}}
+\symdef{ASCIIETX}{\comp{\mathtt{ETX}}}
+\symdef{ASCIIEOT}{\comp{\mathtt{EOT}}}
+\symdef{ASCIIENQ}{\comp{\mathtt{ENQ}}}
+\symdef{ASCIIACK}{\comp{\mathtt{ACK}}}
+\symdef{ASCIIBEL}{\comp{\mathtt{BEL}}}
+\symdef{ASCIIBS}{\comp{\mathtt{BS}}}
+\symdef{ASCIIHT}{\comp{\mathtt{HT}}}
+\symdef{ASCIILF}{\comp{\mathtt{LF}}}
+\symdef{ASCIIVT}{\comp{\mathtt{VT}}}
+\symdef{ASCIIFF}{\comp{\mathtt{FF}}}
+\symdef{ASCIICR}{\comp{\mathtt{CR}}}
+\symdef{ASCIISO}{\comp{\mathtt{SO}}}
+\symdef{ASCIISI}{\comp{\mathtt{SI}}}
+\symdef{ASCIIDLE}{\comp{\mathtt{DLE}}}
+\symdef{ASCIIDCone}{\comp{\mathtt{DC1}}}
+\symdef{ASCIIDCtwo}{\comp{\mathtt{DC2}}}
+\symdef{ASCIIDCthree}{\comp{\mathtt{DC3}}}
+\symdef{ASCIIDCfour}{\comp{\mathtt{DC4}}}
+\symdef{ASCIINAK}{\comp{\mathtt{NAK}}}
+\symdef{ASCIISYN}{\comp{\mathtt{SYN}}}
+\symdef{ASCIIETB}{\comp{\mathtt{ETB}}}
+\symdef{ASCIICAN}{\comp{\mathtt{CAN}}}
+\symdef{ASCIIEM}{\comp{\mathtt{EM}}}
+\symdef{ASCIISUB}{\comp{\mathtt{SUB}}}
+\symdef{ASCIIESC}{\comp{\mathtt{ESC}}}
+\symdef{ASCIIFS}{\comp{\mathtt{FS}}}
+\symdef{ASCIIGS}{\comp{\mathtt{GS}}}
+\symdef{ASCIIRS}{\comp{\mathtt{RS}}}
+\symdef{ASCIIUS}{\comp{\mathtt{US}}}
+\symdef{ASCIIspace}{\operatorname{\textvisiblespace}}
+\symdef{ASCIIexclamation}{\comp{\mathtt{!}}}
+\symdef{ASCIIdquot}{\comp{\mathtt{\char34}}}
+\symdef{ASCIIhash}{\comp{\mathtt{\#}}}
+\symdef{ASCIIdollar}{\comp{\mathtt{\$}}}
+\symdef{ASCIIpercent}{\comp{\mathtt{\char37}}}
+\symdef{ASCIIampersand}{\comp{\mathtt{\&}}}
+\symdef{ASCIIquote}{\comp{\mathtt{'}}}
+\symdef{ASCIIobrack}{\comp{\mathtt{(}}}
+\symdef{ASCIIcbrack}{\comp{\mathtt{)}}}
+\symdef{ASCIIstar}{\comp{\mathtt{*}}}
+\symdef{ASCIIplus}{\comp{\mathtt{+}}}
+\symdef{ASCIIcomma}{\comp{\mathtt{,}}}
+\symdef{ASCIIdash}{\comp{\mathtt{-}}}
+\symdef{ASCIIslash}{\comp{\mathtt{/}}}
+\symdef{ASCIIzero}{\comp{\mathtt{0}}}
+\symdef{ASCIIone}{\comp{\mathtt{1}}}
+\symdef{ASCIItwo}{\comp{\mathtt{2}}}
+\symdef{ASCIIthree}{\comp{\mathtt{3}}}
+\symdef{ASCIIfour}{\comp{\mathtt{4}}}
+\symdef{ASCIIfive}{\comp{\mathtt{5}}}
+\symdef{ASCIIsix}{\comp{\mathtt{6}}}
+\symdef{ASCIIseven}{\comp{\mathtt{7}}}
+\symdef{ASCIIeight}{\comp{\mathtt{8}}}
+\symdef{ASCIInine}{\comp{\mathtt{9}}}
+\symdef{ASCIIcolon}{\comp{\mathtt{:}}}
+\symdef{ASCIIsemicolon}{\comp{\mathtt{;}}}
+\symdef{ASCIIless}{\comp{\mathtt{<}}}
+\symdef{ASCIIeq}{\comp{\mathtt{=}}}
+\symdef{ASCIIgreater}{\comp{\mathtt{>}}}
+\symdef{ASCIIquestionmark}{\comp{\mathtt{?}}}
+\symdef{ASCIIat}{\comp{\mathtt{@}}}
+\symdef{ASCIIA}{\comp{\mathtt{A}}}
+\symdef{ASCIIB}{\comp{\mathtt{B}}}
+\symdef{ASCIIC}{\comp{\mathtt{C}}}
+\symdef{ASCIID}{\comp{\mathtt{D}}}
+\symdef{ASCIIE}{\comp{\mathtt{E}}}
+\symdef{ASCIIF}{\comp{\mathtt{F}}}
+\symdef{ASCIIG}{\comp{\mathtt{G}}}
+\symdef{ASCIIH}{\comp{\mathtt{H}}}
+\symdef{ASCIII}{\comp{\mathtt{I}}}
+\symdef{ASCIIJ}{\comp{\mathtt{J}}}
+\symdef{ASCIIK}{\comp{\mathtt{K}}}
+\symdef{ASCIIL}{\comp{\mathtt{L}}}
+\symdef{ASCIIM}{\comp{\mathtt{M}}}
+\symdef{ASCIIN}{\comp{\mathtt{N}}}
+\symdef{ASCIIO}{\comp{\mathtt{O}}}
+\symdef{ASCIIP}{\comp{\mathtt{P}}}
+\symdef{ASCIIQ}{\comp{\mathtt{Q}}}
+\symdef{ASCIIR}{\comp{\mathtt{R}}}
+\symdef{ASCIIS}{\comp{\mathtt{S}}}
+\symdef{ASCIIT}{\comp{\mathtt{T}}}
+\symdef{ASCIIU}{\comp{\mathtt{U}}}
+\symdef{ASCIIV}{\comp{\mathtt{V}}}
+\symdef{ASCIIW}{\comp{\mathtt{W}}}
+\symdef{ASCIIX}{\comp{\mathtt{X}}}
+\symdef{ASCIIY}{\comp{\mathtt{Y}}}
+\symdef{ASCIIZ}{\comp{\mathtt{Z}}}
+\symdef{ASCIIdot}{\comp{\mathtt{.}}}
+\symdef{ASCIIosqbrack}{\comp{\mathtt{[}}}
+\symdef{ASCIIbackslash}{\comp{\mathtt{\textbackslash}}}
+\symdef{ASCIIcsqbrack}{\comp{\mathtt{]}}}
+\symdef{ASCIIcaret}{\comp{\mathtt{\textasciicircum}}}%
+\symdef{ASCIIunderscore}{\comp{\mathtt{\_}}}
+\symdef{ASCIIbackquote}{\comp{\mathtt{`}}}
+\symdef{ASCIIa}{\comp{\mathtt{a}}}
+\symdef{ASCIIb}{\comp{\mathtt{b}}}
+\symdef{ASCIIc}{\comp{\mathtt{c}}}
+\symdef{ASCIId}{\comp{\mathtt{d}}}
+\symdef{ASCIIe}{\comp{\mathtt{e}}}
+\symdef{ASCIIf}{\comp{\mathtt{f}}}
+\symdef{ASCIIg}{\comp{\mathtt{g}}}
+\symdef{ASCIIh}{\comp{\mathtt{h}}}
+\symdef{ASCIIi}{\comp{\mathtt{i}}}
+\symdef{ASCIIj}{\comp{\mathtt{j}}}
+\symdef{ASCIIk}{\comp{\mathtt{k}}}
+\symdef{ASCIIl}{\comp{\mathtt{l}}}
+\symdef{ASCIIm}{\comp{\mathtt{m}}}
+\symdef{ASCIIn}{\comp{\mathtt{n}}}
+\symdef{ASCIIo}{\comp{\mathtt{o}}}
+\symdef{ASCIIp}{\comp{\mathtt{p}}}
+\symdef{ASCIIq}{\comp{\mathtt{q}}}
+\symdef{ASCIIr}{\comp{\mathtt{r}}}
+\symdef{ASCIIs}{\comp{\mathtt{s}}}
+\symdef{ASCIIt}{\comp{\mathtt{t}}}
+\symdef{ASCIIu}{\comp{\mathtt{u}}}
+\symdef{ASCIIv}{\comp{\mathtt{v}}}
+\symdef{ASCIIw}{\comp{\mathtt{w}}}
+\symdef{ASCIIx}{\comp{\mathtt{x}}}
+\symdef{ASCIIy}{\comp{\mathtt{y}}}
+\symdef{ASCIIz}{\comp{\mathtt{z}}}
+\symdef{ASCIIobrace}{\comp{\mathtt{\{}}}
+\symdef{ASCIIvbar}{\comp{\mathtt{|}}}
+\symdef{ASCIIcbrace}{\comp{\mathtt{\}}}}
+\symdef{ASCIItilde}{\comp{\mathtt{\textasciitilde}}}
+\symdef{ASCIIDEL}{\comp{\mathtt{DEL}}}
+
+\symdef{bytesendingwith}[args=1]{\scriptscriptstyle\comp\cdots{#1}}
+\symdef{bytesstartingwith}[args=1]{\scriptscriptstyle{#1}\comp\cdots}
+
+\begin{nparagraph}
+The \sn{ASCII} code we will introduce here is one of the first standardized and widely
+used character encodings for a complete alphabet. It is still widely used today. The
+code tries to strike a balance between being able to encode a large set of
+\sns{character?character} and the representational capabilities in the time of punch
+cards (see below).
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{The ASCII Character Code}
+\begin{itemize}
+\item
+\begin{sdefinition}[for={ASCIINUL,ASCIISOH,ASCIISTX,ASCIIETX,ASCIIEOT,
+ASCIIENQ,ASCIIACK,ASCIIBEL,ASCIIBS,ASCIIHT,ASCIILF,
+ASCIIVT,ASCIIFF,ASCIICR,ASCIISO,ASCIISI,ASCIIDLE,ASCIIDCone,
+ASCIIDCtwo,ASCIIDCthree,ASCIIDCfour,ASCIINAK,ASCIISYN,
+ASCIIETB,ASCIICAN,ASCIIEM,ASCIISUB,ASCIIESC,ASCIIFS,ASCIIGS,
+ASCIIRS,ASCIIUS,ASCIIspace,ASCIIexclamation,ASCIIdquot,ASCIIhash,
+ASCIIdollar,ASCIIpercent,ASCIIampersand,ASCIIquote,ASCIIobrack,
+ASCIIcbrack,ASCIIstar,ASCIIplus,ASCIIcomma,ASCIIdash,ASCIIslash,
+ASCIIzero,ASCIIone,ASCIItwo,ASCIIthree,ASCIIfour,ASCIIfive,
+ASCIIsix,ASCIIseven,ASCIIeight,ASCIInine,ASCIIcolon,ASCIIless,
+ASCIIsemicolon,ASCIIeq,ASCIIgreater,ASCIIquestionmark,ASCIIat,
+ASCIIA,ASCIIB,ASCIIC,ASCIID,ASCIIE,ASCIIF,ASCIIG,ASCIIH,ASCIII,
+ASCIIJ,ASCIIK,ASCIIL,ASCIIM,ASCIIN,ASCIIO,ASCIIP,ASCIIQ,ASCIIR,
+ASCIIT,ASCIIU,ASCIIV,ASCIIW,ASCIIX,ASCIIY,ASCIIZ,ASCIIdot,ASCIIa,
+ASCIIosqbrack,ASCIIbackslash,ASCIIcsqbrack,ASCIIcaret,ASCIIb,
+ASCIIunderscore,ASCIIbackquote,ASCIIc,ASCIId,ASCIIe,ASCIIf,
+ASCIIg,ASCIIh,ASCIIi,ASCIIj,ASCIIk,ASCIIl,ASCIIm,ASCIIn,ASCIIo,
+ASCIIp,ASCIIq,ASCIIr,ASCIIt,ASCIIu,ASCIIv,ASCIIw,ASCIIx,ASCIIy,
+ASCIIz,ASCIIobrace,ASCIIvbar,ASCIIcbrace,ASCIItilde,ASCIIDEL,ASCIIS,ASCIIs,bytesendingwith,bytesstartingwith}]
+The \definiendum{ASCII}{American Standard Code for Information Interchange}
+(\sn{ASCII}) is a \sn{character encoding} that assigns
+\sns{character?character} to numbers 0 127.
+\begin{center}
+\begin{scriptsize}\setlength\tabcolsep{3pt}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}\hline
+Code   &$\bytesendingwith0$&  $\bytesendingwith1$&  $\bytesendingwith2$ & $\bytesendingwith3$ & $\bytesendingwith4$ & $\bytesendingwith5$
+& $\bytesendingwith6$ & $\bytesendingwith7$ & $\bytesendingwith8$ & $\bytesendingwith9$ & $\bytesendingwith{A}$
+& $\bytesendingwith{B}$ & $\bytesendingwith{C}$ & $\bytesendingwith{D}$ & $\bytesendingwith{E}$ & $\bytesendingwith{F}$\\\hline
+$\bytesstartingwith0$ & $\ASCIINUL$ & $\ASCIISOH$ & $\ASCIISTX$ & $\ASCIIETX$ & $\ASCIIEOT$
+& $\ASCIIENQ$ & $\ASCIIACK$ & $\ASCIIBEL$ & $\ASCIIBS$ & $\ASCIIHT$ & $\ASCIILF$
+& $\ASCIIVT$ & $\ASCIIFF$ & $\ASCIICR$ & $\ASCIISO$ & $\ASCIISI$\\\hline
+$\bytesstartingwith1$ & $\ASCIIDLE$ & $\ASCIIDCone$ & $\ASCIIDCtwo$ & $\ASCIIDCthree$ & $\ASCIIDCfour$
+& $\ASCIINAK$ & $\ASCIISYN$ & $\ASCIIETB$ & $\ASCIICAN$ & $\ASCIIEM$
+& $\ASCIISUB$ & $\ASCIIESC$ & $\ASCIIFS$ & $\ASCIIGS$ & $\ASCIIRS$ & $\ASCIIUS$\\\hline
+$\bytesstartingwith2$ & $\ASCIIspace$ & $\ASCIIexclamation$ & $\ASCIIdquot$ & $\ASCIIhash$
+& $\ASCIIdollar$ & $\ASCIIpercent$ & $\ASCIIampersand$ & $\ASCIIquote$ & $\ASCIIobrack$
+& $\ASCIIcbrack$ & $\ASCIIstar$ & $\ASCIIplus$ & $\ASCIIcomma$ & $\ASCIIdash$
+& $\ASCIIdot$ & $\ASCIIslash$\\\hline
+$\bytesstartingwith3$ & $\ASCIIzero$ & $\ASCIIone$ & $\ASCIItwo$ & $\ASCIIthree$ & $\ASCIIfour$
+& $\ASCIIfive$ & $\ASCIIsix$ & $\ASCIIseven$ & $\ASCIIeight$ & $\ASCIInine$
+& $\ASCIIcolon$ & $\ASCIIsemicolon$ & $\ASCIIless$ & $\ASCIIeq$ & $\ASCIIgreater$
+& $\ASCIIquestionmark$\\\hline
+$\bytesstartingwith4$ & $\ASCIIat$ & $\ASCIIA$ & $\ASCIIB$ & $\ASCIIC$ & $\ASCIID$ & $\ASCIIE$ & $\ASCIIF$
+& $\ASCIIG$ & $\ASCIIH$ & $\ASCIII$ & $\ASCIIJ$ & $\ASCIIK$ & $\ASCIIL$ & $\ASCIIM$
+& $\ASCIIN$ & $\ASCIIO$\\\hline
+$\bytesstartingwith5$ & $\ASCIIP$ & $\ASCIIQ$ & $\ASCIIR$ & $\ASCIIS$ & $\ASCIIT$ & $\ASCIIU$ & $\ASCIIV$
+& $\ASCIIW$ & $\ASCIIX$ & $\ASCIIY$ & $\ASCIIZ$ & $\ASCIIosqbrack$ & $\ASCIIbackslash$
+& $\ASCIIcsqbrack$ & $\ASCIIcaret$ & $\ASCIIunderscore$\\\hline
+$\bytesstartingwith6$ & $\ASCIIbackquote$ & $\ASCIIa$ & $\ASCIIb$ & $\ASCIIc$ & $\ASCIId$ & $\ASCIIe$ & $\ASCIIf$
+& $\ASCIIg$ & $\ASCIIh$ & $\ASCIIi$ & $\ASCIIj$ & $\ASCIIk$ & $\ASCIIl$ & $\ASCIIm$
+& $\ASCIIn$ & $\ASCIIo$\\\hline
+$\bytesstartingwith7$ & $\ASCIIp$ & $\ASCIIq$ & $\ASCIIr$ & $\ASCIIs$ & $\ASCIIt$ & $\ASCIIu$ & $\ASCIIv$
+& $\ASCIIw$ & $\ASCIIx$ & $\ASCIIy$ & $\ASCIIz$ & $\ASCIIobrace$ & $\ASCIIvbar$
+& $\ASCIIcbrace$ & $\ASCIItilde$ & $\ASCIIDEL$\\\hline
+\end{tabular}
+\end{scriptsize}
+\end{center}
+\end{sdefinition}
+\item
+\begin{sparagraph}
+The first 32 \sns{character?character} are control \sns{character?character} for \sn{ASCII} devices like
+printers.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Motivated by punch cards]
+The \sn{character?character} 0 ($\pnsinbase{0000000}2$ in
+\sn{pns-common?binary}) carries no information
+$\ASCIINUL$,\lec{used as dividers}\\
+\Sn{character?character} 127 (\hateq $\pnsinbase{1111111}2$) can be used for
+deleting (overwriting) last value\lec{cannot delete holes}
+\end{sparagraph}
+\item
+\begin{sparagraph}
+The \sn{ASCII} code was standardized in 1963 and is still prevalent in
+\sns{computer} today.\lec{but seen as US centric}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

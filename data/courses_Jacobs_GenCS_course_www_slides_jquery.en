@@ -1,0 +1,32 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/jquery.en
+
+\begin{document}
+\begin{smodule}{jquery}
+
+\begin{frame}
+\frametitle{\sn{jQuery}: Write Less, Do More}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Definame{jQuery} is a feature-rich \sn{javascript?JavaScript} \sn{library} that
+simplifies tasks like \sn{html?HTML} document traversal and manipulation, \sn{event}
+\sr{handle}{handling}, animation, and \sn{ajax?Ajax}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Using]
+\begin{itemize}
+\item Download from \url{https://jquery.com/download/}, save on your
+system\lec{remember where}
+\item integrate into your \sn{html?HTML} (usually in the \lstinline|<head>|)
+\lstinputmhlisting[language=html,linerange=1-1]{www/code/jquery-script.html} or
+from the \sn{internet} directly \lec{only works if you are online}
+\lstinputmhlisting[language=html,linerange=2-2,basicstyle=\small\sf]{www/code/jquery-script.html}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

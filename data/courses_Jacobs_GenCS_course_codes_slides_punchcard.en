@@ -1,0 +1,42 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/slides/punchcard.en
+
+\begin{document}
+\begin{smodule}{punchcard}
+
+\begin{nparagraph}
+Punch cards were the preferred medium for long-term storage of programs up to the
+late 1970s, since they could directly be produced by card punchers and automatically
+read by \sns{computer}.
+\end{nparagraph}
+
+\begin{frame}[label=slide.punchcard]
+\frametitle{A Punchcard}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=punchcard.def]
+A \definame{punch card} is a piece of stiff paper that contains digital
+information represented by the presence or absence of holes in predefined positions.
+\end{sdefinition}
+\item
+\begin{sexample}[for=punch card]
+This \sn{punch card} encodes the $\FortranLanguage$ statement
+\lstinline[language=Fortran]|Z(1) = Y + W(1)|
+\cmhgraphics[width=12cm]{codes/PIC/punchcard}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?interactive}
+
+Up to the 1970s, \sns{computer} were batch machines, where the
+\sn{programmer} delivered the \sn{program} to the operator (a person behind a
+counter who fed the programs to the \sn{computer}) and collected the printouts the
+next morning. Essentially, each punch card represented a single \sn{file-type?line}
+(80 \sns{character?character}) of \sn{program} code. Direct \sn[post=ion]{interact} with a
+\sn{computer} is a relatively young mode of operation.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

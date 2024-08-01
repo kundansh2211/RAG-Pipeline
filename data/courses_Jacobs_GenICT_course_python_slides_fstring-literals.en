@@ -1,0 +1,63 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/fstring-literals.en
+
+\begin{document}
+\begin{smodule}{python-fstring-literals}
+\lstset{language=python,aboveskip=2pt,belowskip=0pt}
+
+\begin{nparagraph}
+\Sn{string} \sns{literal} are convenient for creating simple
+\sn{string} \sns{object}. For more complex ones, we usually want to
+build them from pieces, usually using the \sns{variable?value} of
+\sns{program-variable?variable} or the results of \sns{subroutine?function}. This
+is what \sns{f string} are for in \python; we will cover that now.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Formatted String Literals (aka. f-strings)}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Problem]
+In a \sn{program} we often want to build \sns{string} from pieces
+that we already have lying around interspersed by other \sns{string}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Solution]
+Use \sn{string} \sn{words?concatenation}:
+\lstinputmhlisting{python/code/string-concat.py}
+\end{sparagraph}
+\item We can do better! \lec{mixing blanks and quotes is error-prone}
+\item
+\begin{sdefinition}
+\definiendum{f string}{Formatted string} \sns{literal}
+(aka. \definame[post=s]{f string}) are \sn{string} \sns{literal}
+can contain \python \sns{program-expression?expression} that will be
+\sr{evaluation}{evaluated} -- i.e. replaced with their \sns{value?value}
+at runtime.
+
+\Definame[post=s]{f string} are \sn[post=ed]{prefix} by \lstinline|f| or
+\lstinline|F|, the \sns{program-expression?expression} are delimited by
+curly braces, and the \sns{character?character} \{ and \} themselves are
+represented by \{\{ and \}\}.
+\end{sdefinition}
+\item
+\begin{sexample}[title=An f-String for IWGS]
+\lstinputmhlisting{python/code/f-string.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{F-String Example with a Dictionary}
+\begin{itemize}
+\item
+\begin{sexample}[title=An F-String with a Dictionary]
+\lstinputmhlisting[basicstyle=\small\sf]{python/code/f-dict.py}
+Note that we alternated the quotes here to avoid the following problems:
+\lstinputmhlisting[basicstyle=\small\sf]{python/code/f-dict-error.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

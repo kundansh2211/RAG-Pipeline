@@ -1,0 +1,56 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/flexary-kwargs.en
+
+\begin{document}
+\begin{smodule}{python-flexary-kwargs}
+
+\begin{nparagraph}  Finally, we can combine the ideas from the last two to make
+\sns{python-kwargs?keyword argument} flexary.
+\end{nparagraph}
+
+\begin{frame}[label=slide.flexary-kwargs1]
+\frametitle{Argument Passing in \python: Flexible Keyword Arguments}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=def.keyword-arguments]
+\python \sns{subroutine?function} can take
+\definame[post=s]{keyword argument}:\\
+if $k$ is a sequence of key/value pairs then
+\lstinline[mathescape]|def $f$($p_1$,$\ldots$,$p_n$,**$k$)|
+binds the keys to values in the body of $f$.
+\end{sdefinition}
+\item
+\begin{sexample}[for=keyword argument]
+\lstinputmhlisting{python/code/kwargs.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Just as for the flexible arity case above, we have an operator that unpacks argument
+structures, here a dictionary.
+\end{nparagraph}
+
+\begin{frame}[label=slide.flexary-kwargs2]
+\frametitle{Argument Passing in \python: Flexible Keyword Arguments (cont.)}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=def.dstar-operator]3
+The \definame{double star operator} unpacks a
+\sn{dictionary?dictionary} into a sequence of
+\sns{python-kwargs?keyword argument}.
+\end{sdefinition}
+\item
+\begin{sexample}[title=Passing around dates as dictionaries]
+\lstinputmhlisting{python/code/dstar-operator.py}
+\end{sexample}
+\item
+\begin{sexample}[title=Mixing formal and keyword arguments]
+\lstinputmhlisting{python/code/dict-arg.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

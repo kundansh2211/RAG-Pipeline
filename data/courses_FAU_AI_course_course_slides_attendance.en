@@ -1,0 +1,40 @@
+Archive: courses/FAU/AI/course
+Filepath: course/slides/attendance.en
+
+\begin{document}
+\begin{nparagraph}
+What I am going to go into next is -- or should be -- obvious, but there is an important
+point I want to make.
+\end{nparagraph}
+
+\begin{frame}[label=slide-attendance]
+\frametitle{Do I need to attend the lectures}
+\begin{itemize}
+\item<1-> Attendance is not mandatory for the \useSGvar{courseacronym} lecture
+\item<2-> There are two ways of learning \useSGvar{courseacronym}:\lec{both are OK, your mileage may vary}
+\begin{itemize}
+\item Approach \blue{B}: Read a \blue{Book}
+\ifSGvar{courseacronym}{AI}{\cite{RusNor:AIMA09} or follow~\cite{NorTru:itai}}
+\item Approach \blue{I}: come to the lectures, be \blue{involved}, interrupt me whenever you have a question.
+\end{itemize}
+The only advantage of \blue{I} over \blue{B} is that books do not answer questions
+\lec{yet! \ogre we are working on this in AI research}
+\item<3-> Approach \blue{S}: come to the lectures and \blue{sleep} \red{does not work}!
+\item<4->
+\begin{sparagraph}[title=I really mean it]
+If you come to class, be involved, ask questions, challenge me with comments, tell
+me about errors, \ldots
+\begin{itemize}
+\item<5-> I would much rather have a lively discussion than get through all the
+slides
+\item<6-> You learn more, I have more fun \lec{Approach \blue{B} serves as a backup}
+\item<7-> You may have to change your habits, overcome shyness, \ldots\lec{please do!}
+\end{itemize}
+\end{sparagraph}
+\item<8-> This is what I get paid for, and I am more expensive than most books\lec{get
+your money's worth}
+\end{itemize}
+\end{frame}
+\end{document}
+
+

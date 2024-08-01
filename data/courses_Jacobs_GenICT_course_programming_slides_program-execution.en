@@ -1,0 +1,79 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: programming/slides/program-execution.en
+
+\begin{document}
+\begin{smodule}{program-execution}
+
+\begin{nparagraph}
+In \sr{computer-science?CS}{computer science}, we distinguish two levels on which
+we can talk about \sns{program?program}. The more general is the level of
+\sns{algorithm?algorithm}, which is independent of the concrete
+\sn{program?programming language}. \Sns{algorithm} express the general ideas
+and flow of computation and can be realized in various languages, but are all equivalent
+-- in terms of the \sns{algorithm?algorithm} they \sn{implement}.
+\end{nparagraph}
+
+\begin{nparagraph}
+\usemodule[smglom/epistemology]{mod?ambiguity}
+As they are not bound to \sns{program?programming language} \sns{algorithm?algorithm}
+transcend them, and we can find them in our daily lives, e.g. as sequences of
+instructions like recipes, game instructions, and the like. This should make
+\sns{algorithm} quite familiar; the only difference of \sns{program?program} is that
+they are written down in an \sn[pre=un]{ambiguous} syntax that a \sn{computer} can
+understand.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Program Execution}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=algorithm.def]
+\Definame{algorithm?algorithm}: informal description of what to do (good enough for
+humans)
+\end{sdefinition}
+\item
+\begin{sexample}[id=recipe-alg,for=algorithm?algorithm]
+\end{sexample}
+\item
+\begin{sexample}
+\usemodule{python/slides/forloop?python-forloop}
+\Sn{program?program}: \sn{computer} processable version, e.g. in
+\python.
+
+\lstinputmhlisting{python/code/forloop3.py}
+\end{sexample}
+\item
+\begin{sdefinition}
+\Definame{interpreter?interpreter}: reads a \sn{program?program} and executes it
+directly
+\begin{itemize}
+\item special case: \sn{interactive} interpretation\lec{lets you experiment
+easily}
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sdefinition}
+\Definame{compiler?compiler}: translates a \sn{program?program} (the
+\definame{source}) into another \sn{program?program} (the \definame{program-execution?binary}) in
+a much simpler \sn{program?programming language} for optimized execution on
+hardware directly.
+\end{sdefinition}
+\item
+\begin{sassertion}[style=remark]
+\Sns{compiler?compiler} are \sn{efficient}, but more cumbersome for development.
+\end{sassertion}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+We have two kinds of \sns{program?programming language}: one which the
+\sn{cpu?CPU} can execute directly -- these are very very
+difficult for humans to understand and maintain -- and higher-level ones that are
+understandable by humans. If we want to use high-level languages -- and we do, then we
+need to have some way bridging the language gap: this is what \sns{compiler?compiler} and
+\sns{interpreter?interpreter} do.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

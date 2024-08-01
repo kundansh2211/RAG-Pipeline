@@ -1,0 +1,57 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/slides/jupyterNotebooks.en
+
+\begin{document}
+\begin{smodule}{jupyterNotebooks}
+
+\begin{nparagraph}
+We now come to the signature component of \sn{jupyterLab}: \sns{jupyter notebook}. They
+take the important practice of documenting \sn{computer-code?code} to a whole new
+level. Instead of just allowing \sns{commenting?comment} in \sn{program} \sns{file},
+they provide rich text cells, in which we can write elaborate text.
+\end{nparagraph}
+
+\begin{frame}[label=slide.jupyterNotebooks]
+\frametitle{Jupyter Notebooks}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Definame[post=s]{jupyter notebook} are documents that combine live runnable code
+with rich, narrative text (for comments and explanations).
+\end{sdefinition}
+\item
+\begin{sdefinition}
+\Sns{jupyter notebook} consist of \definame[post=s]{cell} which come in three forms:
+\begin{itemize}
+\item a \definame{raw cell} shows text as is,
+\item a \definame{markdown cell} interprets the contents as markdown text,\lec{later more}
+\item a \definame{code cell} interprets the contents as (e.g.  \python) code.
+\end{itemize}
+\end{sdefinition}
+\item \Sns{cell} can be executed by pressing ``shift enter''.\lec{Just ``enter'' gives
+a new line}
+\item
+\begin{sparagraph}[title=Idea]
+\Sns{jupyter notebook} act as a \sn{REPL?REPL}, just as $\idlethree$, but
+allows
+\begin{itemize}
+\item documentation in \sr{raw cell}{raw} and \sns{markdown cell}
+and
+\item changing and re-executing existing \sns{cell}.
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=slide.jupyterNotebooks2]
+\frametitle{Jupyter Notebooks}
+\begin{itemize}
+\item
+\begin{sexample}[title=Showing off Cells in a Notebook,for=jupyter notebook]
+\cmhgraphics[width=8cm]{progintro/PIC/cells-nb}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

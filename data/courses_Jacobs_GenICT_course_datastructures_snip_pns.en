@@ -1,0 +1,12 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/snip/pns.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{datastructures/slides?natural-numbers} The
+\sn{unary natural numbers} are very simple and direct, but they
+are neither space-efficient, nor easy to manipulate. Therefore we will use different
+ways of representing numbers in practice.
+\end{sparagraph}
+\end{document}
+

@@ -1,0 +1,52 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/html-form-data.en
+
+\begin{document}
+\begin{smodule}{html-form-data}
+
+\begin{nparagraph}
+Let us now look at the data transmission mechanism in more detail to see what is
+actually transmitted and how.
+\end{nparagraph}
+
+\begin{frame}[label=slide.html-form-data,fragile]
+\frametitle{\sn{html?HTML} Forms and Form Data Transmission}
+\begin{itemize}
+\item
+\begin{sparagraph}
+We specify the \sn{http-protocol?HTTP} communication of \sn{html?HTML} forms in detail.
+\end{sparagraph}
+\item
+\begin{sdefinition}
+The \sn{html?HTML} \lstinline|form| element groups the layout and \lstinline|input|
+elements:
+\begin{itemize}
+\item \lstinline[mathescape]|<form action="$\pmetavar{URI}$" method="$\pmetavar{req}$">|
+specifies the \sn{html-forms?form action} in
+terms of a \sn{http-protocol?HTTP request} $\pmetavar{req}$ to the \sn{URI?URI}
+$\pmetavar{URI}$.
+\item The \definame{form data} consists of a string $\pmetavar{data}$ of the form
+\lstinline[mathescape]|$n_1$=$v_1$&$\cdots$&$n_k$=$v_k$|, where
+\begin{itemize}
+\item $n_i$ are the values of the \lstinline|name| attributes of the input fields
+\item and $v_i$ are their values at the time of submission.
+\end{itemize}
+\item \lstinline|<input type="submit" .../>| triggers the \sn{html-forms?form
+action}: it composes a \sn{http-protocol?HTTP request}
+\begin{itemize}
+\item If $\pmetavar{req}$ is \lstinline|get| (the default), then the browser
+issues a \sn{http-protocol?GET} request
+$\pmetavar{URI}$\lstinline[mathescape]|?$\pmetavar{data}$|.
+\item If $\pmetavar{req}$ is \lstinline|post|, then the browser
+issues a \sn{http-protocol?POST} request to
+$\pmetavar{URI}$ with document content $\pmetavar{data}$.
+\end{itemize}
+\end{itemize}
+\end{sdefinition}
+\item We now also understand the form action, but should we use \sn{http-protocol?GET} or
+\sn{http-protocol?POST}.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

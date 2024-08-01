@@ -1,0 +1,22 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: doccomp/slides/regexpal.en
+
+\begin{document}
+\begin{smodule}{regexpal}
+\begin{nparagraph}
+As we have seen \sr{regex}{regular expressions} can become quite cryptic and long
+(cf. e.g. \sref[file=doccomp/slides/regexp-ex.en]{complex-regexp.ex}), so we need help
+in developing them. One way is to use one of the many regexp testers online
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Playing with Regular Expressions}
+\begin{itemize}
+\item If you want to play with \sns{regex}, go e.g. to
+\url{http://regex101.com}
+\cmhgraphics[width=10.5cm]{doccomp/PIC/regex101}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

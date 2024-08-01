@@ -1,0 +1,31 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/raw-strings.en
+
+\begin{document}
+\lstset{language=python,aboveskip=2pt,belowskip=0pt}
+\begin{smodule}{raw-strings}
+
+\begin{frame}[fragile]
+\frametitle{Raw String Literals in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\Sn[post=ing]{prefix} a \sn{string} \sn{literal} with a \lstinline|r| or
+\lstinline|R| turns it into a \definame{raw string} \sn{literal}, in which
+backslashes have no special \sn{meaning}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]
+Using the backslash as an \sn{escape character} forces us to escape it as well.
+\end{sparagraph}
+\item
+\begin{sexample}
+The string \lstinline|"a\nb\nc"| has length five and three lines, but the string
+\lstinline|r"a\nb\nc"| only has length seven and only one line.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

@@ -1,0 +1,13 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/dom-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?html}
+\usemodule{www/slides?webbrowser}
+
+To understand client-side computation, we first need to understand the way
+\sr{web browser}{browsers} render \sn{html?HTML} pages.
+\end{sparagraph}
+\end{document}
+

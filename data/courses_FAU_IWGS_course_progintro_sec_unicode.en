@@ -1,0 +1,24 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/unicode.en
+
+\begin{document}
+\begin{sfragment}[id=sec.character-encodings]{Characters and their Encodings: ASCII and UniCode}
+File: [courses/Jacobs/GenICT/course]{datastructures/snip/encoding-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/snip/encoding-standardization.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/slides/ASCII.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/slides/punchcard.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/slides/ASCII-problems.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/slides/unicode-ucs.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/slides/utfcodes.en}
+
+File: [courses/Jacobs/GenCS/course]{codes/slides/unicode-emojis.en}
+
+\end{sfragment}
+\end{document}
+

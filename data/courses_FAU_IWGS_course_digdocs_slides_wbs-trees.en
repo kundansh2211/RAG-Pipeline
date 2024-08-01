@@ -1,0 +1,47 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/wbs-trees.en
+
+\begin{document}
+\begin{smodule}{wbs-trees}
+
+\begin{frame}
+\frametitle{A Common \sr{data structure}{Data Structure} for Well Bracketed
+Structures}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+In well-bracketed strutures, brackets contain two kinds of objects
+\begin{itemize}
+\item bracket-less objects
+\item well-bracketed structures themselves
+\end{itemize}
+\end{sassertion}
+\item
+\begin{sparagraph}[title=Idea,name=wbs]
+Write bracket pairs and bracket-less objects as nodes, connect with an arrow when
+contained.\lec{let arrows point downwards}
+\end{sparagraph}
+\item
+\begin{sexample}[for=wbs]
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+Let's try this for \sn{html?HTML} creating nodes top to bottom
+\begin{columns}
+\begin{column}{6.5cm}
+\lstinputmhlisting[language=HTML]{digdocs/code/html-generic2.html}
+\end{column}
+\qquad
+\begin{column}{3.5cm}
+\mhtikzinput{digdocs/tikz/html-tree}
+\end{column}
+\end{columns}
+\end{sexample}
+\item
+\begin{sdefinition}
+We call such structures \definame{tree?tree}.\lec{more on \sns{tree?tree} next}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

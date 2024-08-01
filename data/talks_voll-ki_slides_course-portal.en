@@ -1,0 +1,45 @@
+Archive: talks/voll-ki
+Filepath: slides/course-portal.en
+
+\begin{document}
+\begin{smodule}{course-portal}
+
+\begin{frame}
+\frametitle{\sn{VoLL-KI} Portal at \url{https://courses.voll-ki.fau.de}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Portal for \ALeA Courses]
+\url{https://courses.voll-ki.fau.de}
+\only<1>{\cmhgraphics[width=10cm]{PIC/course-portal}}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=AI-1 in \ALeA]
+{\footnotesize\url{https://courses.voll-ki.fau.de/course-home/ai-1}}
+\begin{itemize}
+\item All details for the course.
+\item recorded syllabus \lec{keep track of material covered in course}
+\item syllabus of the last semester (for over/preview)
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=\ALeA Status]
+The \ALeA system is deployed at FAU for over 1000 students taking six courses
+\begin{itemize}
+\item (some) students use the system actively \lec{our logs tell us}
+\item reviews are mostly positive/enthusiastic \lec{error reports pour in}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The \sn{VoLL-KI} course portal (and the AI-1) home page is the central entry point for
+working with the \sn{ALeA} system. You can get to all the components of the system,
+including two presentations of the course contents (notes- and slides-centric ones), the
+flash cards, the localized forum, and the quiz dashboard.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+
+

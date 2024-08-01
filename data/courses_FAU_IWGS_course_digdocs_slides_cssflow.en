@@ -1,0 +1,71 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/cssflow.en
+
+\begin{document}
+\begin{smodule}{cssflow}
+\lstset{language=HTML}
+
+\begin{nparagraph}
+Recall that \sn{CSS?CSS} is based on the \sn{css-boxmodel?box} model, which understands
+\sn{html?HTML} \sr{XML element}{elements} as \sn[post=es]{box}, and layouts as
+\sr{property}{properties} of \sr{css-boxmodel?box}{boxes} nested in
+\sr{css-boxmodel?box}{boxes} (as the corresponding \sn{html?HTML} \sr{XML element}{elements} are).
+
+If we can specify how inner \sn[post=es]{box} \sn{float} inside outer \sn[post=es]{box} -- via the
+\sn{CSS?CSS} \lstinline|float| \sns{CSS?rule}, we can already do quite a lot, as the
+following examples show.
+\end{nparagraph}
+
+\begin{frame}[t,fragile,label=slide.cssflow]
+\frametitle{\sn{CSS Flow}: How \Sn[post=es]{box} \Sn{float} to their Place}
+\begin{itemize}
+\item
+\begin{sdefinition}
+\definame{CSS Flow} describes how different \sr{XML element}{elements} are distributed
+in the visible area. \lec{how they flow; hence the name}\\
+The \definame{float} property allows to ifluence that.
+\end{sdefinition}
+\item<1->
+\begin{sexample}[for={CSS,float}]
+Block-level \sn[post=es]{box} (here div \sn{graph?node}) \sn{float} to the left:\\
+\begin{onlyenv}<1>
+\parbox[c]{4.7cm}{\lstinputmhlisting[linewidth=4.7cm,linerange=13-16]{digdocs/code/cssflow-boxeffect.html}}+
+\parbox[c]{5cm}{\lstinputmhlisting[linewidth=5.5cm,linerange=4-9]{digdocs/code/cssflow-boxeffect.html}}=
+\parbox[c]{.7cm}{\mhgraphics[width=.7cm]{digdocs/PIC/cssflow-boxeffect}}
+\end{onlyenv}
+\end{sexample}
+\item<2->
+\begin{sexample}[for={CSS,float}]
+\lstinline[mathescape]|float:left| \sns{float} \sn[post=es]{box} as far as they will
+go:\lec{without overlap}
+\begin{onlyenv}<2>
+\parbox[c]{4.7cm}{\lstinputmhlisting[linewidth=4.7cm,linerange=14-17]{digdocs/code/cssflow-float.html}}+
+\parbox[c]{5cm}{\lstinputmhlisting[linewidth=5.5cm,linerange=4-10]{digdocs/code/cssflow-float.html}}=\\
+\parbox{5cm}{\mhgraphics[width=5cm]{digdocs/PIC/cssflow-float}}
+\end{onlyenv}
+\end{sexample}
+\item<3->
+\begin{sexample}[for={CSS,float}]
+\lstinline[mathescape]|float:right| in a \lstinline|div| will \sn{float} inside the
+corresponding \sn{box}.\\
+\begin{onlyenv}<3>
+\parbox[c]{5.5cm}{\lstinputmhlisting[linewidth=5.5cm,linerange=19-24]{digdocs/code/cssflow-position.html}}+
+\parbox[c]{4.3cm}{\lstinputmhlisting[linewidth=4.3cm,linerange=10-15]{digdocs/code/cssflow-position.html}}=\\
+\parbox{5cm}{\mhgraphics[width=5cm]{digdocs/PIC/cssflow-position}}
+\end{onlyenv}
+\end{sexample}
+\item<4->
+\begin{sexample}[for={CSS,float}]
+\lstinline[mathescape]|float:left| will let contents flow around an obstacle\\
+\begin{onlyenv}<4>
+\parbox[c]{5.5cm}{\lstinputmhlisting[linewidth=5.5cm,linerange=19-24]{digdocs/code/cssflow-position2.html}}+
+\parbox[c]{4.3cm}{\lstinputmhlisting[linewidth=4.3cm,linerange=10-15]{digdocs/code/cssflow-position2.html}}=\\
+\parbox{5cm}{\mhgraphics[width=5cm]{digdocs/PIC/cssflow-position2}}\\
+The large space ($>$2px) is caused because there is no linebreaking.
+\end{onlyenv}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

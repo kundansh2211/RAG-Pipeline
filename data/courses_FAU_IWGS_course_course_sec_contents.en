@@ -1,0 +1,86 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/contents.en
+
+\begin{document}
+\begin{sfragment}[id=sec.course-contents]{Course Contents}
+\usemodule{wisski/slides/nutshell?WissKI-nutshell}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?html}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+\usemodule{progintro/slides?proglang-synsem}
+\usemodule[smglom/computing]{mod?persistent}
+\usemodule[smglom/db]{mod?ERD}
+
+\begin{sparagraph}
+The course comprises two parts that are given as two-hour/week lectures.
+\end{sparagraph}
+
+\begin{sparagraph}[title=IWGS 1 (the first semester)]
+begins with an introduction to \sn{programming} in \python which we will
+use as the main computational tool in the course; see
+\sref[file=progintro/sec/progintro.en]{sec.progintro} and
+\sref[file=progintro/sec/datastructures.en]{sec.datastructures}. In particular we will
+cover
+\begin{itemize}
+\item systematics and culture of \sn{programming}
+\item program and \sns{control structure}
+\item basic \sns{data structure} like numbers and strings, in particular
+character encodings, Unicode, and regular expressions.
+\end{itemize}
+Building on this, we will cover
+\begin{enumerate}
+\item digital documents and document processing, in particular; text files, markup
+systems, \sn{html?HTML}, and \sn{xml?XML}; see \sref[fallback=Chapter
+4,file=digdocs/sec/digdocs.en]{sec.digdocs}.
+\item basic concepts of the \sr{WWW}{World Wide Web}; see \sref[fallback=Chapter
+5,file=webapps/sec/www-basics.en]{sec.www-basics}
+\item Web technologies for \sn{interactive} documents and applications; in
+particular \sn{internet} infrastructure, web browsers and servers, PHP, dynamic
+\sn{html?HTML}, JavaScript, and \sn{CSS?CSS}; see \sref[fallback=Chapter
+5,file=webapps/sec/webapps.en]{sec.webapps}.
+\end{enumerate}
+\end{sparagraph}
+
+\begin{sparagraph}[title=IWGS 2 (the second semester)]
+\usemodule[smglom/www]{mod?semantic-web}
+\usemodule[smglom/computing]{mod?image-processing}
+covers selected topics and exemplary tools that will become useful in the DH. We will
+cover
+\begin{enumerate}
+\item \Sns{database}; in particular \sr{ERD}{entity relationship diagrams}, CRUD
+operations, and \sn[post=ing]{query}; see
+\sref[file=databases/sec/databases.en]{sec.databases}.
+\item \Sn{image processing} tools, see \sref[fallback=Chapter
+9,file=images/sec/images.en]{sec.image-processing}
+\item Using the ontologies and the \sn{semantic web} for Cultural Heritage; see
+\sref[fallback=Chapter 11,file=semweb/sec/ch-ontologies.en]{sec.ch-ontologies}
+\item The \sn{WissKI-nutshell?WissKI} System: A Virtual Research Environment for
+Cultural Heritage; see \sref[fallback=Chapter
+12,file=wisski/sec/wisski.en]{sec.wisski}
+\item Copyright and Data Privacy as legal foundations of DH tools; see
+\sref[fallback=Chapter 10,file=legal/sec/legal.en]{sec.legal}
+\end{enumerate}
+\end{sparagraph}
+
+\begin{sparagraph}[title=Idea]
+\usemodule[smglom/www]{mod?webapp}
+The first semester lays the foundations by introducing \sn{programming} in
+\python and work our way towards \sns{web application}, which form
+the base of most modern tools in the DH. In
+\sref[file=booksapp/sec/books-app.en]{sec.books-app}, we pull all parts together to
+build a first, simple web application with \sn{persistent} storage that manages a
+set of books.
+
+After an excursion into project management systems, we introduce methods and tools for
+their management. Here, we extend our \sn{web application} to deal with \sr{digital
+image}{image} fragments; actually building a simple replacement for a prominent DH
+\sn{web application}.
+
+Finally, after another excursion -- this time into the legal foundations of intellectual
+property and data privacy the course culminates in an introduction of the \sn{WissKI-nutshell?WissKI}
+system, a virtual research environment for documenting cultural heritage artifacts.
+Indeed the \sn{WissKI-nutshell?WissKI} system combines all topics in the course so far.
+\end{sparagraph}
+\end{sfragment}
+\end{document}
+
+

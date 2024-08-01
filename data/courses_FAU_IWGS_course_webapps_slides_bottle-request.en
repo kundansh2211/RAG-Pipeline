@@ -1,0 +1,96 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/bottle-request.en
+
+\begin{document}
+\begin{smodule}{bottle-request}
+\lstset{language=python,mathescape}
+
+\begin{nparagraph}
+We have already seen above that we want to use \sn{http-protocol?HTTP}
+\sn{http-protocol?GET} and \sn{http-protocol?POST} request for different
+facets of transmitting \sn{html?HTML} \sn{html-form-data?form data} to the
+\sn{webserver?web server}. This is supported by \sn{bottle-stpl?bottle WSGI}
+in two ways: we can specify the \sn{http-protocol?HTTP}
+\sn{http-protocol?method} of a \sn{bottle-routing?route} and we have access to
+the \sn{html-form-data?form data} (and other aspects of the request).
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Method-Specific Routes: \sn{http-protocol?HTTP}
+\sn{http-protocol?GET} and \sn{http-protocol?POST}}
+\begin{itemize}
+\item
+\begin{sdefinition}
+The \lstinline|@route| decorator takes a \lstinline|method| keyword to specify the
+\sn{http-protocol?HTTP} request \sn{http-protocol?method} to be
+answered. \lec{\sn{http-protocol?HTTP} \sn{http-protocol?GET} is the
+default}
+\begin{itemize}
+\item \lstinline|@get($\pmetavar{path}$)| abbreviates
+\lstinline|@route($\pmetavar{path}$,method="GET")|
+\item \lstinline|@post($\pmetavar{path}$)| abbreviates
+\lstinline|@route($\pmetavar{path}$,method="POST")|
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sexample}[title=Login 1,id=login1.ex,for=login]
+Managing \sns{login} with \sn{http-protocol?HTTP}
+\sn{http-protocol?GET} and \sn{http-protocol?POST}.
+\lstinputmhlisting[linerange=1-11]{webapps/code/login.py}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Note]
+We can also have a \sn{http-protocol?POST} request to the same
+\sn{URI?path}; we use that for handling the \sn{html-form-data?form data}
+transmitted by the \sn{http-protocol?POST} action on submit.\lec{up next}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Recall that we have already seen most of this in slide \ref{slide.forms-recap1}. The
+only new thing is that we return the \sn{html?HTML} as a string in the route
+function as a request to a \sn{http-protocol?HTTP} \sn{http-protocol?GET}
+request. Now comes the interesting part: the form uses the \sn{http-protocol?POST}
+\sn{http-protocol?method} in the form action and we have to specify a route for
+that. Recall from \sref[file=webapps/slides/getvspost.en]{getvspost.obs} that this
+allows for encrypted transmission, so we are less naive than our solution from slide
+\ref{slide.forms-recap1}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Bottle Request: Dealing with \sn{http-protocol?POST} Data}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Recall]
+from a \sn{html?HTML} form we get a \sn{http-protocol?GET} or
+\sn{http-protocol?POST} request with \sn{html-form-data?form data}
+\lstinline[mathescape]|$n_1$=$v_1$&$\cdots$&$n_k$=$v_k$| \lec{here
+\lstinline|user=mkohlhase&login=noneofyourbusiness|}
+\end{sparagraph}
+\item \Sn{bottle-stpl?bottle WSGI} provides the \lstinline|request| object for
+dealing with \sn{http-protocol?HTTP} request data.
+\item
+\begin{sexample}[title=Login 2,id=login2.ex,for={login}]
+\usemodule[smglom/grammar]{mod?parser}
+Continuing from \sref{login1.ex}: we \sn{parse} the request transmitted request
+and check password information:
+
+\lstinputmhlisting[linerange=13-20]{webapps/code/login.py}
+
+We assume a \python function \lstinline|check_login| that checks
+\sn{authentication} \sn{credential} and \sn{authenticator}, and keeps a
+list of \sr{log in}{logged in} users.
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The main new thing in~\sref{login2.ex} is that we use the \lstinline|request.forms.get|
+method to \sn{query} the request object that comes with the \sn{http-protocol?HTTP}
+request triggering the route for the \sn{html-form-data?form data}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

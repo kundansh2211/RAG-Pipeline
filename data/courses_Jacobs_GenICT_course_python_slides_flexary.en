@@ -1,0 +1,58 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/flexary.en
+
+\begin{document}
+\begin{smodule}{python-flexary}
+
+\begin{nparagraph}
+The next feature is dual to the last: instead of letting the caller leave out some
+arguments, we allow the caller more, which is then bound to a \sn{list?list}
+\sn{subroutine?parameter}.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Argument Passing in \python: Flexible Arity}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=def.rest-argument]
+\varseq{pseq}{1,\ellipses,k}{\comp{p}_{#1}}
+\varseq{aseq}{1,\ellipses,k}{\comp{a}_{#1}}
+\varseq{acseq}{k+1,\ellipses,n}{\comp{a}_{#1}}
+
+\python \sns{subroutine?function} can take a variable number
+of \sns{subroutine?argument}:\\
+\lstinline[mathescape]|def $f$ ($\pseq!$,*$r$)| allows $\natmethan{n}k$
+\sns{subroutine?argument}, e. g.
+\lstinline[mathescape]|$f$($\aseq!$,$\acseq!$)| and binds
+the \sn{subroutine?parameter} $r$ the \definame{rest argument} to the
+\sn{list?list} \lstinline[mathescape]|[$\acseq!$]|.
+\end{sdefinition}
+\item
+\begin{sexample}[for=rest argument]
+A somewhat construed \sn{subroutine?function} that reports the number of extra arguments
+\lstinputmhlisting{python/code/rest.py}
+\end{sexample}
+\item
+\begin{sdefinition}[id=star-operator]
+The \definame{star operator} unpacks a \sn{list?list} into an
+\sn{subroutine?argument} sequence.
+\end{sdefinition}
+\item
+\begin{sexample}[title=Passing a starred list]
+\lstinputmhlisting{python/code/star-arg.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Actually the \sn{star operator} can be used in other situations as well, consider
+for instance
+\lstinputmhlisting{python/code/star-operator.py}
+Here we have used the \sn{star operator} twice: First to pass the list
+\lstinline|numbers| as arguments to the \sn{python-lists?list constructor} and a
+second time to pass the extended list \lstinline|more_numbers| to the \lstinline|print|
+\sn{subroutine?function}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

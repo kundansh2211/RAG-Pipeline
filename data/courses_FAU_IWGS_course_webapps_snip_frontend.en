@@ -1,0 +1,20 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/frontend.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/www]{mod?webapp}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?jquery}
+We introduce three important concepts for building modern web front ends for
+\sns{web application}:
+\begin{enumerate}
+\item Client-side computation: manipulating the \sr{web browser}{browser} \sn{DOM} via \sn{JavaScript}.
+\item \sr{CSS}{Cascading Stylesheets} (\sn{CSS}) for styling the layout of \sn{HTML} (and \sn{XML}).
+\item The \sn{jQuery} library: a symbiosis of \sn{JavaScript} and \sn{CSS} ideas to make
+\sn{JavaScript} coding easier and more \sn{efficient}.
+\end{enumerate}
+\end{sparagraph}
+\end{document}
+
+

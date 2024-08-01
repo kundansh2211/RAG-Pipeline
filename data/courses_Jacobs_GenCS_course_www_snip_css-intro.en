@@ -1,0 +1,19 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/css-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?CSS}
+As the \sn{WWW} evolved from a hypertext system purely aimed at human readers to a
+\sr{WWW}{Web of multimedia documents}, where machines perform added-value services
+like searching or aggregating, it became more important that machines could understand
+critical aspects \sns{web-page?web page}. One way to facilitate this is to
+separate markup that specifies the content and functionality from markup that specifies
+human-oriented layout and presentation (together called ``styling''). This is what
+``cascading style sheets'' set out to do.
+
+Another motivation for \sn{CSS?CSS} is that we often want the styling of a
+\sn{web-page?web page} to be customizable (e.g. for vision impaired readers).
+\end{sparagraph}
+\end{document}
+

@@ -1,0 +1,63 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: memory/slides/units-information.en
+
+\begin{document}
+\begin{smodule}{units-information}
+
+\begin{nparagraph}
+From the basic units of information, we can make prefixed units for prefixed units for
+larger chunks of \sn{information}. But note that the usual \sr{SIprefix?prefix}{SI unit
+prefixes} are inconvenient for application to information measures, since powers of
+two are much more natural to realize.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Larger Units of Information via Binary Prefixes}
+\begin{itemize}
+\item
+\begin{sparagraph}
+\usemodule{memory/slides?storage-element}
+We will see that \sn{memory} comes naturally in \sns{natarith?power} to 2, as we address
+memory cell by \sn{pns-common?binary} \sns{number}, therefore the derived \sn{information}
+\sns{unit} are prefixed by special \sn[post=es]{SIprefix?prefix} that are based on
+\sns{natarith?power} of 2.
+\end{sparagraph}
+\item
+\begin{sdefinition}[title=Binary Prefixes]
+The following \definame[post=es]{bits?binary unit prefix} are used for
+\sn{information} \sns{unit} because they are similar to the \sr{SIprefix?prefix}{SI
+unit prefixes}.
+\begin{center}
+\begin{tabular}{|l|l|l|l||l|l|}\hline
+prefix & symbol &$\natpower{2}n$ & decimal & \textasciitilde \sr{SIprefix?prefix}{SI prefix} & Symbol \\\hline
+\definame{bits?kibi} & $\defnotation\kibi!$    & $\natpower2{10}$  & 1024 & \sn{kilo} & $\kilo!$\\
+\definame{bits?mebi} & $\defnotation\mebi!$& $\natpower2{20}$ & 1048576 & \sn{mega} & $\mega!$\\
+\definame{bits?gibi} & $\defnotation\gibi!$   & $\natpower2{30}$ & $\scinotation{1.074}{9}$& \sn{giga} & $\giga!$\\
+\definame{bits?tebi} & $\defnotation\tebi!$   & $\natpower2{40}$  & $\scinotation{1.1}{12}$ & \sn{tera} & $\tera!$\\
+\definame{bits?pebi} & $\defnotation\pebi!$   & $\natpower2{50}$ & $\scinotation{1.125}{15}$ & \sn{peta} & $\peta!$\\
+\definame{bits?exbi} & $\defnotation\exbi!$    & $\natpower2{60}$   & $\scinotation{1.153}{18}$& \sn{exa} & $\exa!$\\
+\definame{bits?zebi} & $\defnotation\zebi!$  & $\natpower2{70}$ & $\scinotation{1.181}{21}$ & \sn{zetta} & $\zetta!$\\
+\definame{bits?yobi} & $\defnotation\yobi!$  & $\natpower2{80}$  & $\scinotation{1.209}{24}$ & \sn{yotta} & $\yotta!$\\\hline
+\end{tabular}
+\end{center}
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]
+The correspondence works better on the smaller prefixes; for \sn{yobi}
+vs. \sn{SIprefix?yotta} there is a $\percentage{20}$ difference in magnitude.
+\end{sparagraph}
+\item
+\begin{sparagraph}[name=si-bi-note]
+The \sr{SIprefix?prefix}{SI unit prefixes} (and their operators) are often used
+instead of the correct \sn{binary} ones defined here.
+\end{sparagraph}
+\item
+\begin{sexample}[for=si-bi-note]
+You can buy hard-disks that say that their capacity is ``one terabyte'', but they
+actually have a capacity of one \sn{tebi}\sn{byte}.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

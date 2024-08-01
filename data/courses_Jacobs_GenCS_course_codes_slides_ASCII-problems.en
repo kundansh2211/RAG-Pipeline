@@ -1,0 +1,66 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: codes/slides/ASCII-problems.en
+
+\begin{document}
+\begin{smodule}{ASCII-problems}
+
+\begin{nparagraph}
+The \sn{ASCII} code as above has a variety of problems, for instance that the
+\sns{control character} are mostly no longer in use, the code is lacking many
+\sns{character?character} of languages other than the English language it was developed
+for, and finally, it only uses seven \sns{bit}, where an \sn{octet} (eight \sns{bit}) is
+the preferred unit in information technology. Therefore a whole zoo of extensions were
+introduced, which --- due to the fact that there were so many of them --- never quite
+solved the encoding problem.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Problems with \sn{ASCII} encoding}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Problem]
+Many of the control \sns{character?character} are obsolete by now/
+\lec{e.g. $\ASCIINUL$,$\ASCIIBEL$, or $\ASCIIDEL$}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Problem]
+Many European \sns{character?character} are not represented.\lec{e.g. \`e,\~n,ü,\ss,\ldots}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=European ASCII Variants]
+Exchange less-used \sns{character?character} for national ones.
+\end{sparagraph}
+\item
+\begin{sexample}[title=German \sn{ASCII},for=character encoding]
+Remap e.g. $\map\ASCIIosqbrack{\text{Ä}}$, $\map\ASCIIcsqbrack{\text{Ü}}$ in German
+\sn{ASCII}\lec{``{\lstinline!Apple ][!}'' comes out as ``\texttt{Apple ÜÄ}''}
+\end{sexample}
+\item
+\begin{sdefinition}[title=ISO-Latin (ISO/IEC 8859)]
+16 Extensions of \sn{ASCII} to 8-bit (256 \sns{character?character})
+\begin{footnotesize}
+\definame{ISO Latin} 1 \hateq ``Western European'', \definame{ISO Latin} 6 \hateq
+``Arabic'', \definame{ISO Latin} 7
+\hateq ``Greek''\ldots
+\end{footnotesize}
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Problem]
+No cursive Arabic, Asian, African, Old Icelandic Runes, Math,\ldots
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+\usemodule{codes/slides?utfcodes}
+Do something totally different to include all the world's scripts: For a scalable
+architecture, separate
+\begin{itemize}
+\item what \sns{character?character} are available, and \lec{\sn{character set}}
+\item a \sr{function}{mapping} from \sn{pns-common?bit} \sr{word}{strings} to
+\sns{character?character}.\lec{\sn{character encoding}}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

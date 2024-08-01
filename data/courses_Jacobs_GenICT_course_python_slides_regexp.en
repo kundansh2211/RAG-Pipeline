@@ -1,0 +1,50 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/regexp.en
+
+\begin{document}
+\begin{smodule}{python-regexp}
+\lstset{language=python,mathescape}
+
+\begin{nparagraph}
+After covering \sr{regex}{regular expressions} in the abstract, we
+will see how they are integrated into \sns{programming language} to solve
+problems. Of course we take \python as an example.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Regular Expressions in \python}
+\begin{itemize}
+\item We can use \sr{regex}{regular expressions} directly in
+\python by importing the \lstinline|re| module \lec{just add
+\lstinline|import re| at the beginning}
+\item As \python has $\unicode$ strings,
+\sr{regex}{regular expressions} support $\unicode$ as well.
+\item Useful \python \sns{subroutine?function} that use
+\sr{regex}{regular expressions}.
+\begin{itemize}
+\item \lstinline|re.findall($\pmetavar{pat}$,$\pmetavar{str}$)|: Return a list of
+non-overlapping matches of $\pmetavar{pat}$ in $\pmetavar{str}$.
+\lstinputmhlisting[linerange=1-2]{python/code/regexp.py}
+\item \lstinline|re.sub($\pmetavar{pat}$,$\pmetavar{sub}$,$\pmetavar{str}$)|: Replace
+\sr{subword}{substrings} that match $\pmetavar{pat}$ in $\pmetavar{str}$ by $\pmetavar{sub}$.
+\lstinputmhlisting[linerange=4-5]{python/code/regexp.py}
+\item \lstinline|re.split($\pmetavar{pat}$,$\pmetavar{str}$)|: Split $\pmetavar{str}$
+into \sr{subword}{substrings} that match $pmetavar{pat}$.
+\lstinputmhlisting[linerange=7-10]{python/code/regexp.py}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+As \sr{regex}{regular expressions} form a special language for
+describing sets of strings, it is not surprising that they are used in all kinds of
+searching, splitting, and \sr{subword}{substring} replacement operations. As the
+language of \sr{regex}{regular expressions} is well standardized,
+these more or less work the same in all \sns{programming language}, so what
+you learn for \python, you can re-use in other
+\sr{programming language}{languages}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

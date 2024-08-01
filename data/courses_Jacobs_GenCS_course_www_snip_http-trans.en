@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/http-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/www]{mod?http-protocol}
+\usemodule[smglom/www]{mod?webserver}
+\usemodule[smglom/www]{mod?webbrowser}
+The \sn{web browser} communicates with the \sn{web server} through a
+specialized protocol, the \sr{HTTP}{hypertext transfer protocol}, which we cover
+now.
+\end{sparagraph}
+\end{document}
+

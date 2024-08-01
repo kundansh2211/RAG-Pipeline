@@ -1,0 +1,79 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/methods.en
+
+\begin{document}
+\begin{smodule}{python-methods}
+\lstset{language=python}
+\makeatletter\providecommand\lst@tagresetfirst{}\makeatletter
+
+\begin{nparagraph}
+\python provides two kinds of \sn{subroutine?function}-like facilities: regular
+\sns{subroutine?function} as discussed above and \sns{method}, which come with \python
+\sn[post=es]{oop-class?class}. We will not attempt a presentation of \sr{OOP}{object
+oriented programming} and its particular \sn{implementation} in \python this would be
+beyond the mandate of the \useSGvar{courseacronym} course -- but give a brief
+introduction that is sufficient to use \sns{method}.
+\end{nparagraph}
+
+\begin{frame}[fragile]
+\frametitle{Functions vs. Methods in \python}
+\begin{itemize}
+\item There is another mechanism that is similar to \sns{subroutine?function}
+in \python. \lec{we briefly introduce it here to delineate}
+\item
+\begin{sparagraph}[title=Background]
+Actually, the \sns{type?type} from
+\sref[fallback=above,file=python/slides/datatypes.en]{python-basic-datatypes.def}
+are \sn[post=es]{oop-class?class}, \ldots
+\end{sparagraph}
+\item
+\begin{sdefinition}
+In \python all \sns{value?value} belong to a
+\definame{oop-class?class}, which provide special
+\sns{subroutine?function} we call
+\definame[post=s]{oop?method}. \Sns{value?value} are also called
+\definame[post=s]{oop?object}, to emphasise \sn{oop-class?class}
+aspects. \Sn{method} application is written with \definame{dot notation}:
+\lstinline[mathescape]|$\pmetavar{obj}$.$\pmetavar{meth}$($\pmetavar{args}$)|
+corresponds to
+\lstinline[mathescape]|$\pmetavar{meth}$($\pmetavar{obj}$,$\pmetavar{args}$)|.
+\end{sdefinition}
+\item
+\begin{sexample}
+\usemodule[smglom/sets]{mod?subword}
+Finding the position of a \sr{subword}{substring}
+\lstinputmhlisting[linerange=1-5]{python/code/methods.py}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=slide.methods2]
+\frametitle{Functions vs. Methods in \python}
+\begin{itemize}
+\item
+\begin{sexample}[title=Functions vs. Methods]
+\begin{center}\vspace*{-1em}
+\begin{tabular}{p{5.4cm}@{\qquad}p{5.2cm}}
+\lstinputmhlisting[linerange=7-8]{python/code/methods.py} &
+\lstinputmhlisting[linerange=10-13]{python/code/methods.py}
+\end{tabular}\vspace*{-1em}
+\end{center}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Intuition]
+Only \sns{method} can change \sns{oop?object},
+\sns{subroutine?function} return changed copies (of the \sns{oop?object}
+they act on).
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+For the purposes of \useSGvar{courseacronym}, it is sufficient to remember that
+\sns{method} are a special kind of \sns{subroutine?function} that employ
+the \sn{dot notation}. They are provided by the \sn{oop-class?class} of an
+\sn{oop?object}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

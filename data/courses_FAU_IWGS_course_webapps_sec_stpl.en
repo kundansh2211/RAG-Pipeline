@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/stpl.en
+
+\begin{document}
+\begin{sfragment}[id=sec.stpl]{Templating in Python via STPL}
+File: [courses/Jacobs/GenICT/course]{python/slides/html-in-python.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/template-engine.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/bottle-stpl.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/stpl-files.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/stpl-functions.en}
+
+\end{sfragment}
+\end{document}
+

@@ -1,0 +1,41 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/goals.en
+
+\begin{document}
+\begin{frame}
+\usemodule[smglom/cs]{mod?computer-science}
+\frametitle{Goals of ``\useSGvar{courseacronym}''}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Goal]
+giving students an overview over the variety of digital tools and methods
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Goal]
+explaining their intuitions on how/why they work (the way they do).
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Goal]
+empower students for their for the emerging field \enquote{digital humanities and
+social sciences}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=NON-Goal]
+Laying the \sn{mathematical} and computational foundations which will become useful
+in the long run.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Method]
+introduce methods and tools that can become \emph{useful in the short term}
+\begin{itemize}
+\item generate immediate success and gratification,
+\item alleviate the ``programming shock'' (the brain stops working when in contact
+with \sr{computer-science?CS}{computer science} tools or
+\sns{computer-science?computer scientist}) common in the humanities and
+social sciences.
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{document}
+

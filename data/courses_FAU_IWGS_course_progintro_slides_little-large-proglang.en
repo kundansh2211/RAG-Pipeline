@@ -1,0 +1,24 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/slides/little-large-proglang.en
+
+\begin{document}
+\begin{smodule}{little-large-proglang}
+
+\begin{frame}
+\frametitle{A note on Programming: Little vs. Large Languages}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+Most such concepts can be studied in isolations, and some can be given a syntax on
+their own.\lec{standardization}
+\end{sassertion}
+\item
+\begin{sparagraph}[title=Consequence]
+If we understand the concepts and syntax of the sublanguages, then learning another
+\sn{program?programming language} is relatively easy.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,13 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/snip/fileio-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/regexp?python-regexp}
+The next topic of our stroll through \python is one that is more practically
+useful than intrinsically interesting: file input/output. Together with the
+\sr{regex}{regular expressions} this allows us to write programs that
+transform files.
+\end{sparagraph}
+\end{document}
+

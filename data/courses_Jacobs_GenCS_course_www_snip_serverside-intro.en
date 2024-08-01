@@ -1,0 +1,17 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/serverside-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?webbrowser}
+\usemodule{www/slides?webserver}
+\usemodule[smglom/www]{mod?webapp}
+
+As the \sn{WWW} is based on a \sn{client-server?client server architecture},
+computation in \sns{web application} can be executed either on the
+\sn{client-server?client} (the \sn{webbrowser?web browser}) or the
+\sn{client-server?server} (the \sn{webserver?web server}). For both we have a
+special technology; we start with computation on the \sn{webserver?web server}.
+\end{sparagraph}
+\end{document}
+

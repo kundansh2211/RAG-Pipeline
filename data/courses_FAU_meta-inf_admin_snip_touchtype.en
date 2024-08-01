@@ -1,0 +1,26 @@
+Archive: courses/FAU/meta-inf
+Filepath: admin/snip/touchtype.en
+
+\begin{document}
+\usemodule{admin/mod?typingaids}
+\begin{sparagraph}[title=Touch-typing]
+You should not underestimate the amount of time you will spend typing during your
+studies. Even if you consider yourself fluent in two-finger typing, touch-typing will
+give you a factor two in speed. This ability will save you at least half an hour per
+day, once you master it. Which can make a crucial difference in your success.
+
+Touch-typing is very easy to learn, if you practice about an hour a day for a week,
+you will re-gain your two-finger speed and from then on start saving time. There are
+various free typing tutors on the network. At
+{\url{http://typingsoft.com/all_typing_tutors.htm}} you can find about programs, most
+for windows, some for linux. I would probably try $\Ktouch$ or $\TuxType$
+
+Darko Pesikan (one of the previous TAs) recommends the $\TypingMaster$ program. You
+can download a demo version from
+{\url{http://www.typingmaster.com/index.asp?go=tutordemo}}
+
+You can find more information by googling something like "learn to touch-type". (goto
+{\url{http://www.google.com}} and type these search terms).
+\end{sparagraph}
+\end{document}
+

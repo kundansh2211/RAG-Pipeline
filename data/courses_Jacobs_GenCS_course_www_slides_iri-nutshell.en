@@ -1,0 +1,62 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/iri-nutshell.en
+
+\begin{document}
+\begin{smodule}{iri-nutshell}
+
+\begin{frame}[fragile]% needed somehow
+\frametitle{Internationalized Resource Identifiers}
+\begin{itemize}
+\item
+\begin{sassertion}[style=remark]
+\sns{URI?URI} are \sn{ASCII} strings.
+\end{sassertion}
+\item
+\begin{sparagraph}[title=Problem]
+This is awkward e.g. for \nlex{France T\'el\'ecom}, worse in Asia.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Solution?]
+Use \sn{unicode}! \lec{no, too young/unsafe}
+\end{sparagraph}
+\item
+\begin{sdefinition}
+\definiendum[post=s,root=internationalized resource
+identifier]{IRI}{Internationalized resource identifiers} (\definame[post=s]{IRI})
+extend the \sn{ASCII}-based \sns{URI?URI} to the
+\sr{unicode-ucs?UCS}{universal character set}.
+\end{sdefinition}
+\item
+\begin{sdefinition}
+\definame{URI encoding} maps \sn[pre=non-]{ASCII} characters to \sn{ASCII} strings:
+\begin{enumerate}
+\item Map each \sn{character?character} to its $\UTFeight$ representation.
+\item Represent each \sn{bits?byte} of the $\UTFeight$ representation by three
+characters.
+\item The first \sn{character?character} is the percent sign (\char37),
+\item and the other two \sns{character?character} are the \sn{hexadecimal} representation of
+the \sn{byte}.
+\end{enumerate}
+\definame{URI decoding} is the dual operation.
+\end{sdefinition}
+\item
+\begin{sexample}[for=URI encoding]
+The letter ``\l'' ($\unicodepoint{142}$) would be represented as \texttt{\char37
+C5\char37 82}.
+\end{sexample}
+\item
+\begin{sexample}[for=URI encoding]
+\texttt{http://www.Übergrö\ss en.de} becomes\\
+\texttt{http://www.\%C3\%9Cbergr\char37 C3\char37 B6\char37 C3\char37 9Fen.de}
+\end{sexample}
+\item
+\begin{sassertion}[style=remark]
+\usemodule[smglom/www]{mod?webbrowser}
+Your \sr{web browser}{browser} can still show the
+\sr{URI decoding}{URI decoded} version \lec{so you can read it}
+\end{sassertion}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

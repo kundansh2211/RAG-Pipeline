@@ -1,0 +1,12 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/concl1.en
+
+\begin{document}
+\begin{sfragment}{What did we learn in IWGS-1?}
+File: [courses/FAU/IWGS/course]{course/slides/outline.en}
+
+File: [courses/FAU/IWGS/course]{course/slides/outline2.en}
+
+\end{sfragment}
+\end{document}
+

@@ -1,0 +1,68 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: xml/slides/xml-trees.en
+
+\begin{document}
+\begin{smodule}{xml-trees}
+
+\usestructure{XML document tree}
+
+\begin{frame}[label=slide.xml-trees]
+\frametitle{\sn{xml?XML} Documents as Trees}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea]
+An \sn{xml?XML} Document is a Tree
+\begin{columns}
+\begin{column}{5cm}
+\lstinputmhlisting[numbers=none,mathescape,
+morekeywords={[3]omtext,CMP},
+morekeywords={[4]om:OMOBJ,om:OMS}]{xml/code/omtext.xml}
+\end{column}\qquad
+\begin{column}{5cm}\vspace*{2em}
+\mhtikzinput[width=\textwidth]{xml/tikz/xmltreepicture}
+\end{column}
+\end{columns}
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=xml-nodes.def]
+The \definame{XML document tree} is made up of \definame[post=s]{XML element},
+\definame[post=s]{attribute node}, \definame[post=s]{text node}\lec{and
+\definame[post=s]{namespace declaration}, comments,\ldots}
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=slide.xml-trees2]
+\frametitle{XML Documents as Trees (continued)}
+\begin{itemize}
+\item
+\usestructure{tree}
+\begin{sdefinition}
+For \sn{communication} this \sn{tree} is \sr{serialization}{serialized} into a
+balanced bracketing structure, where
+\begin{itemize}
+\item an \sr{forest?inner node}{inner} \sn{XML element} \sns{node} is represented by the brackets
+\lstinline|<el>| (called the \definame{opening tag}) and \lstinline|</el>| (called
+the \definame{closing tag}),
+\item the \sr{leaf}{leaves} of the \sn{xml?XML} \sn{tree} are
+represented by \definame[post=s]{empty element tag}
+(\sr{serialization}{serialized} as \lstinline|<el></el>|, which can be
+abbreviated as \lstinline|<el/>|,
+\item and \sn{text node} (\sr{serialization}{serialized} as a sequence of
+$\unicode$ \sns{character?character}).
+\item An \sn{XML element} \sn{node} can be annotated by further information using
+\sns{attribute node}     \sr{serialization}{serialized} as an
+\definame{xml-markup?attribute} in its \sn{opening tag}.
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]
+As a document is a \sn{tree}, the \sn{xml?XML} specification mandates that there
+must be a unique \inlinedef{\definame{document root}}.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

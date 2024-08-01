@@ -1,0 +1,17 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/exercises.en
+
+\begin{document}
+\begin{nfragment}[id=sec.digdocs-exercises]{Exercises}
+\includeproblem{digdocs/prob/simple-table.en}
+\includeproblem{digdocs/prob/simple-page.en}
+\includeproblem{digdocs/prob/simple-form.en}
+\includeproblem{progintro/prob/regex-pizza.en}
+\includeproblem{progintro/prob/trees.en}
+\includeproblem{digdocs/prob/simple-xml.en}
+\includeproblem{progintro/prob/genHTML-1.en}
+\includeproblem{progintro/prob/genHTML-2.en}
+\includeproblem{progintro/prob/genHTML-3.en}
+\end{nfragment}
+\end{document}
+

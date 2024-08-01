@@ -1,0 +1,49 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/stpl-files.en
+
+\begin{document}
+\begin{smodule}{stpl-files}
+
+\begin{nparagraph}
+The $\stplengine$ \lstinline|template| function is a powerful enabling basic functionality in
+\python, but it does not satisfy our goal of writing ``\sn{html?HTML} with embedded
+\python''. Fortunately, that can easily be built on top of the
+\lstinline|template| functionality:
+\end{nparagraph}
+
+\begin{frame}[fragile]% fragile needed.
+\frametitle{$\stplengine$ Syntax and Template Files}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=But what about\ldots]
+\sn{html?HTML} files with embedded \python?
+\end{sparagraph}
+\item $\stplengine$ uses \sns{template file} (extension \lstinline|.tpl|) for that.
+\item
+\begin{sdefinition}
+A $\stplengine$ \definame{template file} mixes \sn{html?HTML} with \definame{stpl python}:
+\begin{itemize}
+\item \sn{stpl python} is exactly like \python but ignores indentation
+and closes bodies with \lstinline|end| instead.
+\item \sn{stpl python} can be embedded into the \sn{html?HTML} as
+\begin{itemize}
+\item a \definame[post=s]{code line} starting with a \texttt{\char37},
+\item a \definame[post=s]{code block} surrounded with \texttt{<\char37} and
+\texttt{\char37 >}, and
+\item an \definame[post=s]{stpl-files?expression} \lstinline[mathescape]|{{$\pmetavar{exp}$}}| as long
+as $\pmetavar{exp}$ evaluates to a string.
+\end{itemize}
+\end{itemize}
+\end{sdefinition}
+\item
+\begin{sexample}[for=template file]
+Two \sns{template file}\\
+\parbox[c]{6.4cm}{\lstinputmhlisting[linewidth=6.4cm]{webapps/code/embedding.tpl}}\qquad
+\parbox[c]{3.8cm}{\lstinputmhlisting[linewidth=3.8cm]{webapps/code/for.tpl}}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
+

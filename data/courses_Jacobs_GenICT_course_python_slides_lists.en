@@ -1,0 +1,50 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/lists.en
+
+\begin{document}
+\begin{smodule}{python-lists}
+\lstset{language=python}
+
+\begin{frame}[fragile]
+\frametitle{Lists in \python}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \definame{list?list} is a \sn{finite-cardinality?finite}
+\sn{sequences?sequence} of objects, its \definame{container?element}.
+\end{sdefinition}
+\item In \sns{program?programming language}, \sns{list} are used
+for locally storing and passing around collections of objects.
+\item In \python \sns{list} can be written as a sequence of comma separated
+expressions between square brackets.
+\item
+\begin{sdefinition}
+We call \lstinline[mathescape]|[$\pmetavar{seq}$]| the \definame{list constructor}.
+\end{sdefinition}
+\item
+\begin{sexample}[title=Three lists]
+\Sns{container?element} can be of different \sns{type?type}
+in \python \lstinputmhlisting[linerange=1-3]{python/code/lists.py}
+\end{sexample}
+\item
+\begin{sexample}[id=python-lists.ex]
+\Sn{list} \sns{container?element} can be accessed by specifying ranges
+\begin{center}\vspace*{-1.2em}
+\begin{tabular}{p{2cm}@{\qquad}p{2.5cm}@{\qquad}p{2.5cm}}
+\lstinputmhlisting[linerange=5-6]{python/code/lists.py} &
+\lstinputmhlisting[linerange=8-9]{python/code/lists.py} &
+\lstinputmhlisting[linerange=11-12]{python/code/lists.py}
+\end{tabular}\vspace*{-1.5em}
+\end{center}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+As \sref{python-lists.ex} shows, \python treats counting in list
+\sns{accessor} somewhat peculiarly. It starts counting with zero when
+counting from the front and with one when counting from the back.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

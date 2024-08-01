@@ -1,0 +1,14 @@
+Archive: courses/FAU/meta-inf
+Filepath: admin/sec/thisdoc-CC-By-SA.en
+
+\begin{document}
+\begin{sparagraph}[title=Licensing]
+\usemodule[courses/Jacobs/GenCS/course]{legal/slides?creativecommons}
+This document is licensed under a \sr{creativecommons?cclicenses}{Creative Commons
+license} that \sr{creativecommons?attribuition}{requires attribution},
+\sr{creativecommons?commercial use}{allows commercial use}, and
+\sr{creativecommons?derivative works}{allows derivative works} as long as
+\sr{creativecommons?share alike}{these are licensed under the same license}.
+\end{sparagraph}
+\end{document}
+

@@ -1,0 +1,102 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/js-browserlevel.en
+
+\begin{document}
+\begin{smodule}{js-browserlevel}
+
+\begin{nparagraph}
+Here are three \sr{web browser}{browser} level functions that can be used for
+\sr{interact}{user interaction} (and finer debugging as they do not change the
+\sn{DOM}).
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Browser-level \sn{javascript?JavaScript} functions: 1}
+\begin{itemize}
+\item
+\begin{sexample}[title=Logging to the \sr{web browser}{browser} console,
+name=console-log.ex,for=subroutine?function]
+\lstinputmhlisting[linerange=3-3]{www/code/alert.html}
+\cmhgraphics[width=4cm]{www/PIC/console.png}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{note}
+\begin{sparagraph}[style=recap,for=console.log]
+The \sn{subroutine?function} \sn{console.log} writes its \sn{subroutine?argument} into the
+\sn{console} of the \sn{web browser}.
+\end{sparagraph}
+
+\begin{sparagraph}[style=elaboration,for=console.log,name=console.log-appl]
+\usemodule[smglom/computing]{mod?bug}
+\sr{console.log}{It} is primarily used for \sn[post=ging]{debug} the \sn{source code}
+of a \sn{web page}.
+\end{sparagraph}
+
+\begin{sexample}[for=console.log-appl]
+\usemodule[smglom/computing]{mod?bug}
+If we want to know whether a  \sn{subroutine?function} \lstinline|square| has been
+executed we add calls to \sn{console.log} like this:
+\begin{lstlisting}[gobble=6,language=JavaScript]
+function square (n) {
+console.log ("entered function square with argument " + n);
+return (n * n);
+console.log ("exited function square with result " + n * n);
+}
+\end{lstlisting}
+In the \sn{console} we can check whether the content contains
+e.g. \lstinline|entered function square| and
+moreover whether \sn{subroutine?argument} and \sn{value?value} are as expected.
+\end{sexample}
+\end{note}
+
+
+\begin{frame}
+\frametitle{Browser-level \sn{javascript?JavaScript} functions: 2}
+\begin{itemize}
+\item
+\begin{sexample}[title=Raising a \Sn{popup},for=JavaScript]
+\lstinputmhlisting[linerange=4-4]{www/code/alert.html}
+\cmhgraphics[width=4cm]{www/PIC/alert.png}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\begin{note}
+\begin{sparagraph}[style=recap]
+The \sn{subroutine?function} \sn{alert} creates a \sn{popup} that contains the
+\sn{subroutine?argument}.
+\end{sparagraph}
+\end{note}
+
+\begin{frame}
+\frametitle{Browser-level \sn{javascript?JavaScript} functions: 3}
+\begin{itemize}
+\item
+\begin{sexample}[title=Asking for Confirmation,for=JavaScript]
+\lstinputmhlisting[linerange=5-5]{www/code/alert.html}
+\cmhgraphics[width=4cm]{www/PIC/confirm.png}
+\end{sexample}
+\end{itemize}
+\end{frame}
+\begin{note}
+\begin{sparagraph}[style=recap,name=popup.recap]
+The \sn{subroutine?function} \sn{confirm} creates a \sn{popup} that contains the
+\sn{subroutine?argument} and a confirmation/cancel button pair and returns the corresponding
+\sr{Boolean data type}{Boolean} \sn{value?value}.
+\end{sparagraph}
+
+\begin{sparagraph}[style=elaboration,for=popup.recap]
+If the user clicks on the confirmation button, the returned \sn{value?value} will be
+\sn{false} and \sn{true} for the cancel button.
+\end{sparagraph}
+
+\begin{sexample}[for=JavaScript]
+You can play with this in the following frizzle:
+
+\lstinputmhlisting[language=JavaScript]{www/code/confirm.html}
+\end{sexample}
+\end{note}
+\end{smodule}
+\end{document}
+

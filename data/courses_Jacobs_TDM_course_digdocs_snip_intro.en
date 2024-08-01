@@ -1,0 +1,12 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/snip/intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/computing]{mod?computer}
+
+In this \currentsectionlevel we take a first look at documents and how they are
+represented on the \sn{computer}.
+\end{sparagraph}
+\end{document}
+

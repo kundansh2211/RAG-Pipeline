@@ -1,0 +1,58 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/html.en
+
+\begin{document}
+\begin{smodule}{html}
+
+\begin{frame}[label=slide.html]
+\frametitle{\sn{html?HTML}: Hypertext Markup Language}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=html.def]
+The \definiendum{HTML}{HyperText Markup Language} (\definame{HTML}), is a representation
+format for \sns{web-page?web page}~\cite{W3C:html5}.
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=html-elements.def,title=Main markup elements of HTML]
+\sn{HTML} marks up the structure and appearance of text with \definame[post=s]{tag} of the form
+\lstinline|<el>| (\definame{begin tag}), \lstinline|</el>| (\definame{end tag}), and
+\lstinline|<el/>| (\definame{empty tag}), where \lstinline|el| is one of the
+following
+\begin{center}\small
+\begin{tabular}{|p{1.6cm}|p{2.5cm}||p{1.5cm}|p{3.5cm}|}\hline
+structure & \texttt{html},\texttt{head}, \texttt{body} &
+\sn{metadata} & \texttt{title}, \texttt{link}, \texttt{meta}\\\hline
+headings & \texttt{h1}, \texttt{h2}, \ldots, \texttt{h6} &
+paragraphs & \texttt{p}, \texttt{br} \\\hline
+lists & \texttt{ul}, \texttt{ol}, \texttt{dl}, \ldots, \texttt{li} &
+\sns{hyperlink} & \texttt{a}\\\hline
+\sn{multimedia} & \texttt{img}, \texttt{video}, \texttt{audio} &
+tables & \texttt{table}, \texttt{th}, \texttt{tr}, \texttt{td}, \ldots \\\hline
+styling & \texttt{style}, \texttt{div}, \texttt{span} &
+old style & \texttt{b}, \texttt{u}, \texttt{tt}, \texttt{i}, \ldots \\\hline
+\sn[post=ion]{interact} &  \texttt{script}  &
+forms & \texttt{form}, \texttt{input}, \texttt{button}\\\hline
+Math & MathML (formulae) &
+\sn{interactive} graphics & vector graphics (SVG) and \texttt{canvas} (2D bitmapped)\\\hline
+\end{tabular}
+\end{center}
+\end{sdefinition}
+\item
+\begin{sexample}[id=html-simple.ex,for=HTML]
+A (very simple) \sn{HTML} file with a single paragraph.
+\lstinputmhlisting[language=HTML,mathescape,aboveskip=0pt]{www/code/hello.html}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The thing to understand here is that \sn{html?HTML} uses the characters \lstinline|<|,
+\lstinline|>|, and \lstinline|/| to delimit the markup. All markup is in the form of
+\sns{tag}, so anything that is not between \lstinline|<| and \lstinline|>| is the
+\sn{markup?textual content}.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+
+

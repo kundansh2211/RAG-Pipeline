@@ -1,0 +1,38 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/digitalobjects.en
+
+\begin{document}
+\begin{frame}
+\usemodule[smglom/computing]{mod?computer}
+\usemodule[smglom/arithmetics]{mod?pns-common}
+\frametitle{Documents as Digital Objects}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Question]
+how do texts get onto the \sn{computer}?\lec{after all,
+\sns{computer} can only do 0/1}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Hint]
+At the most basic level, texts are just \sns{sequence} of
+\sns{character}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Answer]
+We have to encode \sns{character} as \sns{sequence} of
+\sns{bit}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=We will go into how]
+\usemodule[smglom/cs]{mod?bits}
+\begin{itemize}
+\item documents are represented as \sns{sequence} of
+\sns{character},
+\item \sns{character} are represented as \sns{number},
+\item \sns{number} are represented as \sns{pns-common?bit} (0/1).
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{document}
+

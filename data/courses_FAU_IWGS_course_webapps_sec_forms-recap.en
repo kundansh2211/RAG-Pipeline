@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/forms-recap.en
+
+\begin{document}
+\begin{sfragment}[id=sec.forms-recap]{Recap: HTML Forms Data Transmission}
+File: [courses/FAU/IWGS/course]{webapps/snip/trans-recap.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/forms-recap.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/html-form-data.en}
+
+File: [courses/FAU/IWGS/course]{webapps/snip/getvspost.en}
+
+File: [courses/FAU/IWGS/course]{webapps/slides/getvspost.en}
+
+\end{sfragment}
+\end{document}
+

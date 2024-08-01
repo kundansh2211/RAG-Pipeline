@@ -1,0 +1,48 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/markup.en
+
+\begin{document}
+\begin{smodule}{rc*markup}
+
+\begin{nparagraph}
+We will now establish a nomenclature for giving instructions to a
+\sn{electronic-document?document renderer}. This has originated from movable (lead)
+type based typesetting but carries over well to
+\sns{electronic-document?electronic document}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Document Markup}
+\begin{itemize}
+\item\inputref[smglom/computing]{mod/markup.en}
+\item
+\begin{sexample}[id=document-markup.ex,for=markup]
+A text with \sr{control word}{markup codes} (for printing)
+\cmhgraphics[width=8cm]{digdocs/PIC/markup}
+\end{sexample}
+\item\inputref[smglom/computing]{mod/document-type.en}
+\item
+\begin{sassertion}[style=remark]
+\Sn{markup} turns \sn{plain text} into \sn{formatted text}.
+\end{sassertion}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+There are many systems for \sr{markup}{document markup}, ranging from informal ones
+as in \sref{document-markup.ex} that specify the intended document appearance to humans
+-- in this case the printer -- to technical ones which can be understood by machines but
+serving the same purpose.
+\end{nparagraph}
+
+\begin{nparagraph}
+\Sn{markup} is by no means limited to \inlinedef{\definame{visual markup} for
+documents intended for printing} as \sref{document-markup.ex} may suggest. There are
+\inlinedef{\definame{aural markup} formats that instruct
+\sns{electronic-document?document renderer} that transform documents to
+audio streams of e.g. reading speeds, intonation, and stress.}
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

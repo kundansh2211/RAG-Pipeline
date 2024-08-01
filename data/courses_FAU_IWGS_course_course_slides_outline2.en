@@ -1,0 +1,41 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/outline2.en
+
+\begin{document}
+\begin{frame}[label=slide.iwgs-outline2]
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+\usemodule[courses/Jacobs/GenCS/course]{xml/slides?xml-nutshell}
+\usemodule{databases/slides?json}
+\usemodule[smglom/computing]{mod?database}
+\usemodule[smglom/www]{mod?semantic-web}
+\usemodule[smglom/computing]{mod?image-processing}
+\frametitle{Outline of \useSGvar{courseacronym}-II:}
+\begin{itemize}
+\item<1-> \Sns{database}
+\begin{itemize}
+\item CRUD operations, \sn[post=ing]{query}, and python embedding
+\item \sn{xml?XML} and \sn{json?JSON} for file based data storage
+\end{itemize}
+\item<2-> \textrm{BooksApp}: a Books Application with \sn{persistent} storage
+\item<3-> \Sn{image processing}
+\begin{itemize}
+\item Basics
+\item Image transformations, Image Understanding
+\end{itemize}
+\item<4-> Ontologies, \sn{semantic web}, and WissKI
+\begin{itemize}
+\item Ontologies\lec{inference \ergo get out more than you put in}
+\item \sn{semantic web} Technologies\lec{standardize ontology formats and
+inference}
+\item Using \sn{semantic web} Tech for cultural heritage research data \ergo the
+WissKI System
+\end{itemize}
+\item<5-> Legal Foundations of Information Systems
+\begin{itemize}
+\item Copyright \& Licensing
+\item Data Protection (GDPR)
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}
+

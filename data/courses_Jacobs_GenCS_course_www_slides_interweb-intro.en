@@ -1,0 +1,32 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/interweb-intro.en
+
+\begin{document}
+\begin{smodule}{internetweb}
+
+\begin{frame}
+\frametitle{The Internet and the Web}
+\begin{itemize}
+\item\inputref[smglom/www]{mod/internet.en}
+\item\inputref[smglom/www]{mod/www.en}
+\item
+\begin{sparagraph}[title=Intuition]
+The \sn{www?WWW} is the \sn{multimedia} part of the
+\sn{internet?internet}, they form critical infrastructure for modern society
+and commerce.
+\end{sparagraph}
+\item The \sn{internet}/\sn{WWW} is huge:
+\begin{center}
+\begin{tabular}{|l|l|l|l|}\hline
+Year & \sr{WWW}{Web} & Deep Web & eMail\\\hline\hline
+1999 &   21 TB &  100 TB &  11TB\\\hline
+2003 & 167 TB &  92 PB & 447 PB \\\hline
+2010 & ???? & ????? & ?????\\\hline
+\end{tabular}
+\end{center}
+\item We want to understand how it works.\lec{services and scalability issues}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

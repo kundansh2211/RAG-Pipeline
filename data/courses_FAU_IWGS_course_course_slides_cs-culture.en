@@ -1,0 +1,52 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/cs-culture.en
+
+\begin{document}
+\begin{smodule}{cs-culture}
+\begin{nparagraph}
+One of the most important tasks in an inter/trans-disciplinary enterprise -- and that
+what ``digital humanities'' is, fundamentally -- is to understand the disciplinary
+language, intuitions and foundational assumptions of the respective other side. Assuming
+that most students are more versed in the ``humanities and social sciences'' side we
+want to try to give an overview of the ``\sr{computer-science?CS}{computer science}
+culture''.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Academic Culture in Computer Science}
+\begin{itemize}
+\item
+\begin{sdefinition}
+The \definame{academic culture} is the overall style of working, research, and
+discussion in an academic field.
+\end{sdefinition}
+\item
+\begin{sassertion}[style=observation]
+There are significant differences in the \sn{academic culture} between
+\sr{computer-science?CS}{computer science}, the humanities and the social
+sciences.
+\end{sassertion}
+\item \sr{computer-science?CS}{Computer science} is an \red{engineering
+discipline}\lec{we build things}
+\begin{itemize}
+\item given a problem we look for a (mathematical) model, we can think with
+\item once we have one, we try to re-express it with fewer ``primitives'' (concepts)
+\item once we have, we generalize it \lec{make it more widely applicable}
+\item only then do we \sn{implement} it in a program\lec{ideally}
+\end{itemize}
+Design of versatile, usable, and elegant tools is an important concern
+\item Almost all technical literature is in English.\lec{technical vocabulary too}
+\item \sr{computer-science?computer scientist}{CSlings} love shallow
+hierarchies.\lec{no personality cult; alle per Du}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Please keep in mind that -- self-awareness is always difficult -- the list below may be
+incomplete and clouded by mirror-gazing.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+
+

@@ -1,4 +1,5 @@
 import os
+import re
 import tiktoken
 from dotenv import load_dotenv
 from llama_index.embeddings.openai import OpenAIEmbedding
@@ -46,8 +47,26 @@ Settings._tokenizer = tokenizer
 Settings._node_parser = sentence_splitter
 Settings._prompt_helper = prompt_helper
 
+# Custom SimpleDirectoryReader to include metadata
+class CustomSimpleDirectoryReader(SimpleDirectoryReader):
+    def load_data(self):
+        documents = super().load_data()
+        for document in documents:
+            # Extract metadata from the content
+            lines = document.text.split('\n')
+            metadata = {}
+            for line in lines[:3]:  # Assuming the first few lines contain metadata
+                if line.startswith('Archive:'):
+                    metadata['archive'] = line.replace('Archive:', '').strip()
+                elif line.startswith('Filepath:'):
+                    metadata['filepath'] = line.replace('Filepath:', '').strip()
+            document.metadata = metadata
+            # Debug prints to verify metadata
+            print(f"Document Metadata: {metadata}")
+        return documents
+
 # Load documents from data directory
-directory_documents = SimpleDirectoryReader(input_dir='data').load_data()
+directory_documents = CustomSimpleDirectoryReader(input_dir='data').load_data()
 
 # Print the total number of documents
 print(f'Total number of documents: {len(directory_documents)}')
@@ -58,7 +77,7 @@ index = VectorStoreIndex.from_documents(
     service_context=Settings  
 )
 
-# load index
+# Load index
 index.storage_context.persist(persist_dir="index_storage")
 
 # Create a query engine
@@ -67,5 +86,5 @@ query_engine = index.as_query_engine(service_context=Settings)
 def query_index(query):
     response = query_engine.query(query)
     # Extract metadata
-    sources = [node.node.metadata for node in response.source_nodes]
+    sources = [{"archive": node.node.metadata.get('archive'), "filepath": node.node.metadata.get('filepath')} for node in response.source_nodes]
     return {"response": str(response), "sources": sources}

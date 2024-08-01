@@ -1,0 +1,15 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/snip/argpassing.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{python/slides/functions?python-functions}
+
+Another important feature of \python \sns{subroutine?function} is flexible
+argument passing. This allows to define \sns{subroutine?function} that supply complex
+behaviors -- for which we need to set many \sns{subroutine?parameter}    but
+simple calling patterns -- which is good to hide complexity from the
+\sn{programmer}.
+\end{sparagraph}
+\end{document}
+

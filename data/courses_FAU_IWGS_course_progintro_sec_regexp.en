@@ -1,0 +1,20 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/regexp.en
+
+\begin{document}
+\begin{sfragment}[id=sec.regexp]{Regular Expressions: Patterns in Strings}
+File: [courses/Jacobs/TDM/course]{doccomp/snip/regexp.en}
+
+File: [courses/Jacobs/TDM/course]{doccomp/slides/regexp-practical.en}
+
+File: [courses/Jacobs/TDM/course]{doccomp/slides/regexp-ex.en}
+
+File: [courses/Jacobs/TDM/course]{doccomp/slides/regexpal.en}
+
+File: [courses/Jacobs/GenICT/course]{python/slides/regexp.en}
+
+File: [courses/Jacobs/GenICT/course]{python/slides/humanities-ex.en}
+
+\end{sfragment}
+\end{document}
+

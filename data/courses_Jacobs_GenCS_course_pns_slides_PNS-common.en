@@ -1,0 +1,55 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: pns/slides/PNS-common.en
+
+\begin{document}
+\begin{smodule}{PNS-common}
+
+\usestructure{pns}
+\begin{frame}
+\frametitle{Commonly Used Positional Number Systems}
+\begin{itemize}
+\item\inputref[smglom/arithmetics]{mod/pns-common.en}
+\item
+\begin{sparagraph}[title=Notation]
+Attach the base of $\cN$ to every number from $\cN$.\lec{default: decimal}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Trick]
+Group triples or quadruples of \sn{pns-common?binary} \sns{digit} into
+recognizable chunks\lec{add leading zeros as needed}
+\begin{footnotesize}
+\begin{itemize}
+\item $\pnsinbase{110 0011 0101 1100}2 =
+\underbrace{\pnsinbase{0110}2}_{\pnsinbase{6}{16}}\underbrace{\pnsinbase{0011}2}_{\pnsinbase{3}{16}}\underbrace{\pnsinbase{0101}2}_{\pnsinbase{5}{16}}\underbrace{\pnsinbase{1100}2}_{\pnsinbase{C}{16}}
+=\pnsinbase{635C}{16}$
+\item $\pnsinbase{110 001 101 011 100}2=
+\underbrace{\pnsinbase{110}2}_{\pnsinbase68}\underbrace{\pnsinbase{001}2}_{\pnsinbase{1}8}\underbrace{\pnsinbase{101}2}_{\pnsinbase{5}8}\underbrace{\pnsinbase{011}2}_{\pnsinbase{3}{8}}\underbrace{\pnsinbase{100}2}_{\pnsinbase{4}{8}}
+=61534_{8}$
+\item
+\begin{scriptsize} $\pnsinbase{F3A}{16}=
+\underbrace{\pnsinbase{F}{16}}_{\pnsinbase{1111}2}\underbrace{\pnsinbase{3}{16}}_{\pnsinbase{0011}2}\underbrace{\pnsinbase{A}{16}}_{\pnsinbase{1010}2}
+=\pnsinbase{111100111010}2$,\quad $\pnsinbase{4721}8=
+\underbrace{\pnsinbase{4}8}_{\pnsinbase{100}2}\underbrace{\pnsinbase{7}8}_{\pnsinbase{111}2}\underbrace{\pnsinbase{2}8}_{\pnsinbase{010}2}\underbrace{\pnsinbase{1}8}_{\pnsinbase{001}2}
+=\pnsinbase{100111010001}2$
+\end{scriptsize}
+\end{itemize}
+\end{footnotesize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}[style=introduction]%,to=PNS-intro]
+We have all seen \sns{positional number system}: our \sn{decimal} system is one (for the
+\sn{positional-number-system?base} 10).  Other systems that important for us are the
+\sn{pns-common?binary} system (it is the smallest non degenerate one) and the \sn{octal}
+(base 8) and \sn{hexadecimal} (base 16) systems. These come from the fact that
+\sn{pns-common?binary} numbers are very hard for humans to scan. Therefore it became
+customary to group three or four \sns{digit} together and introduce (compound)
+\sns{digit} for these groups. The \sn{octal} system is mostly relevant for historic
+reasons, the \sn{hexadecimal} system is in widespread use as syntactic sugar for
+\sn{pns-common?binary} \sns{number}, which form the basis for electronic circuits, since
+\sn{pns-common?binary} \sns{digit} can be represented physically by voltage/no voltage.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

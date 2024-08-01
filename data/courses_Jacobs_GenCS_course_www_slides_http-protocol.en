@@ -1,0 +1,53 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/http-protocol.en
+
+\begin{document}
+\begin{smodule}{http-protocol}
+
+\begin{frame}
+\frametitle{\sn{HTTP}: Hypertext Transfer Protocol}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=http.def]
+The \definiendum{HTTP}{Hypertext Transfer Protocol} (\definame{HTTP}) is an application
+layer protocol for distributed, collaborative, hypermedia information systems.
+\end{sdefinition}
+\item June 1999: \sn{HTTP}/1.1 is defined in RFC 2616 \cite{FieGet:http99}.
+\item
+\begin{sparagraph}[title=Preview/Recap,id=user-agent-web-server]
+\usemodule[smglom/www]{mod?user-agent}
+\sn{HTTP} is used by a \sn{client} (called \sn{user agent}) to access web
+\sns{URI?web resource} (addressed by \sr{URL?URL}{uniform resource locators}
+(\sns{URL?URL})) via a \sn{HTTP request}. The \sn{web server} answers by supplying
+the \sn{web resource} (and \sn{metadata}).
+\end{sparagraph}
+\item
+\begin{sdefinition}
+Most important \sn{HTTP} request \definame[post=s]{method}.\lec{5 more less prominent}
+\begin{center}\small
+\begin{tabular}{|l|p{7cm}|l|}\hline
+\definame{GET} &  Requests a representation of the specified resource. & \sn{safe} \\\hline
+\definame{PUT} & Uploads a representation of the specified resource. & \sn{idempotent}\\\hline
+\definame{DELETE} &  Deletes the specified resource. & \sn{idempotent} \\\hline
+\definame{POST} &   Submits data to be processed (e.g., from a web form) to the identified
+resource. & \\\hline
+\end{tabular}
+\end{center}
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=safe.def]
+We call a \sn{HTTP} request \definame{safe}, \sn{iff} it does not change the state
+in the \sn{web server}.\lec{except for server logs, counters,\ldots; no side
+effects}
+\end{sdefinition}
+\item
+\begin{sdefinition}[id=idenpotent.def]
+We call a \sn{HTTP} request \definame{idempotent}, \sn{iff} executing it twice has
+the same effect as executing it once.
+\end{sdefinition}
+\item \sn{HTTP} is a stateless protocol.\lec{very memory \sn{efficient} for the server.}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

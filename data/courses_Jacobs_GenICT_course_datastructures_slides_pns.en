@@ -1,0 +1,47 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: datastructures/slides/pns.en
+
+\begin{document}
+\begin{smodule}{pns-intro}
+
+\usestructure{pns}
+\begin{frame}[fragile]
+\frametitle{Positional Number Systems}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Problem]
+Find a better representation system for \sns{natural number}.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+Build a clever code on the \sn{unary natural numbers}, use position information and
+\sn{natarith?addition}, \sn{natarith?multiplication}, and
+\sn{natarith?exponentiation}.
+\end{sparagraph}
+\item\inputref[smglom/arithmetics]{mod/positional-number-system.en}
+\item
+\begin{sexample}[for=positional number system]
+$\mathstruct{\set{a,b,c},\phi}$ with with $\defeq{\apply\phi{a}}0$,
+$\fundefeq{b}{\apply\phi{b}}1$, and $\defeq{\apply\phi{c}}2$ is a
+\sn{positional number system} for \sn{positional-number-system?base} three. We have
+\[\apply\phi{c,a,b} =
+\natplus{\nattimes[cdot]{2,\natpower32},\nattimes[cdot]{0,\natpower31},\nattimes[cdot]{1,\natpower30}}
+= \natplus{18,0,1} = 19
+\]
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+
+\begin{nparagraph}[style=transition]%,to=PNS-arithm,from=PNS-intro]
+If we look at the unary number system from a greater distance, we see that we are not
+using a very important feature of strings here: position. As we only have one letter in
+our alphabet, we cannot, so we should use a larger alphabet. The main idea behind a
+positional number system $\cN=\mathstruct{D_b,\phi_b}$ is that we encode numbers as
+strings of \sns{digit} in $D_b$, such that the position matters, and to give these
+encodings a \sn{meaning} by mapping them into the unary natural numbers via a mapping
+$\phi_b$.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

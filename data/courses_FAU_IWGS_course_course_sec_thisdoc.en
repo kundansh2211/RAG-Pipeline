@@ -1,0 +1,29 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/thisdoc.en
+
+\begin{document}
+\begin{sfragment}{This Document}
+\begin{sparagraph}[title=Format]
+The document mixes the slides presented in class with comments of the instructor to
+give students a more complete background reference.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Caveat]
+This document is primarily made available for the students of the
+\useSGvar{courseacronym} course only. After two iterations of this course it is
+reasonably feature-complete, but will evolve and be polished in coming academic years.
+\end{sparagraph}
+
+File: [courses/FAU/meta-inf]{admin/sec/thisdoc-CC-By-SA.en}
+
+File: [talks/voll-ki]{snip/kr-experiment.en}
+
+
+\begin{sparagraph}[title=Other Resources]
+The course notes will be complemented by a selection of problems (with and without
+solutions) that can be used for self-study; see
+\url{http://kwarc.info/teaching/IWGS}.
+\end{sparagraph}
+\end{sfragment}
+\end{document}
+

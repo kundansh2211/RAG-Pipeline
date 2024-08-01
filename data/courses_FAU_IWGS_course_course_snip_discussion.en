@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/snip/discussion.en
+
+\begin{document}
+\begin{nparagraph}\usemodule[smglom/cs]{mod?computer-science}
+Do use the opportunity to discuss the \useSGvar{courseacronym} topics with others. After
+all, one of the non-trivial inter/transdisciplinary skills you want to learn in the
+course is how to talk about \sr{computer-science?CS}{computer science} topics --
+maybe even with real \sns{computer-science?computer scientist}. And that takes
+practice, practice, and practice.
+\end{nparagraph}
+\end{document}
+

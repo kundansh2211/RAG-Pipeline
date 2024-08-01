@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/clientside.en
+
+\begin{document}
+\begin{sfragment}[id=sec.clientside]{Dynamic HTML: Client-side Manipulation of HTML Documents}
+File: [courses/Jacobs/GenCS/course]{www/snip/clientside-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/snip/clientside-interaction.en}
+
+File: [courses/Jacobs/GenCS/course]{www/snip/dom-intro.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/browser-rendering-pipeline.en}
+
+File: [courses/Jacobs/GenCS/course]{www/sec/javascript.en}
+
+\end{sfragment}
+\end{document}
+

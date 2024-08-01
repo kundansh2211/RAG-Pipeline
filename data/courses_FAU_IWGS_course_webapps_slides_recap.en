@@ -1,0 +1,47 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/recap.en
+
+\begin{document}
+\begin{frame}
+\usemodule{webapps/slides?bottle-stpl}
+\usemodule[smglom/www]{mod?webapp}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?jquery-layers}
+\usemodule{webapps/slides?bottle-routing}
+\usemodule[smglom/computing]{mod?Turing-complete}
+\frametitle{What Tools have we seen so far?}
+\begin{itemize}
+\item<1-> HTML (Hypertext Markup Language)
+\begin{itemize}
+\item Text-based \sr{markup format}{markup language} for the web.
+\item Tree structure (realized as the DOM in the browser)
+\begin{itemize}
+\item easy search\&find \ogre Selection
+\item \sn{DOM} changes easy by clear dependencies.
+\end{itemize}
+\end{itemize}
+\item<2-> \sn{CSS} (\sr{CSS}{Cascading Stylesheets})
+\begin{itemize}
+\item Language for specifying layout of \sn{HTML}/\sn{DOM}
+\item \sn{CSS} selection ties layout specifications into \sn{HTML}/\sn{DOM}
+\end{itemize}
+\item<3-> \Sn{bottle WSGI} (Server-Side \sn{web page} generation via \python)
+\begin{itemize}
+\item full \sn{programming language} for comprehensive functionality
+\item \sns{route} for complex but coherent \sns{web site}
+\item \sn{template engine} for \sn{HTML}-centered \sn{web page} design
+\end{itemize}
+\item<4-> \sn{JavaScript} (client-side scripting)
+\begin{itemize}
+\item full \sn{programming language} \lec{\sn{Turing complete}}
+\item \sn[post=matic]{program} changes to the \sn{DOM} \ergo \sn{dynamic} \sn{HTML}
+\begin{itemize}
+\item navigating the \sn{DOM} via JS-selection\lec{relatively clumsy, but sufficient}
+\item \sn{jQuery} navigates the \sn{DOM} via \sn{CSS} \sns{CSS?selector}\lec{reuses
+successful concepts}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}
+
+

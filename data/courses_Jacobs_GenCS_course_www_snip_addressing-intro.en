@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/addressing-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?www-concepts}
+The essential idea is that the \sr{WWW}{World Wide Web} consists of a set of resources
+(documents, \sr{digital image}{images}, movies, etc.) that are connected by links (like
+a spider-web). In the \sn{WWW}, the links consist of pointers to addresses of
+resources. To realize them, we only need addresses of resources (much as we have IP
+numbers as addresses to hosts on the \sn{internet}).
+\end{sparagraph}
+\end{document}
+

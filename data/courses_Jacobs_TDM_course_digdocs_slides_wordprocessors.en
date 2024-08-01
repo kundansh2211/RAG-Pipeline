@@ -1,0 +1,57 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/wordprocessors.en
+
+\begin{document}
+\begin{smodule}{wordprocessors}
+\symdef{MSWord}{\comp{\mathtt{MS Word}}}
+\symdef{MSOffice}{\comp{\mathtt{MS Office}}}
+\symdef{LibreOffice}{\comp{\mathtt{LibreOffice}}}
+\symdef{OpenOffice}{\comp{\mathtt{OpenOffice}}}
+\symdef{ApplePages}{\comp{\mathtt{Pages}}}
+\symdef{OfficeOnline}{\comp{\mathtt{Office Online}}}
+\symdef{GoogleDocs}{\comp{\mathtt{GoogleDocs}}}
+
+\begin{nparagraph}
+What \sns{text editor} do for \sns{file-type?text file},
+\sns{word processor} do for other
+\sns{electronic-document?electronic document}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Word Processors and Formatted Text}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=word-processor.def]
+A \definame{word processor} is a software application, that -- apart from being a
+\sn{electronic-document?document renderer} -- also supports the tasks of
+composition, editing, formatting, printing of
+\sns{electronic-document?electronic document}.
+\end{sdefinition}
+\item
+\begin{sexample}[for=word processor]
+Popular \sns{word processor} include
+\begin{itemize}
+\item \inlinedef[for={MSWord,MSOffice,OOXML}]{$\defnotation\MSWord$, an elaborated \sn{word processor} for
+$\windowsOS$, whose native format is \definiendum{OOXML}{Office Open XML}
+(\definame{OOXML}; \sn{file} \sn{file-system?extension} \lstinline|.docx|)}.
+\item \inlinedef[for={OpenOffice,LibreOffice,ODF}]{$\OpenOffice$ and $\LibreOffice$ are similar
+\sns{word processor} using the \definame{ODF} format
+(\definiendum{ODF}{Open Office Format}; \sn{file} \sn{file-system?extension} \lstinline|.odf|)
+natively, but can also import other formats.}.
+\item \inlinedef[for=ApplePages]{$\ApplePages$, a \sns{word processor} for $\macosxOS$ it
+uses a proprietary format}.
+\item \inlinedef[for={OfficeOnline,GoogleDocs}]{$\OfficeOnline$ and $\GoogleDocs$ are browser-based real-time
+collaborative \sns{word processor}}.
+\end{itemize}
+\end{sexample}
+\item
+\begin{sexample}[style=counter,for=word processor]
+\usemodule{digdocs/slides/markup?rc*markup}
+\Sn{text editor} are usually not considered to be \sns{word processor}, even though
+they can sometimes be used to edit \sn{markup?markup} based \sn{formatted text}.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,15 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/snip/css-fragment.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+\sn{CSS?CSS} is a huge ecosystem of technologies, which is spread out over about 100
+particular specifications -- see~\cite{w3c:css-allspecs:on} for an overview.
+
+We will now go over a small fragment of \sn{CSS?CSS} that is already very useful for web
+applications in more detail and introduce it by example. For a more complete
+introduction, see e.g.~\cite{W3Schools:CSS-tutorial}.
+\end{sparagraph}
+\end{document}
+

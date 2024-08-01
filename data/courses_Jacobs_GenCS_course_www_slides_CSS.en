@@ -1,0 +1,79 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/CSS.en
+
+\begin{document}
+\begin{smodule}{CSS}
+
+\begin{frame}[label=slide.css]
+\frametitle{\sn{CSS?CSS}: Cascading Style Sheets}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea]
+Separate structure/function from appearance.
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=css.def]
+\definiendum{CSS}{Cascading Style Sheets} (\sn{CSS?CSS}) is a \sn{style
+language} that allows authors and users to attach \definame{style} (e.g., fonts,
+colors, and spacing) to \sn{html?HTML} and \sn{xml?XML} documents.
+\end{sdefinition}
+\item
+\begin{sexample}[id=css-simple.ex,for={HTML,CSS}]
+Our \sn{text file} from \sref[file=www/slides/html.en]{html-simple.ex} with
+embedded \sn{CSS?CSS}:
+\begin{columns}
+\begin{column}{5.6cm}
+\lstinputmhlisting[language=HTML,basicstyle=\footnotesize\sf,belowskip=0pt]
+{www/code/csshello.html}
+\end{column}\quad
+\begin{column}{6cm}
+\end{column}
+\end{columns}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Now that we have seen the example, let us fix the basic terminology of \sn{CSS?CSS}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{\sn{CSS?CSS}: Rules, Selectors, and Declarations}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \sn{CSS?CSS} \definame{style sheet} consists of a sequence of
+\definame[post=s]{rule} that in turn consist of a set of \definame[post=s]{selector}
+that determine which \sn{xml?XML} \sr{XML element}{elements} the
+\sn{rule} applies to and a \definame{declaration block} that specifies intended
+presentation.
+\end{sdefinition}
+\item
+\begin{sdefinition}
+A \sn{CSS?CSS} \sn{declaration block} consists of a semicolon separated list of
+\sns{declaration} in curly braces. Each \definame{declaration} itself consists of a
+\definame{property}, a colon, and a \definame{CSS?value}.
+\end{sdefinition}
+\item
+\begin{sexample}[id=css-simple-css.ex,for={CSS,rule}]
+In \sref{css-simple.ex} we have three \sns{rule}, they address color and font
+\sr{property}{properties}:
+\lstinputmhlisting[language=HTML,linerange={4-7},gobble=7]{www/code/csshello.html}
+\end{sexample}
+\item
+\begin{sparagraph}[title=Observation]
+In modern \sns{web-site?web site}, \sn{CSS?CSS}
+contributes as much -- if not more -- to the appearance as the choice of \sn{html?HTML}
+elements.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+In \sref{css-simple-css.ex} the \sns{selector} are just
+\sr{XML element}{element} names, they specify that the respecive
+\sns{declaration block} apply to all elements of this name.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

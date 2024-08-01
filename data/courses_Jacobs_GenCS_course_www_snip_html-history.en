@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/html-history.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides/html5?htmlfive}
+
+\sn{html?HTML} was created in 1990 and standardized in version 4 in
+1997~\cite{RagHor:html98}. Since then the \sn{WWW} has evolved considerably from a
+web of static \sns{web-page?web page} to a \sr{WWW}{Web} in which highly
+dynamic \sns{web-page?web page} become user interfaces for web-based
+applications and even mobile applets. \sn{htmlfive?HTML5} standardized the
+necessary infrastructure in 2014~\cite{W3C:html5}.
+\end{sparagraph}
+\end{document}
+

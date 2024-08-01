@@ -1,0 +1,13 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/getvspost.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?http-protocol}
+
+To understand whether we should use the \sn{http-protocol?GET} or
+\sn{http-protocol?POST} methods, we have to look into the details, which we will now
+summarize.
+\end{sparagraph}
+\end{document}
+

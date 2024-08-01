@@ -1,0 +1,60 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/editors.en
+
+\begin{document}
+\begin{smodule}{editors}
+\symdef{emacsEditor}{\comp{\mathtt{emacs}}}
+\symdef{viEditor}{\comp{\mathtt{vi}}}
+\symdef{sublimeEditor}{\comp{\mathtt{sublime}}}
+\symdef{notepadEditor}{\comp{\mathtt{Notepad}}}
+\symdef{etherpad}{\comp{\mathtt{EtherPad}}}
+
+
+\begin{nparagraph}
+\usemodule[courses/Jacobs/GenCS/course]{xml/slides?unicode-nutshell}
+\usemodule[smglom/computing]{mod?shell}
+As we have seen above, it does not take much to \sr{electronic-document?document
+renderer}{render} a \sn{file-type?text file}: we only need to guess the right
+\sn{unicode-nutshell?encoding scheme} so we can decode the file and show the
+character sequence to the user. Indeed the $\unixOS$ \lstinline|cat| just prints the
+contents of a \sn{file-type?text file} to a \sn{shell?shell}. But we need much
+more, we need tools with which we can compose and edit \sns{file-type?text
+file}; we do this with \sns{text editor}, which we will discuss now.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Text Editors}
+\begin{itemize}
+\item
+\begin{sdefinition}[id=text-editor.def]
+A \definame{text editor} is a program used for
+\sr{electronic-document?document renderer}{rendering} and manipulating
+\sns{file-type?text file}.
+\end{sdefinition}
+\item
+\begin{sexample}[for=text editor]
+Popular \sns{text editor} include
+\begin{itemize}
+\item \inlinedef[for=notepadEditor]{$\notepadEditor$ is a simple \sr{text editor}{editor} distributed with
+$\windowsOS$.}
+\item \inlinedef[for=emacsEditor]{$\emacsEditor$ and $\viEditor$ are powerful \sr{text editor}{editors}
+originating from $\unixOS$ and optimized for \sn{programming}.}
+\item \inlinedef[for=sublimeEditor]{$\sublimeEditor$ is a sophisticated \sn{programming}
+\sr{text editor}{editor} for multiple \sr{operating-system?OS}{operating
+systems}.}
+\item \inlinedef[for=etherpad]{$\etherpad$ is a browser-based real-time collaborative editor.}
+\end{itemize}
+\end{sexample}
+\item
+\begin{sexample}[style=counter,for=text editor]
+\usemodule{digdocs/slides?wordprocessors}
+Even though it can save documents as \sns{file-type?text file}, $\MSWord$ is not usually considered a
+\sn{text editor}, since it is optimized towards
+\sn{formatted text}; such ``editors'' are called
+\sns{wordprocessors?word processor}.
+\end{sexample}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

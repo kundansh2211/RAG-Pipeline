@@ -1,0 +1,17 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/rtfm.en
+
+\begin{document}
+\begin{smodule}{python-rtfm}
+
+\begin{frame}[label=slide.python-rtfm]
+\frametitle{For more information on \python}
+\begin{center}\huge
+\begin{sparagraph}
+\inlinedef{\definame{RTFM} (\hateq ``read the fine manuals''})
+\end{sparagraph}
+\end{center}
+\end{frame}
+\end{smodule}
+\end{document}
+

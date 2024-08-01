@@ -1,0 +1,17 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/snip/rtfm-more.en
+
+\begin{document}
+\begin{nparagraph}
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+
+Our very quick introduction to \python is intended to present the very basics
+of \sn{programming} and get \useSGvar{courseacronym} students off the ground, so that they
+can start using programs as tools for the humanities and social sciences.
+
+But there is a lot more to the core functionality \python than our very quick
+introduction showed, and on top of that there is a wealth of specialized packages and
+libraries for almost all computational and practical needs.
+\end{nparagraph}
+\end{document}
+

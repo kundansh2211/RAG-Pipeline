@@ -1,0 +1,35 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/input-print.en
+
+\begin{document}
+\begin{smodule}{input-print}
+\lstset{language=python,mathescape}
+
+\begin{frame}[label=slide.input-print,fragile]
+\frametitle{Input/Output in \python}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Recall]
+The \sn{cpu?CPU} communicates with the user through
+\sr{information-processing-system?input subsystem}{input} devices like keyboards
+and \sr{information-processing-system?output subsystem}{output} devices like the
+screen.
+\end{sparagraph}
+\item \Sns{program?programming language} provide special
+\sns{information-processing-system?instruction} for this.
+\item In \python we have already seen
+\begin{itemize}
+\item \lstinline|input($\pmetavar{prompt}$)| for
+\sr{information-processing-system?input subsystem}{input} from the keyboard, it
+returns a \sn{python-datatypes?string}.
+\item \lstinline|print($\pmetavar{objects}$,sep=$\pmetavar{separator}$,end=$\pmetavar{endchar}$)| for
+\sr{information-processing-system?output subsystem}{output} to the screen.
+\end{itemize}
+\item But \sns{computer} also supply another object to
+\sr{information-processing-system?input subsystem}{input} from and
+\sr{information-processing-system?output subsystem}{output} to\lec{up next}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

@@ -1,0 +1,14 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/snip/html-ex-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{www/slides?html} We will not give a complete introduction to the various tags
+and elements of the \sn{html?HTML} language here, but refer the reader to the
+\sn{html?HTML} recommendation \cite {W3C:html5} and the plethora of excellent web
+tutorials. Instead we will introduce the concepts of \sn{html?HTML} markup by way
+of examples.
+\end{sparagraph}
+
+\end{document}
+

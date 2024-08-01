@@ -1,0 +1,21 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/snip/contact-form-trans.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule{webapps/slides?bottle-request}
+\usemodule[smglom/computing]{mod?database}
+There are two great flaws in the current state of the contact form:
+\begin{enumerate}
+\item The ``receipt page'' \lstinline|contact-after.html| is static and does not take
+the data it receives from the contact form into account. It would be polite to give
+some record on what happened. We can fix this using \sn{bottle-stpl?bottle WSGI}
+using the methods we just learned.
+\item Nothing actually happens with the message. It should be either entered into an
+internal message queue in a \sn{database}0 or ticketing system, or fed into an
+e-mail to a sales person. As we do not have access to the first, we will just use a
+\python library to send an e-mail programmatically.
+\end{enumerate}
+\end{sparagraph}
+\end{document}
+

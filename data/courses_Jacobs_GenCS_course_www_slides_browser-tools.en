@@ -1,0 +1,30 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/browser-tools.en
+
+\begin{document}
+\begin{smodule}{browser-tools}
+\begin{nparagraph}
+Let us now look at a couple of more advanced tools available in most
+\sns{webbrowser?web browser} for dealing with the underlying \sn{html?HTML} document.
+\end{nparagraph}
+\begin{frame}
+\frametitle{Browser Tools for dealing with \sn{html?HTML}, e.g. in $\firefoxbrowser$}
+\begin{itemize}
+\item<1-> Hit Control-U to see the page source in the \sr{web browser}{browser}
+\only<1>{\cmhgraphics[width=11cm]{www/PIC/first-html-source}}
+\item<2->  go to an element and right-click \ergo ``Inspect element''
+\only<2>{\cmhgraphics[width=10cm]{www/PIC/first-html-inspector}}
+\end{itemize}
+\end{frame}
+\begin{nparagraph}
+\usemodule[smglom/www]{mod?webapp}
+
+We have used $\firefoxbrowser$ as an example here, but these tools are available in some
+form in all major \sr{web browser}{browsers}    the \sr{web browser}{browser} vendors want to make their offerings
+attractive to web developers, so that web pages and \sns{web application}
+get tested and debugged in them and therefore work as expected.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

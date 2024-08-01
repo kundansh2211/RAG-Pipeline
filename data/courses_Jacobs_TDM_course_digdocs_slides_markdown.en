@@ -1,0 +1,39 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/markdown.en
+
+\begin{document}
+\begin{smodule}{markdown}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?wikis}
+\usemodule[courses/Jacobs/GenICT/course]{maintenance/slides?bugtracker}
+
+\begin{frame}
+\frametitle{Markdown a simple Markup Format Generating \sn{html?HTML}}.
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea]
+We can translate between \sns{document-type?markup format}.
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=markdown.def]
+\Definame{markdown} is a family of \sns{document-type?markup format} whose
+\sns{markup?control word} are unobtrusive and easy to write in a
+\sn{text editor}. It is intended to be converted to \sn{html?HTML} and other
+formats for display.
+\end{sdefinition}
+\item
+\begin{sexample}[for=markdown]
+\Sn{markdown} is used in applications that want to make user input easy and
+\sn{efficient}, e.g. \sns{wikis?wiki} and \sr{bugtracker?bugtracker}{issue tracking
+systems}.
+\end{sexample}
+\item
+\begin{sparagraph}[title=Workflow]
+Users write \sn{markdown}, which is formatted to \sn{html?HTML} and then served for display.
+\end{sparagraph}
+\item A good cheet-sheet for \sn{markdown} \sns{markup?control word} can be
+found at \url{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

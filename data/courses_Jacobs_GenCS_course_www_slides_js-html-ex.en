@@ -1,0 +1,45 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/js-html-ex.en
+
+\begin{document}
+\begin{smodule}{js-html-ex}
+
+\usestructure{tree}
+\begin{nparagraph}
+Let us now use all we have learned in an example to fortify our intuition about using
+\sn{javascript?JavaScript} to change the \sn{DOM}.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Example: Changing Web Pages Programmatically}
+\begin{itemize}
+\item
+\begin{sexample}[title=Stupid but Fun,id=ex.pyramid,for=JavaScript]\strut\\
+\begin{minipage}[c]{8cm}
+\lstinputmhlisting[linerange=2-18,linewidth=8cm,basicstyle=\small\sf]{www/code/triangle.html}
+\end{minipage}\qquad
+\begin{minipage}[c]{2.5cm}
+\end{minipage}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The \sn{html?HTML} document in \sref{ex.pyramid} contains an empty
+\lstinline|<div>| element whose \lstinline|id| attribute has the value
+\lstinline|pyramid|. The subsequent \lstinline|script| element contains some code that
+builds a \sn{DOM} node-set of 10 text and \lstinline|<br/>| nodes in the
+\lstinline|triangle| variable. Then it assigns the \sn{DOM} node for the
+\lstinline|<div>| to the variable \lstinline|elem| and deposits the \lstinline|triangle|
+node-set as \sn[post=ren]{child} into it via the \sn{javascript?JavaScript}
+\lstinline|innerHTML| method.
+
+We see the result on the right of \sref{ex.pyramid}. It is the same as if the
+\lstinline|#|-strings and \lstinline|<br/>| sequence had been written in the
+\sn{html?HTML}    which    at least for pyramids of greater depth    would have
+been quite tedious for the author.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

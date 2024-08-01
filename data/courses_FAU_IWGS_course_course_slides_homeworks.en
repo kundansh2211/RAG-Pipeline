@@ -1,0 +1,51 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/homeworks.en
+
+\begin{document}
+\begin{frame}
+\usemodule[smglom/arithmetics]{mod?percentage}
+\frametitle{\useSGvar{courseacronym} Homework Assignments}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Homeworks]
+will be small individual problem/programming/system assignments
+\begin{itemize}
+\item but take time to solve\lec{at least read them directly \ergo questions}
+\item group submission if and only if explicitly permitted.
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[style=warning]
+Without trying the homework assignments you are unlikely to pass the exam.
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Admin]
+To keep things running smoothly
+\begin{itemize}
+\item Homeworks will be posted on \href{https://www.studon.fau.de/studon}{StudOn}.
+\item Sign up for \useSGvar{courseacronym} under \useSGvar{studon}.
+\item Homeworks are handed in electronically there. \lec{plain text, program files, PDF}
+\item \red{Go to the tutorials, discuss with your TA}!\lec{they are there for you!}
+\end{itemize}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Homework Discipline]
+\begin{itemize}
+\item \red{Start early}!\lec{many assignments need more than one evening's work}
+\item Don't start by sitting at a blank screen \lec{talking \& study group help}
+\item Humans will be trying to understand the text/code/math when grading it.
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+It is very well-established experience that without doing the homework assignments (or
+something similar) on your own, you will not master the concepts, you will not even be
+able to ask sensible questions, and take nothing home from the course. Just sitting in
+the course and nodding is not enough!
+\end{nparagraph}
+\end{document}
+
+
+

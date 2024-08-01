@@ -1,0 +1,37 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/webserver.en
+
+\begin{document}
+\begin{smodule}{webserver}
+\symdef{apachewebserver}{\comp{\mathtt{apache}}}
+\symdef{IISwebserver}{\comp{\mathtt{IIS}}}
+\symdef{nginxwebserver}{\comp{\mathtt{nginx}}}
+
+\begin{nparagraph}
+Finally, we come to the last component, the \sn{web server}, which is responsible
+for providing the \sn{web-page?web page} requested by the user.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Web Servers}
+\begin{itemize}
+\item\inputref[smglom/www]{mod/webserver.en}
+\item
+\begin{sexample}[for=web server,title=Common Web Servers]
+\begin{itemize}
+\item \inlinedef[for=apachewebserver]{$\apachewebserver$ is an open source \sn{web server} that serves about
+$\percentage{50}$ of the \sn{WWW}.}
+\item \inlinedef[for=nginxwebserver]{$\nginxwebserver$ is a lightweight open source
+\sn{web server}.} \lec{ca. $\percentage{35}$}
+\item \inlinedef[for=IISwebserver]{$\IISwebserver$ is a proprietary \sn{web server} provided by Microsoft Inc.}
+\end{itemize}
+\end{sexample}
+\item\inputref[smglom/www]{mod/host.en}
+\item Even though \sns{webserver?web server} are very complex software
+systems, they come \sn[pre=pre,post=ed]{install} on most $\unixOS$ systems and
+can be downloaded for $\windowsOS$~\cite{xampp:webpage}.
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

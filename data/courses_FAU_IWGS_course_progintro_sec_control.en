@@ -1,0 +1,16 @@
+Archive: courses/FAU/IWGS/course
+Filepath: progintro/sec/control.en
+
+\begin{document}
+\begin{sfragment}[id=sec.control]{Python Control Structures}
+File: [courses/Jacobs/GenICT/course]{python/slides/branchloop.en}
+
+File: [courses/Jacobs/GenICT/course]{python/snip/python-branchloop.en}
+
+File: [courses/Jacobs/GenICT/course]{python/slides/branching.en}
+
+File: [courses/Jacobs/GenICT/course]{python/slides/looping.en}
+
+\end{sfragment}
+\end{document}
+

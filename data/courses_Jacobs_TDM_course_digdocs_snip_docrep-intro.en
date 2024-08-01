@@ -1,0 +1,16 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/snip/docrep-intro.en
+
+\begin{document}
+\begin{sparagraph}
+\usemodule[smglom/computing]{mod?character}
+\usemodule[smglom/arithmetics]{mod?pns-common}
+
+
+Now that we can represent \sns{character} as \sn{bit}
+\sns{sequence}, we can represent text documents. In principle text documents
+are just \sns{sequence} of \sns{character}; they can be
+represented by just concatenating them.
+\end{sparagraph}
+\end{document}
+

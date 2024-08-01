@@ -1,0 +1,72 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/jupyterlab.en
+
+\begin{document}
+\begin{sfragment}[id=sec.jupyterlab]{Programming Exercises and JuptyterLab as a Web IDE}
+\usemodule{progintro/slides?jupyterLab}
+\usemodule{progintro/slides?jupyterNotebooks}
+
+\begin{sparagraph}[title=Programming Exercises]
+Most of the \sn{computer} tools introduced in this course require
+\sn{programming}    e.g. for configuration, extension, or input preprocessing    or
+work much better when the user understands the basic underlying concepts at the program
+level. Therefore we accompany the course with a set of (\sn{programming}) exercises
+(given as homework to the \useSGvar{courseacronym} students) that allow practicing that.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Web IDEs]
+In the \useSGvar{courseacronym} course at FAU, which is adressed to students from the
+humanities and social sciences, we do not have access to a pool of standardized
+hardware. Students have to use their own computing devices for the \sn{programming}
+exercises. In any group with diverse hardware, \sn[post=ing]{install} software,
+standardizing software versions, \ldots becomes a serious problem, even if the group
+only has 50 members; in \useSGvar{courseacronym}, we need the \python
+\sn{interpreter}, a \sn{text editor} or \sr{IDE?IDE}{integrated
+development environment} (\sn{IDE?IDE}), and various \python
+libraries. In \useSGvar{courseacronym} we solve this by using a
+\sn{web-IDE?web IDE}, which only presupposes a \sn{webbrowser?web browser} on
+student hardware.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Jupyterlab]
+After experimenting with commercial \sns{web-IDE?web IDE} we settled on \sn{jupyterLab},
+even though it does not focus on \sn{IDE?IDE} features. \Sns{jupyter notebook} allow to
+mix documentation, code snippets, and exercise text of \sn{programming} exercises and
+package them into learning objects that can be downloaded, \sn[post=ed]{interact} with,
+and submitted easily. \sn{jupyterLab} acts as the user interface for managing and
+editing \sns{jupyter notebook} and supplies standardized \sn{shell} and \python
+\sns{REPL?REPL} for students.  The \sn{jupyterLab} server runs as a virtual machine on
+the instructor's hardware. Resource consumption is minimal in our experience (except in
+the week before the exam). See~\cite{Betzendahl:jkid20} for a documentation of how to
+set up a server for a small course like \useSGvar{courseacronym}.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Limitations of JupyterLab]
+Of course, students who want to engage in more serious software development will
+eventually have to ``graduate'' to a regular \sn{IDE?IDE} when programs become
+larger and more long-lived. But this -- and the necessary software engineering skills --
+is emphatically not the focus of the \useSGvar{courseacronym} course.
+\end{sparagraph}
+
+\begin{sparagraph}[title=Exercise Notebooks]
+The exercise notebooks (in \sr{jupyter notebook}{notebook} format and PDF --
+unfortunately only in German) can be found at
+\url{https://kwarc.info/teaching/IWGS/NB}. They comprise
+\begin{itemize}
+\item outright \sn{programming} exercises that introduce the \python
+language or allow to play with the respective concepts in \python
+\item code reading/\sn[post=ging]{debug} exercises where the character of Beatrice
+Beispiel almost solves interesting problems, and
+\item development steps towards larger applications, which often involve completing
+\python skeletons using the concepts taught in class.
+\end{itemize}
+In all cases, the necessary increments to be supplied by the students are designed to
+not let the \python skills become a barrier, but give students the opportunity
+to develop the necessary \sn{programming} skills in passing.
+
+We have themed the exercises with DigiHumS topics to keep them interesting for our
+students.
+\end{sparagraph}
+\end{sfragment}
+\end{document}
+

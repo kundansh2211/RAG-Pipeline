@@ -1,0 +1,47 @@
+Archive: courses/Jacobs/GenCS/course
+Filepath: www/slides/browser-rendering-pipeline.en
+
+\begin{document}
+\begin{smodule}{browser-rendering-pipeline}
+
+\begin{frame}
+\frametitle{Background: Rendering Pipeline in \sr{web browser}{browsers}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Observation]
+The nested markup codes turn \sn{html?HTML} documents into trees.
+\end{sparagraph}
+\item
+\begin{sdefinition}[id=DOM.def]
+The \definiendum{DOM}{document object model} (\definame{DOM}) is a
+\sn{data structure} for the \sn{html?HTML} document tree together with
+a standardized set of access methods.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Rendering Pipeline]
+Rendering a \sn{web-page?web page} proceeds in three steps
+\begin{enumerate}
+\item the \sr{web browser}{browser} receives a \sn{html?HTML} document,
+\item \sns{parse} it into an internal \sn{data structure}, the
+\sn{DOM},
+\item which is then painted to the screen. \lec{repaint whenever \sn{DOM} changes}
+\end{enumerate}
+\cmhtikzinput{www/tikz/dom-arch}
+The \sn{DOM} is notified of any user events.\lec{resizing, clicks, hover,\ldots}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+The most important concept to grasp here is the tight synchronization between the
+\sn{DOM} and the screen. The \sn{DOM} is first established by \sr{parse}{parsing}
+(i.e. interpreting) the input, and is synchronized with the \sr{web browser}{browser} UI
+and document viewport. As the \sn{DOM} is \sn{persistent} and synchronized, any change
+in the \sn{DOM} is directly mirrored in the \sr{web browser}{browser} viewpoint, as a
+consequence we only need to change the \sn{DOM} to change its presentation in the
+\sr{web browser}{browser}. This exactly is the purpose of the client side scripting
+language, which we will go into next.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

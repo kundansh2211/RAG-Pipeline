@@ -1,0 +1,14 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/css-tools.en
+
+\begin{document}
+\begin{sfragment}[id=sec.css-tools]{CSS Tools}
+File: [courses/FAU/IWGS/course]{digdocs/snip/css-tools.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/inspector.en}
+
+File: [courses/FAU/IWGS/course]{digdocs/slides/colorpicker.en}
+
+\end{sfragment}
+\end{document}
+

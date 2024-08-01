@@ -1,0 +1,17 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/sec/html-intro.en
+
+\begin{document}
+\begin{sfragment}[id=sec.html-intro]{Introduction}
+File: [courses/Jacobs/GenCS/course]{www/snip/html-history.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/html.en}
+
+File: [courses/Jacobs/GenCS/course]{www/snip/html-ex-trans.en}
+
+File: [courses/Jacobs/GenCS/course]{www/slides/html-ex.en}
+
+\end{sfragment}
+\end{document}
+
+

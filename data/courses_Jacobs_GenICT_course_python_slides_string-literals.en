@@ -1,0 +1,41 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/string-literals.en
+
+\begin{document}
+\begin{smodule}{python-string-literals}
+\lstset{language=python,aboveskip=2pt,belowskip=0pt}
+
+\begin{frame}[fragile]
+\frametitle{String Literals in \python}
+\begin{itemize}
+\item<1->
+\begin{sparagraph}[title=Problem]
+How to write \sns{string} including special \sns{character?character}?
+\end{sparagraph}
+\item<1->\inputref[smglom/computing]{mod/literal.en}
+\item<1->
+\begin{sdefinition}
+\python uses \sn{string} \sns{literal}, i.e
+\sn{character?character} sequences surrounded by one, two, or three sets of matched
+single or double quotes for string input. The content can contain
+\definame[post=s]{escape sequence}, i.e. the \definame{escape character} backslash
+followed by a code \sn{character?character} for problematic \sns{character?character}:
+\begin{center}
+\begin{tabular}{|l|l||l|l|}\hline
+Seq & \Sn{meaning} & Seq& \Sn{meaning}\\\hline\hline{}
+\lstinline|\\| & Backslash (\textbackslash) & \lstinline|\'| & Single quote (') \\\hline
+\lstinline|\"| & Double quote (") & \lstinline|\a| & Bell (BEL) \\\hline
+\lstinline|\b| & Backspace (BS) & \lstinline|\f| & Form-feed (FF)\\\hline
+\lstinline|\n| & Linefeed (LF) & \lstinline|\r| & Carriage Return (CR)\\\hline
+\lstinline|\t| & Horizontal Tab (TAB) & \lstinline|\v| & Vertical Tab (VT) \\\hline
+\end{tabular}
+\end{center}
+In triple-quoted \sn{string} \sns{literal}, unescaped newlines and
+quotes are honored, except that three unescaped quotes in a row terminate the
+\sn{literal}.
+\end{sdefinition}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

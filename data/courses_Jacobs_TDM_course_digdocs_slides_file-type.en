@@ -1,0 +1,53 @@
+Archive: courses/Jacobs/TDM/course
+Filepath: digdocs/slides/file-type.en
+
+\begin{document}
+\begin{smodule}{file-type}
+
+\begin{nparagraph}
+\usemodule[smglom/computing]{mod?interactive}
+We now come to another aspect of \sns{electronic-document?electronic document}: We
+mostly \sn{interact} with them in the form of \sns{file?file}. Again, we fix our
+nomenclature.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{File Types}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+We mostly encounter \sns{electronic document} in the form of \sns{file?file} on some
+\sn{storage medium}.
+\end{sassertion}
+\item\inputref[smglom/computing]{mod/file-type.en}
+\item
+\begin{sassertion}[style=remark]
+\Sns{text file} are usually encoded with \sn{ASCII},
+\sn{ASCII-problems?ISO Latin}, or    increasingly    $\unicode$ encodings like
+$\UTFeight$.
+\end{sassertion}
+\item
+\begin{sexample}[for=text file]
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+\python programs are stored in \sns{text file}.
+\end{sexample}
+\item
+\begin{sparagraph}
+In practice, \sns{text file} are often processed as a
+\sn{sequences?sequence} of \inlinedef{\definiendum[post=s]{line}{text line} (or
+just \definame[post=s]{line}), i.e. sub strings separated by the
+\definame{line feed character} $\unicodepoint{000A}$; $\ucsname{LINE FEED
+(LF)}$. The \definame{line number} is just the position in the sequence.}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}[style=remark]
+\usemodule{digdocs/slides/markup?rc*markup}
+\Sn{plain text} is different from \sn{formatted text}, which includes \sr{markup?control
+word}{markup code}, and \sns{binary file} in which some portions must be interpreted
+as binary data (encoded \sns{integer}, \sns{real number}, \sns{digital image}, etc.)
+\end{nparagraph}
+\end{smodule}
+\end{document}
+

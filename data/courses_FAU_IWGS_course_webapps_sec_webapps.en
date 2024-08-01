@@ -1,0 +1,26 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/sec/webapps.en
+
+\begin{document}
+\begin{sfragment}[id=sec.webapps]{Web Applications}
+File: [courses/FAU/IWGS/course]{webapps/snip/intro.en}
+
+\excursion[courses/Jacobs/GenCS/course]{internet-basics}
+{internet/sec/basics.en}
+{The World Wide Web as we introduce it here is based on the Internet infrastructure
+and protocols. In some places it may be useful to read up on this in}
+File: [courses/FAU/IWGS/course]{webapps/sec/webapps-intro.en}
+
+File: [courses/FAU/IWGS/course]{webapps/snip/trans.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/www-basics.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/forms-recap.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/serverside.en}
+
+File: [courses/FAU/IWGS/course]{webapps/sec/exercises.en}
+
+\end{sfragment}
+\end{document}
+

@@ -1,0 +1,39 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/slides/outline.en
+
+\begin{document}
+\begin{frame}[label=slide.iwgs-outline]
+\usemodule[courses/Jacobs/GenICT/course]{python/slides/nutshell?python-nutshell}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?CSS}
+\usemodule[courses/Jacobs/GenCS/course]{www/slides?javascript}
+\usemodule[smglom/www]{mod?webapp}
+\frametitle{Outline of \useSGvar{courseacronym} 1:}
+\begin{itemize}
+\item \Sn{programming} in \python:\lec{main tool in
+\useSGvar{courseacronym}}
+\begin{itemize}
+\item Systematics and culture of \sn{programming}
+\item Program and control structures
+\item Basic data strutures like numbers and strings, character encodings, unicode, and
+regular expressions
+\end{itemize}
+\item Digital documents and document processing:
+\begin{itemize}
+\item text files
+\item markup systems, \sn{html?HTML}, and \sn{CSS?CSS}
+\item \sn{xml?XML}: Documents are trees.
+\end{itemize}
+\item Web technologies for \sn{interactive} documents and
+\sns{web application}
+\begin{itemize}
+\item \sn{internet} infrastructure: web browsers and servers
+\item serverside computing: bottle routing and
+\item client-side \sn[post=ion]{interact}: dynamic \sn{html?HTML},
+\sn{javascript?JavaScript}, \sn{html?HTML} forms
+\end{itemize}
+\item \Sn{web application} project\lec{fill in the blanks to obtain a working web app}
+\end{itemize}
+\end{frame}
+\end{document}
+
+

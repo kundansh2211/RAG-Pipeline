@@ -1,0 +1,131 @@
+Archive: courses/FAU/IWGS/course
+Filepath: digdocs/slides/tree-computing.en
+
+\begin{document}
+\begin{smodule}{tree-computing}
+\lstset{language=python,aboveskip=0pt,belowskip=0pt}
+
+\begin{nparagraph}
+We will now make use of the \sn{tree?tree} structure for computation. Even if the
+computing tasks we pursue here may seem a bit abstract, they show very nicely how
+\sn{tree} \sns{algorithm} typically work.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computing with Trees in \python}
+\begin{itemize}
+\item
+\begin{sassertion}[style=observation]
+All connected substructures of \sns{tree?tree} are \sns{tree?tree}
+themselves.
+\end{sassertion}
+\begin{columns}
+\begin{column}[c]{8cm}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Idea]
+operate on the \sn{tree} by ``Divide and Conquer''
+\begin{itemize}
+\item operate on the two \sns{subtree}
+\item combine results, taking \sn{forest?root} into account
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{column}
+\quad
+\begin{column}[c]{3cm}
+\mhtikzinput{digdocs/tikz/ctree}
+\end{column}
+\end{columns}
+This approach lends itself very well to
+\sr{recursion?recursion}{recursive programming}
+\lec{\sns{subroutine?function} that \sn{subroutine?call} themselves}
+\item
+\begin{sparagraph}[title=Idea]
+Represent \sns{tree?tree} as \sns{list?list} of
+\sn{tree} labels and \sns{list?list} (of
+\sns{subtree?subtree}).
+\end{sparagraph}
+\item
+\begin{sexample}[title=The tree above,id=tree-height.ex,for=tree]
+Represented as \lstinline|[1,[2,[[4],[5]]],[3,[[6],[7]]]]|\\
+compute the \sr{height-depth?tree height}{tree height} by the following
+\python functions:
+\begin{center}\lstset{basicstyle=\small\sf}
+\begin{tabular}{c>{\quad}c}
+\lstinputmhlisting[linerange=7-11,linewidth=4.5cm]{digdocs/code/height.py}&
+\lstinputmhlisting[linerange=1-5,linewidth=6.1cm]{digdocs/code/height.py}
+\end{tabular}
+\end{center}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Let use have a closer look at \sref{tree-height.ex}. The \sn{algorithm} consists of two
+\sns{subroutine?function}:
+\usestructure{tree}
+\begin{enumerate}
+\item \lstinline|height|, which computes the \sr{height-depth?tree height}{height}
+of an input \sn{tree?tree} by delegating the computation of the maximal
+\sr{height-depth?tree height}{height} of its \sr{child}{children} to
+\lstinline|maxh| and then incrementing the value by 1.
+\item \lstinline|maxh|, which takes a list of \sns{tree?tree} and computes the
+maximum of their \sr{height-depth?tree height}{heights} by calling
+\lstinline|height| on the first input \sn{tree?tree} and then comparing with the
+maximal \sr{height-depth?tree height}{height} of the remaining
+\sns{tree?tree}.
+\end{enumerate}
+
+\inlinedef{Note that \lstinline|maxh| and \lstinline|height| each
+\sn{subroutine?call} the other. We call such
+\sns{subroutine?function} \definame{recursion?mutually recursive}.} Here
+this behavior poses no problem, since the arguments in the recursive calls are smaller
+than the inputs: for \lstinline|maxh| it is the rest list, and for \lstinline|height|
+the ``list of \sn[post=ren]{child}'' of the input \sn{tree}.
+\end{nparagraph}
+
+\begin{nparagraph}
+\sref{tree-height.ex} was complex for two reasons: \sr{mutually recursive}{mutual recursion}
+and the somewhat cryptic encoding of trees as lists of lists of integers.  We claim that
+\sr{recursion}{recursive programming} is ``not a \sn{bug}, but a feature'', as
+it allows to succinctly capture the ``divide-and-conquer'' approach afforded by
+trees. For the cryptic encoding of trees we can do better.
+\end{nparagraph}
+
+\begin{frame}
+\frametitle{Computing with Trees in \python (Dictionaries)}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=That was a bit cryptic]
+i.e. very difficult to read/\sn{debug}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Idea]
+why not use \sr{dictionary?dictionary}{dictionaries}?\lec{they are more
+explicit}
+\end{sparagraph}
+\item
+\begin{sexample}[for={python,tree}]
+\Sn{compute} the \sn{tree} weight (the sum of all labels) by
+\begin{center}\lstset{basicstyle=\small\sf}
+\begin{tabular}{l>{\quad}l}
+\lstinputmhlisting[linerange=1-15,linewidth=4.2cm]{digdocs/code/dict-weight.py} &
+\lstinputmhlisting[linerange=16-27,linewidth=7cm]{digdocs/code/dict-weight.py}
+\end{tabular}
+\end{center}
+\end{sexample}
+\end{itemize}
+\end{frame}
+
+\begin{nparagraph}
+Again, we have two \sn{mutually recursive} \sns{subroutine?function}:
+\lstinline|weight| that takes a tree, and \lstinline|wsum| that takes a list and the
+recursion goes analogously. Only that this time, the list of \sn[post=ren]{child} is a dictionary
+value and the calls are clearer. The only real difference, is that in \lstinline|wsum|
+we have to add up the weight of the head of the list an the joint sum of the rest list.
+\end{nparagraph}
+\end{smodule}
+\end{document}
+
+

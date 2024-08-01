@@ -1,0 +1,18 @@
+Archive: courses/FAU/IWGS/course
+Filepath: course/sec/pre.en
+
+\begin{document}
+\begin{sfragment}[id=IGWS-preface]{Preface}
+File: [courses/FAU/IWGS/course]{course/sec/concept.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/contents.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/jupyterlab.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/thisdoc.en}
+
+File: [courses/FAU/IWGS/course]{course/sec/acknowledgements.en}
+
+\end{sfragment}
+\end{document}
+

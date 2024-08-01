@@ -1,0 +1,58 @@
+Archive: courses/Jacobs/GenICT/course
+Filepath: python/slides/expressions.en
+
+\begin{document}
+\begin{smodule}{python-expressions}
+\lstset{language=python}
+
+\begin{frame}[fragile]
+\frametitle{Arithmetic Expressions in \python}
+\begin{itemize}
+\item Expressions are ``\sns{program?program}'' that compute
+values\lec{here: numbers}
+\begin{columns}
+\begin{column}{8.5cm}
+\begin{itemize}
+\item \blue{Integers} \lec{numbers without a decimal point}
+\begin{itemize}
+\item \sns{operator?operator}: addition (\lstinline|+|), subtraction
+(\lstinline| |), multiplication (\lstinline|*|), division (\lstinline|/|),
+integer division (\lstinline|//|), remainder/modulo (\lstinline|%|), \ldots
+\item Division yields a float
+\end{itemize}
+\item \blue{Floats} \lec{numbers with a decimal point}
+\begin{itemize}
+\item \Sns{operator?operator}: integer below (\lstinline|floor|),
+integer above (\lstinline|ceil|), exponential (\lstinline|exp|), square root
+(\lstinline|sqrt|), \ldots
+\end{itemize}
+\item
+\begin{sparagraph}
+Numbers are \inlinedef{\definame[post=s]{value?value}, i.e. data objects that
+can be computed with.}\lec{reference the last computed one with
+\lstinline|_|}
+\end{sparagraph}
+\item
+\begin{sdefinition}
+\Definame[post=s]{program-expression?expression} are created from
+\sns{value?value} (and other
+\sns{program-expression?expression}) via
+\definame[post=s]{operator?operator}.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Observation]
+The \python \sn{interpreter?interpreter} simplifies
+\sns{program-expression?expression} to
+\sns{functions?value} by computation.
+\end{sparagraph}
+\end{itemize}
+\end{column}
+\begin{column}{2.5cm}
+\cmhgraphics[width=2.5cm]{python/PIC/idle3-expressions}
+\end{column}
+\end{columns}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

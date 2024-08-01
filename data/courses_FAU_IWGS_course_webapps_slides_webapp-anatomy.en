@@ -1,0 +1,40 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/webapp-anatomy.en
+
+\begin{document}
+\begin{smodule}{webapp-anatomy}
+
+\begin{nparagraph}
+We have seen that \sns{web application} are a common way of building
+\sn{appsys-software?application software}. To understand how this works let us now
+have a look at the components.
+\end{nparagraph}
+
+\begin{frame}[label=slide.webapp-anatomy]
+\frametitle{Anatomy of a Web Application}
+\begin{itemize}
+\item
+\begin{sdefinition}
+A \sn{web application} consists of two parts:
+\begin{itemize}
+\item A \definame{front end} that handles the \sr{interact}{user interaction}.
+\item A \definame{back end} that stores, computes and serves the application content.
+\end{itemize}
+\cmhtikzinput{webapps/tikz/webapp-anatomy}
+Both parts rely on (separate) computational facilities.\\
+A \sn{database?database} as a \definame{persistence layer} is optional.
+\end{sdefinition}
+\item
+\begin{sparagraph}[title=Note]
+The \sn{webbrowser?web browser}, \sn{webserver?web server}, and
+\sn{database?database} can
+\begin{itemize}
+\item be deployed on different \sns{computer}, \lec{high throughput}
+\item all run on your laptop \lec{e.g. for development}
+\end{itemize}
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+

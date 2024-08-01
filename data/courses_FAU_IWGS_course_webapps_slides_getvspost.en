@@ -1,0 +1,40 @@
+Archive: courses/FAU/IWGS/course
+Filepath: webapps/slides/getvspost.en
+
+\begin{document}
+\begin{smodule}{getvspost}
+\begin{frame}[label=slide.getvspost]
+\frametitle{Practical Differences between \sn{http-protocol?HTTP}
+\sn{http-protocol?GET} and \sn{http-protocol?POST}}
+\begin{itemize}
+\item
+\begin{sparagraph}[title=Observation,title=Using GET vs. POST in HTML
+Forms,id=getvspost.obs]\strut
+\begin{center}
+\begin{tabular}{|l|l|l|}\hline
+& \sn{http-protocol?GET} & \sn{http-protocol?POST}\\\hline\hline
+Caching & possible & never\\\hline
+Browser History & Yes & never \\\hline
+Bookmarking & Yes & No \\\hline
+Change Server Data  & No & Yes \\\hline
+Size Restrictions & $\leq2KB$ & No \\\hline
+Encryption & No & HTTPS\\\hline
+\end{tabular}
+\end{center}
+\end{sparagraph}
+\item
+\begin{sparagraph}[title=Upshot]
+\sn{http-protocol?HTTP} \sn{http-protocol?GET} is more convenient, but
+less potent.
+\end{sparagraph}
+\item
+\begin{sparagraph}[style=warning]
+Always use \sn{http-protocol?POST} for sensitive data! \lec{passwords, personal data, etc.}\\
+\sn{http-protocol?GET} data is part of the \sn{URI?URI} and thus
+unencrypted, \sn{http-protocol?POST} data via HTTPS is.
+\end{sparagraph}
+\end{itemize}
+\end{frame}
+\end{smodule}
+\end{document}
+
