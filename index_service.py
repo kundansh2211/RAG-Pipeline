@@ -1,5 +1,4 @@
 import os
-import re
 import tiktoken
 from dotenv import load_dotenv
 from llama_index.embeddings.openai import OpenAIEmbedding
@@ -16,13 +15,13 @@ load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
 
 # Initialize the language model with the API key
-llm = OpenAI(model='gpt-3.5-turbo', temperature=0, max_tokens=256, api_key=api_key)
+llm = OpenAI(model='gpt-4o-mini', temperature=0, max_tokens=256, api_key=api_key)
 
 # Initialize the embedding model
 embed_model = OpenAIEmbedding(api_key=api_key)
 
 # Initialize the tokenizer
-tokenizer = tiktoken.encoding_for_model("gpt-3.5-turbo").encode
+tokenizer = tiktoken.encoding_for_model("gpt-4o-mini").encode
 
 # Initialize the sentence splitter
 sentence_splitter = SentenceSplitter(
@@ -62,7 +61,7 @@ class CustomSimpleDirectoryReader(SimpleDirectoryReader):
                     metadata['filepath'] = line.replace('Filepath:', '').strip()
             document.metadata = metadata
             # Debug prints to verify metadata
-            print(f"Document Metadata: {metadata}")
+            # print(f"Document Metadata: {metadata}")
         return documents
 
 # Load documents from data directory

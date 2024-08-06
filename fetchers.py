@@ -1,7 +1,5 @@
 import re
 import os
-from doc_fetcher import get_raw_stex
-
 import requests
 import requests_cache
 requests_cache.install_cache('requests_cache', expire_after=3600*24)
@@ -49,6 +47,7 @@ def get_raw_stex(archive: str, filename: str):
     url = get_raw_stex_url(archive, filename)
     # print(f'getting url: {url}')
     return requests.get(url).text
+
 def transform_line(line: str, debug=False):
     line = line.strip()
     if line.startswith('%'):
@@ -144,23 +143,12 @@ def cleanup_stex(text: str):
     return '\n'.join([transform_line(line) for line in text.split('\n')
                      if transform_line(line) is not None])
 
-
-
 def get_recursive_stex(archive: str, filename: str) -> str:
     stex = cleanup_stex(get_raw_stex(archive, filename))
     return replace_inputref(archive, stex)
 
-def create_raw_stex_files(output_filename="iwgs.txt", archive="courses/FAU/IWGS/course", filename="course/notes/notes-part1.tex"):
-    try:
-        res = get_recursive_stex(archive, filename)
-        with open(output_filename, "w") as file:
-            file.write(res)
-        print(f"Successfully wrote processed content to {output_filename}.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
 
 
 if __name__ == "__main__":
-    # save_content_to_file()
-    create_raw_stex_files()
+    get_recursive_stex(archive="courses/FAU/IWGS/course", filename="course/notes/notes-part1.tex")
  
