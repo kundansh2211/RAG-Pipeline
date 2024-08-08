@@ -7,6 +7,7 @@ from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Document
 from llama_index.llms.openai import OpenAI
 from llama_index.core.settings import Settings  # Import the singleton instance
+from llama_index.core import PromptTemplate
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -82,8 +83,28 @@ index.storage_context.persist(persist_dir="index_storage")
 # Create a query engine
 query_engine = index.as_query_engine(service_context=Settings)  
 
+# Define the context
+context = "Please generate responses using the provided course notes, with minimal additional input. Focus primarily on the documents for accuracy. Rephrase only when absolutely necessary."
+
+
+# Create a prompt template
+template = (
+    "We have provided context information below. \n"
+    "---------------------\n"
+    "{context_str}"
+    "\n---------------------\n"
+    "Given this information, please answer the question: {query_str}\n"
+)
+qa_template = PromptTemplate(template)
+
 def query_index(query):
-    response = query_engine.query(query)
+    # Format the prompt using the custom template
+    formatted_prompt = qa_template.format(context_str=context, query_str=query)
+    
+    # Use the formatted prompt to query the index
+    response = query_engine.query(formatted_prompt)
+    
     # Extract metadata
     sources = [{"archive": node.node.metadata.get('archive'), "filepath": node.node.metadata.get('filepath')} for node in response.source_nodes]
+    
     return {"response": str(response), "sources": sources}
